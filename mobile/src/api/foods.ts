@@ -29,6 +29,9 @@ export interface FoodItem {
   aka: string | null;
   basis: "100g" | "100ml";
   kcalPer100: number;
+  proteinG: number;
+  carbsG: number;
+  fatG: number;
   category: string | null;
   verified: boolean;
   measures: FoodMeasure[];
@@ -43,6 +46,15 @@ export function computeKcal(
   kcalPer100: number
 ): number {
   return Math.round((quantity * measureGrams) / 100 * kcalPer100);
+}
+
+/** Same formula for macros — returns grams of the macro, rounded to 1 dp. */
+export function computeMacros(
+  quantity: number,
+  measureGrams: number,
+  valuePer100: number
+): number {
+  return Math.round((quantity * measureGrams) / 100 * valuePer100 * 10) / 10;
 }
 
 // ─── Config ───────────────────────────────────────────────────────────────────
@@ -149,6 +161,9 @@ function toBundledItem(f: any, lang: Lang): FoodItem {
     aka:        f.aka ?? null,
     basis:      f.basis,
     kcalPer100: f.kcalPer100,
+    proteinG:   f.proteinG ?? 0,
+    carbsG:     f.carbsG ?? 0,
+    fatG:       f.fatG ?? 0,
     category:   f.category ?? null,
     verified:   f.verified ?? false,
     measures:   f.measures,

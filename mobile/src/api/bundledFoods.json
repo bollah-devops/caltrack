@@ -1,135 +1,4287 @@
 [
-  {"id":"bundled_001","nameFr":"Ndolé","nameEn":"Ndole","aka":"ndole ndolé ndolé","basis":"100g","kcalPer100":160,"category":"sauce/stew","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"tablespoon","grams":15,"sortOrder":1},{"label":"cup","grams":240,"sortOrder":2},{"label":"ladle","grams":150,"sortOrder":3}]},
-  {"id":"bundled_002","nameFr":"Eru","nameEn":"Eru","aka":"eru okazi afang waterleaf","basis":"100g","kcalPer100":140,"category":"sauce/stew","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"tablespoon","grams":15,"sortOrder":1},{"label":"cup","grams":240,"sortOrder":2},{"label":"ladle","grams":150,"sortOrder":3}]},
-  {"id":"bundled_003","nameFr":"Okok salé","nameEn":"Okok (savoury)","aka":"okok mfumbwa koko salé savoury","basis":"100g","kcalPer100":150,"category":"sauce/stew","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"tablespoon","grams":15,"sortOrder":1},{"label":"cup","grams":240,"sortOrder":2},{"label":"ladle","grams":150,"sortOrder":3}]},
-  {"id":"bundled_004","nameFr":"Okok sucré","nameEn":"Okok (sweet)","aka":"okok mfumbwa koko sucré sweet","basis":"100g","kcalPer100":175,"category":"sauce/stew","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"tablespoon","grams":15,"sortOrder":1},{"label":"cup","grams":240,"sortOrder":2},{"label":"ladle","grams":150,"sortOrder":3}]},
-  {"id":"bundled_005","nameFr":"Kpwem","nameEn":"Kpwem (cassava leaf)","aka":"kpem kpwem kpem","basis":"100g","kcalPer100":120,"category":"sauce/stew","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"tablespoon","grams":15,"sortOrder":1},{"label":"cup","grams":240,"sortOrder":2},{"label":"ladle","grams":150,"sortOrder":3}]},
-  {"id":"bundled_006","nameFr":"Sanga","nameEn":"Sanga","aka":"sanga","basis":"100g","kcalPer100":120,"category":"dish","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"1 plat moyen","grams":250,"sortOrder":2}]},
-  {"id":"bundled_007","nameFr":"Njama njama sauté","nameEn":"Sauteed huckleberry (njama njama)","aka":"njama njama huckleberry huckleberry","basis":"100g","kcalPer100":90,"category":"vegetable","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":100,"sortOrder":1},{"label":"handful","grams":30,"sortOrder":2},{"label":"1 portion","grams":150,"sortOrder":3}]},
-  {"id":"bundled_008","nameFr":"Folong sauté","nameEn":"Sauteed amaranth (folong)","aka":"folong zom amaranth amaranth/zom","basis":"100g","kcalPer100":70,"category":"vegetable","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":100,"sortOrder":1},{"label":"handful","grams":30,"sortOrder":2},{"label":"1 portion","grams":150,"sortOrder":3}]},
-  {"id":"bundled_009","nameFr":"Sauce gombo","nameEn":"Okra sauce","aka":"gombo okra sauce okra sauce","basis":"100g","kcalPer100":90,"category":"sauce","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"tablespoon","grams":15,"sortOrder":1},{"label":"cup","grams":240,"sortOrder":2},{"label":"ladle","grams":150,"sortOrder":3}]},
-  {"id":"bundled_010","nameFr":"Sauce gombo sec","nameEn":"Dried okra sauce","aka":"gombo sec dried okra dried okra","basis":"100g","kcalPer100":110,"category":"sauce","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"tablespoon","grams":15,"sortOrder":1},{"label":"cup","grams":240,"sortOrder":2},{"label":"ladle","grams":150,"sortOrder":3}]},
-  {"id":"bundled_011","nameFr":"Sauce follère","nameEn":"Roselle leaf sauce (follère)","aka":"follere folere roselle roselle leaf sauce","basis":"100g","kcalPer100":100,"category":"sauce","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"tablespoon","grams":15,"sortOrder":1},{"label":"cup","grams":240,"sortOrder":2},{"label":"ladle","grams":150,"sortOrder":3}]},
-  {"id":"bundled_012","nameFr":"Sauce arachide","nameEn":"Groundnut sauce (mafé)","aka":"arachide mafe groundnut peanut mafé/groundnut sauce","basis":"100g","kcalPer100":190,"category":"sauce","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"tablespoon","grams":15,"sortOrder":1},{"label":"cup","grams":240,"sortOrder":2},{"label":"ladle","grams":150,"sortOrder":3}]},
-  {"id":"bundled_013","nameFr":"Sauce tomate","nameEn":"Tomato sauce","aka":"tomate tomato stew tomato stew","basis":"100g","kcalPer100":90,"category":"sauce","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"tablespoon","grams":15,"sortOrder":1},{"label":"cup","grams":240,"sortOrder":2},{"label":"ladle","grams":150,"sortOrder":3}]},
-  {"id":"bundled_014","nameFr":"Sauce jaune","nameEn":"Yellow soup (achu soup)","aka":"achu jaune yellow achu soup","basis":"100g","kcalPer100":150,"category":"sauce","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"tablespoon","grams":15,"sortOrder":1},{"label":"cup","grams":240,"sortOrder":2},{"label":"ladle","grams":150,"sortOrder":3}]},
-  {"id":"bundled_015","nameFr":"Nkui","nameEn":"Nkui","aka":"nkui","basis":"100g","kcalPer100":70,"category":"sauce","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"tablespoon","grams":15,"sortOrder":1},{"label":"cup","grams":240,"sortOrder":2},{"label":"ladle","grams":150,"sortOrder":3},{"label":"1 bol","grams":200,"sortOrder":4}]},
-  {"id":"bundled_016","nameFr":"Mbongo tchobi","nameEn":"Mbongo tchobi (black stew)","aka":"mbongo tchobi black black stew","basis":"100g","kcalPer100":130,"category":"sauce/stew","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"tablespoon","grams":15,"sortOrder":1},{"label":"cup","grams":240,"sortOrder":2},{"label":"ladle","grams":150,"sortOrder":3}]},
-  {"id":"bundled_017","nameFr":"Sauce mbanga","nameEn":"Palm nut soup (mbanga)","aka":"mbanga palm nut palm nut soup","basis":"100g","kcalPer100":180,"category":"soup","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"tablespoon","grams":15,"sortOrder":1},{"label":"cup","grams":240,"sortOrder":2},{"label":"ladle","grams":150,"sortOrder":3}]},
-  {"id":"bundled_018","nameFr":"Sauce pistache (egusi)","nameEn":"Egusi / pistachio soup","aka":"egusi pistache pistachio melon pistache sauce","basis":"100g","kcalPer100":200,"category":"sauce/stew","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"tablespoon","grams":15,"sortOrder":1},{"label":"cup","grams":240,"sortOrder":2},{"label":"ladle","grams":150,"sortOrder":3}]},
-  {"id":"bundled_019","nameFr":"Pistache vapeur (ngon)","nameEn":"Steamed egusi pudding (ngon)","aka":"pistache ngon egusi steamed egusi pudding/ngon","basis":"100g","kcalPer100":190,"category":"steamed dish","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1}]},
-  {"id":"bundled_020","nameFr":"Koki (gâteau de haricot)","nameEn":"Koki (bean cake)","aka":"koki bean cake haricot koki beans/gateau haricot","basis":"100g","kcalPer100":185,"category":"steamed dish","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1}]},
-  {"id":"bundled_021","nameFr":"Ekwang","nameEn":"Ekwang","aka":"ekwang","basis":"100g","kcalPer100":170,"category":"dish","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"1 portion","grams":250,"sortOrder":2}]},
-  {"id":"bundled_022","nameFr":"Kwacoco bible","nameEn":"Kwacoco bible","aka":"kwacoco kwacoco","basis":"100g","kcalPer100":180,"category":"dish","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"1 paquet","grams":250,"sortOrder":2}]},
-  {"id":"bundled_023","nameFr":"Kondre","nameEn":"Kondre (plantain stew)","aka":"kondre plantain","basis":"100g","kcalPer100":130,"category":"plantain stew","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"1 plat moyen","grams":300,"sortOrder":2}]},
-  {"id":"bundled_024","nameFr":"Ndomba","nameEn":"Ndomba (fish/meat in leaves)","aka":"ndomba mintsan fish/meat in leaves","basis":"100g","kcalPer100":110,"category":"dish","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1}]},
-  {"id":"bundled_025","nameFr":"Mbol","nameEn":"Mbol","aka":"mbol","basis":"100g","kcalPer100":120,"category":"sauce","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"tablespoon","grams":15,"sortOrder":1},{"label":"cup","grams":240,"sortOrder":2},{"label":"ladle","grams":150,"sortOrder":3}]},
-  {"id":"bundled_026","nameFr":"Pepper soup (pèppè)","nameEn":"Pepper soup","aka":"pepper soup peppe pèppè soup","basis":"100g","kcalPer100":50,"category":"soup","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"tablespoon","grams":15,"sortOrder":1},{"label":"cup","grams":240,"sortOrder":2},{"label":"ladle","grams":150,"sortOrder":3},{"label":"1 bol","grams":300,"sortOrder":4}]},
-  {"id":"bundled_027","nameFr":"Corn chaff","nameEn":"Corn chaff (corn & beans)","aka":"corn chaff maïs haricot","basis":"100g","kcalPer100":140,"category":"dish","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"1 plat moyen","grams":300,"sortOrder":2}]},
-  {"id":"bundled_028","nameFr":"Achu (taro pilé)","nameEn":"Achu (pounded taro)","aka":"achu taro taro pilé","basis":"100g","kcalPer100":110,"category":"swallow","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"tablespoon","grams":15,"sortOrder":2},{"label":"1 boule moyenne","grams":250,"sortOrder":3}]},
-  {"id":"bundled_029","nameFr":"Water fufu (fufu de manioc)","nameEn":"Water fufu (cassava)","aka":"water fufu manioc cassava fufu de manioc","basis":"100g","kcalPer100":120,"category":"swallow","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"tablespoon","grams":15,"sortOrder":2},{"label":"1 boule moyenne","grams":250,"sortOrder":3}]},
-  {"id":"bundled_030","nameFr":"Fufu de maïs","nameEn":"Corn fufu","aka":"corn fufu maïs couscous couscous de maïs","basis":"100g","kcalPer100":110,"category":"swallow","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"tablespoon","grams":15,"sortOrder":2},{"label":"1 boule moyenne","grams":250,"sortOrder":3}]},
-  {"id":"bundled_031","nameFr":"Garri (sec)","nameEn":"Garri (dry)","aka":"garri gari sec dry","basis":"100g","kcalPer100":357,"category":"staple","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"tablespoon","grams":10,"sortOrder":1},{"label":"cup","grams":150,"sortOrder":2},{"label":"1 verre","grams":100,"sortOrder":3}]},
-  {"id":"bundled_032","nameFr":"Garri à l'eau","nameEn":"Soaked garri","aka":"garri gari soaked eau garri à l'eau","basis":"100g","kcalPer100":100,"category":"staple","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"tablespoon","grams":10,"sortOrder":1},{"label":"cup","grams":150,"sortOrder":2},{"label":"1 bol","grams":300,"sortOrder":3}]},
-  {"id":"bundled_033","nameFr":"Boule de mil","nameEn":"Millet ball (la boule)","aka":"boule mil millet sorghum la boule","basis":"100g","kcalPer100":105,"category":"swallow","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"tablespoon","grams":15,"sortOrder":2},{"label":"1 boule moyenne","grams":250,"sortOrder":3}]},
-  {"id":"bundled_034","nameFr":"Riz blanc cuit","nameEn":"White rice (cooked)","aka":"riz rice blanc white","basis":"100g","kcalPer100":130,"category":"staple","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"tablespoon","grams":15,"sortOrder":2}]},
-  {"id":"bundled_035","nameFr":"Riz sauté","nameEn":"Fried rice","aka":"riz sauté fried rice","basis":"100g","kcalPer100":175,"category":"staple","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"tablespoon","grams":15,"sortOrder":2},{"label":"1 plat moyen","grams":250,"sortOrder":3}]},
-  {"id":"bundled_036","nameFr":"Plantain bouilli","nameEn":"Boiled plantain","aka":"plantain bouilli boiled","basis":"100g","kcalPer100":116,"category":"staple","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"tablespoon","grams":15,"sortOrder":2},{"label":"1 doigt moyen","grams":150,"sortOrder":3}]},
-  {"id":"bundled_037","nameFr":"Plantain mûr frit","nameEn":"Fried ripe plantain","aka":"plantain frit fried dodo","basis":"100g","kcalPer100":200,"category":"side","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"1 portion","grams":100,"sortOrder":2}]},
-  {"id":"bundled_038","nameFr":"Plantain braisé (bôbolô)","nameEn":"Roasted plantain (boli)","aka":"plantain braisé roasted boli boli","basis":"100g","kcalPer100":125,"category":"street food","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"1 doigt moyen","grams":150,"sortOrder":2}]},
-  {"id":"bundled_039","nameFr":"Macabo bouilli","nameEn":"Boiled cocoyam (macabo)","aka":"macabo cocoyam bouilli cocoyam","basis":"100g","kcalPer100":112,"category":"staple","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"tablespoon","grams":15,"sortOrder":2},{"label":"1 morceau moyen","grams":150,"sortOrder":3}]},
-  {"id":"bundled_040","nameFr":"Igname bouillie","nameEn":"Boiled yam","aka":"igname yam bouillie yam","basis":"100g","kcalPer100":116,"category":"staple","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"tablespoon","grams":15,"sortOrder":2},{"label":"1 morceau moyen","grams":150,"sortOrder":3}]},
-  {"id":"bundled_041","nameFr":"Patate douce bouillie","nameEn":"Boiled sweet potato","aka":"patate douce sweet potato","basis":"100g","kcalPer100":90,"category":"staple","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"tablespoon","grams":15,"sortOrder":2},{"label":"1 morceau moyen","grams":150,"sortOrder":3}]},
-  {"id":"bundled_042","nameFr":"Manioc bouilli","nameEn":"Boiled cassava","aka":"manioc cassava bouilli cassava","basis":"100g","kcalPer100":160,"category":"staple","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"tablespoon","grams":15,"sortOrder":2},{"label":"1 morceau moyen","grams":150,"sortOrder":3}]},
-  {"id":"bundled_043","nameFr":"Bâton de manioc (bobolo)","nameEn":"Cassava stick (bobolo)","aka":"baton bobolo manioc cassava bobolo","basis":"100g","kcalPer100":150,"category":"staple","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"tablespoon","grams":15,"sortOrder":2},{"label":"piece","grams":150,"sortOrder":3}]},
-  {"id":"bundled_044","nameFr":"Miondo","nameEn":"Miondo (cassava stick)","aka":"miondo mintumba","basis":"100g","kcalPer100":150,"category":"staple","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"tablespoon","grams":15,"sortOrder":2}]},
-  {"id":"bundled_045","nameFr":"Mintumba","nameEn":"Mintumba (cassava cake)","aka":"mintumba cassava pudding","basis":"100g","kcalPer100":180,"category":"steamed dish","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"1 morceau","grams":150,"sortOrder":2}]},
-  {"id":"bundled_046","nameFr":"Tapioca","nameEn":"Tapioca","aka":"tapioca","basis":"100g","kcalPer100":150,"category":"staple","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"tablespoon","grams":15,"sortOrder":2},{"label":"1 bol prepare","grams":250,"sortOrder":3}]},
-  {"id":"bundled_047","nameFr":"Pommes frites","nameEn":"French fries","aka":"frites fries chips fries","basis":"100g","kcalPer100":310,"category":"side","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"1 portion","grams":150,"sortOrder":2}]},
-  {"id":"bundled_048","nameFr":"Spaghetti sauté","nameEn":"Fried spaghetti","aka":"spaghetti sauté fried","basis":"100g","kcalPer100":150,"category":"dish","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"1 plat moyen","grams":300,"sortOrder":2}]},
-  {"id":"bundled_049","nameFr":"Omelette spaghetti","nameEn":"Spaghetti omelette","aka":"omelette spaghetti","basis":"100g","kcalPer100":171.4,"category":"dish","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"piece","grams":350,"sortOrder":2}]},
-  {"id":"bundled_050","nameFr":"Poisson braisé","nameEn":"Grilled fish","aka":"poisson braisé grilled fish bar grilled fish/bar/tilapia","basis":"100g","kcalPer100":150,"category":"protein","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"piece","grams":100,"sortOrder":1},{"label":"1 poisson moyen","grams":300,"sortOrder":2}]},
-  {"id":"bundled_051","nameFr":"Maquereau braisé","nameEn":"Grilled mackerel","aka":"maquereau mackerel braisé","basis":"100g","kcalPer100":205,"category":"protein","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"piece","grams":100,"sortOrder":1},{"label":"1 poisson moyen","grams":250,"sortOrder":2}]},
-  {"id":"bundled_052","nameFr":"Poulet braisé","nameEn":"Grilled chicken","aka":"poulet braisé grilled chicken","basis":"100g","kcalPer100":190,"category":"protein","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"piece","grams":100,"sortOrder":1},{"label":"1 quart de poulet","grams":250,"sortOrder":2}]},
-  {"id":"bundled_053","nameFr":"Poulet DG","nameEn":"Poulet DG","aka":"poulet dg directeur general","basis":"100g","kcalPer100":200,"category":"dish","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"1 plat complet","grams":400,"sortOrder":2}]},
-  {"id":"bundled_054","nameFr":"Kati kati","nameEn":"Kati kati (grilled chicken)","aka":"kati kati","basis":"100g","kcalPer100":190,"category":"protein","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"piece","grams":100,"sortOrder":1},{"label":"1 portion","grams":200,"sortOrder":2}]},
-  {"id":"bundled_055","nameFr":"Porc braisé","nameEn":"Grilled pork","aka":"porc braisé grilled pork grilled pork","basis":"100g","kcalPer100":290,"category":"protein","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"piece","grams":100,"sortOrder":1},{"label":"1 portion","grams":200,"sortOrder":2}]},
-  {"id":"bundled_056","nameFr":"Soya (brochette de bœuf)","nameEn":"Soya (beef skewer)","aka":"soya brochette skewer suya brochette de boeuf","basis":"100g","kcalPer100":288.9,"category":"protein","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"piece","grams":45,"sortOrder":1}]},
-  {"id":"bundled_057","nameFr":"Brochette de porc","nameEn":"Pork skewer","aka":"brochette porc pork skewer","basis":"100g","kcalPer100":320,"category":"protein","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"piece","grams":50,"sortOrder":1}]},
-  {"id":"bundled_058","nameFr":"Kilishi","nameEn":"Kilishi (spiced dried beef)","aka":"kilishi dried beef","basis":"100g","kcalPer100":380,"category":"snack","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"1 sachet moyen","grams":50,"sortOrder":2}]},
-  {"id":"bundled_059","nameFr":"Viande en sauce","nameEn":"Meat in sauce","aka":"viande meat sauce boeuf boeuf en sauce","basis":"100g","kcalPer100":180,"category":"protein","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"piece","grams":100,"sortOrder":1},{"label":"1 louche avec viande","grams":150,"sortOrder":2}]},
-  {"id":"bundled_060","nameFr":"Escargots","nameEn":"Snails","aka":"escargots snails nyama nyama ngub/snails","basis":"100g","kcalPer100":90,"category":"protein","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"piece","grams":100,"sortOrder":1},{"label":"1 portion","grams":150,"sortOrder":2}]},
-  {"id":"bundled_061","nameFr":"Escargots pimentés","nameEn":"Peppered snails","aka":"escargots pimentés peppered snails","basis":"100g","kcalPer100":145,"category":"protein","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"piece","grams":100,"sortOrder":1},{"label":"1 portion","grams":150,"sortOrder":2}]},
-  {"id":"bundled_062","nameFr":"Crevettes sautées (njanga)","nameEn":"Sauteed shrimp (njanga)","aka":"crevettes njanga shrimp prawns njanga fresh","basis":"100g","kcalPer100":150,"category":"protein","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"piece","grams":100,"sortOrder":1}]},
-  {"id":"bundled_063","nameFr":"Njanga sec (crevettes séchées)","nameEn":"Dried crayfish (njanga)","aka":"njanga crayfish dried crevettes dried crayfish","basis":"100g","kcalPer100":320,"category":"condiment","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"1 poignee","grams":20,"sortOrder":2}]},
-  {"id":"bundled_064","nameFr":"Poisson fumé","nameEn":"Smoked fish","aka":"poisson fumé smoked fish smoked fish","basis":"100g","kcalPer100":290,"category":"protein","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"piece","grams":100,"sortOrder":1},{"label":"1 morceau","grams":80,"sortOrder":2}]},
-  {"id":"bundled_065","nameFr":"Makayabu (morue salée)","nameEn":"Salted cod (makayabu)","aka":"makayabu cod salted morue stockfish/salted fish","basis":"100g","kcalPer100":180,"category":"protein","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"piece","grams":100,"sortOrder":1}]},
-  {"id":"bundled_066","nameFr":"Œuf bouilli","nameEn":"Boiled egg","aka":"oeuf egg bouilli boiled boiled egg","basis":"100g","kcalPer100":156,"category":"protein","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"piece","grams":50,"sortOrder":1}]},
-  {"id":"bundled_067","nameFr":"Œuf en omelette","nameEn":"Omelette egg","aka":"oeuf omelette egg","basis":"100g","kcalPer100":183.3,"category":"protein","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"piece","grams":60,"sortOrder":1}]},
-  {"id":"bundled_068","nameFr":"Haricot rouge cuit","nameEn":"Cooked red beans","aka":"haricot beans rouge red beans","basis":"100g","kcalPer100":130,"category":"staple","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"tablespoon","grams":15,"sortOrder":2}]},
-  {"id":"bundled_069","nameFr":"Haricot à l'huile","nameEn":"Beans in oil","aka":"haricot beans huile oil","basis":"100g","kcalPer100":165,"category":"staple","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"ml","grams":0.92,"sortOrder":1},{"label":"teaspoon","grams":4.5,"sortOrder":2},{"label":"tablespoon","grams":14,"sortOrder":3},{"label":"cup","grams":218,"sortOrder":4},{"label":"1 louche","grams":200,"sortOrder":5}]},
-  {"id":"bundled_070","nameFr":"Beignet soufflé (puff-puff)","nameEn":"Puff-puff (fried dough)","aka":"beignet puff puff soufflé puff-puff/boule","basis":"100g","kcalPer100":271.4,"category":"snack","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0}]},
-  {"id":"bundled_071","nameFr":"Beignet haricot (accra)","nameEn":"Bean fritter (accra)","aka":"beignet haricot accra akara accra haricot","basis":"100g","kcalPer100":242.9,"category":"snack","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0}]},
-  {"id":"bundled_072","nameFr":"BHB complet (beignet-haricot-bouillie)","nameEn":"BHB combo (fritter-beans-pap)","aka":"bhb beignet haricot bouillie beignet-haricot-bouillie","basis":"100g","kcalPer100":130,"category":"combo","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"piece","grams":500,"sortOrder":2}]},
-  {"id":"bundled_073","nameFr":"Accra banane","nameEn":"Banana fritter","aka":"accra banane banana fritter beignet banane","basis":"100g","kcalPer100":275,"category":"snack","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0}]},
-  {"id":"bundled_074","nameFr":"Croquettes","nameEn":"Croquettes","aka":"croquettes","basis":"100g","kcalPer100":450,"category":"snack","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"1 sachet","grams":60,"sortOrder":2}]},
-  {"id":"bundled_075","nameFr":"Chin-chin","nameEn":"Chin-chin","aka":"chin chin","basis":"100g","kcalPer100":480,"category":"snack","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"1 sachet","grams":60,"sortOrder":2}]},
-  {"id":"bundled_076","nameFr":"Chips de plantain","nameEn":"Plantain chips","aka":"chips plantain crisps plantain chips","basis":"100g","kcalPer100":520,"category":"snack","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"1 sachet moyen","grams":50,"sortOrder":2}]},
-  {"id":"bundled_077","nameFr":"Gâteau local","nameEn":"Local cake","aka":"gateau cake cake local","basis":"100g","kcalPer100":333.3,"category":"snack","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"piece","grams":45,"sortOrder":2}]},
-  {"id":"bundled_078","nameFr":"Pain (baguette)","nameEn":"Bread (baguette)","aka":"pain bread baguette baguette","basis":"100g","kcalPer100":265,"category":"staple","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"tablespoon","grams":15,"sortOrder":2},{"label":"piece","grams":250,"sortOrder":3},{"label":"1 demi-baguette","grams":125,"sortOrder":4}]},
-  {"id":"bundled_079","nameFr":"Pain chargé","nameEn":"Loaded sandwich","aka":"pain chargé sandwich sandwich complet","basis":"100g","kcalPer100":220,"category":"combo","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"piece","grams":250,"sortOrder":2}]},
-  {"id":"bundled_080","nameFr":"Pain beurré","nameEn":"Buttered bread","aka":"pain beurre butter bread","basis":"100g","kcalPer100":237,"category":"combo","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"piece","grams":135,"sortOrder":2}]},
-  {"id":"bundled_081","nameFr":"Bouillie de maïs (pap)","nameEn":"Corn pap (porridge)","aka":"bouillie mais pap corn porridge corn pap","basis":"100g","kcalPer100":70,"category":"porridge","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"tablespoon","grams":15,"sortOrder":2},{"label":"1 bol","grams":300,"sortOrder":3}]},
-  {"id":"bundled_082","nameFr":"Bouillie de riz","nameEn":"Rice pap (porridge)","aka":"bouillie riz rice pap rice pap","basis":"100g","kcalPer100":70,"category":"porridge","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"tablespoon","grams":15,"sortOrder":2},{"label":"1 bol","grams":300,"sortOrder":3}]},
-  {"id":"bundled_083","nameFr":"Dakéré","nameEn":"Dakéré (millet couscous)","aka":"dakere millet couscous","basis":"100g","kcalPer100":140,"category":"dessert","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"1 bol","grams":250,"sortOrder":2}]},
-  {"id":"bundled_084","nameFr":"Kossam (lait caillé)","nameEn":"Kossam (fermented milk)","aka":"kossam lait caillé fermented milk lait caillé","basis":"100ml","kcalPer100":70,"category":"drink","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":245,"sortOrder":1},{"label":"glass","grams":250,"sortOrder":2}]},
-  {"id":"bundled_085","nameFr":"Folère (bissap)","nameEn":"Hibiscus drink (folère/bissap)","aka":"folere bissap hibiscus zobo bissap/hibiscus","basis":"100ml","kcalPer100":40,"category":"drink","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":240,"sortOrder":1},{"label":"glass","grams":250,"sortOrder":2},{"label":"bottle_50cl","grams":500,"sortOrder":3}]},
-  {"id":"bundled_086","nameFr":"Jus de gingembre","nameEn":"Ginger juice","aka":"gingembre ginger juice gnamakoudji","basis":"100ml","kcalPer100":50,"category":"drink","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":240,"sortOrder":1},{"label":"glass","grams":250,"sortOrder":2},{"label":"bottle_50cl","grams":500,"sortOrder":3}]},
-  {"id":"bundled_087","nameFr":"Jus de baobab (bouye)","nameEn":"Baobab juice (bouye)","aka":"baobab bouye juice bouye","basis":"100ml","kcalPer100":60,"category":"drink","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":240,"sortOrder":1},{"label":"glass","grams":250,"sortOrder":2},{"label":"bottle_50cl","grams":500,"sortOrder":3}]},
-  {"id":"bundled_088","nameFr":"Matango (vin de palme)","nameEn":"Palm wine (matango)","aka":"matango palm wine vin vin de palme/palm wine","basis":"100ml","kcalPer100":45,"category":"drink","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"bottle_65cl","grams":656,"sortOrder":1},{"label":"glass","grams":250,"sortOrder":2}]},
-  {"id":"bundled_089","nameFr":"Bilibili (bière de mil)","nameEn":"Millet beer (bilibili)","aka":"bilibili millet beer bière bière de mil","basis":"100ml","kcalPer100":50,"category":"drink","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"bottle_65cl","grams":656,"sortOrder":1},{"label":"glass","grams":250,"sortOrder":2},{"label":"1 calebasse","grams":400,"sortOrder":3}]},
-  {"id":"bundled_090","nameFr":"Sha (bière de maïs)","nameEn":"Corn beer (sha)","aka":"sha corn beer corn beer","basis":"100ml","kcalPer100":50,"category":"drink","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"bottle_65cl","grams":656,"sortOrder":1},{"label":"glass","grams":250,"sortOrder":2},{"label":"1 verre","grams":300,"sortOrder":3}]},
-  {"id":"bundled_091","nameFr":"Bière (33/Castel)","nameEn":"Beer (33/Castel)","aka":"biere beer 33 castel beer","basis":"100ml","kcalPer100":43,"category":"drink","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"bottle_65cl","grams":656,"sortOrder":1},{"label":"glass","grams":250,"sortOrder":2},{"label":"1 bouteille 65cl","grams":650,"sortOrder":3}]},
-  {"id":"bundled_092","nameFr":"Top / soda","nameEn":"Soft drink (soda)","aka":"top soda soft drink soft drink","basis":"100ml","kcalPer100":42,"category":"drink","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"can_33cl","grams":343,"sortOrder":1},{"label":"bottle_50cl","grams":520,"sortOrder":2},{"label":"glass","grams":250,"sortOrder":3},{"label":"1 bouteille 30cl","grams":300,"sortOrder":4}]},
-  {"id":"bundled_093","nameFr":"Coca Zero","nameEn":"Coca-Cola Zero","aka":"coca zero diet diet soda","basis":"100ml","kcalPer100":0.3,"category":"drink","verified":true,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"can_33cl","grams":343,"sortOrder":1},{"label":"bottle_50cl","grams":520,"sortOrder":2},{"label":"glass","grams":250,"sortOrder":3},{"label":"piece","grams":330,"sortOrder":4}]},
-  {"id":"bundled_094","nameFr":"Café noir sans sucre","nameEn":"Black coffee (no sugar)","aka":"café coffee noir black","basis":"100ml","kcalPer100":1,"category":"drink","verified":true,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":240,"sortOrder":1},{"label":"glass","grams":250,"sortOrder":2},{"label":"bottle_50cl","grams":500,"sortOrder":3},{"label":"piece","grams":200,"sortOrder":4}]},
-  {"id":"bundled_095","nameFr":"Thé au citron","nameEn":"Lemon tea","aka":"thé tea citron lemon","basis":"100ml","kcalPer100":2.5,"category":"drink","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":240,"sortOrder":1},{"label":"glass","grams":250,"sortOrder":2},{"label":"bottle_50cl","grams":500,"sortOrder":3},{"label":"piece","grams":200,"sortOrder":4}]},
-  {"id":"bundled_096","nameFr":"Sucre","nameEn":"Sugar","aka":"sucre sugar","basis":"100g","kcalPer100":400,"category":"condiment","verified":true,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"teaspoon","grams":4,"sortOrder":1},{"label":"tablespoon","grams":12.5,"sortOrder":2},{"label":"cup","grams":200,"sortOrder":3}]},
-  {"id":"bundled_097","nameFr":"Lait en poudre","nameEn":"Powdered milk","aka":"lait poudre powdered milk powdered milk","basis":"100g","kcalPer100":496,"category":"condiment","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"teaspoon","grams":3,"sortOrder":1},{"label":"tablespoon","grams":9,"sortOrder":2},{"label":"cup","grams":128,"sortOrder":3}]},
-  {"id":"bundled_098","nameFr":"Matinal / Milo (cacao)","nameEn":"Cocoa drink (Matinal/Milo)","aka":"matinal milo cocoa cacao cocoa drink powder","basis":"100g","kcalPer100":420,"category":"drink powder","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"teaspoon","grams":4.6,"sortOrder":1},{"label":"tablespoon","grams":14,"sortOrder":2},{"label":"cup","grams":100,"sortOrder":3},{"label":"2 cuilleres a cafe","grams":10,"sortOrder":4}]},
-  {"id":"bundled_099","nameFr":"Huile de palme","nameEn":"Palm oil","aka":"huile palme palm oil palm oil","basis":"100g","kcalPer100":884,"category":"fat","verified":true,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"ml","grams":0.92,"sortOrder":1},{"label":"teaspoon","grams":4.5,"sortOrder":2},{"label":"tablespoon","grams":14,"sortOrder":3},{"label":"cup","grams":218,"sortOrder":4}]},
-  {"id":"bundled_100","nameFr":"Huile végétale","nameEn":"Vegetable oil","aka":"huile végétale vegetable oil","basis":"100g","kcalPer100":884,"category":"fat","verified":true,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"ml","grams":0.92,"sortOrder":1},{"label":"teaspoon","grams":4.5,"sortOrder":2},{"label":"tablespoon","grams":14,"sortOrder":3},{"label":"cup","grams":218,"sortOrder":4}]},
-  {"id":"bundled_101","nameFr":"Arachides grillées","nameEn":"Roasted groundnuts","aka":"arachides groundnuts peanuts grillées groundnuts roasted","basis":"100g","kcalPer100":570,"category":"snack","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"handful","grams":30,"sortOrder":1},{"label":"tablespoon","grams":9,"sortOrder":2},{"label":"cup","grams":145,"sortOrder":3}]},
-  {"id":"bundled_102","nameFr":"Arachides bouillies","nameEn":"Boiled groundnuts","aka":"arachides bouillies boiled groundnuts","basis":"100g","kcalPer100":320,"category":"snack","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"handful","grams":30,"sortOrder":1},{"label":"tablespoon","grams":9,"sortOrder":2},{"label":"cup","grams":145,"sortOrder":3},{"label":"1 poignee","grams":40,"sortOrder":4}]},
-  {"id":"bundled_103","nameFr":"Pâte d'arachide","nameEn":"Peanut butter","aka":"pâte arachide peanut butter peanut paste","basis":"100g","kcalPer100":590,"category":"condiment","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"teaspoon","grams":5.3,"sortOrder":1},{"label":"tablespoon","grams":16,"sortOrder":2},{"label":"cup","grams":258,"sortOrder":3}]},
-  {"id":"bundled_104","nameFr":"Noix de kola","nameEn":"Kola nut","aka":"kola cola nut noix cola nut","basis":"100g","kcalPer100":166.7,"category":"stimulant","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"piece","grams":15,"sortOrder":2}]},
-  {"id":"bundled_105","nameFr":"Safou (prune)","nameEn":"Safou (African plum)","aka":"safou prune plum prune/African plum","basis":"100g","kcalPer100":170,"category":"fruit","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"piece","grams":50,"sortOrder":2}]},
-  {"id":"bundled_106","nameFr":"Avocat","nameEn":"Avocado","aka":"avocat avocado avocado","basis":"100g","kcalPer100":160,"category":"fruit","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"1 demi-avocat","grams":100,"sortOrder":2}]},
-  {"id":"bundled_107","nameFr":"Papaye","nameEn":"Pawpaw / papaya","aka":"papaye pawpaw papaya pawpaw","basis":"100g","kcalPer100":43,"category":"fruit","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"1 tranche","grams":150,"sortOrder":2}]},
-  {"id":"bundled_108","nameFr":"Mangue","nameEn":"Mango","aka":"mangue mango mango","basis":"100g","kcalPer100":60,"category":"fruit","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1}]},
-  {"id":"bundled_109","nameFr":"Goyave","nameEn":"Guava","aka":"goyave guava guava","basis":"100g","kcalPer100":68,"category":"fruit","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"1 fruit","grams":100,"sortOrder":2}]},
-  {"id":"bundled_110","nameFr":"Corossol","nameEn":"Soursop","aka":"corossol soursop soursop","basis":"100g","kcalPer100":66,"category":"fruit","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"1 portion","grams":150,"sortOrder":2}]},
-  {"id":"bundled_111","nameFr":"Ananas","nameEn":"Pineapple","aka":"ananas pineapple pineapple","basis":"100g","kcalPer100":50,"category":"fruit","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"1 tranche epaisse","grams":150,"sortOrder":2}]},
-  {"id":"bundled_112","nameFr":"Banane douce","nameEn":"Sweet banana","aka":"banane banana sweet sweet banana","basis":"100g","kcalPer100":87.5,"category":"fruit","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"piece","grams":120,"sortOrder":2}]},
-  {"id":"bundled_113","nameFr":"Orange","nameEn":"Orange","aka":"orange","basis":"100g","kcalPer100":47.7,"category":"fruit","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"piece","grams":130,"sortOrder":2}]},
-  {"id":"bundled_114","nameFr":"Pamplemousse","nameEn":"Grapefruit","aka":"pamplemousse grapefruit grapefruit","basis":"100g","kcalPer100":42,"category":"fruit","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"1 demi-fruit","grams":120,"sortOrder":2}]},
-  {"id":"bundled_115","nameFr":"Canne à sucre","nameEn":"Sugarcane","aka":"canne sucre sugarcane sugarcane","basis":"100g","kcalPer100":60,"category":"fruit","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"1 troncon machouille","grams":100,"sortOrder":2}]},
-  {"id":"bundled_116","nameFr":"Noix de coco","nameEn":"Coconut","aka":"noix coco coconut coconut flesh","basis":"100g","kcalPer100":354,"category":"fruit","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"1 morceau","grams":50,"sortOrder":2}]},
-  {"id":"bundled_117","nameFr":"Pastèque","nameEn":"Watermelon","aka":"pastèque watermelon watermelon","basis":"100g","kcalPer100":30,"category":"fruit","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"1 tranche","grams":300,"sortOrder":2}]},
-  {"id":"bundled_118","nameFr":"Tomate","nameEn":"Tomato","aka":"tomate tomato","basis":"100g","kcalPer100":18,"category":"vegetable","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":100,"sortOrder":1},{"label":"handful","grams":30,"sortOrder":2},{"label":"1 tomate moyenne","grams":120,"sortOrder":3}]},
-  {"id":"bundled_119","nameFr":"Gombo frais","nameEn":"Fresh okra","aka":"gombo okra frais fresh okra","basis":"100g","kcalPer100":33,"category":"vegetable","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":100,"sortOrder":1},{"label":"handful","grams":30,"sortOrder":2}]},
-  {"id":"bundled_120","nameFr":"Aubergine locale (zong)","nameEn":"Garden egg (zong)","aka":"aubergine garden egg zong eggplant garden egg/zong","basis":"100g","kcalPer100":25,"category":"vegetable","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":100,"sortOrder":1},{"label":"handful","grams":30,"sortOrder":2}]},
-  {"id":"bundled_121","nameFr":"Légumes sautés","nameEn":"Sauteed vegetables","aka":"légumes vegetables sautés greens mixed greens","basis":"100g","kcalPer100":80,"category":"vegetable","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":100,"sortOrder":1},{"label":"handful","grams":30,"sortOrder":2},{"label":"1 portion","grams":150,"sortOrder":3}]},
-  {"id":"bundled_122","nameFr":"Salade simple","nameEn":"Simple salad","aka":"salade salad simple","basis":"100g","kcalPer100":30,"category":"vegetable","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":100,"sortOrder":1},{"label":"handful","grams":30,"sortOrder":2},{"label":"1 assiette","grams":150,"sortOrder":3}]},
-  {"id":"bundled_123","nameFr":"Salade avec mayonnaise","nameEn":"Salad with mayonnaise","aka":"salade salad mayonnaise","basis":"100g","kcalPer100":130,"category":"vegetable","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"teaspoon","grams":5,"sortOrder":1},{"label":"tablespoon","grams":15,"sortOrder":2},{"label":"1 assiette","grams":150,"sortOrder":3}]},
-  {"id":"bundled_124","nameFr":"Piment frais","nameEn":"Fresh chilli pepper","aka":"piment chilli pepper hot hot pepper","basis":"100g","kcalPer100":40,"category":"condiment","verified":true,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"1 dose","grams":10,"sortOrder":2}]},
-  {"id":"bundled_125","nameFr":"Sauce piment à l'huile","nameEn":"Pepper sauce (in oil)","aka":"piment pepper sauce huile pepper sauce","basis":"100g","kcalPer100":300,"category":"condiment","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"ml","grams":0.92,"sortOrder":1},{"label":"teaspoon","grams":4.5,"sortOrder":2},{"label":"tablespoon","grams":14,"sortOrder":3},{"label":"cup","grams":218,"sortOrder":4},{"label":"1 cuillere a soupe","grams":15,"sortOrder":5}]},
-  {"id":"bundled_126","nameFr":"Maggi / cube bouillon","nameEn":"Bouillon cube (Maggi)","aka":"maggi bouillon cube stock","basis":"100g","kcalPer100":100,"category":"condiment","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"piece","grams":10,"sortOrder":2}]},
-  {"id":"bundled_127","nameFr":"Mayonnaise","nameEn":"Mayonnaise","aka":"mayonnaise mayo","basis":"100g","kcalPer100":680,"category":"condiment","verified":true,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"teaspoon","grams":5,"sortOrder":1},{"label":"tablespoon","grams":15,"sortOrder":2}]},
-  {"id":"bundled_128","nameFr":"Ndolé + riz (plat complet)","nameEn":"Ndole with rice (full plate)","aka":"ndole riz rice complet plate plat complet","basis":"100g","kcalPer100":166.7,"category":"combo","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"piece","grams":450,"sortOrder":2}]},
-  {"id":"bundled_129","nameFr":"Eru + water fufu (plat complet)","nameEn":"Eru with water fufu (full plate)","aka":"eru fufu complet plate plat complet","basis":"100g","kcalPer100":144.4,"category":"combo","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"piece","grams":450,"sortOrder":2}]},
-  {"id":"bundled_130","nameFr":"Achu + sauce jaune (plat complet)","nameEn":"Achu with yellow soup (full plate)","aka":"achu jaune complet plate plat complet","basis":"100g","kcalPer100":140,"category":"combo","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"piece","grams":500,"sortOrder":2}]},
-  {"id":"bundled_131","nameFr":"Poisson braisé + miondo (plat complet)","nameEn":"Grilled fish with miondo (full plate)","aka":"poisson miondo complet plate fish","basis":"100g","kcalPer100":156,"category":"combo","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"piece","grams":500,"sortOrder":2}]},
-  {"id":"bundled_132","nameFr":"Riz + sauce arachide (plat complet)","nameEn":"Rice with groundnut sauce (full plate)","aka":"riz arachide complet plate rice","basis":"100g","kcalPer100":160,"category":"combo","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"piece","grams":450,"sortOrder":2}]},
-  {"id":"bundled_133","nameFr":"Taro sauce jaune","nameEn":"Taro with yellow sauce","aka":"taro jaune yellow bamileke","basis":"100g","kcalPer100":140,"category":"combo","verified":false,"measures":[{"label":"gram","grams":1,"sortOrder":0},{"label":"cup","grams":200,"sortOrder":1},{"label":"piece","grams":500,"sortOrder":2}]}
+  {
+    "id": "bundled_001",
+    "nameFr": "Ndolé",
+    "nameEn": "Ndole",
+    "aka": "ndole ndolé ndolé",
+    "basis": "100g",
+    "kcalPer100": 160,
+    "proteinG": 12,
+    "carbsG": 5,
+    "fatG": 10,
+    "category": "sauce/stew",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "tablespoon",
+        "grams": 15,
+        "sortOrder": 1
+      },
+      {
+        "label": "cup",
+        "grams": 240,
+        "sortOrder": 2
+      },
+      {
+        "label": "ladle",
+        "grams": 150,
+        "sortOrder": 3
+      }
+    ]
+  },
+  {
+    "id": "bundled_002",
+    "nameFr": "Eru",
+    "nameEn": "Eru",
+    "aka": "eru okazi afang waterleaf",
+    "basis": "100g",
+    "kcalPer100": 140,
+    "proteinG": 10,
+    "carbsG": 5,
+    "fatG": 9,
+    "category": "sauce/stew",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "tablespoon",
+        "grams": 15,
+        "sortOrder": 1
+      },
+      {
+        "label": "cup",
+        "grams": 240,
+        "sortOrder": 2
+      },
+      {
+        "label": "ladle",
+        "grams": 150,
+        "sortOrder": 3
+      }
+    ]
+  },
+  {
+    "id": "bundled_003",
+    "nameFr": "Okok salé",
+    "nameEn": "Okok (savoury)",
+    "aka": "okok mfumbwa koko salé savoury",
+    "basis": "100g",
+    "kcalPer100": 150,
+    "proteinG": 9,
+    "carbsG": 6,
+    "fatG": 10,
+    "category": "sauce/stew",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "tablespoon",
+        "grams": 15,
+        "sortOrder": 1
+      },
+      {
+        "label": "cup",
+        "grams": 240,
+        "sortOrder": 2
+      },
+      {
+        "label": "ladle",
+        "grams": 150,
+        "sortOrder": 3
+      }
+    ]
+  },
+  {
+    "id": "bundled_004",
+    "nameFr": "Okok sucré",
+    "nameEn": "Okok (sweet)",
+    "aka": "okok mfumbwa koko sucré sweet",
+    "basis": "100g",
+    "kcalPer100": 175,
+    "proteinG": 7,
+    "carbsG": 14,
+    "fatG": 10,
+    "category": "sauce/stew",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "tablespoon",
+        "grams": 15,
+        "sortOrder": 1
+      },
+      {
+        "label": "cup",
+        "grams": 240,
+        "sortOrder": 2
+      },
+      {
+        "label": "ladle",
+        "grams": 150,
+        "sortOrder": 3
+      }
+    ]
+  },
+  {
+    "id": "bundled_005",
+    "nameFr": "Kpwem",
+    "nameEn": "Kpwem (cassava leaf)",
+    "aka": "kpem kpwem kpem",
+    "basis": "100g",
+    "kcalPer100": 120,
+    "proteinG": 5,
+    "carbsG": 7,
+    "fatG": 8,
+    "category": "sauce/stew",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "tablespoon",
+        "grams": 15,
+        "sortOrder": 1
+      },
+      {
+        "label": "cup",
+        "grams": 240,
+        "sortOrder": 2
+      },
+      {
+        "label": "ladle",
+        "grams": 150,
+        "sortOrder": 3
+      }
+    ]
+  },
+  {
+    "id": "bundled_006",
+    "nameFr": "Sanga",
+    "nameEn": "Sanga",
+    "aka": "sanga",
+    "basis": "100g",
+    "kcalPer100": 120,
+    "proteinG": 4,
+    "carbsG": 18,
+    "fatG": 4,
+    "category": "dish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "1 plat moyen",
+        "grams": 250,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_007",
+    "nameFr": "Njama njama sauté",
+    "nameEn": "Sauteed huckleberry (njama njama)",
+    "aka": "njama njama huckleberry huckleberry",
+    "basis": "100g",
+    "kcalPer100": 90,
+    "proteinG": 5,
+    "carbsG": 8,
+    "fatG": 4,
+    "category": "vegetable",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 100,
+        "sortOrder": 1
+      },
+      {
+        "label": "handful",
+        "grams": 30,
+        "sortOrder": 2
+      },
+      {
+        "label": "1 portion",
+        "grams": 150,
+        "sortOrder": 3
+      }
+    ]
+  },
+  {
+    "id": "bundled_008",
+    "nameFr": "Folong sauté",
+    "nameEn": "Sauteed amaranth (folong)",
+    "aka": "folong zom amaranth amaranth/zom",
+    "basis": "100g",
+    "kcalPer100": 70,
+    "proteinG": 4,
+    "carbsG": 7,
+    "fatG": 3,
+    "category": "vegetable",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 100,
+        "sortOrder": 1
+      },
+      {
+        "label": "handful",
+        "grams": 30,
+        "sortOrder": 2
+      },
+      {
+        "label": "1 portion",
+        "grams": 150,
+        "sortOrder": 3
+      }
+    ]
+  },
+  {
+    "id": "bundled_009",
+    "nameFr": "Sauce gombo",
+    "nameEn": "Okra sauce",
+    "aka": "gombo okra sauce okra sauce",
+    "basis": "100g",
+    "kcalPer100": 90,
+    "proteinG": 4,
+    "carbsG": 5,
+    "fatG": 6,
+    "category": "sauce",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "tablespoon",
+        "grams": 15,
+        "sortOrder": 1
+      },
+      {
+        "label": "cup",
+        "grams": 240,
+        "sortOrder": 2
+      },
+      {
+        "label": "ladle",
+        "grams": 150,
+        "sortOrder": 3
+      }
+    ]
+  },
+  {
+    "id": "bundled_010",
+    "nameFr": "Sauce gombo sec",
+    "nameEn": "Dried okra sauce",
+    "aka": "gombo sec dried okra dried okra",
+    "basis": "100g",
+    "kcalPer100": 110,
+    "proteinG": 5,
+    "carbsG": 7,
+    "fatG": 7,
+    "category": "sauce",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "tablespoon",
+        "grams": 15,
+        "sortOrder": 1
+      },
+      {
+        "label": "cup",
+        "grams": 240,
+        "sortOrder": 2
+      },
+      {
+        "label": "ladle",
+        "grams": 150,
+        "sortOrder": 3
+      }
+    ]
+  },
+  {
+    "id": "bundled_011",
+    "nameFr": "Sauce follère",
+    "nameEn": "Roselle leaf sauce (follère)",
+    "aka": "follere folere roselle roselle leaf sauce",
+    "basis": "100g",
+    "kcalPer100": 100,
+    "proteinG": 3,
+    "carbsG": 6,
+    "fatG": 7,
+    "category": "sauce",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "tablespoon",
+        "grams": 15,
+        "sortOrder": 1
+      },
+      {
+        "label": "cup",
+        "grams": 240,
+        "sortOrder": 2
+      },
+      {
+        "label": "ladle",
+        "grams": 150,
+        "sortOrder": 3
+      }
+    ]
+  },
+  {
+    "id": "bundled_012",
+    "nameFr": "Sauce arachide",
+    "nameEn": "Groundnut sauce (mafé)",
+    "aka": "arachide mafe groundnut peanut mafé/groundnut sauce",
+    "basis": "100g",
+    "kcalPer100": 190,
+    "proteinG": 8,
+    "carbsG": 8,
+    "fatG": 14,
+    "category": "sauce",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "tablespoon",
+        "grams": 15,
+        "sortOrder": 1
+      },
+      {
+        "label": "cup",
+        "grams": 240,
+        "sortOrder": 2
+      },
+      {
+        "label": "ladle",
+        "grams": 150,
+        "sortOrder": 3
+      }
+    ]
+  },
+  {
+    "id": "bundled_013",
+    "nameFr": "Sauce tomate",
+    "nameEn": "Tomato sauce",
+    "aka": "tomate tomato stew tomato stew",
+    "basis": "100g",
+    "kcalPer100": 90,
+    "proteinG": 3,
+    "carbsG": 8,
+    "fatG": 5,
+    "category": "sauce",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "tablespoon",
+        "grams": 15,
+        "sortOrder": 1
+      },
+      {
+        "label": "cup",
+        "grams": 240,
+        "sortOrder": 2
+      },
+      {
+        "label": "ladle",
+        "grams": 150,
+        "sortOrder": 3
+      }
+    ]
+  },
+  {
+    "id": "bundled_014",
+    "nameFr": "Sauce jaune",
+    "nameEn": "Yellow soup (achu soup)",
+    "aka": "achu jaune yellow achu soup",
+    "basis": "100g",
+    "kcalPer100": 150,
+    "proteinG": 4,
+    "carbsG": 5,
+    "fatG": 13,
+    "category": "sauce",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "tablespoon",
+        "grams": 15,
+        "sortOrder": 1
+      },
+      {
+        "label": "cup",
+        "grams": 240,
+        "sortOrder": 2
+      },
+      {
+        "label": "ladle",
+        "grams": 150,
+        "sortOrder": 3
+      }
+    ]
+  },
+  {
+    "id": "bundled_015",
+    "nameFr": "Nkui",
+    "nameEn": "Nkui",
+    "aka": "nkui",
+    "basis": "100g",
+    "kcalPer100": 70,
+    "proteinG": 2,
+    "carbsG": 7,
+    "fatG": 4,
+    "category": "sauce",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "tablespoon",
+        "grams": 15,
+        "sortOrder": 1
+      },
+      {
+        "label": "cup",
+        "grams": 240,
+        "sortOrder": 2
+      },
+      {
+        "label": "ladle",
+        "grams": 150,
+        "sortOrder": 3
+      },
+      {
+        "label": "1 bol",
+        "grams": 200,
+        "sortOrder": 4
+      }
+    ]
+  },
+  {
+    "id": "bundled_016",
+    "nameFr": "Mbongo tchobi",
+    "nameEn": "Mbongo tchobi (black stew)",
+    "aka": "mbongo tchobi black black stew",
+    "basis": "100g",
+    "kcalPer100": 130,
+    "proteinG": 10,
+    "carbsG": 4,
+    "fatG": 8,
+    "category": "sauce/stew",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "tablespoon",
+        "grams": 15,
+        "sortOrder": 1
+      },
+      {
+        "label": "cup",
+        "grams": 240,
+        "sortOrder": 2
+      },
+      {
+        "label": "ladle",
+        "grams": 150,
+        "sortOrder": 3
+      }
+    ]
+  },
+  {
+    "id": "bundled_017",
+    "nameFr": "Sauce mbanga",
+    "nameEn": "Palm nut soup (mbanga)",
+    "aka": "mbanga palm nut palm nut soup",
+    "basis": "100g",
+    "kcalPer100": 180,
+    "proteinG": 5,
+    "carbsG": 6,
+    "fatG": 15,
+    "category": "soup",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "tablespoon",
+        "grams": 15,
+        "sortOrder": 1
+      },
+      {
+        "label": "cup",
+        "grams": 240,
+        "sortOrder": 2
+      },
+      {
+        "label": "ladle",
+        "grams": 150,
+        "sortOrder": 3
+      }
+    ]
+  },
+  {
+    "id": "bundled_018",
+    "nameFr": "Sauce pistache (egusi)",
+    "nameEn": "Egusi / pistachio soup",
+    "aka": "egusi pistache pistachio melon pistache sauce",
+    "basis": "100g",
+    "kcalPer100": 200,
+    "proteinG": 10,
+    "carbsG": 6,
+    "fatG": 15,
+    "category": "sauce/stew",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "tablespoon",
+        "grams": 15,
+        "sortOrder": 1
+      },
+      {
+        "label": "cup",
+        "grams": 240,
+        "sortOrder": 2
+      },
+      {
+        "label": "ladle",
+        "grams": 150,
+        "sortOrder": 3
+      }
+    ]
+  },
+  {
+    "id": "bundled_019",
+    "nameFr": "Pistache vapeur (ngon)",
+    "nameEn": "Steamed egusi pudding (ngon)",
+    "aka": "pistache ngon egusi steamed egusi pudding/ngon",
+    "basis": "100g",
+    "kcalPer100": 190,
+    "proteinG": 10,
+    "carbsG": 6,
+    "fatG": 14,
+    "category": "steamed dish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_020",
+    "nameFr": "Koki (gâteau de haricot)",
+    "nameEn": "Koki (bean cake)",
+    "aka": "koki bean cake haricot koki beans/gateau haricot",
+    "basis": "100g",
+    "kcalPer100": 185,
+    "proteinG": 10,
+    "carbsG": 14,
+    "fatG": 10,
+    "category": "steamed dish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_021",
+    "nameFr": "Ekwang",
+    "nameEn": "Ekwang",
+    "aka": "ekwang",
+    "basis": "100g",
+    "kcalPer100": 170,
+    "proteinG": 4,
+    "carbsG": 20,
+    "fatG": 8,
+    "category": "dish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "1 portion",
+        "grams": 250,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_022",
+    "nameFr": "Kwacoco bible",
+    "nameEn": "Kwacoco bible",
+    "aka": "kwacoco kwacoco",
+    "basis": "100g",
+    "kcalPer100": 180,
+    "proteinG": 4,
+    "carbsG": 21,
+    "fatG": 9,
+    "category": "dish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "1 paquet",
+        "grams": 250,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_023",
+    "nameFr": "Kondre",
+    "nameEn": "Kondre (plantain stew)",
+    "aka": "kondre plantain",
+    "basis": "100g",
+    "kcalPer100": 130,
+    "proteinG": 8,
+    "carbsG": 14,
+    "fatG": 5,
+    "category": "plantain stew",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "1 plat moyen",
+        "grams": 300,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_024",
+    "nameFr": "Ndomba",
+    "nameEn": "Ndomba (fish/meat in leaves)",
+    "aka": "ndomba mintsan fish/meat in leaves",
+    "basis": "100g",
+    "kcalPer100": 110,
+    "proteinG": 12,
+    "carbsG": 4,
+    "fatG": 5,
+    "category": "dish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_025",
+    "nameFr": "Mbol",
+    "nameEn": "Mbol",
+    "aka": "mbol",
+    "basis": "100g",
+    "kcalPer100": 120,
+    "proteinG": 4,
+    "carbsG": 6,
+    "fatG": 9,
+    "category": "sauce",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "tablespoon",
+        "grams": 15,
+        "sortOrder": 1
+      },
+      {
+        "label": "cup",
+        "grams": 240,
+        "sortOrder": 2
+      },
+      {
+        "label": "ladle",
+        "grams": 150,
+        "sortOrder": 3
+      }
+    ]
+  },
+  {
+    "id": "bundled_026",
+    "nameFr": "Pepper soup (pèppè)",
+    "nameEn": "Pepper soup",
+    "aka": "pepper soup peppe pèppè soup",
+    "basis": "100g",
+    "kcalPer100": 50,
+    "proteinG": 6,
+    "carbsG": 2,
+    "fatG": 2,
+    "category": "soup",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "tablespoon",
+        "grams": 15,
+        "sortOrder": 1
+      },
+      {
+        "label": "cup",
+        "grams": 240,
+        "sortOrder": 2
+      },
+      {
+        "label": "ladle",
+        "grams": 150,
+        "sortOrder": 3
+      },
+      {
+        "label": "1 bol",
+        "grams": 300,
+        "sortOrder": 4
+      }
+    ]
+  },
+  {
+    "id": "bundled_027",
+    "nameFr": "Corn chaff",
+    "nameEn": "Corn chaff (corn & beans)",
+    "aka": "corn chaff maïs haricot",
+    "basis": "100g",
+    "kcalPer100": 140,
+    "proteinG": 4,
+    "carbsG": 20,
+    "fatG": 5,
+    "category": "dish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "1 plat moyen",
+        "grams": 300,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_028",
+    "nameFr": "Achu (taro pilé)",
+    "nameEn": "Achu (pounded taro)",
+    "aka": "achu taro taro pilé",
+    "basis": "100g",
+    "kcalPer100": 110,
+    "proteinG": 2,
+    "carbsG": 21,
+    "fatG": 2,
+    "category": "swallow",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "tablespoon",
+        "grams": 15,
+        "sortOrder": 2
+      },
+      {
+        "label": "1 boule moyenne",
+        "grams": 250,
+        "sortOrder": 3
+      }
+    ]
+  },
+  {
+    "id": "bundled_029",
+    "nameFr": "Water fufu (fufu de manioc)",
+    "nameEn": "Water fufu (cassava)",
+    "aka": "water fufu manioc cassava fufu de manioc",
+    "basis": "100g",
+    "kcalPer100": 120,
+    "proteinG": 1,
+    "carbsG": 29,
+    "fatG": 0,
+    "category": "swallow",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "tablespoon",
+        "grams": 15,
+        "sortOrder": 2
+      },
+      {
+        "label": "1 boule moyenne",
+        "grams": 250,
+        "sortOrder": 3
+      }
+    ]
+  },
+  {
+    "id": "bundled_030",
+    "nameFr": "Fufu de maïs",
+    "nameEn": "Corn fufu",
+    "aka": "corn fufu maïs couscous couscous de maïs",
+    "basis": "100g",
+    "kcalPer100": 110,
+    "proteinG": 2,
+    "carbsG": 24,
+    "fatG": 1,
+    "category": "swallow",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "tablespoon",
+        "grams": 15,
+        "sortOrder": 2
+      },
+      {
+        "label": "1 boule moyenne",
+        "grams": 250,
+        "sortOrder": 3
+      }
+    ]
+  },
+  {
+    "id": "bundled_031",
+    "nameFr": "Garri (sec)",
+    "nameEn": "Garri (dry)",
+    "aka": "garri gari sec dry",
+    "basis": "100g",
+    "kcalPer100": 357,
+    "proteinG": 1,
+    "carbsG": 87,
+    "fatG": 0.5,
+    "category": "staple",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "tablespoon",
+        "grams": 10,
+        "sortOrder": 1
+      },
+      {
+        "label": "cup",
+        "grams": 150,
+        "sortOrder": 2
+      },
+      {
+        "label": "1 verre",
+        "grams": 100,
+        "sortOrder": 3
+      }
+    ]
+  },
+  {
+    "id": "bundled_032",
+    "nameFr": "Garri à l'eau",
+    "nameEn": "Soaked garri",
+    "aka": "garri gari soaked eau garri à l'eau",
+    "basis": "100g",
+    "kcalPer100": 100,
+    "proteinG": 0.5,
+    "carbsG": 24,
+    "fatG": 0,
+    "category": "staple",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "tablespoon",
+        "grams": 10,
+        "sortOrder": 1
+      },
+      {
+        "label": "cup",
+        "grams": 150,
+        "sortOrder": 2
+      },
+      {
+        "label": "1 bol",
+        "grams": 300,
+        "sortOrder": 3
+      }
+    ]
+  },
+  {
+    "id": "bundled_033",
+    "nameFr": "Boule de mil",
+    "nameEn": "Millet ball (la boule)",
+    "aka": "boule mil millet sorghum la boule",
+    "basis": "100g",
+    "kcalPer100": 105,
+    "proteinG": 3,
+    "carbsG": 21,
+    "fatG": 1,
+    "category": "swallow",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "tablespoon",
+        "grams": 15,
+        "sortOrder": 2
+      },
+      {
+        "label": "1 boule moyenne",
+        "grams": 250,
+        "sortOrder": 3
+      }
+    ]
+  },
+  {
+    "id": "bundled_034",
+    "nameFr": "Riz blanc cuit",
+    "nameEn": "White rice (cooked)",
+    "aka": "riz rice blanc white",
+    "basis": "100g",
+    "kcalPer100": 130,
+    "proteinG": 2.7,
+    "carbsG": 28,
+    "fatG": 0.3,
+    "category": "staple",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "tablespoon",
+        "grams": 15,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_035",
+    "nameFr": "Riz sauté",
+    "nameEn": "Fried rice",
+    "aka": "riz sauté fried rice",
+    "basis": "100g",
+    "kcalPer100": 175,
+    "proteinG": 3,
+    "carbsG": 25,
+    "fatG": 7,
+    "category": "staple",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "tablespoon",
+        "grams": 15,
+        "sortOrder": 2
+      },
+      {
+        "label": "1 plat moyen",
+        "grams": 250,
+        "sortOrder": 3
+      }
+    ]
+  },
+  {
+    "id": "bundled_036",
+    "nameFr": "Plantain bouilli",
+    "nameEn": "Boiled plantain",
+    "aka": "plantain bouilli boiled",
+    "basis": "100g",
+    "kcalPer100": 116,
+    "proteinG": 1,
+    "carbsG": 27,
+    "fatG": 0.5,
+    "category": "staple",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "tablespoon",
+        "grams": 15,
+        "sortOrder": 2
+      },
+      {
+        "label": "1 doigt moyen",
+        "grams": 150,
+        "sortOrder": 3
+      }
+    ]
+  },
+  {
+    "id": "bundled_037",
+    "nameFr": "Plantain mûr frit",
+    "nameEn": "Fried ripe plantain",
+    "aka": "plantain frit fried dodo",
+    "basis": "100g",
+    "kcalPer100": 200,
+    "proteinG": 1,
+    "carbsG": 28,
+    "fatG": 9,
+    "category": "side",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "1 portion",
+        "grams": 100,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_038",
+    "nameFr": "Plantain braisé (bôbolô)",
+    "nameEn": "Roasted plantain (boli)",
+    "aka": "plantain braisé roasted boli boli",
+    "basis": "100g",
+    "kcalPer100": 125,
+    "proteinG": 1,
+    "carbsG": 28,
+    "fatG": 1,
+    "category": "street food",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "1 doigt moyen",
+        "grams": 150,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_039",
+    "nameFr": "Macabo bouilli",
+    "nameEn": "Boiled cocoyam (macabo)",
+    "aka": "macabo cocoyam bouilli cocoyam",
+    "basis": "100g",
+    "kcalPer100": 112,
+    "proteinG": 2,
+    "carbsG": 25,
+    "fatG": 0.5,
+    "category": "staple",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "tablespoon",
+        "grams": 15,
+        "sortOrder": 2
+      },
+      {
+        "label": "1 morceau moyen",
+        "grams": 150,
+        "sortOrder": 3
+      }
+    ]
+  },
+  {
+    "id": "bundled_040",
+    "nameFr": "Igname bouillie",
+    "nameEn": "Boiled yam",
+    "aka": "igname yam bouillie yam",
+    "basis": "100g",
+    "kcalPer100": 116,
+    "proteinG": 2,
+    "carbsG": 26,
+    "fatG": 0.2,
+    "category": "staple",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "tablespoon",
+        "grams": 15,
+        "sortOrder": 2
+      },
+      {
+        "label": "1 morceau moyen",
+        "grams": 150,
+        "sortOrder": 3
+      }
+    ]
+  },
+  {
+    "id": "bundled_041",
+    "nameFr": "Patate douce bouillie",
+    "nameEn": "Boiled sweet potato",
+    "aka": "patate douce sweet potato",
+    "basis": "100g",
+    "kcalPer100": 90,
+    "proteinG": 2,
+    "carbsG": 20,
+    "fatG": 0.3,
+    "category": "staple",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "tablespoon",
+        "grams": 15,
+        "sortOrder": 2
+      },
+      {
+        "label": "1 morceau moyen",
+        "grams": 150,
+        "sortOrder": 3
+      }
+    ]
+  },
+  {
+    "id": "bundled_042",
+    "nameFr": "Manioc bouilli",
+    "nameEn": "Boiled cassava",
+    "aka": "manioc cassava bouilli cassava",
+    "basis": "100g",
+    "kcalPer100": 160,
+    "proteinG": 1,
+    "carbsG": 38,
+    "fatG": 0.3,
+    "category": "staple",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "tablespoon",
+        "grams": 15,
+        "sortOrder": 2
+      },
+      {
+        "label": "1 morceau moyen",
+        "grams": 150,
+        "sortOrder": 3
+      }
+    ]
+  },
+  {
+    "id": "bundled_043",
+    "nameFr": "Bâton de manioc (bobolo)",
+    "nameEn": "Cassava stick (bobolo)",
+    "aka": "baton bobolo manioc cassava bobolo",
+    "basis": "100g",
+    "kcalPer100": 150,
+    "proteinG": 1,
+    "carbsG": 35,
+    "fatG": 0.5,
+    "category": "staple",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "tablespoon",
+        "grams": 15,
+        "sortOrder": 2
+      },
+      {
+        "label": "piece",
+        "grams": 150,
+        "sortOrder": 3
+      }
+    ]
+  },
+  {
+    "id": "bundled_044",
+    "nameFr": "Miondo",
+    "nameEn": "Miondo (cassava stick)",
+    "aka": "miondo mintumba",
+    "basis": "100g",
+    "kcalPer100": 150,
+    "proteinG": 1,
+    "carbsG": 35,
+    "fatG": 0.5,
+    "category": "staple",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "tablespoon",
+        "grams": 15,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_045",
+    "nameFr": "Mintumba",
+    "nameEn": "Mintumba (cassava cake)",
+    "aka": "mintumba cassava pudding",
+    "basis": "100g",
+    "kcalPer100": 180,
+    "proteinG": 2,
+    "carbsG": 30,
+    "fatG": 6,
+    "category": "steamed dish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "1 morceau",
+        "grams": 150,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_046",
+    "nameFr": "Tapioca",
+    "nameEn": "Tapioca",
+    "aka": "tapioca",
+    "basis": "100g",
+    "kcalPer100": 150,
+    "proteinG": 0.5,
+    "carbsG": 36,
+    "fatG": 0.5,
+    "category": "staple",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "tablespoon",
+        "grams": 15,
+        "sortOrder": 2
+      },
+      {
+        "label": "1 bol prepare",
+        "grams": 250,
+        "sortOrder": 3
+      }
+    ]
+  },
+  {
+    "id": "bundled_047",
+    "nameFr": "Pommes frites",
+    "nameEn": "French fries",
+    "aka": "frites fries chips fries",
+    "basis": "100g",
+    "kcalPer100": 310,
+    "proteinG": 4,
+    "carbsG": 38,
+    "fatG": 16,
+    "category": "side",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "1 portion",
+        "grams": 150,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_048",
+    "nameFr": "Spaghetti sauté",
+    "nameEn": "Fried spaghetti",
+    "aka": "spaghetti sauté fried",
+    "basis": "100g",
+    "kcalPer100": 150,
+    "proteinG": 4,
+    "carbsG": 23,
+    "fatG": 5,
+    "category": "dish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "1 plat moyen",
+        "grams": 300,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_049",
+    "nameFr": "Omelette spaghetti",
+    "nameEn": "Spaghetti omelette",
+    "aka": "omelette spaghetti",
+    "basis": "100g",
+    "kcalPer100": 171.4,
+    "proteinG": 7,
+    "carbsG": 18,
+    "fatG": 8,
+    "category": "dish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "piece",
+        "grams": 350,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_050",
+    "nameFr": "Poisson braisé",
+    "nameEn": "Grilled fish",
+    "aka": "poisson braisé grilled fish bar grilled fish/bar/tilapia",
+    "basis": "100g",
+    "kcalPer100": 150,
+    "proteinG": 22,
+    "carbsG": 0,
+    "fatG": 7,
+    "category": "protein",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 100,
+        "sortOrder": 1
+      },
+      {
+        "label": "1 poisson moyen",
+        "grams": 300,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_051",
+    "nameFr": "Maquereau braisé",
+    "nameEn": "Grilled mackerel",
+    "aka": "maquereau mackerel braisé",
+    "basis": "100g",
+    "kcalPer100": 205,
+    "proteinG": 18,
+    "carbsG": 0,
+    "fatG": 15,
+    "category": "protein",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 100,
+        "sortOrder": 1
+      },
+      {
+        "label": "1 poisson moyen",
+        "grams": 250,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_052",
+    "nameFr": "Poulet braisé",
+    "nameEn": "Grilled chicken",
+    "aka": "poulet braisé grilled chicken",
+    "basis": "100g",
+    "kcalPer100": 190,
+    "proteinG": 25,
+    "carbsG": 0,
+    "fatG": 10,
+    "category": "protein",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 100,
+        "sortOrder": 1
+      },
+      {
+        "label": "1 quart de poulet",
+        "grams": 250,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_053",
+    "nameFr": "Poulet DG",
+    "nameEn": "Poulet DG",
+    "aka": "poulet dg directeur general",
+    "basis": "100g",
+    "kcalPer100": 200,
+    "proteinG": 15,
+    "carbsG": 8,
+    "fatG": 12,
+    "category": "dish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "1 plat complet",
+        "grams": 400,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_054",
+    "nameFr": "Kati kati",
+    "nameEn": "Kati kati (grilled chicken)",
+    "aka": "kati kati",
+    "basis": "100g",
+    "kcalPer100": 190,
+    "proteinG": 25,
+    "carbsG": 0,
+    "fatG": 10,
+    "category": "protein",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 100,
+        "sortOrder": 1
+      },
+      {
+        "label": "1 portion",
+        "grams": 200,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_055",
+    "nameFr": "Porc braisé",
+    "nameEn": "Grilled pork",
+    "aka": "porc braisé grilled pork grilled pork",
+    "basis": "100g",
+    "kcalPer100": 290,
+    "proteinG": 20,
+    "carbsG": 0,
+    "fatG": 23,
+    "category": "protein",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 100,
+        "sortOrder": 1
+      },
+      {
+        "label": "1 portion",
+        "grams": 200,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_056",
+    "nameFr": "Soya (brochette de bœuf)",
+    "nameEn": "Soya (beef skewer)",
+    "aka": "soya brochette skewer suya brochette de boeuf",
+    "basis": "100g",
+    "kcalPer100": 288.9,
+    "proteinG": 30,
+    "carbsG": 5,
+    "fatG": 16,
+    "category": "protein",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 45,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_057",
+    "nameFr": "Brochette de porc",
+    "nameEn": "Pork skewer",
+    "aka": "brochette porc pork skewer",
+    "basis": "100g",
+    "kcalPer100": 320,
+    "proteinG": 22,
+    "carbsG": 2,
+    "fatG": 25,
+    "category": "protein",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 50,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_058",
+    "nameFr": "Kilishi",
+    "nameEn": "Kilishi (spiced dried beef)",
+    "aka": "kilishi dried beef",
+    "basis": "100g",
+    "kcalPer100": 380,
+    "proteinG": 45,
+    "carbsG": 10,
+    "fatG": 17,
+    "category": "snack",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "1 sachet moyen",
+        "grams": 50,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_059",
+    "nameFr": "Viande en sauce",
+    "nameEn": "Meat in sauce",
+    "aka": "viande meat sauce boeuf boeuf en sauce",
+    "basis": "100g",
+    "kcalPer100": 180,
+    "proteinG": 18,
+    "carbsG": 5,
+    "fatG": 10,
+    "category": "protein",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 100,
+        "sortOrder": 1
+      },
+      {
+        "label": "1 louche avec viande",
+        "grams": 150,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_060",
+    "nameFr": "Escargots",
+    "nameEn": "Snails",
+    "aka": "escargots snails nyama nyama ngub/snails",
+    "basis": "100g",
+    "kcalPer100": 90,
+    "proteinG": 15,
+    "carbsG": 3,
+    "fatG": 2,
+    "category": "protein",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 100,
+        "sortOrder": 1
+      },
+      {
+        "label": "1 portion",
+        "grams": 150,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_061",
+    "nameFr": "Escargots pimentés",
+    "nameEn": "Peppered snails",
+    "aka": "escargots pimentés peppered snails",
+    "basis": "100g",
+    "kcalPer100": 145,
+    "proteinG": 14,
+    "carbsG": 4,
+    "fatG": 8,
+    "category": "protein",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 100,
+        "sortOrder": 1
+      },
+      {
+        "label": "1 portion",
+        "grams": 150,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_062",
+    "nameFr": "Crevettes sautées (njanga)",
+    "nameEn": "Sauteed shrimp (njanga)",
+    "aka": "crevettes njanga shrimp prawns njanga fresh",
+    "basis": "100g",
+    "kcalPer100": 150,
+    "proteinG": 20,
+    "carbsG": 4,
+    "fatG": 6,
+    "category": "protein",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 100,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_063",
+    "nameFr": "Njanga sec (crevettes séchées)",
+    "nameEn": "Dried crayfish (njanga)",
+    "aka": "njanga crayfish dried crevettes dried crayfish",
+    "basis": "100g",
+    "kcalPer100": 320,
+    "proteinG": 45,
+    "carbsG": 3,
+    "fatG": 14,
+    "category": "condiment",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "1 poignee",
+        "grams": 20,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_064",
+    "nameFr": "Poisson fumé",
+    "nameEn": "Smoked fish",
+    "aka": "poisson fumé smoked fish smoked fish",
+    "basis": "100g",
+    "kcalPer100": 290,
+    "proteinG": 45,
+    "carbsG": 0,
+    "fatG": 12,
+    "category": "protein",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 100,
+        "sortOrder": 1
+      },
+      {
+        "label": "1 morceau",
+        "grams": 80,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_065",
+    "nameFr": "Makayabu (morue salée)",
+    "nameEn": "Salted cod (makayabu)",
+    "aka": "makayabu cod salted morue stockfish/salted fish",
+    "basis": "100g",
+    "kcalPer100": 180,
+    "proteinG": 28,
+    "carbsG": 2,
+    "fatG": 7,
+    "category": "protein",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 100,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_066",
+    "nameFr": "Œuf bouilli",
+    "nameEn": "Boiled egg",
+    "aka": "oeuf egg bouilli boiled boiled egg",
+    "basis": "100g",
+    "kcalPer100": 156,
+    "proteinG": 13,
+    "carbsG": 1,
+    "fatG": 11,
+    "category": "protein",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 50,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_067",
+    "nameFr": "Œuf en omelette",
+    "nameEn": "Omelette egg",
+    "aka": "oeuf omelette egg",
+    "basis": "100g",
+    "kcalPer100": 183.3,
+    "proteinG": 12,
+    "carbsG": 2,
+    "fatG": 14,
+    "category": "protein",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 60,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_068",
+    "nameFr": "Haricot rouge cuit",
+    "nameEn": "Cooked red beans",
+    "aka": "haricot beans rouge red beans",
+    "basis": "100g",
+    "kcalPer100": 130,
+    "proteinG": 8,
+    "carbsG": 22,
+    "fatG": 1,
+    "category": "staple",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "tablespoon",
+        "grams": 15,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_069",
+    "nameFr": "Haricot à l'huile",
+    "nameEn": "Beans in oil",
+    "aka": "haricot beans huile oil",
+    "basis": "100g",
+    "kcalPer100": 165,
+    "proteinG": 7,
+    "carbsG": 21,
+    "fatG": 6,
+    "category": "staple",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "ml",
+        "grams": 0.92,
+        "sortOrder": 1
+      },
+      {
+        "label": "teaspoon",
+        "grams": 4.5,
+        "sortOrder": 2
+      },
+      {
+        "label": "tablespoon",
+        "grams": 14,
+        "sortOrder": 3
+      },
+      {
+        "label": "cup",
+        "grams": 218,
+        "sortOrder": 4
+      },
+      {
+        "label": "1 louche",
+        "grams": 200,
+        "sortOrder": 5
+      }
+    ]
+  },
+  {
+    "id": "bundled_070",
+    "nameFr": "Beignet soufflé (puff-puff)",
+    "nameEn": "Puff-puff (fried dough)",
+    "aka": "beignet puff puff soufflé puff-puff/boule",
+    "basis": "100g",
+    "kcalPer100": 271.4,
+    "proteinG": 4,
+    "carbsG": 33,
+    "fatG": 14,
+    "category": "snack",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      }
+    ]
+  },
+  {
+    "id": "bundled_071",
+    "nameFr": "Beignet haricot (accra)",
+    "nameEn": "Bean fritter (accra)",
+    "aka": "beignet haricot accra akara accra haricot",
+    "basis": "100g",
+    "kcalPer100": 242.9,
+    "proteinG": 7,
+    "carbsG": 29,
+    "fatG": 11,
+    "category": "snack",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      }
+    ]
+  },
+  {
+    "id": "bundled_072",
+    "nameFr": "BHB complet (beignet-haricot-bouillie)",
+    "nameEn": "BHB combo (fritter-beans-pap)",
+    "aka": "bhb beignet haricot bouillie beignet-haricot-bouillie",
+    "basis": "100g",
+    "kcalPer100": 130,
+    "proteinG": 3,
+    "carbsG": 20,
+    "fatG": 4,
+    "category": "combo",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "piece",
+        "grams": 500,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_073",
+    "nameFr": "Accra banane",
+    "nameEn": "Banana fritter",
+    "aka": "accra banane banana fritter beignet banane",
+    "basis": "100g",
+    "kcalPer100": 275,
+    "proteinG": 3,
+    "carbsG": 36,
+    "fatG": 13,
+    "category": "snack",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      }
+    ]
+  },
+  {
+    "id": "bundled_074",
+    "nameFr": "Croquettes",
+    "nameEn": "Croquettes",
+    "aka": "croquettes",
+    "basis": "100g",
+    "kcalPer100": 450,
+    "proteinG": 5,
+    "carbsG": 52,
+    "fatG": 25,
+    "category": "snack",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "1 sachet",
+        "grams": 60,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_075",
+    "nameFr": "Chin-chin",
+    "nameEn": "Chin-chin",
+    "aka": "chin chin",
+    "basis": "100g",
+    "kcalPer100": 480,
+    "proteinG": 7,
+    "carbsG": 62,
+    "fatG": 23,
+    "category": "snack",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "1 sachet",
+        "grams": 60,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_076",
+    "nameFr": "Chips de plantain",
+    "nameEn": "Plantain chips",
+    "aka": "chips plantain crisps plantain chips",
+    "basis": "100g",
+    "kcalPer100": 520,
+    "proteinG": 2,
+    "carbsG": 65,
+    "fatG": 28,
+    "category": "snack",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "1 sachet moyen",
+        "grams": 50,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_077",
+    "nameFr": "Gâteau local",
+    "nameEn": "Local cake",
+    "aka": "gateau cake cake local",
+    "basis": "100g",
+    "kcalPer100": 333.3,
+    "proteinG": 5,
+    "carbsG": 50,
+    "fatG": 13,
+    "category": "snack",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "piece",
+        "grams": 45,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_078",
+    "nameFr": "Pain (baguette)",
+    "nameEn": "Bread (baguette)",
+    "aka": "pain bread baguette baguette",
+    "basis": "100g",
+    "kcalPer100": 265,
+    "proteinG": 8,
+    "carbsG": 52,
+    "fatG": 3,
+    "category": "staple",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "tablespoon",
+        "grams": 15,
+        "sortOrder": 2
+      },
+      {
+        "label": "piece",
+        "grams": 250,
+        "sortOrder": 3
+      },
+      {
+        "label": "1 demi-baguette",
+        "grams": 125,
+        "sortOrder": 4
+      }
+    ]
+  },
+  {
+    "id": "bundled_079",
+    "nameFr": "Pain chargé",
+    "nameEn": "Loaded sandwich",
+    "aka": "pain chargé sandwich sandwich complet",
+    "basis": "100g",
+    "kcalPer100": 220,
+    "proteinG": 9,
+    "carbsG": 28,
+    "fatG": 8,
+    "category": "combo",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "piece",
+        "grams": 250,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_080",
+    "nameFr": "Pain beurré",
+    "nameEn": "Buttered bread",
+    "aka": "pain beurre butter bread",
+    "basis": "100g",
+    "kcalPer100": 237,
+    "proteinG": 7,
+    "carbsG": 30,
+    "fatG": 10,
+    "category": "combo",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "piece",
+        "grams": 135,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_081",
+    "nameFr": "Bouillie de maïs (pap)",
+    "nameEn": "Corn pap (porridge)",
+    "aka": "bouillie mais pap corn porridge corn pap",
+    "basis": "100g",
+    "kcalPer100": 70,
+    "proteinG": 2,
+    "carbsG": 14,
+    "fatG": 1,
+    "category": "porridge",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "tablespoon",
+        "grams": 15,
+        "sortOrder": 2
+      },
+      {
+        "label": "1 bol",
+        "grams": 300,
+        "sortOrder": 3
+      }
+    ]
+  },
+  {
+    "id": "bundled_082",
+    "nameFr": "Bouillie de riz",
+    "nameEn": "Rice pap (porridge)",
+    "aka": "bouillie riz rice pap rice pap",
+    "basis": "100g",
+    "kcalPer100": 70,
+    "proteinG": 1,
+    "carbsG": 15,
+    "fatG": 1,
+    "category": "porridge",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "tablespoon",
+        "grams": 15,
+        "sortOrder": 2
+      },
+      {
+        "label": "1 bol",
+        "grams": 300,
+        "sortOrder": 3
+      }
+    ]
+  },
+  {
+    "id": "bundled_083",
+    "nameFr": "Dakéré",
+    "nameEn": "Dakéré (millet couscous)",
+    "aka": "dakere millet couscous",
+    "basis": "100g",
+    "kcalPer100": 140,
+    "proteinG": 3,
+    "carbsG": 25,
+    "fatG": 3,
+    "category": "dessert",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "1 bol",
+        "grams": 250,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_084",
+    "nameFr": "Kossam (lait caillé)",
+    "nameEn": "Kossam (fermented milk)",
+    "aka": "kossam lait caillé fermented milk lait caillé",
+    "basis": "100ml",
+    "kcalPer100": 70,
+    "proteinG": 3,
+    "carbsG": 8,
+    "fatG": 3,
+    "category": "drink",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 245,
+        "sortOrder": 1
+      },
+      {
+        "label": "glass",
+        "grams": 250,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_085",
+    "nameFr": "Folère (bissap)",
+    "nameEn": "Hibiscus drink (folère/bissap)",
+    "aka": "folere bissap hibiscus zobo bissap/hibiscus",
+    "basis": "100ml",
+    "kcalPer100": 40,
+    "proteinG": 0.3,
+    "carbsG": 10,
+    "fatG": 0.1,
+    "category": "drink",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 240,
+        "sortOrder": 1
+      },
+      {
+        "label": "glass",
+        "grams": 250,
+        "sortOrder": 2
+      },
+      {
+        "label": "bottle_50cl",
+        "grams": 500,
+        "sortOrder": 3
+      }
+    ]
+  },
+  {
+    "id": "bundled_086",
+    "nameFr": "Jus de gingembre",
+    "nameEn": "Ginger juice",
+    "aka": "gingembre ginger juice gnamakoudji",
+    "basis": "100ml",
+    "kcalPer100": 50,
+    "proteinG": 0.3,
+    "carbsG": 12,
+    "fatG": 0.1,
+    "category": "drink",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 240,
+        "sortOrder": 1
+      },
+      {
+        "label": "glass",
+        "grams": 250,
+        "sortOrder": 2
+      },
+      {
+        "label": "bottle_50cl",
+        "grams": 500,
+        "sortOrder": 3
+      }
+    ]
+  },
+  {
+    "id": "bundled_087",
+    "nameFr": "Jus de baobab (bouye)",
+    "nameEn": "Baobab juice (bouye)",
+    "aka": "baobab bouye juice bouye",
+    "basis": "100ml",
+    "kcalPer100": 60,
+    "proteinG": 0.5,
+    "carbsG": 14,
+    "fatG": 0.5,
+    "category": "drink",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 240,
+        "sortOrder": 1
+      },
+      {
+        "label": "glass",
+        "grams": 250,
+        "sortOrder": 2
+      },
+      {
+        "label": "bottle_50cl",
+        "grams": 500,
+        "sortOrder": 3
+      }
+    ]
+  },
+  {
+    "id": "bundled_088",
+    "nameFr": "Matango (vin de palme)",
+    "nameEn": "Palm wine (matango)",
+    "aka": "matango palm wine vin vin de palme/palm wine",
+    "basis": "100ml",
+    "kcalPer100": 45,
+    "proteinG": 0.3,
+    "carbsG": 5,
+    "fatG": 0,
+    "category": "drink",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "bottle_65cl",
+        "grams": 656,
+        "sortOrder": 1
+      },
+      {
+        "label": "glass",
+        "grams": 250,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_089",
+    "nameFr": "Bilibili (bière de mil)",
+    "nameEn": "Millet beer (bilibili)",
+    "aka": "bilibili millet beer bière bière de mil",
+    "basis": "100ml",
+    "kcalPer100": 50,
+    "proteinG": 0.5,
+    "carbsG": 4,
+    "fatG": 0.5,
+    "category": "drink",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "bottle_65cl",
+        "grams": 656,
+        "sortOrder": 1
+      },
+      {
+        "label": "glass",
+        "grams": 250,
+        "sortOrder": 2
+      },
+      {
+        "label": "1 calebasse",
+        "grams": 400,
+        "sortOrder": 3
+      }
+    ]
+  },
+  {
+    "id": "bundled_090",
+    "nameFr": "Sha (bière de maïs)",
+    "nameEn": "Corn beer (sha)",
+    "aka": "sha corn beer corn beer",
+    "basis": "100ml",
+    "kcalPer100": 50,
+    "proteinG": 0.5,
+    "carbsG": 4,
+    "fatG": 0.5,
+    "category": "drink",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "bottle_65cl",
+        "grams": 656,
+        "sortOrder": 1
+      },
+      {
+        "label": "glass",
+        "grams": 250,
+        "sortOrder": 2
+      },
+      {
+        "label": "1 verre",
+        "grams": 300,
+        "sortOrder": 3
+      }
+    ]
+  },
+  {
+    "id": "bundled_091",
+    "nameFr": "Bière (33/Castel)",
+    "nameEn": "Beer (33/Castel)",
+    "aka": "biere beer 33 castel beer",
+    "basis": "100ml",
+    "kcalPer100": 43,
+    "proteinG": 0.5,
+    "carbsG": 3.5,
+    "fatG": 0,
+    "category": "drink",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "bottle_65cl",
+        "grams": 656,
+        "sortOrder": 1
+      },
+      {
+        "label": "glass",
+        "grams": 250,
+        "sortOrder": 2
+      },
+      {
+        "label": "1 bouteille 65cl",
+        "grams": 650,
+        "sortOrder": 3
+      }
+    ]
+  },
+  {
+    "id": "bundled_092",
+    "nameFr": "Top / soda",
+    "nameEn": "Soft drink (soda)",
+    "aka": "top soda soft drink soft drink",
+    "basis": "100ml",
+    "kcalPer100": 42,
+    "proteinG": 0,
+    "carbsG": 10.5,
+    "fatG": 0,
+    "category": "drink",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "can_33cl",
+        "grams": 343,
+        "sortOrder": 1
+      },
+      {
+        "label": "bottle_50cl",
+        "grams": 520,
+        "sortOrder": 2
+      },
+      {
+        "label": "glass",
+        "grams": 250,
+        "sortOrder": 3
+      },
+      {
+        "label": "1 bouteille 30cl",
+        "grams": 300,
+        "sortOrder": 4
+      }
+    ]
+  },
+  {
+    "id": "bundled_093",
+    "nameFr": "Coca Zero",
+    "nameEn": "Coca-Cola Zero",
+    "aka": "coca zero diet diet soda",
+    "basis": "100ml",
+    "kcalPer100": 0.3,
+    "proteinG": 0,
+    "carbsG": 0,
+    "fatG": 0,
+    "category": "drink",
+    "verified": true,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "can_33cl",
+        "grams": 343,
+        "sortOrder": 1
+      },
+      {
+        "label": "bottle_50cl",
+        "grams": 520,
+        "sortOrder": 2
+      },
+      {
+        "label": "glass",
+        "grams": 250,
+        "sortOrder": 3
+      },
+      {
+        "label": "piece",
+        "grams": 330,
+        "sortOrder": 4
+      }
+    ]
+  },
+  {
+    "id": "bundled_094",
+    "nameFr": "Café noir sans sucre",
+    "nameEn": "Black coffee (no sugar)",
+    "aka": "café coffee noir black",
+    "basis": "100ml",
+    "kcalPer100": 1,
+    "proteinG": 0.1,
+    "carbsG": 0,
+    "fatG": 0,
+    "category": "drink",
+    "verified": true,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 240,
+        "sortOrder": 1
+      },
+      {
+        "label": "glass",
+        "grams": 250,
+        "sortOrder": 2
+      },
+      {
+        "label": "bottle_50cl",
+        "grams": 500,
+        "sortOrder": 3
+      },
+      {
+        "label": "piece",
+        "grams": 200,
+        "sortOrder": 4
+      }
+    ]
+  },
+  {
+    "id": "bundled_095",
+    "nameFr": "Thé au citron",
+    "nameEn": "Lemon tea",
+    "aka": "thé tea citron lemon",
+    "basis": "100ml",
+    "kcalPer100": 2.5,
+    "proteinG": 0.1,
+    "carbsG": 0.5,
+    "fatG": 0,
+    "category": "drink",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 240,
+        "sortOrder": 1
+      },
+      {
+        "label": "glass",
+        "grams": 250,
+        "sortOrder": 2
+      },
+      {
+        "label": "bottle_50cl",
+        "grams": 500,
+        "sortOrder": 3
+      },
+      {
+        "label": "piece",
+        "grams": 200,
+        "sortOrder": 4
+      }
+    ]
+  },
+  {
+    "id": "bundled_096",
+    "nameFr": "Sucre",
+    "nameEn": "Sugar",
+    "aka": "sucre sugar",
+    "basis": "100g",
+    "kcalPer100": 400,
+    "proteinG": 0,
+    "carbsG": 100,
+    "fatG": 0,
+    "category": "condiment",
+    "verified": true,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "teaspoon",
+        "grams": 4,
+        "sortOrder": 1
+      },
+      {
+        "label": "tablespoon",
+        "grams": 12.5,
+        "sortOrder": 2
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 3
+      }
+    ]
+  },
+  {
+    "id": "bundled_097",
+    "nameFr": "Lait en poudre",
+    "nameEn": "Powdered milk",
+    "aka": "lait poudre powdered milk powdered milk",
+    "basis": "100g",
+    "kcalPer100": 496,
+    "proteinG": 26,
+    "carbsG": 38,
+    "fatG": 26,
+    "category": "condiment",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "teaspoon",
+        "grams": 3,
+        "sortOrder": 1
+      },
+      {
+        "label": "tablespoon",
+        "grams": 9,
+        "sortOrder": 2
+      },
+      {
+        "label": "cup",
+        "grams": 128,
+        "sortOrder": 3
+      }
+    ]
+  },
+  {
+    "id": "bundled_098",
+    "nameFr": "Matinal / Milo (cacao)",
+    "nameEn": "Cocoa drink (Matinal/Milo)",
+    "aka": "matinal milo cocoa cacao cocoa drink powder",
+    "basis": "100g",
+    "kcalPer100": 420,
+    "proteinG": 6,
+    "carbsG": 80,
+    "fatG": 9,
+    "category": "drink powder",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "teaspoon",
+        "grams": 4.6,
+        "sortOrder": 1
+      },
+      {
+        "label": "tablespoon",
+        "grams": 14,
+        "sortOrder": 2
+      },
+      {
+        "label": "cup",
+        "grams": 100,
+        "sortOrder": 3
+      },
+      {
+        "label": "2 cuilleres a cafe",
+        "grams": 10,
+        "sortOrder": 4
+      }
+    ]
+  },
+  {
+    "id": "bundled_099",
+    "nameFr": "Huile de palme",
+    "nameEn": "Palm oil",
+    "aka": "huile palme palm oil palm oil",
+    "basis": "100g",
+    "kcalPer100": 884,
+    "proteinG": 0,
+    "carbsG": 0,
+    "fatG": 100,
+    "category": "fat",
+    "verified": true,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "ml",
+        "grams": 0.92,
+        "sortOrder": 1
+      },
+      {
+        "label": "teaspoon",
+        "grams": 4.5,
+        "sortOrder": 2
+      },
+      {
+        "label": "tablespoon",
+        "grams": 14,
+        "sortOrder": 3
+      },
+      {
+        "label": "cup",
+        "grams": 218,
+        "sortOrder": 4
+      }
+    ]
+  },
+  {
+    "id": "bundled_100",
+    "nameFr": "Huile végétale",
+    "nameEn": "Vegetable oil",
+    "aka": "huile végétale vegetable oil",
+    "basis": "100g",
+    "kcalPer100": 884,
+    "proteinG": 0,
+    "carbsG": 0,
+    "fatG": 100,
+    "category": "fat",
+    "verified": true,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "ml",
+        "grams": 0.92,
+        "sortOrder": 1
+      },
+      {
+        "label": "teaspoon",
+        "grams": 4.5,
+        "sortOrder": 2
+      },
+      {
+        "label": "tablespoon",
+        "grams": 14,
+        "sortOrder": 3
+      },
+      {
+        "label": "cup",
+        "grams": 218,
+        "sortOrder": 4
+      }
+    ]
+  },
+  {
+    "id": "bundled_101",
+    "nameFr": "Arachides grillées",
+    "nameEn": "Roasted groundnuts",
+    "aka": "arachides groundnuts peanuts grillées groundnuts roasted",
+    "basis": "100g",
+    "kcalPer100": 570,
+    "proteinG": 26,
+    "carbsG": 13,
+    "fatG": 46,
+    "category": "snack",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "handful",
+        "grams": 30,
+        "sortOrder": 1
+      },
+      {
+        "label": "tablespoon",
+        "grams": 9,
+        "sortOrder": 2
+      },
+      {
+        "label": "cup",
+        "grams": 145,
+        "sortOrder": 3
+      }
+    ]
+  },
+  {
+    "id": "bundled_102",
+    "nameFr": "Arachides bouillies",
+    "nameEn": "Boiled groundnuts",
+    "aka": "arachides bouillies boiled groundnuts",
+    "basis": "100g",
+    "kcalPer100": 320,
+    "proteinG": 13,
+    "carbsG": 20,
+    "fatG": 20,
+    "category": "snack",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "handful",
+        "grams": 30,
+        "sortOrder": 1
+      },
+      {
+        "label": "tablespoon",
+        "grams": 9,
+        "sortOrder": 2
+      },
+      {
+        "label": "cup",
+        "grams": 145,
+        "sortOrder": 3
+      },
+      {
+        "label": "1 poignee",
+        "grams": 40,
+        "sortOrder": 4
+      }
+    ]
+  },
+  {
+    "id": "bundled_103",
+    "nameFr": "Pâte d'arachide",
+    "nameEn": "Peanut butter",
+    "aka": "pâte arachide peanut butter peanut paste",
+    "basis": "100g",
+    "kcalPer100": 590,
+    "proteinG": 23,
+    "carbsG": 13,
+    "fatG": 51,
+    "category": "condiment",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "teaspoon",
+        "grams": 5.3,
+        "sortOrder": 1
+      },
+      {
+        "label": "tablespoon",
+        "grams": 16,
+        "sortOrder": 2
+      },
+      {
+        "label": "cup",
+        "grams": 258,
+        "sortOrder": 3
+      }
+    ]
+  },
+  {
+    "id": "bundled_104",
+    "nameFr": "Noix de kola",
+    "nameEn": "Kola nut",
+    "aka": "kola cola nut noix cola nut",
+    "basis": "100g",
+    "kcalPer100": 166.7,
+    "proteinG": 3,
+    "carbsG": 35,
+    "fatG": 2,
+    "category": "stimulant",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "piece",
+        "grams": 15,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_105",
+    "nameFr": "Safou (prune)",
+    "nameEn": "Safou (African plum)",
+    "aka": "safou prune plum prune/African plum",
+    "basis": "100g",
+    "kcalPer100": 170,
+    "proteinG": 2,
+    "carbsG": 7,
+    "fatG": 15,
+    "category": "fruit",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "piece",
+        "grams": 50,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_106",
+    "nameFr": "Avocat",
+    "nameEn": "Avocado",
+    "aka": "avocat avocado avocado",
+    "basis": "100g",
+    "kcalPer100": 160,
+    "proteinG": 2,
+    "carbsG": 7,
+    "fatG": 14,
+    "category": "fruit",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "1 demi-avocat",
+        "grams": 100,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_107",
+    "nameFr": "Papaye",
+    "nameEn": "Pawpaw / papaya",
+    "aka": "papaye pawpaw papaya pawpaw",
+    "basis": "100g",
+    "kcalPer100": 43,
+    "proteinG": 0.5,
+    "carbsG": 10,
+    "fatG": 0.3,
+    "category": "fruit",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "1 tranche",
+        "grams": 150,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_108",
+    "nameFr": "Mangue",
+    "nameEn": "Mango",
+    "aka": "mangue mango mango",
+    "basis": "100g",
+    "kcalPer100": 60,
+    "proteinG": 0.5,
+    "carbsG": 14,
+    "fatG": 0.2,
+    "category": "fruit",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_109",
+    "nameFr": "Goyave",
+    "nameEn": "Guava",
+    "aka": "goyave guava guava",
+    "basis": "100g",
+    "kcalPer100": 68,
+    "proteinG": 2.5,
+    "carbsG": 13,
+    "fatG": 0.5,
+    "category": "fruit",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "1 fruit",
+        "grams": 100,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_110",
+    "nameFr": "Corossol",
+    "nameEn": "Soursop",
+    "aka": "corossol soursop soursop",
+    "basis": "100g",
+    "kcalPer100": 66,
+    "proteinG": 1,
+    "carbsG": 15,
+    "fatG": 0.3,
+    "category": "fruit",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "1 portion",
+        "grams": 150,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_111",
+    "nameFr": "Ananas",
+    "nameEn": "Pineapple",
+    "aka": "ananas pineapple pineapple",
+    "basis": "100g",
+    "kcalPer100": 50,
+    "proteinG": 0.5,
+    "carbsG": 12,
+    "fatG": 0.1,
+    "category": "fruit",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "1 tranche epaisse",
+        "grams": 150,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_112",
+    "nameFr": "Banane douce",
+    "nameEn": "Sweet banana",
+    "aka": "banane banana sweet sweet banana",
+    "basis": "100g",
+    "kcalPer100": 87.5,
+    "proteinG": 1,
+    "carbsG": 20,
+    "fatG": 0.3,
+    "category": "fruit",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "piece",
+        "grams": 120,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_113",
+    "nameFr": "Orange",
+    "nameEn": "Orange",
+    "aka": "orange",
+    "basis": "100g",
+    "kcalPer100": 47.7,
+    "proteinG": 0.9,
+    "carbsG": 11,
+    "fatG": 0.1,
+    "category": "fruit",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "piece",
+        "grams": 130,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_114",
+    "nameFr": "Pamplemousse",
+    "nameEn": "Grapefruit",
+    "aka": "pamplemousse grapefruit grapefruit",
+    "basis": "100g",
+    "kcalPer100": 42,
+    "proteinG": 0.8,
+    "carbsG": 10,
+    "fatG": 0.1,
+    "category": "fruit",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "1 demi-fruit",
+        "grams": 120,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_115",
+    "nameFr": "Canne à sucre",
+    "nameEn": "Sugarcane",
+    "aka": "canne sucre sugarcane sugarcane",
+    "basis": "100g",
+    "kcalPer100": 60,
+    "proteinG": 0.2,
+    "carbsG": 15,
+    "fatG": 0.1,
+    "category": "fruit",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "1 troncon machouille",
+        "grams": 100,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_116",
+    "nameFr": "Noix de coco",
+    "nameEn": "Coconut",
+    "aka": "noix coco coconut coconut flesh",
+    "basis": "100g",
+    "kcalPer100": 354,
+    "proteinG": 3,
+    "carbsG": 12,
+    "fatG": 33,
+    "category": "fruit",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "1 morceau",
+        "grams": 50,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_117",
+    "nameFr": "Pastèque",
+    "nameEn": "Watermelon",
+    "aka": "pastèque watermelon watermelon",
+    "basis": "100g",
+    "kcalPer100": 30,
+    "proteinG": 0.6,
+    "carbsG": 7,
+    "fatG": 0.2,
+    "category": "fruit",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "1 tranche",
+        "grams": 300,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_118",
+    "nameFr": "Tomate",
+    "nameEn": "Tomato",
+    "aka": "tomate tomato",
+    "basis": "100g",
+    "kcalPer100": 18,
+    "proteinG": 0.9,
+    "carbsG": 3.5,
+    "fatG": 0.2,
+    "category": "vegetable",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 100,
+        "sortOrder": 1
+      },
+      {
+        "label": "handful",
+        "grams": 30,
+        "sortOrder": 2
+      },
+      {
+        "label": "1 tomate moyenne",
+        "grams": 120,
+        "sortOrder": 3
+      }
+    ]
+  },
+  {
+    "id": "bundled_119",
+    "nameFr": "Gombo frais",
+    "nameEn": "Fresh okra",
+    "aka": "gombo okra frais fresh okra",
+    "basis": "100g",
+    "kcalPer100": 33,
+    "proteinG": 2,
+    "carbsG": 6,
+    "fatG": 0.1,
+    "category": "vegetable",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 100,
+        "sortOrder": 1
+      },
+      {
+        "label": "handful",
+        "grams": 30,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_120",
+    "nameFr": "Aubergine locale (zong)",
+    "nameEn": "Garden egg (zong)",
+    "aka": "aubergine garden egg zong eggplant garden egg/zong",
+    "basis": "100g",
+    "kcalPer100": 25,
+    "proteinG": 1,
+    "carbsG": 5,
+    "fatG": 0.2,
+    "category": "vegetable",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 100,
+        "sortOrder": 1
+      },
+      {
+        "label": "handful",
+        "grams": 30,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_121",
+    "nameFr": "Légumes sautés",
+    "nameEn": "Sauteed vegetables",
+    "aka": "légumes vegetables sautés greens mixed greens",
+    "basis": "100g",
+    "kcalPer100": 80,
+    "proteinG": 2,
+    "carbsG": 5,
+    "fatG": 6,
+    "category": "vegetable",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 100,
+        "sortOrder": 1
+      },
+      {
+        "label": "handful",
+        "grams": 30,
+        "sortOrder": 2
+      },
+      {
+        "label": "1 portion",
+        "grams": 150,
+        "sortOrder": 3
+      }
+    ]
+  },
+  {
+    "id": "bundled_122",
+    "nameFr": "Salade simple",
+    "nameEn": "Simple salad",
+    "aka": "salade salad simple",
+    "basis": "100g",
+    "kcalPer100": 30,
+    "proteinG": 1.5,
+    "carbsG": 5,
+    "fatG": 0.3,
+    "category": "vegetable",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 100,
+        "sortOrder": 1
+      },
+      {
+        "label": "handful",
+        "grams": 30,
+        "sortOrder": 2
+      },
+      {
+        "label": "1 assiette",
+        "grams": 150,
+        "sortOrder": 3
+      }
+    ]
+  },
+  {
+    "id": "bundled_123",
+    "nameFr": "Salade avec mayonnaise",
+    "nameEn": "Salad with mayonnaise",
+    "aka": "salade salad mayonnaise",
+    "basis": "100g",
+    "kcalPer100": 130,
+    "proteinG": 2,
+    "carbsG": 6,
+    "fatG": 11,
+    "category": "vegetable",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "teaspoon",
+        "grams": 5,
+        "sortOrder": 1
+      },
+      {
+        "label": "tablespoon",
+        "grams": 15,
+        "sortOrder": 2
+      },
+      {
+        "label": "1 assiette",
+        "grams": 150,
+        "sortOrder": 3
+      }
+    ]
+  },
+  {
+    "id": "bundled_124",
+    "nameFr": "Piment frais",
+    "nameEn": "Fresh chilli pepper",
+    "aka": "piment chilli pepper hot hot pepper",
+    "basis": "100g",
+    "kcalPer100": 40,
+    "proteinG": 1.5,
+    "carbsG": 7,
+    "fatG": 0.5,
+    "category": "condiment",
+    "verified": true,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "1 dose",
+        "grams": 10,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_125",
+    "nameFr": "Sauce piment à l'huile",
+    "nameEn": "Pepper sauce (in oil)",
+    "aka": "piment pepper sauce huile pepper sauce",
+    "basis": "100g",
+    "kcalPer100": 300,
+    "proteinG": 1,
+    "carbsG": 5,
+    "fatG": 30,
+    "category": "condiment",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "ml",
+        "grams": 0.92,
+        "sortOrder": 1
+      },
+      {
+        "label": "teaspoon",
+        "grams": 4.5,
+        "sortOrder": 2
+      },
+      {
+        "label": "tablespoon",
+        "grams": 14,
+        "sortOrder": 3
+      },
+      {
+        "label": "cup",
+        "grams": 218,
+        "sortOrder": 4
+      },
+      {
+        "label": "1 cuillere a soupe",
+        "grams": 15,
+        "sortOrder": 5
+      }
+    ]
+  },
+  {
+    "id": "bundled_126",
+    "nameFr": "Maggi / cube bouillon",
+    "nameEn": "Bouillon cube (Maggi)",
+    "aka": "maggi bouillon cube stock",
+    "basis": "100g",
+    "kcalPer100": 100,
+    "proteinG": 2,
+    "carbsG": 18,
+    "fatG": 2,
+    "category": "condiment",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "piece",
+        "grams": 10,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_127",
+    "nameFr": "Mayonnaise",
+    "nameEn": "Mayonnaise",
+    "aka": "mayonnaise mayo",
+    "basis": "100g",
+    "kcalPer100": 680,
+    "proteinG": 1,
+    "carbsG": 2,
+    "fatG": 74,
+    "category": "condiment",
+    "verified": true,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "teaspoon",
+        "grams": 5,
+        "sortOrder": 1
+      },
+      {
+        "label": "tablespoon",
+        "grams": 15,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_128",
+    "nameFr": "Ndolé + riz (plat complet)",
+    "nameEn": "Ndole with rice (full plate)",
+    "aka": "ndole riz rice complet plate plat complet",
+    "basis": "100g",
+    "kcalPer100": 166.7,
+    "proteinG": 10,
+    "carbsG": 14,
+    "fatG": 8,
+    "category": "combo",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "piece",
+        "grams": 450,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_129",
+    "nameFr": "Eru + water fufu (plat complet)",
+    "nameEn": "Eru with water fufu (full plate)",
+    "aka": "eru fufu complet plate plat complet",
+    "basis": "100g",
+    "kcalPer100": 144.4,
+    "proteinG": 7,
+    "carbsG": 14,
+    "fatG": 7,
+    "category": "combo",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "piece",
+        "grams": 450,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_130",
+    "nameFr": "Achu + sauce jaune (plat complet)",
+    "nameEn": "Achu with yellow soup (full plate)",
+    "aka": "achu jaune complet plate plat complet",
+    "basis": "100g",
+    "kcalPer100": 140,
+    "proteinG": 3,
+    "carbsG": 17,
+    "fatG": 7,
+    "category": "combo",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "piece",
+        "grams": 500,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_131",
+    "nameFr": "Poisson braisé + miondo (plat complet)",
+    "nameEn": "Grilled fish with miondo (full plate)",
+    "aka": "poisson miondo complet plate fish",
+    "basis": "100g",
+    "kcalPer100": 156,
+    "proteinG": 11,
+    "carbsG": 14,
+    "fatG": 6,
+    "category": "combo",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "piece",
+        "grams": 500,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_132",
+    "nameFr": "Riz + sauce arachide (plat complet)",
+    "nameEn": "Rice with groundnut sauce (full plate)",
+    "aka": "riz arachide complet plate rice",
+    "basis": "100g",
+    "kcalPer100": 160,
+    "proteinG": 5,
+    "carbsG": 19,
+    "fatG": 7,
+    "category": "combo",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "piece",
+        "grams": 450,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_133",
+    "nameFr": "Taro sauce jaune",
+    "nameEn": "Taro with yellow sauce",
+    "aka": "taro jaune yellow bamileke",
+    "basis": "100g",
+    "kcalPer100": 140,
+    "proteinG": 3,
+    "carbsG": 17,
+    "fatG": 7,
+    "category": "combo",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "piece",
+        "grams": 500,
+        "sortOrder": 2
+      }
+    ]
+  }
 ]

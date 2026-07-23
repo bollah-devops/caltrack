@@ -1,0 +1,134 @@
+name_fr,name_en,search_aka,region,category,basis,kcal_per_100,measures,default_measure,local_portion,status,notes,protein_g,carbs_g,fat_g
+Ndolé,Ndole,ndole ndolé ndolé,Littoral/Sawa,sauce/stew,100g,160.0,gram:1|tablespoon:15|cup:240|ladle:150,gram,1 louche,estimate — verify,bitterleaf groundnut stew with meat/shrimp,12,5,10
+Eru,Eru,eru okazi afang waterleaf,Southwest/Centre,sauce/stew,100g,140.0,gram:1|tablespoon:15|cup:240|ladle:150,gram,1 louche,estimate — verify,eru (okazi) leaf with waterleaf and red palm oil,10,5,9
+Okok salé,Okok (savoury),okok mfumbwa koko salé savoury,Centre/Beti,sauce/stew,100g,150.0,gram:1|tablespoon:15|cup:240|ladle:150,gram,1 louche,estimate — verify,"okok leaf, savoury preparation with palm oil and meat/fish",9,6,10
+Okok sucré,Okok (sweet),okok mfumbwa koko sucré sweet,Centre/Beti,sauce/stew,100g,175.0,gram:1|tablespoon:15|cup:240|ladle:150,gram,1 louche,estimate — verify,"okok leaf, sweet preparation with groundnut and sugarcane juice",7,14,10
+Kpwem,Kpwem (cassava leaf),kpem kpwem kpem,Centre/Beti,sauce/stew,100g,120.0,gram:1|tablespoon:15|cup:240|ladle:150,gram,1 louche,estimate — verify,young cassava leaves often with groundnut,5,7,8
+Sanga,Sanga,sanga,Centre,dish,100g,120.0,gram:1|cup:200|1 plat moyen:250.0,gram,1 plat moyen,estimate — verify,fresh corn with cassava leaves,4,18,4
+Njama njama sauté,Sauteed huckleberry (njama njama),njama njama huckleberry huckleberry,Northwest,vegetable,100g,90.0,gram:1|cup:100|handful:30|1 portion:150.0,gram,1 portion,estimate — verify,sauteed with oil and onion,5,8,4
+Folong sauté,Sauteed amaranth (folong),folong zom amaranth amaranth/zom,Centre,vegetable,100g,70.0,gram:1|cup:100|handful:30|1 portion:150.0,gram,1 portion,estimate — verify,,4,7,3
+Sauce gombo,Okra sauce,gombo okra sauce okra sauce,national,sauce,100g,90.0,gram:1|tablespoon:15|cup:240|ladle:150,gram,1 louche,estimate — verify,,4,5,6
+Sauce gombo sec,Dried okra sauce,gombo sec dried okra dried okra,Grand Nord,sauce,100g,110.0,gram:1|tablespoon:15|cup:240|ladle:150,gram,1 louche,estimate — verify,,5,7,7
+Sauce follère,Roselle leaf sauce (follère),follere folere roselle roselle leaf sauce,Grand Nord,sauce,100g,100.0,gram:1|tablespoon:15|cup:240|ladle:150,gram,1 louche,estimate — verify,,3,6,7
+Sauce arachide,Groundnut sauce (mafé),arachide mafe groundnut peanut mafé/groundnut sauce,national,sauce,100g,190.0,gram:1|tablespoon:15|cup:240|ladle:150,gram,1 louche,estimate — verify,,8,8,14
+Sauce tomate,Tomato sauce,tomate tomato stew tomato stew,national,sauce,100g,90.0,gram:1|tablespoon:15|cup:240|ladle:150,gram,1 louche,estimate — verify,includes typical oil,3,8,5
+Sauce jaune,Yellow soup (achu soup),achu jaune yellow achu soup,Northwest/West,sauce,100g,150.0,gram:1|tablespoon:15|cup:240|ladle:150,gram,1 louche,estimate — verify,palm oil and limestone base,4,5,13
+Nkui,Nkui,nkui,West/Bamileke,sauce,100g,70.0,gram:1|tablespoon:15|cup:240|ladle:150|1 bol:200.0,gram,1 bol,estimate — verify,slippery bark-based sauce low oil,2,7,4
+Mbongo tchobi,Mbongo tchobi (black stew),mbongo tchobi black black stew,Littoral/Bassa,sauce/stew,100g,130.0,gram:1|tablespoon:15|cup:240|ladle:150,gram,1 louche,estimate — verify,burnt-spice black sauce with fish,10,4,8
+Sauce mbanga,Palm nut soup (mbanga),mbanga palm nut palm nut soup,Southwest,soup,100g,180.0,gram:1|tablespoon:15|cup:240|ladle:150,gram,1 louche,estimate — verify,,5,6,15
+Sauce pistache (egusi),Egusi / pistachio soup,egusi pistache pistachio melon pistache sauce,national,sauce/stew,100g,200.0,gram:1|tablespoon:15|cup:240|ladle:150,gram,1 louche,estimate — verify,melon seed rich,10,6,15
+Pistache vapeur (ngon),Steamed egusi pudding (ngon),pistache ngon egusi steamed egusi pudding/ngon,Centre,steamed dish,100g,190.0,gram:1|cup:200,gram,1 paquet moyen,estimate — verify,steamed in leaves,10,6,14
+Koki (gâteau de haricot),Koki (bean cake),koki bean cake haricot koki beans/gateau haricot,West/national,steamed dish,100g,185.0,gram:1|cup:200,gram,1 paquet moyen,estimate — verify,cowpea pudding with palm oil,10,14,10
+Ekwang,Ekwang,ekwang,Southwest/Bakweri,dish,100g,170.0,gram:1|cup:200|1 portion:250.0,gram,1 portion,estimate — verify,grated cocoyam wrapped in leaves,4,20,8
+Kwacoco bible,Kwacoco bible,kwacoco kwacoco,Southwest,dish,100g,180.0,gram:1|cup:200|1 paquet:250.0,gram,1 paquet,estimate — verify,grated cocoyam with fish and oil,4,21,9
+Kondre,Kondre (plantain stew),kondre plantain,West,plantain stew,100g,130.0,gram:1|cup:200|1 plat moyen:300.0,gram,1 plat moyen,estimate — verify,plantain with meat,8,14,5
+Ndomba,Ndomba (fish/meat in leaves),ndomba mintsan fish/meat in leaves,Centre/Littoral,dish,100g,110.0,gram:1|cup:200,gram,1 paquet,estimate — verify,steamed with spices minimal oil,12,4,5
+Mbol,Mbol,mbol,Centre/Beti,sauce,100g,120.0,gram:1|tablespoon:15|cup:240|ladle:150,gram,1 louche,estimate — verify,groundnut-free spiced sauce,4,6,9
+Pepper soup (pèppè),Pepper soup,pepper soup peppe pèppè soup,national,soup,100g,50.0,gram:1|tablespoon:15|cup:240|ladle:150|1 bol:300.0,gram,1 bol,estimate — verify,light spicy broth,6,2,2
+Corn chaff,Corn chaff (corn & beans),corn chaff maïs haricot,Northwest,dish,100g,140.0,gram:1|cup:200|1 plat moyen:300.0,gram,1 plat moyen,estimate — verify,corn and beans with palm oil,4,20,5
+Achu (taro pilé),Achu (pounded taro),achu taro taro pilé,Northwest/West,swallow,100g,110.0,gram:1|cup:200|tablespoon:15|1 boule moyenne:250.0,gram,1 boule moyenne,estimate — verify,pounded cocoyam/taro,2,21,2
+Water fufu (fufu de manioc),Water fufu (cassava),water fufu manioc cassava fufu de manioc,Southwest/national,swallow,100g,120.0,gram:1|cup:200|tablespoon:15|1 boule moyenne:250.0,gram,1 boule moyenne,estimate — verify,fermented cassava,1,29,0
+Fufu de maïs,Corn fufu,corn fufu maïs couscous couscous de maïs,Northwest/West,swallow,100g,110.0,gram:1|cup:200|tablespoon:15|1 boule moyenne:250.0,gram,1 boule moyenne,estimate — verify,,2,24,1
+Garri (sec),Garri (dry),garri gari sec dry,national,staple,100g,357.0,gram:1|tablespoon:10|cup:150|1 verre:100.0,gram,1 verre,estimate — verify,dry before soaking,1,87,0.5
+Garri à l'eau,Soaked garri,garri gari soaked eau garri à l'eau,national,staple,100g,100.0,gram:1|tablespoon:10|cup:150|1 bol:300.0,gram,1 bol,estimate — verify,soaked with water,0.5,24,0
+Boule de mil,Millet ball (la boule),boule mil millet sorghum la boule,Grand Nord,swallow,100g,105.0,gram:1|cup:200|tablespoon:15|1 boule moyenne:250.0,gram,1 boule moyenne,estimate — verify,millet or sorghum paste,3,21,1
+Riz blanc cuit,White rice (cooked),riz rice blanc white,national,staple,100g,130.0,gram:1|cup:200|tablespoon:15,gram,1 tasse cuite,estimate — verify,,2.7,28,0.3
+Riz sauté,Fried rice,riz sauté fried rice,national,staple,100g,175.0,gram:1|cup:200|tablespoon:15|1 plat moyen:250.0,gram,1 plat moyen,estimate — verify,fried rice with oil and vegetables,3,25,7
+Plantain bouilli,Boiled plantain,plantain bouilli boiled,national,staple,100g,116.0,gram:1|cup:200|tablespoon:15|1 doigt moyen:150.0,gram,1 doigt moyen,estimate — verify,,1,27,0.5
+Plantain mûr frit,Fried ripe plantain,plantain frit fried dodo,national,side,100g,200.0,gram:1|cup:200|1 portion:100.0,gram,1 portion,estimate — verify,,1,28,9
+Plantain braisé (bôbolô),Roasted plantain (boli),plantain braisé roasted boli boli,national,street food,100g,125.0,gram:1|cup:200|1 doigt moyen:150.0,gram,1 doigt moyen,estimate — verify,,1,28,1
+Macabo bouilli,Boiled cocoyam (macabo),macabo cocoyam bouilli cocoyam,national,staple,100g,112.0,gram:1|cup:200|tablespoon:15|1 morceau moyen:150.0,gram,1 morceau moyen,estimate — verify,,2,25,0.5
+Igname bouillie,Boiled yam,igname yam bouillie yam,national,staple,100g,116.0,gram:1|cup:200|tablespoon:15|1 morceau moyen:150.0,gram,1 morceau moyen,estimate — verify,,2,26,0.2
+Patate douce bouillie,Boiled sweet potato,patate douce sweet potato,national,staple,100g,90.0,gram:1|cup:200|tablespoon:15|1 morceau moyen:150.0,gram,1 morceau moyen,estimate — verify,,2,20,0.3
+Manioc bouilli,Boiled cassava,manioc cassava bouilli cassava,national,staple,100g,160.0,gram:1|cup:200|tablespoon:15|1 morceau moyen:150.0,gram,1 morceau moyen,estimate — verify,,1,38,0.3
+Bâton de manioc (bobolo),Cassava stick (bobolo),baton bobolo manioc cassava bobolo,Centre/Littoral,staple,100g,150.0,gram:1|cup:200|tablespoon:15|piece:150,gram,1 bâton moyen (150g),estimate — verify,150 kcal per 100g,1,35,0.5
+Miondo,Miondo (cassava stick),miondo mintumba,Littoral,staple,100g,150.0,gram:1|cup:200|tablespoon:15,gram,1 paquet (200g),estimate — verify,150 kcal per 100g,1,35,0.5
+Mintumba,Mintumba (cassava cake),mintumba cassava pudding,Littoral,steamed dish,100g,180.0,gram:1|cup:200|1 morceau:150.0,gram,1 morceau,estimate — verify,cassava with palm oil steamed,2,30,6
+Tapioca,Tapioca,tapioca,national,staple,100g,150.0,gram:1|cup:200|tablespoon:15|1 bol prepare:250.0,gram,1 bol prepare,estimate — verify,soaked pearls with milk/sugar varies,0.5,36,0.5
+Pommes frites,French fries,frites fries chips fries,urban,side,100g,310.0,gram:1|cup:200|1 portion:150.0,gram,1 portion,estimate — verify,,4,38,16
+Spaghetti sauté,Fried spaghetti,spaghetti sauté fried,urban/street,dish,100g,150.0,gram:1|cup:200|1 plat moyen:300.0,gram,1 plat moyen,estimate — verify,with vegetables and oil,4,23,5
+Omelette spaghetti,Spaghetti omelette,omelette spaghetti,street,dish,100g,171.4,gram:1|cup:200|piece:350,gram,1 plat tournedos,estimate — verify,street breakfast classic,7,18,8
+Poisson braisé,Grilled fish,poisson braisé grilled fish bar grilled fish/bar/tilapia,national,protein,100g,150.0,gram:1|piece:100|1 poisson moyen:300.0,gram,1 poisson moyen,estimate — verify,with oil brushing average,22,0,7
+Maquereau braisé,Grilled mackerel,maquereau mackerel braisé,national,protein,100g,205.0,gram:1|piece:100|1 poisson moyen:250.0,gram,1 poisson moyen,estimate — verify,oilier fish,18,0,15
+Poulet braisé,Grilled chicken,poulet braisé grilled chicken,national,protein,100g,190.0,gram:1|piece:100|1 quart de poulet:250.0,gram,1 quart de poulet,estimate — verify,,25,0,10
+Poulet DG,Poulet DG,poulet dg directeur general,urban,dish,100g,200.0,gram:1|cup:200|1 plat complet:400.0,gram,1 plat complet,estimate — verify,chicken plantain vegetables in oil,15,8,12
+Kati kati,Kati kati (grilled chicken),kati kati,Northwest,protein,100g,190.0,gram:1|piece:100|1 portion:200.0,gram,1 portion,estimate — verify,grilled chicken in palm oil,25,0,10
+Porc braisé,Grilled pork,porc braisé grilled pork grilled pork,urban,protein,100g,290.0,gram:1|piece:100|1 portion:200.0,gram,1 portion,estimate — verify,fatty cuts common,20,0,23
+Soya (brochette de bœuf),Soya (beef skewer),soya brochette skewer suya brochette de boeuf,street/national,protein,100g,288.9,gram:1|piece:45,gram,1 baton,estimate — verify,per skewer,30,5,16
+Brochette de porc,Pork skewer,brochette porc pork skewer,street,protein,100g,320.0,gram:1|piece:50,gram,1 baton,estimate — verify,,22,2,25
+Kilishi,Kilishi (spiced dried beef),kilishi dried beef,Grand Nord,snack,100g,380.0,gram:1|cup:200|1 sachet moyen:50.0,gram,1 sachet moyen,estimate — verify,spiced dried beef,45,10,17
+Viande en sauce,Meat in sauce,viande meat sauce boeuf boeuf en sauce,national,protein,100g,180.0,gram:1|piece:100|1 louche avec viande:150.0,gram,1 louche avec viande,estimate — verify,,18,5,10
+Escargots,Snails,escargots snails nyama nyama ngub/snails,Centre/Sud,protein,100g,90.0,gram:1|piece:100|1 portion:150.0,gram,1 portion,estimate — verify,boiled,15,3,2
+Escargots pimentés,Peppered snails,escargots pimentés peppered snails,Centre/Sud,protein,100g,145.0,gram:1|piece:100|1 portion:150.0,gram,1 portion,estimate — verify,with oil,14,4,8
+Crevettes sautées (njanga),Sauteed shrimp (njanga),crevettes njanga shrimp prawns njanga fresh,Littoral,protein,100g,150.0,gram:1|piece:100,gram,1 portion,estimate — verify,,20,4,6
+Njanga sec (crevettes séchées),Dried crayfish (njanga),njanga crayfish dried crevettes dried crayfish,national,condiment,100g,320.0,gram:1|cup:200|1 poignee:20.0,gram,1 poignee,estimate — verify,,45,3,14
+Poisson fumé,Smoked fish,poisson fumé smoked fish smoked fish,national,protein,100g,290.0,gram:1|piece:100|1 morceau:80.0,gram,1 morceau,estimate — verify,,45,0,12
+Makayabu (morue salée),Salted cod (makayabu),makayabu cod salted morue stockfish/salted fish,Littoral,protein,100g,180.0,gram:1|piece:100,gram,1 morceau,estimate — verify,,28,2,7
+Œuf bouilli,Boiled egg,oeuf egg bouilli boiled boiled egg,national,protein,100g,156.0,gram:1|piece:50,gram,1 oeuf,estimate — verify,,13,1,11
+Œuf en omelette,Omelette egg,oeuf omelette egg,national,protein,100g,183.3,gram:1|piece:60,gram,1 oeuf avec huile,estimate — verify,,12,2,14
+Haricot rouge cuit,Cooked red beans,haricot beans rouge red beans,national,staple,100g,130.0,gram:1|cup:200|tablespoon:15,gram,1 louche,estimate — verify,plain,8,22,1
+Haricot à l'huile,Beans in oil,haricot beans huile oil,street,staple,100g,165.0,gram:1|ml:0.92|teaspoon:4.5|tablespoon:14|cup:218|1 louche:200.0,gram,1 louche,estimate — verify,with palm/veg oil,7,21,6
+Beignet soufflé (puff-puff),Puff-puff (fried dough),beignet puff puff soufflé puff-puff/boule,street,snack,100g,271.4,gram:1,gram,,estimate — verify,weigh in grams; piece sizes vary by seller,4,33,14
+Beignet haricot (accra),Bean fritter (accra),beignet haricot accra akara accra haricot,street,snack,100g,242.9,gram:1,gram,,estimate — verify,weigh in grams; piece sizes vary by seller,7,29,11
+BHB complet (beignet-haricot-bouillie),BHB combo (fritter-beans-pap),bhb beignet haricot bouillie beignet-haricot-bouillie,street,combo,100g,130.0,gram:1|cup:200|piece:500,gram,1 portion standard,estimate — verify,2 beignets + haricot + bouillie,3,20,4
+Accra banane,Banana fritter,accra banane banana fritter beignet banane,street,snack,100g,275.0,gram:1,gram,,estimate — verify,weigh in grams; piece sizes vary by seller,3,36,13
+Croquettes,Croquettes,croquettes,street,snack,100g,450.0,gram:1|cup:200|1 sachet:60.0,gram,1 sachet,estimate — verify,,5,52,25
+Chin-chin,Chin-chin,chin chin,street,snack,100g,480.0,gram:1|cup:200|1 sachet:60.0,gram,1 sachet,estimate — verify,,7,62,23
+Chips de plantain,Plantain chips,chips plantain crisps plantain chips,street,snack,100g,520.0,gram:1|cup:200|1 sachet moyen:50.0,gram,1 sachet moyen,estimate — verify,,2,65,28
+Gâteau local,Local cake,gateau cake cake local,street,snack,100g,333.3,gram:1|cup:200|piece:45,gram,1 part,estimate — verify,,5,50,13
+Pain (baguette),Bread (baguette),pain bread baguette baguette,national,staple,100g,265.0,gram:1|cup:200|tablespoon:15|piece:250|1 demi-baguette:125.0,gram,1 demi-baguette,estimate — verify,,8,52,3
+Pain chargé,Loaded sandwich,pain chargé sandwich sandwich complet,street,combo,100g,220.0,gram:1|cup:200|piece:250,gram,1 sandwich,estimate — verify,bread + omelette/spaghetti/mayo,9,28,8
+Pain beurré,Buttered bread,pain beurre butter bread,street,combo,100g,237.0,gram:1|cup:200|piece:135,gram,1 demi-baguette beurree,estimate — verify,,7,30,10
+Bouillie de maïs (pap),Corn pap (porridge),bouillie mais pap corn porridge corn pap,national,porridge,100g,70.0,gram:1|cup:200|tablespoon:15|1 bol:300.0,gram,1 bol,estimate — verify,plain without extra sugar,2,14,1
+Bouillie de riz,Rice pap (porridge),bouillie riz rice pap rice pap,national,porridge,100g,70.0,gram:1|cup:200|tablespoon:15|1 bol:300.0,gram,1 bol,estimate — verify,,1,15,1
+Dakéré,Dakéré (millet couscous),dakere millet couscous,Grand Nord,dessert,100g,140.0,gram:1|cup:200|1 bol:250.0,gram,1 bol,estimate — verify,millet couscous with fermented milk sugar,3,25,3
+Kossam (lait caillé),Kossam (fermented milk),kossam lait caillé fermented milk lait caillé,Grand Nord,drink,100ml,70.0,gram:1|cup:245|glass:250,gram,1 sachet/bol,estimate — verify,fermented milk often sweetened,3,8,3
+Folère (bissap),Hibiscus drink (folère/bissap),folere bissap hibiscus zobo bissap/hibiscus,national,drink,100ml,40.0,gram:1|cup:240|glass:250|bottle_50cl:500,gram,1 bouteille 50cl,estimate — verify,sweetened,0.3,10,0.1
+Jus de gingembre,Ginger juice,gingembre ginger juice gnamakoudji,national,drink,100ml,50.0,gram:1|cup:240|glass:250|bottle_50cl:500,gram,1 bouteille 50cl,estimate — verify,sweetened,0.3,12,0.1
+Jus de baobab (bouye),Baobab juice (bouye),baobab bouye juice bouye,Grand Nord,drink,100ml,60.0,gram:1|cup:240|glass:250|bottle_50cl:500,gram,1 verre,estimate — verify,,0.5,14,0.5
+Matango (vin de palme),Palm wine (matango),matango palm wine vin vin de palme/palm wine,Centre/Sud/Littoral,drink,100ml,45.0,gram:1|bottle_65cl:656|glass:250,gram,1 verre,estimate — verify,fresh tapped,0.3,5,0
+Bilibili (bière de mil),Millet beer (bilibili),bilibili millet beer bière bière de mil,Grand Nord,drink,100ml,50.0,gram:1|bottle_65cl:656|glass:250|1 calebasse:400.0,gram,1 calebasse,estimate — verify,millet beer,0.5,4,0.5
+Sha (bière de maïs),Corn beer (sha),sha corn beer corn beer,Northwest,drink,100ml,50.0,gram:1|bottle_65cl:656|glass:250|1 verre:300.0,gram,1 verre,estimate — verify,,0.5,4,0.5
+Bière (33/Castel),Beer (33/Castel),biere beer 33 castel beer,national,drink,100ml,43.0,gram:1|bottle_65cl:656|glass:250|1 bouteille 65cl:650.0,gram,1 bouteille 65cl,estimate — verify,,0.5,3.5,0
+Top / soda,Soft drink (soda),top soda soft drink soft drink,national,drink,100ml,42.0,gram:1|can_33cl:343|bottle_50cl:520|glass:250|1 bouteille 30cl:300.0,gram,1 bouteille 30cl,estimate — verify,,0,10.5,0
+Coca Zero,Coca-Cola Zero,coca zero diet diet soda,urban,drink,100ml,0.3,gram:1|can_33cl:343|bottle_50cl:520|glass:250|piece:330.0,gram,1 canette 33cl,verified,,0,0,0
+Café noir sans sucre,Black coffee (no sugar),café coffee noir black,national,drink,100ml,1.0,gram:1|cup:240|glass:250|bottle_50cl:500|piece:200.0,gram,1 tasse,verified,,0.1,0,0
+Thé au citron,Lemon tea,thé tea citron lemon,national,drink,100ml,2.5,gram:1|cup:240|glass:250|bottle_50cl:500|piece:200.0,gram,1 tasse sans sucre,estimate — verify,,0.1,0.5,0
+Sucre,Sugar,sucre sugar,national,condiment,100g,400.0,gram:1|teaspoon:4|tablespoon:12.5|cup:200,gram,1 morceau/cuillere,verified,,0,100,0
+Lait en poudre,Powdered milk,lait poudre powdered milk powdered milk,national,condiment,100g,496.0,gram:1|teaspoon:3|tablespoon:9|cup:128,gram,1 cuillere a soupe,estimate — verify,,26,38,26
+Matinal / Milo (cacao),Cocoa drink (Matinal/Milo),matinal milo cocoa cacao cocoa drink powder,national,drink powder,100g,420.0,gram:1|teaspoon:4.6|tablespoon:14|cup:100|2 cuilleres a cafe:10.0,gram,2 cuilleres a cafe,estimate — verify,,6,80,9
+Huile de palme,Palm oil,huile palme palm oil palm oil,national,fat,100g,884.0,gram:1|ml:0.92|teaspoon:4.5|tablespoon:14|cup:218,gram,1 cuillere a soupe,verified,,0,0,100
+Huile végétale,Vegetable oil,huile végétale vegetable oil,national,fat,100g,884.0,gram:1|ml:0.92|teaspoon:4.5|tablespoon:14|cup:218,gram,1 cuillere a soupe,verified,,0,0,100
+Arachides grillées,Roasted groundnuts,arachides groundnuts peanuts grillées groundnuts roasted,national,snack,100g,570.0,gram:1|handful:30|tablespoon:9|cup:145,gram,1 poignee,estimate — verify,,26,13,46
+Arachides bouillies,Boiled groundnuts,arachides bouillies boiled groundnuts,national,snack,100g,320.0,gram:1|handful:30|tablespoon:9|cup:145|1 poignee:40.0,gram,1 poignee,estimate — verify,,13,20,20
+Pâte d'arachide,Peanut butter,pâte arachide peanut butter peanut paste,national,condiment,100g,590.0,gram:1|teaspoon:5.3|tablespoon:16|cup:258,gram,1 cuillere a soupe,estimate — verify,,23,13,51
+Noix de kola,Kola nut,kola cola nut noix cola nut,national,stimulant,100g,166.7,gram:1|cup:200|piece:15,gram,1 noix,estimate — verify,,3,35,2
+Safou (prune),Safou (African plum),safou prune plum prune/African plum,national,fruit,100g,170.0,gram:1|cup:200|piece:50,gram,1 safou roti,estimate — verify,rich in healthy fat,2,7,15
+Avocat,Avocado,avocat avocado avocado,national,fruit,100g,160.0,gram:1|cup:200|1 demi-avocat:100.0,gram,1 demi-avocat,estimate — verify,,2,7,14
+Papaye,Pawpaw / papaya,papaye pawpaw papaya pawpaw,national,fruit,100g,43.0,gram:1|cup:200|1 tranche:150.0,gram,1 tranche,estimate — verify,,0.5,10,0.3
+Mangue,Mango,mangue mango mango,national,fruit,100g,60.0,gram:1|cup:200,gram,1 mangue moyenne,estimate — verify,,0.5,14,0.2
+Goyave,Guava,goyave guava guava,national,fruit,100g,68.0,gram:1|cup:200|1 fruit:100.0,gram,1 fruit,estimate — verify,,2.5,13,0.5
+Corossol,Soursop,corossol soursop soursop,national,fruit,100g,66.0,gram:1|cup:200|1 portion:150.0,gram,1 portion,estimate — verify,,1,15,0.3
+Ananas,Pineapple,ananas pineapple pineapple,national,fruit,100g,50.0,gram:1|cup:200|1 tranche epaisse:150.0,gram,1 tranche epaisse,estimate — verify,,0.5,12,0.1
+Banane douce,Sweet banana,banane banana sweet sweet banana,national,fruit,100g,87.5,gram:1|cup:200|piece:120,gram,1 banane moyenne,estimate — verify,,1,20,0.3
+Orange,Orange,orange,national,fruit,100g,47.7,gram:1|cup:200|piece:130,gram,1 orange moyenne,estimate — verify,,0.9,11,0.1
+Pamplemousse,Grapefruit,pamplemousse grapefruit grapefruit,national,fruit,100g,42.0,gram:1|cup:200|1 demi-fruit:120.0,gram,1 demi-fruit,estimate — verify,,0.8,10,0.1
+Canne à sucre,Sugarcane,canne sucre sugarcane sugarcane,national,fruit,100g,60.0,gram:1|cup:200|1 troncon machouille:100.0,gram,1 troncon machouille,estimate — verify,,0.2,15,0.1
+Noix de coco,Coconut,noix coco coconut coconut flesh,national,fruit,100g,354.0,gram:1|cup:200|1 morceau:50.0,gram,1 morceau,estimate — verify,,3,12,33
+Pastèque,Watermelon,pastèque watermelon watermelon,national,fruit,100g,30.0,gram:1|cup:200|1 tranche:300.0,gram,1 tranche,estimate — verify,,0.6,7,0.2
+Tomate,Tomato,tomate tomato,national,vegetable,100g,18.0,gram:1|cup:100|handful:30|1 tomate moyenne:120.0,gram,1 tomate moyenne,estimate — verify,,0.9,3.5,0.2
+Gombo frais,Fresh okra,gombo okra frais fresh okra,national,vegetable,100g,33.0,gram:1|cup:100|handful:30,gram,1 poignee,estimate — verify,,2,6,0.1
+Aubergine locale (zong),Garden egg (zong),aubergine garden egg zong eggplant garden egg/zong,national,vegetable,100g,25.0,gram:1|cup:100|handful:30,gram,3 petites,estimate — verify,,1,5,0.2
+Légumes sautés,Sauteed vegetables,légumes vegetables sautés greens mixed greens,national,vegetable,100g,80.0,gram:1|cup:100|handful:30|1 portion:150.0,gram,1 portion,estimate — verify,with oil,2,5,6
+Salade simple,Simple salad,salade salad simple,urban,vegetable,100g,30.0,gram:1|cup:100|handful:30|1 assiette:150.0,gram,1 assiette,estimate — verify,no dressing,1.5,5,0.3
+Salade avec mayonnaise,Salad with mayonnaise,salade salad mayonnaise,urban,vegetable,100g,130.0,gram:1|teaspoon:5|tablespoon:15|1 assiette:150.0,gram,1 assiette,estimate — verify,mayo adds most calories,2,6,11
+Piment frais,Fresh chilli pepper,piment chilli pepper hot hot pepper,national,condiment,100g,40.0,gram:1|cup:200|1 dose:10.0,gram,1 dose,verified,negligible in normal amounts,1.5,7,0.5
+Sauce piment à l'huile,Pepper sauce (in oil),piment pepper sauce huile pepper sauce,national,condiment,100g,300.0,gram:1|ml:0.92|teaspoon:4.5|tablespoon:14|cup:218|1 cuillere a soupe:15.0,gram,1 cuillere a soupe,estimate — verify,oil-based,1,5,30
+Maggi / cube bouillon,Bouillon cube (Maggi),maggi bouillon cube stock,national,condiment,100g,100.0,gram:1|cup:200|piece:10,gram,1 cube,estimate — verify,sodium warning not calories,2,18,2
+Mayonnaise,Mayonnaise,mayonnaise mayo,urban,condiment,100g,680.0,gram:1|teaspoon:5|tablespoon:15,gram,1 cuillere a soupe,verified,,1,2,74
+Ndolé + riz (plat complet),Ndole with rice (full plate),ndole riz rice complet plate plat complet,restaurant,combo,100g,166.7,gram:1|cup:200|piece:450.0,gram,1 plat standard,estimate — verify,sauce + rice + meat,10,14,8
+Eru + water fufu (plat complet),Eru with water fufu (full plate),eru fufu complet plate plat complet,restaurant,combo,100g,144.4,gram:1|cup:200|piece:450.0,gram,1 plat standard,estimate — verify,,7,14,7
+Achu + sauce jaune (plat complet),Achu with yellow soup (full plate),achu jaune complet plate plat complet,restaurant,combo,100g,140.0,gram:1|cup:200|piece:500.0,gram,1 plat standard,estimate — verify,,3,17,7
+Poisson braisé + miondo (plat complet),Grilled fish with miondo (full plate),poisson miondo complet plate fish,restaurant,combo,100g,156.0,gram:1|cup:200|piece:500.0,gram,1 plat standard,estimate — verify,fish + 1 paquet miondo + piment,11,14,6
+Riz + sauce arachide (plat complet),Rice with groundnut sauce (full plate),riz arachide complet plate rice,restaurant,combo,100g,160.0,gram:1|cup:200|piece:450.0,gram,1 plat standard,estimate — verify,,5,19,7
+Taro sauce jaune,Taro with yellow sauce,taro jaune yellow bamileke,West/Bamileke,combo,100g,140.0,gram:1|cup:200|piece:500.0,gram,1 plat standard,estimate — verify,regional signature dish,3,17,7

@@ -29,7 +29,7 @@ export const translations: Record<string, Record<Lang, string>> = {
                       en: "day streak — keep it going" },
 
   // --- add food ---
-  add_food:         { fr: "Ajouter un aliment",   en: "Add food" },
+  add_food:         { fr: "Ajoutez un aliment",   en: "Add food" },
   for_today:        { fr: "Pour aujourd'hui",     en: "For today" },
   for_yesterday:    { fr: "Pour hier",            en: "For yesterday" },
   breakfast:        { fr: "Petit-déjeuner",       en: "Breakfast" },
@@ -103,6 +103,15 @@ export const translations: Record<string, Record<Lang, string>> = {
   weekly_pace:      { fr: "Rythme",                 en: "Pace" },
   steady_loss_note: { fr: "Régulier et durable — pas de yoyo.",
                       en: "Steady and sustainable — no yo-yo." },
+
+  // --- macros / charts ---
+  protein:          { fr: "Protéines",             en: "Protein" },
+  carbs:            { fr: "Glucides",              en: "Carbs" },
+  fat:              { fr: "Lipides",               en: "Fat" },
+  macros:           { fr: "Macros",                en: "Macros" },
+  no_data:          { fr: "Aucune donnée",         en: "No data" },
+  daily_cals:       { fr: "Calories / jour",       en: "Calories / day" },
+  last_14_days:     { fr: "14 derniers jours",     en: "Last 14 days" },
 
   // --- misc ---
   saved:            { fr: "Enregistré",           en: "Saved" },

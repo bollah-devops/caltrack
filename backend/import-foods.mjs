@@ -21,7 +21,7 @@ import { parse } from "csv-parse/sync";
 import pg from "pg";
 
 const csvPath =
-  process.argv[2] || "./migrations/seed_cameroon_v2.csv";
+  process.argv[2] || "./migrations/seed_cameroon_v3.csv";
 const DATABASE_URL =
   process.env.DATABASE_URL ||
   "postgres://calorie:devpassword@localhost:5432/calorie";
@@ -83,8 +83,8 @@ async function main() {
     const res = await client.query(
       `INSERT INTO foods
          (name, name_fr, name_en, aka, country_code, region, category,
-          basis, kcal_per_100, verification_status, notes)
-       VALUES ($1,$2,$3,$4,'CM',$5,$6,$7,$8,$9,$10)
+          basis, kcal_per_100, protein_g, carbs_g, fat_g, verification_status, notes)
+       VALUES ($1,$2,$3,$4,'CM',$5,$6,$7,$8,$9,$10,$11,$12,$13)
        RETURNING id`,
       [
         nameFr,                                   // name = French primary
@@ -95,6 +95,9 @@ async function main() {
         (r.category || "").trim() || null,
         basis,
         kcalPer100,
+        parseFloat(r.protein_g) || null,
+        parseFloat(r.carbs_g) || null,
+        parseFloat(r.fat_g) || null,
         normalizeStatus(r.status),
         (r.notes || "").trim() || null,
       ]

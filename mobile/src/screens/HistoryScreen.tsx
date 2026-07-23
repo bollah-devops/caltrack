@@ -10,16 +10,20 @@
 import React, { useCallback, useEffect, useState } from "react";
 import {
   ActivityIndicator,
+  Dimensions,
   FlatList,
   Pressable,
   StyleSheet,
   Text,
   View,
 } from "react-native";
+import { Svg, Rect, Line, Text as SvgText } from "react-native-svg";
 import {
   deleteLogEntry,
   DaySummary,
+  DayKcal,
   getEntriesForDate,
+  getDailyKcalHistory,
   getHistoryDays,
   getProfile,
   LogEntry,
@@ -60,19 +64,25 @@ interface Props {
 export default function HistoryScreen({ lang = "fr" }: Props) {
   const t = makeT(lang);
 
-  const [loading, setLoading] = useState(true);
-  const [profile, setProfile] = useState<Profile | null>(null);
-  const [days, setDays] = useState<DaySummary[]>([]);
+  const [loading, setLoading]       = useState(true);
+  const [profile, setProfile]       = useState<Profile | null>(null);
+  const [days, setDays]             = useState<DaySummary[]>([]);
+  const [chartData, setChartData]   = useState<DayKcal[]>([]);
   // Dates whose detail panel is open
-  const [expanded, setExpanded] = useState<Set<string>>(new Set());
+  const [expanded, setExpanded]     = useState<Set<string>>(new Set());
   // Lazily loaded entry lists, keyed by date
-  const [cache, setCache] = useState<Record<string, LogEntry[]>>({});
+  const [cache, setCache]           = useState<Record<string, LogEntry[]>>({});
 
   useEffect(() => {
     async function load() {
-      const [p, d] = await Promise.all([getProfile(), getHistoryDays(90)]);
+      const [p, d, chart] = await Promise.all([
+        getProfile(),
+        getHistoryDays(90),
+        getDailyKcalHistory(14),
+      ]);
       setProfile(p);
       setDays(d);
+      setChartData(chart);
       setLoading(false);
     }
     load();
@@ -114,15 +124,8 @@ export default function HistoryScreen({ lang = "fr" }: Props) {
     );
   }
 
-  if (days.length === 0) {
-    return (
-      <View style={styles.center}>
-        <Text style={styles.emptyText}>{t("no_history")}</Text>
-      </View>
-    );
-  }
-
   const target = profile?.dailyTarget ?? 0;
+  const hasChart = chartData.some((d) => d.kcal > 0);
 
   return (
     <View style={{ flex: 1, backgroundColor: C.bg }}>
@@ -130,6 +133,16 @@ export default function HistoryScreen({ lang = "fr" }: Props) {
         data={days}
         keyExtractor={(d) => d.date}
         contentContainerStyle={styles.list}
+        ListHeaderComponent={
+          hasChart ? (
+            <CalorieBarChart data={chartData} target={target} t={t} />
+          ) : null
+        }
+        ListEmptyComponent={
+          <View style={styles.emptyContainer}>
+            <Text style={styles.emptyText}>{t("no_history")}</Text>
+          </View>
+        }
         renderItem={({ item }) => (
           <DayRow
             day={item}
@@ -143,6 +156,69 @@ export default function HistoryScreen({ lang = "fr" }: Props) {
           />
         )}
       />
+    </View>
+  );
+}
+
+// ─── CalorieBarChart ──────────────────────────────────────────────────────────
+
+function CalorieBarChart({
+  data, target, t,
+}: {
+  data: DayKcal[];
+  target: number;
+  t: ReturnType<typeof makeT>;
+}) {
+  const { width: screenW } = Dimensions.get("window");
+  const width  = screenW - 32 - 2;  // list padding 16×2, border 1×2
+  const height = 150;
+  const padL   = 36;
+  const padR   = 8;
+  const padT   = 12;
+  const padB   = 28;
+  const plotW  = width - padL - padR;
+  const plotH  = height - padT - padB;
+
+  const maxKcal = Math.max(target * 1.2, ...data.map((d) => d.kcal), 1);
+  const barW    = plotW / data.length;
+  const barPad  = 2;
+  const yPos    = (v: number) => padT + (1 - v / maxKcal) * plotH;
+  const targetY = target > 0 ? yPos(target) : -1;
+
+  return (
+    <View style={styles.chartCard}>
+      <Text style={styles.chartLabel}>{t("last_14_days")}</Text>
+      <Svg width={width} height={height}>
+        <SvgText
+          x={padL - 4} y={padT + 8}
+          textAnchor="end" fontSize={10} fill={C.muted}
+        >
+          {Math.round(maxKcal)}
+        </SvgText>
+
+        {data.map((d, i) => {
+          const barH  = d.kcal > 0 ? Math.max(2, (d.kcal / maxKcal) * plotH) : 2;
+          const color = d.kcal === 0 ? C.line : d.kcal <= target ? C.good : C.over;
+          return (
+            <Rect
+              key={i}
+              x={padL + i * barW + barPad}
+              y={padT + plotH - barH}
+              width={barW - barPad * 2}
+              height={barH}
+              fill={color}
+              rx={2}
+            />
+          );
+        })}
+
+        {target > 0 && targetY >= padT && (
+          <Line
+            x1={padL} y1={targetY} x2={width - padR} y2={targetY}
+            stroke={C.accent} strokeWidth={1.5} strokeDasharray="4 3"
+          />
+        )}
+      </Svg>
     </View>
   );
 }
@@ -277,8 +353,20 @@ const styles = StyleSheet.create({
   center:       { flex: 1, backgroundColor: C.bg, justifyContent: "center",
                   alignItems: "center", padding: 32 },
   emptyText:    { fontSize: 14, color: C.muted, textAlign: "center" },
+  emptyContainer: { paddingTop: 32, alignItems: "center" },
 
   list:         { padding: 16, paddingTop: 16, paddingBottom: 40 },
+
+  // Bar chart
+  chartCard: {
+    backgroundColor: C.card, borderRadius: 16, borderWidth: 1,
+    borderColor: C.line, marginBottom: 12, overflow: "hidden",
+    paddingTop: 8,
+  },
+  chartLabel: {
+    fontSize: 11, letterSpacing: 1, textTransform: "uppercase",
+    color: C.muted, fontWeight: "700", paddingHorizontal: 14, paddingBottom: 4,
+  },
 
   dayCard:      { backgroundColor: C.card, borderRadius: 16, borderWidth: 1,
                   borderColor: C.line, marginBottom: 12, overflow: "hidden" },

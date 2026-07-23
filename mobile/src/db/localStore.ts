@@ -39,6 +39,9 @@ export interface LogEntry {
   quantity: number;
   grams: number;         // computed: quantity × measure.grams
   kcal: number;          // computed: round(grams / 100 × kcalPer100)
+  proteinG: number;
+  carbsG: number;
+  fatG: number;
   updatedAt: string;
   isDeleted: boolean;
 }
@@ -51,6 +54,9 @@ export interface NewLogEntry {
   quantity: number;
   grams: number;
   kcal: number;
+  proteinG: number;
+  carbsG: number;
+  fatG: number;
 }
 
 // ─── DB bootstrap ─────────────────────────────────────────────────────────────
@@ -98,6 +104,22 @@ async function initSchema(db: SQLite.SQLiteDatabase): Promise<void> {
       is_deleted   INTEGER NOT NULL DEFAULT 0
     );
     CREATE INDEX IF NOT EXISTS idx_log_date ON log_entries(log_date);
+  `);
+
+  // Migrate: add macro columns if they don't exist yet (SQLite 3.37+ supports IF NOT EXISTS)
+  for (const colDef of [
+    "protein_g REAL DEFAULT 0",
+    "carbs_g REAL DEFAULT 0",
+    "fat_g REAL DEFAULT 0",
+  ]) {
+    try {
+      await db.execAsync(`ALTER TABLE log_entries ADD COLUMN ${colDef}`);
+    } catch {
+      // Column already exists — ignore
+    }
+  }
+
+  await db.execAsync(`
 
     CREATE TABLE IF NOT EXISTS weight_logs (
       id         TEXT PRIMARY KEY,
@@ -176,11 +198,13 @@ export async function addLogEntry(entry: NewLogEntry): Promise<LogEntry> {
   const now = new Date().toISOString();
   await db.runAsync(
     `INSERT INTO log_entries
-       (id, log_date, meal, food_name, measure_label, quantity, grams, kcal, updated_at)
-     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+       (id, log_date, meal, food_name, measure_label, quantity, grams, kcal,
+        protein_g, carbs_g, fat_g, updated_at)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
     [
       id, entry.logDate, entry.meal, entry.foodName,
-      entry.measureLabel, entry.quantity, entry.grams, entry.kcal, now,
+      entry.measureLabel, entry.quantity, entry.grams, entry.kcal,
+      entry.proteinG, entry.carbsG, entry.fatG, now,
     ]
   );
   return { ...entry, id, updatedAt: now, isDeleted: false };
@@ -227,6 +251,9 @@ function rowToEntry(r: any): LogEntry {
     quantity:     r.quantity,
     grams:        r.grams,
     kcal:         r.kcal,
+    proteinG:     r.protein_g ?? 0,
+    carbsG:       r.carbs_g ?? 0,
+    fatG:         r.fat_g ?? 0,
     updatedAt:    r.updated_at,
     isDeleted:    r.is_deleted === 1,
   };
@@ -379,4 +406,36 @@ export async function deleteWeightLog(id: string): Promise<void> {
     `UPDATE weight_logs SET is_deleted = 1, updated_at = ? WHERE id = ?`,
     [new Date().toISOString(), id]
   );
+}
+
+// ─── Daily kcal history (for bar chart) ───────────────────────────────────────
+
+export interface DayKcal {
+  date: string;  // YYYY-MM-DD
+  kcal: number;
+}
+
+/**
+ * Returns the last `days` calendar days (including today) with their kcal
+ * totals. Days with no entries return kcal=0. Ordered oldest→newest.
+ */
+export async function getDailyKcalHistory(days = 14): Promise<DayKcal[]> {
+  const db = await getDb();
+  const dates: string[] = [];
+  for (let i = days - 1; i >= 0; i--) {
+    const d = new Date();
+    d.setDate(d.getDate() - i);
+    dates.push(d.toISOString().split("T")[0]);
+  }
+  const placeholders = dates.map(() => "?").join(",");
+  const rows = await db.getAllAsync<any>(
+    `SELECT log_date, sum(kcal) AS kcal
+       FROM log_entries
+      WHERE is_deleted = 0 AND log_date IN (${placeholders})
+      GROUP BY log_date`,
+    dates
+  );
+  const kcalMap: Record<string, number> = {};
+  for (const r of rows) kcalMap[r.log_date] = r.kcal;
+  return dates.map((date) => ({ date, kcal: kcalMap[date] ?? 0 }));
 }

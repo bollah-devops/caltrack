@@ -13,6 +13,7 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import {
   ActivityIndicator,
+  Dimensions,
   FlatList,
   Modal,
   Pressable,
@@ -22,7 +23,8 @@ import {
   TextInput,
   View,
 } from "react-native";
-import { computeKcal, FoodItem, FoodMeasure, searchFoods } from "../api/foods";
+import { Svg, Path } from "react-native-svg";
+import { computeKcal, computeMacros, FoodItem, FoodMeasure, searchFoods } from "../api/foods";
 import {
   addLogEntry,
   deleteLogEntry,
@@ -127,6 +129,11 @@ export default function HomeScreen({ lang = "fr", onGoToWeight }: Props) {
   const remaining  = target - totalKcal;
   const isOver     = remaining < 0;
   const fillRatio  = target > 0 ? Math.min(1, totalKcal / target) : 0;
+  const macros = {
+    proteinG: entries.reduce((s, e) => s + (e.proteinG ?? 0), 0),
+    carbsG:   entries.reduce((s, e) => s + (e.carbsG ?? 0), 0),
+    fatG:     entries.reduce((s, e) => s + (e.fatG ?? 0), 0),
+  };
 
   const byMeal = MEALS.reduce((acc, m) => {
     acc[m] = entries.filter((e) => e.meal === m);
@@ -168,6 +175,9 @@ export default function HomeScreen({ lang = "fr", onGoToWeight }: Props) {
       quantity: qty,
       grams: Math.round(qty * measure.grams * 10) / 10,
       kcal: previewKcal,
+      proteinG: computeMacros(qty, measure.grams, picked.proteinG ?? 0),
+      carbsG:   computeMacros(qty, measure.grams, picked.carbsG ?? 0),
+      fatG:     computeMacros(qty, measure.grams, picked.fatG ?? 0),
     });
     setEntries(await getEntriesForDate(today));
     closeModal();
@@ -262,6 +272,16 @@ export default function HomeScreen({ lang = "fr", onGoToWeight }: Props) {
               </Text>
             </View>
           </View>
+        )}
+
+        {/* ── 1.5. Macro donut ── */}
+        {profile && totalKcal > 0 && (
+          <MacroDonut
+            proteinG={macros.proteinG}
+            carbsG={macros.carbsG}
+            fatG={macros.fatG}
+            t={t}
+          />
         )}
 
         {/* ── 2. Quick actions ── */}
@@ -487,6 +507,93 @@ export default function HomeScreen({ lang = "fr", onGoToWeight }: Props) {
   );
 }
 
+// ─── donutArc ─────────────────────────────────────────────────────────────────
+
+function donutArc(
+  cx: number, cy: number,
+  outerR: number, innerR: number,
+  startDeg: number, endDeg: number
+): string {
+  const rad = (d: number) => ((d - 90) * Math.PI) / 180;
+  const s = rad(startDeg);
+  const e = rad(endDeg);
+  const large = endDeg - startDeg > 180 ? 1 : 0;
+  const ox1 = cx + outerR * Math.cos(s);
+  const oy1 = cy + outerR * Math.sin(s);
+  const ox2 = cx + outerR * Math.cos(e);
+  const oy2 = cy + outerR * Math.sin(e);
+  const ix1 = cx + innerR * Math.cos(e);
+  const iy1 = cy + innerR * Math.sin(e);
+  const ix2 = cx + innerR * Math.cos(s);
+  const iy2 = cy + innerR * Math.sin(s);
+  return `M ${ox1} ${oy1} A ${outerR} ${outerR} 0 ${large} 1 ${ox2} ${oy2} L ${ix1} ${iy1} A ${innerR} ${innerR} 0 ${large} 0 ${ix2} ${iy2} Z`;
+}
+
+// ─── MacroDonut ───────────────────────────────────────────────────────────────
+
+function MacroDonut({
+  proteinG, carbsG, fatG, t,
+}: {
+  proteinG: number;
+  carbsG: number;
+  fatG: number;
+  t: ReturnType<typeof makeT>;
+}) {
+  const SIZE = 100;
+  const cx = SIZE / 2;
+  const cy = SIZE / 2;
+  const outerR = 44;
+  const innerR = 28;
+
+  const totalKcal = proteinG * 4 + carbsG * 4 + fatG * 9;
+  if (totalKcal === 0) return null;
+
+  const parts = [
+    { value: proteinG * 4, color: C.accent },
+    { value: carbsG * 4,   color: C.warn },
+    { value: fatG * 9,     color: C.fat },
+  ].filter((p) => p.value > 0);
+
+  const gapDeg = parts.length > 1 ? 3 : 0;
+  const gapTotal = gapDeg * parts.length;
+
+  const segments: { d: string; color: string }[] = [];
+  let start = 0;
+  for (const p of parts) {
+    const deg = (p.value / totalKcal) * (360 - gapTotal);
+    if (deg >= 0.5) {
+      segments.push({ d: donutArc(cx, cy, outerR, innerR, start, start + deg), color: p.color });
+      start += deg + gapDeg;
+    }
+  }
+
+  return (
+    <View style={styles.donutCard}>
+      <Svg width={SIZE} height={SIZE}>
+        {segments.map((seg, i) => (
+          <Path key={i} d={seg.d} fill={seg.color} />
+        ))}
+      </Svg>
+      <View style={styles.macroLegend}>
+        <Text style={styles.macroTitle}>{t("macros")}</Text>
+        <MacroRow color={C.accent} label={t("protein")} value={`${Math.round(proteinG)}g`} />
+        <MacroRow color={C.warn}   label={t("carbs")}   value={`${Math.round(carbsG)}g`} />
+        <MacroRow color={C.fat}    label={t("fat")}     value={`${Math.round(fatG)}g`} />
+      </View>
+    </View>
+  );
+}
+
+function MacroRow({ color, label, value }: { color: string; label: string; value: string }) {
+  return (
+    <View style={styles.macroRow}>
+      <View style={[styles.macroDot, { backgroundColor: color }]} />
+      <Text style={styles.macroRowTxt}>{label}</Text>
+      <Text style={styles.macroRowVal}>{value}</Text>
+    </View>
+  );
+}
+
 // ─── MealSection ──────────────────────────────────────────────────────────────
 
 function MealSection({
@@ -561,7 +668,7 @@ const styles = StyleSheet.create({
   qFilled:       { backgroundColor: C.accent },
   qOutline:      { borderWidth: 1.5, borderColor: C.accent },
   qDone:         { borderColor: C.good, backgroundColor: C.accentSoft },
-  qFilledTxt:    { color: "#fff", fontWeight: "700", fontSize: 13 },
+  qFilledTxt:    { color: "#fff", fontWeight: "700", fontSize: 13, textAlign: "center" },
   qOutlineTxt:   { color: C.accent, fontWeight: "700", fontSize: 13 },
   qDoneTxt:      { color: C.good },
 
@@ -588,6 +695,22 @@ const styles = StyleSheet.create({
   },
   deleteBtn:  { padding: 6 },
   deleteTxt:  { color: C.muted, fontSize: 12 },
+
+  // Macro donut
+  donutCard: {
+    backgroundColor: C.card, borderRadius: 16, borderWidth: 1,
+    borderColor: C.line, padding: 12, marginBottom: 12,
+    flexDirection: "row", alignItems: "center", gap: 16,
+  },
+  macroLegend: { flex: 1, gap: 4 },
+  macroTitle: {
+    fontSize: 11, letterSpacing: 1, textTransform: "uppercase",
+    color: C.muted, fontWeight: "700", marginBottom: 4,
+  },
+  macroRow:    { flexDirection: "row", alignItems: "center", gap: 6 },
+  macroDot:    { width: 8, height: 8, borderRadius: 4 },
+  macroRowTxt: { fontSize: 12, color: C.muted, flex: 1 },
+  macroRowVal: { fontSize: 12, color: C.ink, fontFamily: "Georgia" },
 
   // Progress strip
   strip: {

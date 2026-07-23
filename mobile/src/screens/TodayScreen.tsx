@@ -23,7 +23,7 @@ import {
   TextInput,
   View,
 } from "react-native";
-import { computeKcal, searchFoods, FoodItem, FoodMeasure } from "../api/foods";
+import { computeKcal, computeMacros, searchFoods, FoodItem, FoodMeasure } from "../api/foods";
 import {
   addLogEntry,
   deleteLogEntry,
@@ -176,6 +176,9 @@ export default function TodayScreen({ lang = "fr" }: Props) {
       quantity: qty,
       grams: Math.round(qty * measure.grams * 10) / 10,
       kcal: previewKcal,
+      proteinG: computeMacros(qty, measure.grams, picked.proteinG ?? 0),
+      carbsG:   computeMacros(qty, measure.grams, picked.carbsG ?? 0),
+      fatG:     computeMacros(qty, measure.grams, picked.fatG ?? 0),
     });
     const updated = await getEntriesForDate(today);
     setEntries(updated);

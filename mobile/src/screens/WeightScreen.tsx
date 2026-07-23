@@ -11,6 +11,7 @@
 import React, { useEffect, useState } from "react";
 import {
   ActivityIndicator,
+  Dimensions,
   FlatList,
   Pressable,
   StyleSheet,
@@ -18,6 +19,7 @@ import {
   TextInput,
   View,
 } from "react-native";
+import { Svg, Polyline, Circle, Line, Text as SvgText } from "react-native-svg";
 import {
   addWeightLog,
   deleteWeightLog,
@@ -126,6 +128,11 @@ export default function WeightScreen({ lang = "fr" }: Props) {
             <StatCard label={t("goal_kg")}  value={goalWeight} />
           </View>
 
+          {/* ── 1.5. Weight line chart ── */}
+          {logs.length >= 2 && (
+            <WeightLineChart logs={logs} goalWeight={goalWeight} />
+          )}
+
           {/* ── 2. Log input ── */}
           <View style={styles.card}>
             <Text style={styles.sectionLabel}>{t("weigh_today")}</Text>
@@ -190,6 +197,101 @@ export default function WeightScreen({ lang = "fr" }: Props) {
   );
 }
 
+// ─── WeightLineChart ──────────────────────────────────────────────────────────
+
+function WeightLineChart({
+  logs,
+  goalWeight,
+}: {
+  logs: WeightLog[];
+  goalWeight: number | null;
+}) {
+  const { width: screenW } = Dimensions.get("window");
+  const width  = screenW - 32 - 2;  // list padding 16×2, border 1×2
+  const height = 160;
+  const padL   = 40;
+  const padR   = 8;
+  const padT   = 16;
+  const padB   = 30;
+  const plotW  = width - padL - padR;
+  const plotH  = height - padT - padB;
+
+  // Up to 10 most recent points, plotted oldest→newest
+  const recent = logs.slice(0, 10).reverse();
+  if (recent.length < 2) return null;
+
+  const weights   = recent.map((l) => l.weightKg);
+  const allValues = goalWeight != null ? [...weights, goalWeight] : weights;
+  const rawMin    = Math.min(...allValues);
+  const rawMax    = Math.max(...allValues);
+  const pad       = Math.max((rawMax - rawMin) * 0.15, 0.5);
+  const minY      = rawMin - pad;
+  const maxY      = rawMax + pad;
+  const rangeY    = maxY - minY || 1;
+
+  const xPos = (i: number) =>
+    padL + (i / Math.max(recent.length - 1, 1)) * plotW;
+  const yPos = (v: number) =>
+    padT + (1 - (v - minY) / rangeY) * plotH;
+
+  const polyPoints = recent
+    .map((l, i) => `${xPos(i)},${yPos(l.weightKg)}`)
+    .join(" ");
+  const goalY = goalWeight != null ? yPos(goalWeight) : null;
+
+  return (
+    <View style={styles.chartCard}>
+      <Svg width={width} height={height}>
+        {/* Y-axis labels */}
+        <SvgText
+          x={padL - 4} y={padT + 4}
+          textAnchor="end" fontSize={10} fill={C.muted}
+        >
+          {maxY.toFixed(1)}
+        </SvgText>
+        <SvgText
+          x={padL - 4} y={padT + plotH + 4}
+          textAnchor="end" fontSize={10} fill={C.muted}
+        >
+          {minY.toFixed(1)}
+        </SvgText>
+
+        {/* Axis lines */}
+        <Line x1={padL} y1={padT} x2={padL} y2={padT + plotH}
+          stroke={C.line} strokeWidth={1} />
+        <Line x1={padL} y1={padT + plotH} x2={width - padR} y2={padT + plotH}
+          stroke={C.line} strokeWidth={1} />
+
+        {/* Dashed goal line */}
+        {goalY != null && (
+          <Line
+            x1={padL} y1={goalY} x2={width - padR} y2={goalY}
+            stroke={C.good} strokeWidth={1.5} strokeDasharray="4 3"
+          />
+        )}
+
+        {/* Weight line */}
+        <Polyline
+          points={polyPoints}
+          fill="none"
+          stroke={C.accent}
+          strokeWidth={2}
+          strokeLinejoin="round"
+        />
+
+        {/* Data points */}
+        {recent.map((l, i) => (
+          <Circle
+            key={i}
+            cx={xPos(i)} cy={yPos(l.weightKg)}
+            r={4} fill={C.card} stroke={C.accent} strokeWidth={2}
+          />
+        ))}
+      </Svg>
+    </View>
+  );
+}
+
 // ─── StatCard ─────────────────────────────────────────────────────────────────
 
 function StatCard({
@@ -214,6 +316,12 @@ function StatCard({
 const styles = StyleSheet.create({
   list:   { padding: 16, paddingTop: 16, paddingBottom: 48 },
   center: { flex: 1, backgroundColor: C.bg, justifyContent: "center", alignItems: "center" },
+
+  // Line chart
+  chartCard: {
+    backgroundColor: C.card, borderRadius: 16, borderWidth: 1,
+    borderColor: C.line, marginBottom: 12, overflow: "hidden",
+  },
 
   // Stats row
   statsRow: { flexDirection: "row", gap: 10, marginBottom: 12 },

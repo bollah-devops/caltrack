@@ -13,4 +13,5 @@ export const C = {
   good:       "#3E7C5B",
   warn:       "#C77B2E",
   over:       "#B0472F",
+  fat:        "#D4694A",
 };

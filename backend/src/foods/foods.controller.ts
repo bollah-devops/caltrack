@@ -58,6 +58,9 @@ export class FoodsController {
          f.name_en,
          f.basis,
          f.kcal_per_100,
+         f.protein_g,
+         f.carbs_g,
+         f.fat_g,
          f.category,
          f.verification_status,
          COALESCE(
@@ -135,6 +138,9 @@ function formatFood(r: any, lang: string) {
     nameEn:      r.name_en ?? null,
     basis:       r.basis,               // '100g' | '100ml'
     kcalPer100:  Number(r.kcal_per_100),
+    proteinG:    Number(r.protein_g) || 0,
+    carbsG:      Number(r.carbs_g) || 0,
+    fatG:        Number(r.fat_g) || 0,
     category:    r.category ?? null,
     verified:    r.verification_status === "verified",
     measures:    (r.measures as any[]).map((m) => ({
