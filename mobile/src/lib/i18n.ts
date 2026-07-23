@@ -77,6 +77,32 @@ export const translations: Record<string, Record<Lang, string>> = {
   // --- misc ---
   saved:            { fr: "Enregistré",           en: "Saved" },
   loading:          { fr: "Chargement…",          en: "Loading…" },
+
+  // --- app identity ---
+  app_name:         { fr: "CalTrack",             en: "CalTrack" },
+  start_tracking:   { fr: "Commencer",            en: "Start tracking" },
+  floor_note:       { fr: "Minimum sécuritaire appliqué. Plus lent, c'est plus sain.",
+                      en: "Safe minimum applied. Slower is healthier." },
+
+  // --- standard measure labels (shown on picker chips) ---
+  measure_gram:      { fr: "g",            en: "g" },
+  measure_ml:        { fr: "ml",           en: "ml" },
+  measure_teaspoon:  { fr: "c. à café",    en: "tsp" },
+  measure_tablespoon:{ fr: "c. à soupe",   en: "tbsp" },
+  measure_cup:       { fr: "tasse",        en: "cup" },
+  measure_piece:     { fr: "pièce",        en: "piece" },
+  measure_handful:   { fr: "poignée",      en: "handful" },
+  measure_ladle:     { fr: "louche",       en: "ladle" },
+  measure_glass:     { fr: "verre",        en: "glass" },
+
+  // --- measure picker UI ---
+  choose_measure:   { fr: "Quelle mesure ?",       en: "Which measure?" },
+  quantity:         { fr: "Quantité",              en: "Quantity" },
+  confirm:          { fr: "Ajouter",               en: "Add" },
+  no_entries:       { fr: "Rien de mangé ici",     en: "Nothing logged here" },
+  add_to_meal:      { fr: "Ajouter à ce repas",    en: "Add to this meal" },
+  no_profile:       { fr: "Complétez le questionnaire pour commencer à suivre vos calories.",
+                      en: "Complete the questionnaire to start tracking your calories." },
 };
 
 /** Simple translator. Falls back to French, then to the key itself. */

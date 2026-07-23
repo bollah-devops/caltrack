@@ -10,8 +10,9 @@ import React, { useState } from "react";
 import { View, Text, TextInput, Pressable, ScrollView, StyleSheet } from "react-native";
 import { calculateCalories, Sex, ActivityLevel, Goal, Pace } from "../lib/calorieEngine";
 import { makeT, Lang } from "../lib/i18n";
+import { saveProfile } from "../db/localStore";
 
-// theme (matches Miriame's pink "Steady" palette)
+// theme
 const C = {
   bg: "#FCF8FA", card: "#FFFFFF", ink: "#33202B", muted: "#8A6E7C",
   line: "#EFE2E8", accent: "#B93A6A", accentSoft: "#F7E3EC", good: "#3E7C5B",
@@ -81,7 +82,7 @@ export default function OnboardingScreen({ lang = "fr", onComplete }: Props) {
 
   return (
     <ScrollView style={{ backgroundColor: C.bg }} contentContainerStyle={styles.container}>
-      <Text style={styles.title}>Steady</Text>
+      <Text style={styles.title}>{t("app_name")}</Text>
 
       {/* SEX */}
       <View style={styles.card}>
@@ -141,27 +142,36 @@ export default function OnboardingScreen({ lang = "fr", onComplete }: Props) {
             </Text>
           )}
           {result.flooredToMinimum && (
-            <Text style={styles.floorNote}>
-              {lang === "fr"
-                ? "Minimum sécuritaire appliqué. Plus lent, c'est plus sain."
-                : "Safe minimum applied. Slower is healthier."}
-            </Text>
+            <Text style={styles.floorNote}>{t("floor_note")}</Text>
           )}
 
           <Pressable
             style={styles.cta}
-            onPress={() =>
-              onComplete({
+            onPress={async () => {
+              const payload = {
                 sex: sex!, age: Number(age), heightCm: Number(height),
                 weightKg: Number(weight), activity, goal: goal!, pace,
                 goalWeightKg: goalWeight ? Number(goalWeight) : undefined,
                 dailyTarget: result.dailyTarget, maintenance: result.maintenance,
-              })
-            }
+              };
+              await saveProfile({
+                sex: payload.sex,
+                age: payload.age,
+                heightCm: payload.heightCm,
+                weightKg: payload.weightKg,
+                activity: payload.activity,
+                goal: payload.goal,
+                pace: payload.pace,
+                startWeightKg: payload.weightKg,
+                goalWeightKg: payload.goalWeightKg ?? null,
+                dailyTarget: payload.dailyTarget,
+                maintenance: payload.maintenance,
+                lang,
+              });
+              onComplete(payload);
+            }}
           >
-            <Text style={styles.ctaText}>
-              {lang === "fr" ? "Commencer" : "Start tracking"}
-            </Text>
+            <Text style={styles.ctaText}>{t("start_tracking")}</Text>
           </Pressable>
         </View>
       )}
