@@ -27,14 +27,7 @@ import {
   Profile,
 } from "../db/localStore";
 import { makeT, Lang } from "../lib/i18n";
-
-// ─── Theme ────────────────────────────────────────────────────────────────────
-
-const C = {
-  bg: "#FCF8FA", card: "#FFF", ink: "#33202B", muted: "#8A6E7C",
-  line: "#EFE2E8", accent: "#B93A6A", accentSoft: "#F7E3EC",
-  good: "#3E7C5B", warn: "#C77B2E", over: "#B0472F",
-};
+import { C } from "../lib/theme";
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
@@ -124,7 +117,6 @@ export default function HistoryScreen({ lang = "fr" }: Props) {
   if (days.length === 0) {
     return (
       <View style={styles.center}>
-        <Text style={styles.emptyTitle}>{t("tab_history")}</Text>
         <Text style={styles.emptyText}>{t("no_history")}</Text>
       </View>
     );
@@ -138,9 +130,6 @@ export default function HistoryScreen({ lang = "fr" }: Props) {
         data={days}
         keyExtractor={(d) => d.date}
         contentContainerStyle={styles.list}
-        ListHeaderComponent={
-          <Text style={styles.screenTitle}>{t("tab_history")}</Text>
-        }
         renderItem={({ item }) => (
           <DayRow
             day={item}
@@ -287,13 +276,9 @@ function EntryRow({
 const styles = StyleSheet.create({
   center:       { flex: 1, backgroundColor: C.bg, justifyContent: "center",
                   alignItems: "center", padding: 32 },
-  emptyTitle:   { fontSize: 20, fontStyle: "italic", color: C.ink,
-                  fontFamily: "Georgia", marginBottom: 12 },
   emptyText:    { fontSize: 14, color: C.muted, textAlign: "center" },
 
-  list:         { padding: 16, paddingTop: 56, paddingBottom: 40 },
-  screenTitle:  { fontSize: 22, fontStyle: "italic", color: C.ink,
-                  fontFamily: "Georgia", textAlign: "center", marginBottom: 16 },
+  list:         { padding: 16, paddingTop: 16, paddingBottom: 40 },
 
   dayCard:      { backgroundColor: C.card, borderRadius: 16, borderWidth: 1,
                   borderColor: C.line, marginBottom: 12, overflow: "hidden" },

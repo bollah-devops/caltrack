@@ -76,6 +76,25 @@ export const translations: Record<string, Record<Lang, string>> = {
   estimated_time:   { fr: "Temps estimé",         en: "Estimated time" },
   weeks:            { fr: "semaines",             en: "weeks" },
 
+  // --- activity level picker ---
+  your_activity:        { fr: "Votre niveau d'activité", en: "Your activity level" },
+  act_sedentary:        { fr: "Sédentaire",              en: "Sedentary" },
+  act_sedentary_desc:   { fr: "Bureau, peu de mouvement", en: "Desk job, little movement" },
+  act_light:            { fr: "Légèrement actif",        en: "Lightly active" },
+  act_light_desc:       { fr: "Exercice léger 1-3×/semaine", en: "Light exercise 1-3×/week" },
+  act_moderate:         { fr: "Modérément actif",        en: "Moderately active" },
+  act_moderate_desc:    { fr: "Exercice modéré 3-5×/semaine", en: "Moderate exercise 3-5×/week" },
+  act_active:           { fr: "Très actif",              en: "Very active" },
+  act_active_desc:      { fr: "Exercice intense 6-7×/semaine", en: "Hard exercise 6-7×/week" },
+  act_very_active:      { fr: "Extrêmement actif",       en: "Extremely active" },
+  act_very_active_desc: { fr: "Travail physique + sport quotidien", en: "Physical job + daily exercise" },
+
+  // --- timeline (result card) ---
+  target_date:      { fr: "Objectif atteint vers",  en: "Goal reached around" },
+  weekly_pace:      { fr: "Rythme",                 en: "Pace" },
+  steady_loss_note: { fr: "Régulier et durable — pas de yoyo.",
+                      en: "Steady and sustainable — no yo-yo." },
+
   // --- misc ---
   saved:            { fr: "Enregistré",           en: "Saved" },
   loading:          { fr: "Chargement…",          en: "Loading…" },

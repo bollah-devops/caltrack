@@ -11,12 +11,19 @@ import { View, Text, TextInput, Pressable, ScrollView, StyleSheet } from "react-
 import { calculateCalories, Sex, ActivityLevel, Goal, Pace } from "../lib/calorieEngine";
 import { makeT, Lang } from "../lib/i18n";
 import { saveProfile } from "../db/localStore";
+import { C } from "../lib/theme";
 
-// theme
-const C = {
-  bg: "#FCF8FA", card: "#FFFFFF", ink: "#33202B", muted: "#8A6E7C",
-  line: "#EFE2E8", accent: "#B93A6A", accentSoft: "#F7E3EC", good: "#3E7C5B",
-};
+const ACTIVITY_LEVELS: ActivityLevel[] = [
+  "sedentary", "light", "moderate", "active", "very_active",
+];
+
+function targetDateStr(weeks: number, lang: Lang): string {
+  const d = new Date();
+  d.setDate(d.getDate() + weeks * 7);
+  return new Intl.DateTimeFormat(lang === "fr" ? "fr-FR" : "en-US", {
+    month: "long", year: "numeric",
+  }).format(d);
+}
 
 interface Props {
   lang?: Lang;
@@ -29,8 +36,6 @@ interface Props {
 
 export default function OnboardingScreen({ lang = "fr", onComplete }: Props) {
   const t = makeT(lang);
-  const [step, setStep] = useState(0);
-
   const [sex, setSex] = useState<Sex | null>(null);
   const [age, setAge] = useState("");
   const [height, setHeight] = useState("");
@@ -40,7 +45,6 @@ export default function OnboardingScreen({ lang = "fr", onComplete }: Props) {
   const [goal, setGoal] = useState<Goal | null>(null);
   const [pace, setPace] = useState<Pace>("moderate");
 
-  // compute result once we have enough
   const canCompute =
     sex && goal && Number(age) > 0 && Number(height) > 0 && Number(weight) > 0;
 
@@ -82,7 +86,6 @@ export default function OnboardingScreen({ lang = "fr", onComplete }: Props) {
 
   return (
     <ScrollView style={{ backgroundColor: C.bg }} contentContainerStyle={styles.container}>
-      <Text style={styles.title}>{t("app_name")}</Text>
 
       {/* SEX */}
       <View style={styles.card}>
@@ -98,6 +101,25 @@ export default function OnboardingScreen({ lang = "fr", onComplete }: Props) {
         {field(t("your_age"), age, setAge, "40")}
         {field(t("your_height"), height, setHeight, "170")}
         {field(t("your_weight"), weight, setWeight, "78")}
+      </View>
+
+      {/* ACTIVITY LEVEL */}
+      <View style={styles.card}>
+        <Text style={styles.label}>{t("your_activity")}</Text>
+        {ACTIVITY_LEVELS.map((level) => (
+          <Pressable
+            key={level}
+            onPress={() => setActivity(level)}
+            style={[styles.activityPill, activity === level && styles.activityPillOn]}
+          >
+            <Text style={[styles.activityLabel, activity === level && styles.activityLabelOn]}>
+              {t(`act_${level}` as any)}
+            </Text>
+            <Text style={[styles.activityDesc, activity === level && styles.activityDescOn]}>
+              {t(`act_${level}_desc` as any)}
+            </Text>
+          </Pressable>
+        ))}
       </View>
 
       {/* GOAL */}
@@ -136,11 +158,18 @@ export default function OnboardingScreen({ lang = "fr", onComplete }: Props) {
             {result.dailyTarget.toLocaleString()} <Text style={styles.unit}>{t("kcal")}</Text>
           </Text>
 
-          {result.estimatedWeeks && (
-            <Text style={styles.timeline}>
-              {t("estimated_time")}: ~{result.estimatedWeeks} {t("weeks")}
-            </Text>
+          {result.estimatedWeeks != null && (
+            <View style={styles.timelineBox}>
+              <Text style={styles.timelineLine}>
+                {t("target_date")}: <Text style={styles.timelineEm}>{targetDateStr(result.estimatedWeeks, lang)}</Text>
+              </Text>
+              <Text style={styles.timelineLine}>
+                {t("weekly_pace")}: <Text style={styles.timelineEm}>{Math.abs(result.weeklyPaceKg)} kg / {lang === "fr" ? "semaine" : "week"}</Text>
+              </Text>
+              <Text style={styles.steadyNote}>{t("steady_loss_note")}</Text>
+            </View>
           )}
+
           {result.flooredToMinimum && (
             <Text style={styles.floorNote}>{t("floor_note")}</Text>
           )}
@@ -180,11 +209,8 @@ export default function OnboardingScreen({ lang = "fr", onComplete }: Props) {
 }
 
 const styles = StyleSheet.create({
-  container: { padding: 20, paddingTop: 60, paddingBottom: 60 },
-  title: {
-    fontSize: 26, fontStyle: "italic", textAlign: "center", color: C.ink,
-    marginBottom: 20, fontFamily: "Georgia",
-  },
+  container: { padding: 20, paddingTop: 20, paddingBottom: 60 },
+
   card: {
     backgroundColor: C.card, borderRadius: 16, borderWidth: 1,
     borderColor: C.line, padding: 20, marginBottom: 14,
@@ -195,6 +221,8 @@ const styles = StyleSheet.create({
   },
   row: { flexDirection: "row", gap: 8 },
   rowWrap: { flexDirection: "row", flexWrap: "wrap", gap: 8 },
+
+  // Generic pill (sex, goal)
   pill: {
     flexGrow: 1, paddingVertical: 12, paddingHorizontal: 16, borderRadius: 999,
     borderWidth: 1, borderColor: C.line, backgroundColor: "#fff", alignItems: "center",
@@ -202,15 +230,39 @@ const styles = StyleSheet.create({
   pillOn: { borderColor: C.accent, backgroundColor: C.accentSoft },
   pillText: { color: C.muted, fontWeight: "600", fontSize: 14 },
   pillTextOn: { color: C.accent },
+
+  // Activity level pills (stacked, full-width)
+  activityPill: {
+    paddingVertical: 12, paddingHorizontal: 14, borderRadius: 12,
+    borderWidth: 1, borderColor: C.line, backgroundColor: "#fff",
+    marginBottom: 8,
+  },
+  activityPillOn: { borderColor: C.accent, backgroundColor: C.accentSoft },
+  activityLabel: { fontSize: 14, fontWeight: "700", color: C.ink },
+  activityLabelOn: { color: C.accent },
+  activityDesc: { fontSize: 12, color: C.muted, marginTop: 2 },
+  activityDescOn: { color: C.accent },
+
   input: {
     borderWidth: 1, borderColor: C.line, borderRadius: 12, padding: 14,
     fontSize: 16, color: C.ink, backgroundColor: "#fff",
   },
+
+  // Result card
   bigMuted: { fontSize: 28, color: C.muted, fontFamily: "Georgia" },
   bigNumber: { fontSize: 48, color: C.ink, fontFamily: "Georgia" },
   unit: { fontSize: 16, color: C.muted },
-  timeline: { marginTop: 12, fontSize: 14, color: C.ink },
+
+  timelineBox: {
+    marginTop: 16, padding: 14, borderRadius: 12,
+    backgroundColor: "#fff", borderWidth: 1, borderColor: C.line,
+  },
+  timelineLine: { fontSize: 13, color: C.ink, marginBottom: 4 },
+  timelineEm: { fontWeight: "700", color: C.accent },
+  steadyNote: { fontSize: 12, color: C.muted, marginTop: 4 },
+
   floorNote: { marginTop: 8, fontSize: 13, color: C.accent },
+
   cta: {
     marginTop: 20, backgroundColor: C.accent, borderRadius: 12,
     paddingVertical: 15, alignItems: "center",

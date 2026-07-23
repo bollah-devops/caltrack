@@ -36,14 +36,7 @@ import {
   setStepsDone,
 } from "../db/localStore";
 import { makeT, Lang } from "../lib/i18n";
-
-// ─── Theme ────────────────────────────────────────────────────────────────────
-
-const C = {
-  bg: "#FCF8FA", card: "#FFF", ink: "#33202B", muted: "#8A6E7C",
-  line: "#EFE2E8", accent: "#B93A6A", accentSoft: "#F7E3EC",
-  good: "#3E7C5B", warn: "#C77B2E", over: "#B0472F",
-};
+import { C } from "../lib/theme";
 
 // ─── Measure label display ────────────────────────────────────────────────────
 
@@ -230,9 +223,6 @@ export default function TodayScreen({ lang = "fr" }: Props) {
   return (
     <View style={{ flex: 1, backgroundColor: C.bg }}>
       <ScrollView contentContainerStyle={styles.scroll}>
-
-        {/* Title */}
-        <Text style={styles.title}>{t("app_name")}</Text>
 
         {/* No-profile banner */}
         {!profile && (
@@ -478,12 +468,8 @@ function MealSection({
 // ─── Styles ───────────────────────────────────────────────────────────────────
 
 const styles = StyleSheet.create({
-  scroll:     { padding: 16, paddingTop: 56, paddingBottom: 40 },
+  scroll:     { padding: 16, paddingTop: 16, paddingBottom: 40 },
   center:     { flex: 1, justifyContent: "center", alignItems: "center" },
-  title: {
-    fontSize: 22, fontStyle: "italic", textAlign: "center", color: C.ink,
-    marginBottom: 16, fontFamily: "Georgia",
-  },
 
   // Cards
   card: {
