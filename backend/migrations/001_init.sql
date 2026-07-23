@@ -16,6 +16,7 @@
 
 CREATE EXTENSION IF NOT EXISTS pgcrypto;   -- provides gen_random_uuid()
 CREATE EXTENSION IF NOT EXISTS pg_trgm;    -- provides gin_trgm_ops for search
+CREATE EXTENSION IF NOT EXISTS unaccent;   -- accent-insensitive search (é=e, œ=oe …)
 
 -- ============================================================================
 --  USERS & IDENTITY

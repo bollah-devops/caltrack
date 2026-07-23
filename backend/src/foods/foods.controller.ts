@@ -36,10 +36,21 @@ export class FoodsController {
   ) {
     if (!q || q.trim().length < 2) return { results: [] };
 
-    const term   = `%${q.trim().toLowerCase()}%`;
-    const prefix = `${q.trim().toLowerCase()}%`;
+    // All pattern matching goes through unaccent(lower()) so that:
+    //   - "oeuf" matches "œuf"  (ligature → two chars)
+    //   - "ndole" matches "ndolé"
+    // Patterns are passed as literals; unaccent() is applied in SQL.
+    const raw    = q.trim();
+    const term   = `%${raw}%`;      // $1 — substring (widest net)
+    const prefix = `${raw}%`;       // $3 — name starts with query  (rank 1)
+    const word   = `% ${raw}%`;     // $4 — word inside name starts with query (rank 2)
     const cap    = Math.min(parseInt(limit, 10) || 8, 20);
 
+    // Ranking tiers (CASE evaluated after GROUP BY via subquery):
+    //   1 — name_fr or name_en starts with the query  → best
+    //   2 — a word inside name_fr/name_en starts with query (word boundary)
+    //   3 — substring match anywhere (name or synonym)
+    // Within each tier: shorter name_fr first.
     const { rows } = await pool.query(
       `SELECT
          f.id,
@@ -58,23 +69,29 @@ export class FoodsController {
              ) ORDER BY m.sort_order
            ) FILTER (WHERE m.id IS NOT NULL),
            '[]'
-         ) AS measures
+         ) AS measures,
+         CASE
+           WHEN unaccent(lower(coalesce(f.name_fr,''))) LIKE unaccent(lower($3))
+             OR unaccent(lower(coalesce(f.name_en,''))) LIKE unaccent(lower($3))
+           THEN 1
+           WHEN unaccent(lower(coalesce(f.name_fr,''))) LIKE unaccent(lower($4))
+             OR unaccent(lower(coalesce(f.name_en,''))) LIKE unaccent(lower($4))
+           THEN 2
+           ELSE 3
+         END AS rank
        FROM foods f
        LEFT JOIN food_measures m ON m.food_id = f.id
        WHERE f.is_active = TRUE
          AND (f.country_code = $2 OR f.country_code IS NULL)
          AND (
-               lower(coalesce(f.name_fr,'')) LIKE $1
-            OR lower(coalesce(f.name_en,'')) LIKE $1
-            OR lower(coalesce(f.aka,''))     LIKE $1
+               unaccent(lower(coalesce(f.name_fr,''))) LIKE unaccent(lower($1))
+            OR unaccent(lower(coalesce(f.name_en,''))) LIKE unaccent(lower($1))
+            OR unaccent(lower(coalesce(f.aka,'')))     LIKE unaccent(lower($1))
          )
        GROUP BY f.id
-       ORDER BY
-         (lower(coalesce(f.name_fr,'')) LIKE $3
-          OR lower(coalesce(f.name_en,'')) LIKE $3) DESC,
-         length(f.name_fr) ASC
-       LIMIT $4`,
-      [term, country, prefix, cap],
+       ORDER BY rank ASC, length(f.name_fr) ASC
+       LIMIT $5`,
+      [term, country, prefix, word, cap],
     );
 
     return {
