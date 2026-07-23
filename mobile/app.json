@@ -1,0 +1,21 @@
+{
+  "expo": {
+    "name": "CalTrack",
+    "slug": "caltrack",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "platforms": ["android", "ios"],
+    "assetBundlePatterns": ["**/*"],
+    "android": {
+      "package": "com.caltrack.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#B93A6A"
+      }
+    },
+    "ios": {
+      "bundleIdentifier": "com.caltrack.app",
+      "supportsTablet": false
+    }
+  }
+}
