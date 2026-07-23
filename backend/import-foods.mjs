@@ -59,71 +59,89 @@ async function main() {
   await client.connect();
   console.log(`Connected. Importing ${rows.length} foods from ${csvPath}...`);
 
-  let importedFoods = 0;
-  let importedMeasures = 0;
-  let skipped = 0;
-
-  for (const r of rows) {
-    const nameFr = (r.name_fr || "").trim();
-    const kcalPer100 = parseFloat(r.kcal_per_100);
-
-    if (!nameFr || Number.isNaN(kcalPer100)) {
-      console.warn(`  Skipping row: name_fr="${r.name_fr}" kcal_per_100="${r.kcal_per_100}"`);
-      skipped++;
-      continue;
-    }
-
-    const basis = (r.basis || "100g").trim();
-    if (basis !== "100g" && basis !== "100ml") {
-      console.warn(`  Skipping row "${nameFr}": unknown basis "${basis}"`);
-      skipped++;
-      continue;
-    }
-
-    const res = await client.query(
-      `INSERT INTO foods
-         (name, name_fr, name_en, aka, country_code, region, category,
-          basis, kcal_per_100, protein_g, carbs_g, fat_g, verification_status, notes)
-       VALUES ($1,$2,$3,$4,'CM',$5,$6,$7,$8,$9,$10,$11,$12,$13)
-       RETURNING id`,
-      [
-        nameFr,                                   // name = French primary
-        nameFr,
-        (r.name_en || "").trim() || null,
-        (r.search_aka || "").trim() || null,
-        (r.region || "").trim() || null,
-        (r.category || "").trim() || null,
-        basis,
-        kcalPer100,
-        parseFloat(r.protein_g) || null,
-        parseFloat(r.carbs_g) || null,
-        parseFloat(r.fat_g) || null,
-        normalizeStatus(r.status),
-        (r.notes || "").trim() || null,
-      ]
+  try {
+    // Wipe existing seed data so re-runs are idempotent
+    await client.query("BEGIN");
+    await client.query(
+      `DELETE FROM food_measures WHERE food_id IN (SELECT id FROM foods WHERE country_code = 'CM')`
     );
-    const foodId = res.rows[0].id;
-    importedFoods++;
+    const { rowCount: deleted } = await client.query(
+      `DELETE FROM foods WHERE country_code = 'CM'`
+    );
+    console.log(`Cleared ${deleted} existing CM foods.`);
 
-    // Explode the measures column into food_measures rows
-    const measures = parseMeasures(r.measures);
-    for (const m of measures) {
-      await client.query(
-        `INSERT INTO food_measures (food_id, label, grams, sort_order)
-         VALUES ($1, $2, $3, $4)`,
-        [foodId, m.label, m.grams, m.sort_order]
+    let importedFoods = 0;
+    let importedMeasures = 0;
+    let skipped = 0;
+
+    for (const r of rows) {
+      const nameFr = (r.name_fr || "").trim();
+      const kcalPer100 = parseFloat(r.kcal_per_100);
+
+      if (!nameFr || Number.isNaN(kcalPer100)) {
+        console.warn(`  Skipping row: name_fr="${r.name_fr}" kcal_per_100="${r.kcal_per_100}"`);
+        skipped++;
+        continue;
+      }
+
+      const basis = (r.basis || "100g").trim();
+      if (basis !== "100g" && basis !== "100ml") {
+        console.warn(`  Skipping row "${nameFr}": unknown basis "${basis}"`);
+        skipped++;
+        continue;
+      }
+
+      const res = await client.query(
+        `INSERT INTO foods
+           (name, name_fr, name_en, aka, country_code, region, category,
+            basis, kcal_per_100, protein_g, carbs_g, fat_g, verification_status, notes)
+         VALUES ($1,$2,$3,$4,'CM',$5,$6,$7,$8,$9,$10,$11,$12,$13)
+         RETURNING id`,
+        [
+          nameFr,                                   // name = French primary
+          nameFr,
+          (r.name_en || "").trim() || null,
+          (r.search_aka || "").trim() || null,
+          (r.region || "").trim() || null,
+          (r.category || "").trim() || null,
+          basis,
+          kcalPer100,
+          parseFloat(r.protein_g) || null,
+          parseFloat(r.carbs_g) || null,
+          parseFloat(r.fat_g) || null,
+          normalizeStatus(r.status),
+          (r.notes || "").trim() || null,
+        ]
       );
-      importedMeasures++;
-    }
-  }
+      const foodId = res.rows[0].id;
+      importedFoods++;
 
-  const { rows: count } = await client.query("SELECT count(*) FROM foods");
-  console.log(
-    `Done. Imported ${importedFoods} foods, ${importedMeasures} measures.` +
-    (skipped ? ` Skipped ${skipped} invalid rows.` : "") +
-    ` Total foods in DB: ${count[0].count}`
-  );
-  await client.end();
+      // Explode the measures column into food_measures rows
+      const measures = parseMeasures(r.measures);
+      for (const m of measures) {
+        await client.query(
+          `INSERT INTO food_measures (food_id, label, grams, sort_order)
+           VALUES ($1, $2, $3, $4)`,
+          [foodId, m.label, m.grams, m.sort_order]
+        );
+        importedMeasures++;
+      }
+    }
+
+    await client.query("COMMIT");
+
+    const { rows: count } = await client.query("SELECT count(*) FROM foods");
+    console.log(
+      `Done. Imported ${importedFoods} foods, ${importedMeasures} measures.` +
+      (skipped ? ` Skipped ${skipped} invalid rows.` : "") +
+      ` Total foods in DB: ${count[0].count}`
+    );
+  } catch (e) {
+    await client.query("ROLLBACK");
+    throw e;
+  } finally {
+    await client.end();
+  }
 }
 
 main().catch((e) => {
