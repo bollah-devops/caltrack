@@ -223,6 +223,55 @@ function rowToEntry(r: any): LogEntry {
   };
 }
 
+// ─── History ──────────────────────────────────────────────────────────────────
+
+export interface DaySummary {
+  date: string;       // YYYY-MM-DD
+  kcal: number;
+  entryCount: number;
+  stepsDone: boolean;
+}
+
+/**
+ * Returns up to `limit` past days that have at least one log entry,
+ * newest first. Excludes today (TodayScreen covers that).
+ */
+export async function getHistoryDays(limit = 90): Promise<DaySummary[]> {
+  const db = await getDb();
+  const today = new Date().toISOString().split("T")[0];
+
+  const kcalRows = await db.getAllAsync<any>(
+    `SELECT log_date, sum(kcal) AS kcal, count(*) AS entry_count
+       FROM log_entries
+      WHERE is_deleted = 0 AND log_date < ?
+      GROUP BY log_date
+      ORDER BY log_date DESC
+      LIMIT ?`,
+    [today, limit]
+  );
+
+  if (kcalRows.length === 0) return [];
+
+  const dates = kcalRows.map((r: any) => r.log_date);
+  const placeholders = dates.map(() => "?").join(",");
+  const stepsRows = await db.getAllAsync<any>(
+    `SELECT log_date, steps_done
+       FROM day_records
+      WHERE log_date IN (${placeholders}) AND is_deleted = 0`,
+    dates
+  );
+
+  const stepsMap: Record<string, boolean> = {};
+  for (const r of stepsRows) stepsMap[r.log_date] = r.steps_done === 1;
+
+  return kcalRows.map((r: any) => ({
+    date:       r.log_date,
+    kcal:       r.kcal,
+    entryCount: r.entry_count,
+    stepsDone:  stepsMap[r.log_date] ?? false,
+  }));
+}
+
 // ─── Day records (steps) ──────────────────────────────────────────────────────
 
 export async function getStepsForDate(

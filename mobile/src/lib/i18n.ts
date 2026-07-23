@@ -43,9 +43,11 @@ export const translations: Record<string, Record<Lang, string>> = {
 
   // --- history ---
   within_budget:    { fr: "✓ dans l'objectif",    en: "✓ within budget" },
-  over_budget_by:   { fr: "objectif dépassé de",  en: "over budget by" },
-  tap_to_see:       { fr: "toucher pour voir les aliments",
-                      en: "tap to see foods" },
+  over_budget_by:   { fr: "dépassé de",           en: "over by" },
+  tap_to_see:       { fr: "Toucher pour voir les aliments",
+                      en: "Tap to see foods" },
+  no_history:       { fr: "Aucune journée enregistrée",
+                      en: "No days logged yet" },
 
   // --- weight ---
   progress:         { fr: "Progression",          en: "Progress" },
