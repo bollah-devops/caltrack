@@ -11,6 +11,7 @@ export type Lang = "fr" | "en";
 
 export const translations: Record<string, Record<Lang, string>> = {
   // --- tabs ---
+  tab_home:         { fr: "Accueil",             en: "Home" },
   tab_today:        { fr: "Aujourd'hui",        en: "Today" },
   tab_history:      { fr: "Historique",          en: "History" },
   tab_weight:       { fr: "Poids",               en: "Weight" },
@@ -51,14 +52,22 @@ export const translations: Record<string, Record<Lang, string>> = {
 
   // --- weight ---
   progress:         { fr: "Progression",          en: "Progress" },
-  start_kg:         { fr: "départ kg",            en: "start kg" },
-  now_kg:           { fr: "actuel kg",            en: "now kg" },
-  goal_kg:          { fr: "objectif kg",          en: "goal kg" },
+  start_kg:         { fr: "Départ",               en: "Start" },
+  now_kg:           { fr: "Actuel",               en: "Current" },
+  goal_kg:          { fr: "Objectif",             en: "Goal" },
   log_weight:       { fr: "Enregistrer le poids du jour",
                       en: "Log today's weight" },
+  log_weight_short: { fr: "Peser",               en: "Weigh in" },
   log:              { fr: "Enregistrer",          en: "Log" },
   weigh_tip:        { fr: "Astuce : pesez-vous une fois par semaine, à la même heure. Les variations de ±1 kg sont de l'eau, pas de la graisse.",
                       en: "Tip: weigh in once a week, same time of day. ±1 kg swings are water, not fat." },
+  no_weigh_ins:     { fr: "Aucune pesée enregistrée",
+                      en: "No weigh-ins logged yet" },
+  weigh_today:      { fr: "Votre poids aujourd'hui (kg)",
+                      en: "Your weight today (kg)" },
+  vs_prev:          { fr: "vs précédent",         en: "vs previous" },
+  steps_10k:        { fr: "10 000 pas",           en: "10k steps" },
+  streak_days:      { fr: "jours de suite",       en: "day streak" },
 
   // --- onboarding / calorie engine ---
   onboarding_sex:   { fr: "Vous êtes",            en: "You are" },

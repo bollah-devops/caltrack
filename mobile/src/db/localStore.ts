@@ -99,6 +99,15 @@ async function initSchema(db: SQLite.SQLiteDatabase): Promise<void> {
     );
     CREATE INDEX IF NOT EXISTS idx_log_date ON log_entries(log_date);
 
+    CREATE TABLE IF NOT EXISTS weight_logs (
+      id         TEXT PRIMARY KEY,
+      log_date   TEXT NOT NULL UNIQUE,
+      weight_kg  REAL NOT NULL,
+      updated_at TEXT NOT NULL,
+      is_deleted INTEGER NOT NULL DEFAULT 0
+    );
+    CREATE INDEX IF NOT EXISTS idx_weight_log_date ON weight_logs(log_date);
+
     CREATE TABLE IF NOT EXISTS day_records (
       id         TEXT PRIMARY KEY,
       log_date   TEXT NOT NULL UNIQUE,
@@ -297,5 +306,77 @@ export async function setStepsDone(
      VALUES (?, ?, ?, ?)
      ON CONFLICT(log_date) DO UPDATE SET steps_done = ?, updated_at = ?`,
     [uuid(), logDate, done ? 1 : 0, now, done ? 1 : 0, now]
+  );
+}
+
+// ─── Steps streak ─────────────────────────────────────────────────────────────
+
+/** Counts consecutive days (including today) where steps_done = 1. */
+export async function getStepsStreak(): Promise<number> {
+  const db = await getDb();
+  const rows = await db.getAllAsync<{ log_date: string }>(
+    `SELECT log_date FROM day_records
+      WHERE steps_done = 1 AND is_deleted = 0
+      ORDER BY log_date DESC LIMIT 60`
+  );
+  if (rows.length === 0) return 0;
+  let streak = 0;
+  const base = new Date();
+  for (let i = 0; i < rows.length; i++) {
+    const expected = new Date(base);
+    expected.setDate(base.getDate() - i);
+    if (rows[i].log_date === expected.toISOString().split("T")[0]) {
+      streak++;
+    } else {
+      break;
+    }
+  }
+  return streak;
+}
+
+// ─── Weight logs ──────────────────────────────────────────────────────────────
+
+export interface WeightLog {
+  id: string;
+  logDate: string;
+  weightKg: number;
+  updatedAt: string;
+}
+
+/** Upserts a weight log for today. */
+export async function addWeightLog(weightKg: number): Promise<void> {
+  const db = await getDb();
+  const today = new Date().toISOString().split("T")[0];
+  const now = new Date().toISOString();
+  await db.runAsync(
+    `INSERT INTO weight_logs (id, log_date, weight_kg, updated_at)
+     VALUES (?, ?, ?, ?)
+     ON CONFLICT(log_date) DO UPDATE SET weight_kg = ?, updated_at = ?`,
+    [uuid(), today, weightKg, now, weightKg, now]
+  );
+}
+
+/** Returns the most recent weight logs, newest first. */
+export async function getWeightLogs(limit = 50): Promise<WeightLog[]> {
+  const db = await getDb();
+  const rows = await db.getAllAsync<any>(
+    `SELECT * FROM weight_logs WHERE is_deleted = 0
+      ORDER BY log_date DESC LIMIT ?`,
+    [limit]
+  );
+  return rows.map((r) => ({
+    id:       r.id,
+    logDate:  r.log_date,
+    weightKg: r.weight_kg,
+    updatedAt: r.updated_at,
+  }));
+}
+
+/** Soft-delete a weight log entry. */
+export async function deleteWeightLog(id: string): Promise<void> {
+  const db = await getDb();
+  await db.runAsync(
+    `UPDATE weight_logs SET is_deleted = 1, updated_at = ? WHERE id = ?`,
+    [new Date().toISOString(), id]
   );
 }
