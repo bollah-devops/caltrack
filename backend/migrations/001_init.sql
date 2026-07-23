@@ -15,6 +15,7 @@
 -- ============================================================================
 
 CREATE EXTENSION IF NOT EXISTS pgcrypto;   -- provides gen_random_uuid()
+CREATE EXTENSION IF NOT EXISTS pg_trgm;    -- provides gin_trgm_ops for search
 
 -- ============================================================================
 --  USERS & IDENTITY
@@ -88,69 +89,71 @@ CREATE TABLE user_profiles (
 );
 
 -- ============================================================================
---  FOOD DATABASE  (maps directly from your CSV files)
+--  FOOD DATABASE  (v2 — measures model)
 -- ============================================================================
 --  CSV columns -> table columns:
---    name              -> name
---    aka               -> aka  (also used as search synonyms)
---    region_or_community / country / region -> country_code + region
+--    name_fr           -> name (primary), name_fr
+--    name_en           -> name_en
+--    search_aka        -> aka  (bilingual search synonyms)
+--    region            -> region
 --    category          -> category
---    unit              -> unit ('g' or 'pc')
---    kcal              -> kcal_per_unit  (per 100g when unit='g', per piece when 'pc')
---    local_portion     -> default_portion_label
---    portion_g_est     -> default_portion_grams
+--    basis             -> basis ('100g' | '100ml')
+--    kcal_per_100      -> kcal_per_100  (always per 100 g or per 100 ml)
+--    measures          -> food_measures rows (label:grams|label:grams ...)
 --    status            -> verification_status
 --    notes             -> notes
+--
+--  Calorie math (two steps, always):
+--    grams = quantity * measure.grams
+--    kcal  = round(grams / 100 * kcal_per_100)
 -- ============================================================================
 
 CREATE TABLE foods (
     id              UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-    name            TEXT NOT NULL,
-    aka             TEXT,                        -- alternate names / spellings
-    name_fr         TEXT,                        -- optional explicit translations
+    name            TEXT NOT NULL,               -- French primary name
+    aka             TEXT,                        -- bilingual search synonyms
+    name_fr         TEXT,
     name_en         TEXT,
 
     country_code    CHAR(2),                     -- null = pan-African/generic
     region          TEXT,                        -- e.g. 'Littoral/Sawa'
     category        TEXT,                        -- 'sauce/stew','staple','fruit'...
 
-    unit            TEXT NOT NULL DEFAULT 'g',   -- 'g' (per 100g) | 'pc' (per piece)
-    kcal_per_unit   NUMERIC(7,2) NOT NULL,       -- per 100g if 'g', per piece if 'pc'
+    basis           TEXT NOT NULL DEFAULT '100g' -- '100g' | '100ml'
+                        CHECK (basis IN ('100g','100ml')),
+    kcal_per_100    NUMERIC(7,2) NOT NULL,       -- kcal per 100 g (or per 100 ml)
 
     -- optional macro columns (fill over time; nullable so CSV import works now)
     protein_g       NUMERIC(6,2),
     carbs_g         NUMERIC(6,2),
     fat_g           NUMERIC(6,2),
 
-    -- local-portion convenience (your killer feature)
-    default_portion_label TEXT,                  -- '1 louche'
-    default_portion_grams NUMERIC(7,1),          -- 150
-
     verification_status TEXT NOT NULL DEFAULT 'estimate',  -- 'estimate' | 'verified'
     notes           TEXT,
-    is_active        BOOLEAN NOT NULL DEFAULT TRUE,
+    is_active       BOOLEAN NOT NULL DEFAULT TRUE,
 
     created_at      TIMESTAMPTZ NOT NULL DEFAULT now(),
     updated_at      TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 CREATE INDEX idx_foods_country ON foods(country_code);
 CREATE INDEX idx_foods_category ON foods(category);
--- fast case-insensitive prefix/substring search on name + aka:
+-- fast case-insensitive substring search across all name/synonym columns:
 CREATE INDEX idx_foods_name_trgm ON foods USING gin (
-    (coalesce(name,'') || ' ' || coalesce(aka,'')) gin_trgm_ops
+    (coalesce(name_fr,'') || ' ' || coalesce(name_en,'') || ' ' || coalesce(aka,'')) gin_trgm_ops
 );
--- (requires: CREATE EXTENSION IF NOT EXISTS pg_trgm;)
 
--- Multiple named portions per food (1 louche / 1 boule / 1 sachet ...),
--- so the app can offer tap-to-log portions instead of forcing grams.
-CREATE TABLE food_portions (
-    id              UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-    food_id         UUID NOT NULL REFERENCES foods(id) ON DELETE CASCADE,
-    label           TEXT NOT NULL,               -- '1 louche'
-    grams           NUMERIC(7,1) NOT NULL,       -- 150
-    is_default      BOOLEAN NOT NULL DEFAULT FALSE
+-- One row per available measure for a food.
+-- label='gram' is always present and means quantity × 1 g.
+-- Liquids carry both label='gram' (grams) and label='ml' (grams = ml × density).
+-- Local portions (louche, boule, bâton) are additional rows.
+CREATE TABLE food_measures (
+    id          UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    food_id     UUID NOT NULL REFERENCES foods(id) ON DELETE CASCADE,
+    label       TEXT NOT NULL,          -- 'gram','tablespoon','ladle','1 plat moyen'…
+    grams       NUMERIC(7,3) NOT NULL,  -- how many grams 1 unit of this measure weighs
+    sort_order  INT NOT NULL DEFAULT 0  -- display order; gram=0 first
 );
-CREATE INDEX idx_food_portions_food ON food_portions(food_id);
+CREATE INDEX idx_food_measures_food ON food_measures(food_id);
 
 -- Foods a user creates themselves (custom entries not in the master DB).
 -- Same shape as foods but owned by a user; keeps the master DB clean while
