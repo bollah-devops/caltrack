@@ -21,7 +21,7 @@ import { parse } from "csv-parse/sync";
 import pg from "pg";
 
 const csvPath =
-  process.argv[2] || "./migrations/seed_cameroon_v4.csv";
+  process.argv[2] || "./migrations/seed_cameroon_v5.csv";
 const DATABASE_URL =
   process.env.DATABASE_URL ||
   "postgres://calorie:devpassword@localhost:5432/calorie";
@@ -65,15 +65,16 @@ async function main() {
   console.log(`Connected. Importing ${rows.length} foods from ${csvPath}...`);
 
   try {
-    // Wipe existing seed data so re-runs are idempotent
+    // Wipe existing seed data so re-runs are idempotent.
+    // Covers both Cameroon ('CM') and international ('INT') seed rows.
     await client.query("BEGIN");
     await client.query(
-      `DELETE FROM food_measures WHERE food_id IN (SELECT id FROM foods WHERE country_code = 'CM')`
+      `DELETE FROM food_measures WHERE food_id IN (SELECT id FROM foods WHERE country_code IN ('CM','INT'))`
     );
     const { rowCount: deleted } = await client.query(
-      `DELETE FROM foods WHERE country_code = 'CM'`
+      `DELETE FROM foods WHERE country_code IN ('CM','INT')`
     );
-    console.log(`Cleared ${deleted} existing CM foods.`);
+    console.log(`Cleared ${deleted} existing seed foods.`);
 
     let importedFoods = 0;
     let importedMeasures = 0;
@@ -96,18 +97,22 @@ async function main() {
         continue;
       }
 
+      const region = (r.region || "").trim();
+      const countryCode = region === "international" ? "INT" : "CM";
+
       const res = await client.query(
         `INSERT INTO foods
            (name, name_fr, name_en, aka, country_code, region, category,
             basis, kcal_per_100, protein_g, carbs_g, fat_g, verification_status, notes)
-         VALUES ($1,$2,$3,$4,'CM',$5,$6,$7,$8,$9,$10,$11,$12,$13)
+         VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14)
          RETURNING id`,
         [
           nameFr,                                   // name = French primary
           nameFr,
           (r.name_en || "").trim() || null,
           (r.search_aka || "").trim() || null,
-          (r.region || "").trim() || null,
+          countryCode,
+          region || null,
           (r.category || "").trim() || null,
           basis,
           kcalPer100,
