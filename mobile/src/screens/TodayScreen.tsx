@@ -202,8 +202,9 @@ export default function TodayScreen({ lang = "fr" }: Props) {
       <View style={{ flex: 1 }}>
         <Text style={styles.entryName}>{item.foodName}</Text>
         <Text style={styles.entryMeta}>
-          {item.quantity} {measureDisplay(item.measureLabel, t)}
-          {" · "}{item.grams} g
+          {item.measureLabel === "gram"
+            ? `${item.grams} g`
+            : `${item.quantity} ${measureDisplay(item.measureLabel, t)} · ${item.grams} g`}
         </Text>
       </View>
       <Text style={styles.entryKcal}>{item.kcal}</Text>
@@ -459,7 +460,11 @@ function MealSection({
       {entries.length === 0 ? (
         <Text style={styles.muted}>{noEntriesLabel}</Text>
       ) : (
-        entries.map((e) => renderEntry({ item: e }))
+        entries.map((e) => (
+          <React.Fragment key={e.id}>
+            {renderEntry({ item: e })}
+          </React.Fragment>
+        ))
       )}
       <Pressable style={styles.addRow} onPress={onAdd}>
         <Text style={styles.addTxt}>+ {addLabel}</Text>

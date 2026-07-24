@@ -15,6 +15,7 @@ export const translations: Record<string, Record<Lang, string>> = {
   tab_today:        { fr: "Aujourd'hui",        en: "Today" },
   tab_history:      { fr: "Historique",          en: "History" },
   tab_weight:       { fr: "Poids",               en: "Weight" },
+  tab_settings:     { fr: "Profil",              en: "Profile" },
 
   // --- today screen ---
   left_to_eat:      { fr: "Restant à manger",    en: "Left to eat today" },
@@ -88,15 +89,22 @@ export const translations: Record<string, Record<Lang, string>> = {
   // --- activity level picker ---
   your_activity:        { fr: "Votre niveau d'activité", en: "Your activity level" },
   act_sedentary:        { fr: "Sédentaire",              en: "Sedentary" },
-  act_sedentary_desc:   { fr: "Bureau, peu de mouvement", en: "Desk job, little movement" },
+  act_sedentary_desc:   { fr: "Bureau, peu de marche — moins de 5 000 pas/jour",
+                          en: "Desk job, little walking — under 5,000 steps/day" },
   act_light:            { fr: "Légèrement actif",        en: "Lightly active" },
-  act_light_desc:       { fr: "Exercice léger 1-3×/semaine", en: "Light exercise 1-3×/week" },
+  act_light_desc:       { fr: "Bureau + marche quotidienne — environ 10 000 pas",
+                          en: "Desk job plus a daily walk — around 10,000 steps" },
   act_moderate:         { fr: "Modérément actif",        en: "Moderately active" },
-  act_moderate_desc:    { fr: "Exercice modéré 3-5×/semaine", en: "Moderate exercise 3-5×/week" },
+  act_moderate_desc:    { fr: "Souvent debout, ou exercice 3-5×/semaine",
+                          en: "On your feet often, or exercise 3-5×/week" },
   act_active:           { fr: "Très actif",              en: "Very active" },
-  act_active_desc:      { fr: "Exercice intense 6-7×/semaine", en: "Hard exercise 6-7×/week" },
+  act_active_desc:      { fr: "Travail physique, ou entraînement intense 6-7×/semaine",
+                          en: "Physical job, or hard training 6-7×/week" },
   act_very_active:      { fr: "Extrêmement actif",       en: "Extremely active" },
-  act_very_active_desc: { fr: "Travail physique + sport quotidien", en: "Physical job + daily exercise" },
+  act_very_active_desc: { fr: "Travail manuel lourd + entraînement quotidien",
+                          en: "Heavy manual labour plus daily training" },
+  act_hint:             { fr: "La plupart des gens qui travaillent assis et marchent chaque jour devraient choisir « Légèrement actif ».",
+                          en: "Most people who work sitting down and walk daily should choose Light." },
 
   // --- timeline (result card) ---
   target_date:      { fr: "Objectif atteint vers",  en: "Goal reached around" },
@@ -120,6 +128,7 @@ export const translations: Record<string, Record<Lang, string>> = {
   // --- app identity ---
   app_name:         { fr: "CalTrack",             en: "CalTrack" },
   start_tracking:   { fr: "Commencer",            en: "Start tracking" },
+  save_profile:     { fr: "Enregistrer",          en: "Save" },
   floor_note:       { fr: "Minimum sécuritaire appliqué. Plus lent, c'est plus sain.",
                       en: "Safe minimum applied. Slower is healthier." },
 

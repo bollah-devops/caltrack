@@ -31,7 +31,7 @@ import HomeScreen from "./src/screens/HomeScreen";
 import HistoryScreen from "./src/screens/HistoryScreen";
 import WeightScreen from "./src/screens/WeightScreen";
 
-type Tab = "home" | "history" | "weight";
+type Tab = "home" | "history" | "weight" | "settings";
 
 export default function App() {
   return (
@@ -128,6 +128,17 @@ function AppInner() {
         <View style={[StyleSheet.absoluteFill, { display: tab === "weight" ? "flex" : "none" }]}>
           <WeightScreen lang={lang} />
         </View>
+        <View style={[StyleSheet.absoluteFill, { display: tab === "settings" ? "flex" : "none" }]}>
+          <OnboardingScreen
+            lang={lang}
+            initialProfile={profile ?? undefined}
+            onComplete={async () => {
+              const p = await getProfile();
+              setProfile(p);
+              setTab("home");
+            }}
+          />
+        </View>
       </View>
 
       {/* Tab bar */}
@@ -149,6 +160,12 @@ function AppInner() {
           label={t("tab_weight")}
           active={tab === "weight"}
           onPress={() => setTab("weight")}
+        />
+        <TabItem
+          icon="person"
+          label={t("tab_settings")}
+          active={tab === "settings"}
+          onPress={() => setTab("settings")}
         />
       </View>
     </View>

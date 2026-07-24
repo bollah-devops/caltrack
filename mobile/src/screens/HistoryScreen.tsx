@@ -335,8 +335,9 @@ function EntryRow({
       <View style={{ flex: 1 }}>
         <Text style={styles.entryName}>{entry.foodName}</Text>
         <Text style={styles.entryMeta}>
-          {entry.quantity} {measureDisplay(entry.measureLabel, t)}
-          {" · "}{entry.grams} g
+          {entry.measureLabel === "gram"
+            ? `${entry.grams} g`
+            : `${entry.quantity} ${measureDisplay(entry.measureLabel, t)} · ${entry.grams} g`}
         </Text>
       </View>
       <Text style={styles.entryKcal}>{entry.kcal}</Text>

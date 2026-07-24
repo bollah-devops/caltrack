@@ -10,7 +10,7 @@ import React, { useState } from "react";
 import { View, Text, TextInput, Pressable, ScrollView, StyleSheet } from "react-native";
 import { calculateCalories, Sex, ActivityLevel, Goal, Pace } from "../lib/calorieEngine";
 import { makeT, Lang } from "../lib/i18n";
-import { saveProfile } from "../db/localStore";
+import { saveProfile, Profile } from "../db/localStore";
 import { C } from "../lib/theme";
 
 const ACTIVITY_LEVELS: ActivityLevel[] = [
@@ -27,6 +27,7 @@ function targetDateStr(weeks: number, lang: Lang): string {
 
 interface Props {
   lang?: Lang;
+  initialProfile?: Profile;
   onComplete: (result: {
     sex: Sex; age: number; heightCm: number; weightKg: number;
     activity: ActivityLevel; goal: Goal; pace: Pace;
@@ -34,16 +35,17 @@ interface Props {
   }) => void;
 }
 
-export default function OnboardingScreen({ lang = "fr", onComplete }: Props) {
+export default function OnboardingScreen({ lang = "fr", initialProfile, onComplete }: Props) {
   const t = makeT(lang);
-  const [sex, setSex] = useState<Sex | null>(null);
-  const [age, setAge] = useState("");
-  const [height, setHeight] = useState("");
-  const [weight, setWeight] = useState("");
-  const [goalWeight, setGoalWeight] = useState("");
-  const [activity, setActivity] = useState<ActivityLevel>("light");
-  const [goal, setGoal] = useState<Goal | null>(null);
-  const [pace, setPace] = useState<Pace>("moderate");
+  const isEditing = initialProfile != null;
+  const [sex, setSex] = useState<Sex | null>((initialProfile?.sex as Sex) ?? null);
+  const [age, setAge] = useState(initialProfile?.age?.toString() ?? "");
+  const [height, setHeight] = useState(initialProfile?.heightCm?.toString() ?? "");
+  const [weight, setWeight] = useState(initialProfile?.weightKg?.toString() ?? "");
+  const [goalWeight, setGoalWeight] = useState(initialProfile?.goalWeightKg?.toString() ?? "");
+  const [activity, setActivity] = useState<ActivityLevel>((initialProfile?.activity as ActivityLevel) ?? "light");
+  const [goal, setGoal] = useState<Goal | null>((initialProfile?.goal as Goal) ?? null);
+  const [pace, setPace] = useState<Pace>((initialProfile?.pace as Pace) ?? "moderate");
 
   const canCompute =
     sex && goal && Number(age) > 0 && Number(height) > 0 && Number(weight) > 0;
@@ -120,6 +122,7 @@ export default function OnboardingScreen({ lang = "fr", onComplete }: Props) {
             </Text>
           </Pressable>
         ))}
+        <Text style={styles.activityHint}>{t("act_hint")}</Text>
       </View>
 
       {/* GOAL */}
@@ -191,7 +194,7 @@ export default function OnboardingScreen({ lang = "fr", onComplete }: Props) {
                 activity: payload.activity,
                 goal: payload.goal,
                 pace: payload.pace,
-                startWeightKg: payload.weightKg,
+                startWeightKg: initialProfile?.startWeightKg ?? payload.weightKg,
                 goalWeightKg: payload.goalWeightKg ?? null,
                 dailyTarget: payload.dailyTarget,
                 maintenance: payload.maintenance,
@@ -200,7 +203,7 @@ export default function OnboardingScreen({ lang = "fr", onComplete }: Props) {
               onComplete(payload);
             }}
           >
-            <Text style={styles.ctaText}>{t("start_tracking")}</Text>
+            <Text style={styles.ctaText}>{isEditing ? t("save_profile") : t("start_tracking")}</Text>
           </Pressable>
         </View>
       )}
@@ -242,6 +245,7 @@ const styles = StyleSheet.create({
   activityLabelOn: { color: C.accent },
   activityDesc: { fontSize: 12, color: C.muted, marginTop: 2 },
   activityDescOn: { color: C.accent },
+  activityHint: { fontSize: 12, color: C.muted, marginTop: 8, lineHeight: 18 },
 
   input: {
     borderWidth: 1, borderColor: C.line, borderRadius: 12, padding: 14,
