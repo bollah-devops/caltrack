@@ -24,7 +24,7 @@ import {
   View,
 } from "react-native";
 import { Svg, Path } from "react-native-svg";
-import { computeKcal, computeMacros, FoodItem, FoodMeasure, searchFoods } from "../api/foods";
+import { computeKcal, computeMacros, FoodItem, FoodMeasure, resolveFoodName, searchFoods } from "../api/foods";
 import {
   addLogEntry,
   deleteLogEntry,
@@ -170,6 +170,7 @@ export default function HomeScreen({ lang = "fr", onGoToWeight }: Props) {
     const displayName = lang === "en" ? (picked.nameEn || picked.nameFr) : picked.nameFr;
     await addLogEntry({
       logDate: today, meal: activeMeal,
+      foodId: picked.id,
       foodName: displayName,
       measureLabel: measure.label,
       quantity: qty,
@@ -198,7 +199,7 @@ export default function HomeScreen({ lang = "fr", onGoToWeight }: Props) {
   const renderEntry = useCallback(({ item }: { item: LogEntry }) => (
     <View style={styles.entryRow}>
       <View style={{ flex: 1 }}>
-        <Text style={styles.entryName}>{item.foodName}</Text>
+        <Text style={styles.entryName}>{resolveFoodName(item.foodId, item.foodName, lang)}</Text>
         <Text style={styles.entryMeta}>
           {item.measureLabel === "gram"
             ? `${item.grams} g`

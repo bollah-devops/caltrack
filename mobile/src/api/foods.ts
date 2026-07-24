@@ -152,6 +152,24 @@ function searchBundled(q: string, lang: Lang, limit: number): FoodItem[] {
     .map(({ f }) => toBundledItem(f, lang));
 }
 
+// ─── Name resolution (for display of stored log entries) ──────────────────────
+
+/**
+ * Given a food_id stored on a log entry, return the correct display name in
+ * the user's current language. Falls back to the stored name snapshot when
+ * the food_id is absent (custom entry) or not found in the bundled DB.
+ */
+export function resolveFoodName(
+  foodId: string | null | undefined,
+  fallback: string,
+  lang: Lang
+): string {
+  if (!foodId) return fallback;
+  const raw = (rawBundled as any[]).find((f) => f.id === foodId);
+  if (!raw) return fallback;
+  return lang === "en" ? (raw.nameEn || raw.nameFr) : raw.nameFr;
+}
+
 function toBundledItem(f: any, lang: Lang): FoodItem {
   return {
     id:         f.id,

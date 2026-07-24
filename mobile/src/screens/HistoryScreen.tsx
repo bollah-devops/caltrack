@@ -30,6 +30,7 @@ import {
   Meal,
   Profile,
 } from "../db/localStore";
+import { resolveFoodName } from "../api/foods";
 import { makeT, Lang } from "../lib/i18n";
 import { C } from "../lib/theme";
 
@@ -300,6 +301,7 @@ function DayRow({ day, target, lang, t, isExpanded, entries, onToggle, onDelete 
                     <EntryRow
                       key={entry.id}
                       entry={entry}
+                      lang={lang}
                       t={t}
                       onDelete={() => onDelete(entry.id)}
                     />
@@ -324,16 +326,17 @@ function DayRow({ day, target, lang, t, isExpanded, entries, onToggle, onDelete 
 // ─── EntryRow ─────────────────────────────────────────────────────────────────
 
 function EntryRow({
-  entry, t, onDelete,
+  entry, lang, t, onDelete,
 }: {
   entry: LogEntry;
+  lang: Lang;
   t: ReturnType<typeof makeT>;
   onDelete: () => void;
 }) {
   return (
     <View style={styles.entryRow}>
       <View style={{ flex: 1 }}>
-        <Text style={styles.entryName}>{entry.foodName}</Text>
+        <Text style={styles.entryName}>{resolveFoodName(entry.foodId, entry.foodName, lang)}</Text>
         <Text style={styles.entryMeta}>
           {entry.measureLabel === "gram"
             ? `${entry.grams} g`

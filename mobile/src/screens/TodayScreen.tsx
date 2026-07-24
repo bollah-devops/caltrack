@@ -23,7 +23,7 @@ import {
   TextInput,
   View,
 } from "react-native";
-import { computeKcal, computeMacros, searchFoods, FoodItem, FoodMeasure } from "../api/foods";
+import { computeKcal, computeMacros, resolveFoodName, searchFoods, FoodItem, FoodMeasure } from "../api/foods";
 import {
   addLogEntry,
   deleteLogEntry,
@@ -171,6 +171,7 @@ export default function TodayScreen({ lang = "fr" }: Props) {
     await addLogEntry({
       logDate: today,
       meal: activeMeal,
+      foodId: picked.id,
       foodName: displayName,
       measureLabel: measure.label,
       quantity: qty,
@@ -200,7 +201,7 @@ export default function TodayScreen({ lang = "fr" }: Props) {
   const renderEntry = useCallback(({ item }: { item: LogEntry }) => (
     <View style={styles.entryRow}>
       <View style={{ flex: 1 }}>
-        <Text style={styles.entryName}>{item.foodName}</Text>
+        <Text style={styles.entryName}>{resolveFoodName(item.foodId, item.foodName, lang)}</Text>
         <Text style={styles.entryMeta}>
           {item.measureLabel === "gram"
             ? `${item.grams} g`

@@ -34,7 +34,8 @@ export interface LogEntry {
   id: string;
   logDate: string;       // YYYY-MM-DD
   meal: Meal;
-  foodName: string;      // snapshot at log time
+  foodId: string | null; // bundled/server food id for name resolution
+  foodName: string;      // snapshot at log time (fallback)
   measureLabel: string;  // e.g. "tablespoon" or "1 louche"
   quantity: number;
   grams: number;         // computed: quantity × measure.grams
@@ -49,6 +50,7 @@ export interface LogEntry {
 export interface NewLogEntry {
   logDate: string;
   meal: Meal;
+  foodId?: string | null;
   foodName: string;
   measureLabel: string;
   quantity: number;
@@ -106,11 +108,12 @@ async function initSchema(db: SQLite.SQLiteDatabase): Promise<void> {
     CREATE INDEX IF NOT EXISTS idx_log_date ON log_entries(log_date);
   `);
 
-  // Migrate: add macro columns if they don't exist yet (SQLite 3.37+ supports IF NOT EXISTS)
+  // Migrate: add columns if they don't exist yet
   for (const colDef of [
     "protein_g REAL DEFAULT 0",
     "carbs_g REAL DEFAULT 0",
     "fat_g REAL DEFAULT 0",
+    "food_id TEXT",
   ]) {
     try {
       await db.execAsync(`ALTER TABLE log_entries ADD COLUMN ${colDef}`);
@@ -198,16 +201,16 @@ export async function addLogEntry(entry: NewLogEntry): Promise<LogEntry> {
   const now = new Date().toISOString();
   await db.runAsync(
     `INSERT INTO log_entries
-       (id, log_date, meal, food_name, measure_label, quantity, grams, kcal,
+       (id, log_date, meal, food_id, food_name, measure_label, quantity, grams, kcal,
         protein_g, carbs_g, fat_g, updated_at)
-     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
     [
-      id, entry.logDate, entry.meal, entry.foodName,
+      id, entry.logDate, entry.meal, entry.foodId ?? null, entry.foodName,
       entry.measureLabel, entry.quantity, entry.grams, entry.kcal,
       entry.proteinG, entry.carbsG, entry.fatG, now,
     ]
   );
-  return { ...entry, id, updatedAt: now, isDeleted: false };
+  return { ...entry, id, foodId: entry.foodId ?? null, updatedAt: now, isDeleted: false };
 }
 
 export async function getEntriesForDate(logDate: string): Promise<LogEntry[]> {
@@ -246,6 +249,7 @@ function rowToEntry(r: any): LogEntry {
     id:           r.id,
     logDate:      r.log_date,
     meal:         r.meal as Meal,
+    foodId:       r.food_id ?? null,
     foodName:     r.food_name,
     measureLabel: r.measure_label,
     quantity:     r.quantity,
