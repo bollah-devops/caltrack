@@ -1,11 +1,11 @@
 /**
- * gen-bundled.mjs — regenerate mobile/src/api/bundledFoods.json from v3 CSV.
+ * gen-bundled.mjs — regenerate mobile/src/api/bundledFoods.json from the seed CSV.
  *
  * Usage:
  *   node gen-bundled.mjs [path/to/csv] [path/to/output.json]
  *
  * Defaults:
- *   CSV:  ./migrations/seed_cameroon_v3.csv
+ *   CSV:  ./migrations/seed_cameroon_v4.csv
  *   JSON: ../mobile/src/api/bundledFoods.json
  */
 
@@ -13,7 +13,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { parse } from "csv-parse/sync";
 
-const csvPath = process.argv[2] || "./migrations/seed_cameroon_v3.csv";
+const csvPath = process.argv[2] || "./migrations/seed_cameroon_v4.csv";
 const outPath =
   process.argv[3] || "../mobile/src/api/bundledFoods.json";
 
@@ -47,9 +47,9 @@ const foods = rows
       aka: r.search_aka?.trim() || null,
       basis: r.basis?.trim() || "100g",
       kcalPer100: parseFloat(r.kcal_per_100),
-      proteinG: parseFloat(r.protein_g) || 0,
-      carbsG: parseFloat(r.carbs_g) || 0,
-      fatG: parseFloat(r.fat_g) || 0,
+      proteinG: Number.isNaN(parseFloat(r.protein_g)) ? 0 : parseFloat(r.protein_g),
+      carbsG: Number.isNaN(parseFloat(r.carbs_g)) ? 0 : parseFloat(r.carbs_g),
+      fatG: Number.isNaN(parseFloat(r.fat_g)) ? 0 : parseFloat(r.fat_g),
       category: r.category?.trim() || null,
       verified:
         r.status?.toLowerCase().startsWith("verified") &&

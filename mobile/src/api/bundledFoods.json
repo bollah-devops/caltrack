@@ -6,9 +6,9 @@
     "aka": "ndole ndolé ndolé",
     "basis": "100g",
     "kcalPer100": 160,
-    "proteinG": 12,
-    "carbsG": 5,
-    "fatG": 10,
+    "proteinG": 8,
+    "carbsG": 6,
+    "fatG": 11,
     "category": "sauce/stew",
     "verified": false,
     "measures": [
@@ -41,9 +41,9 @@
     "aka": "eru okazi afang waterleaf",
     "basis": "100g",
     "kcalPer100": 140,
-    "proteinG": 10,
+    "proteinG": 5,
     "carbsG": 5,
-    "fatG": 9,
+    "fatG": 11,
     "category": "sauce/stew",
     "verified": false,
     "measures": [
@@ -76,9 +76,9 @@
     "aka": "okok mfumbwa koko salé savoury",
     "basis": "100g",
     "kcalPer100": 150,
-    "proteinG": 9,
-    "carbsG": 6,
-    "fatG": 10,
+    "proteinG": 5.5,
+    "carbsG": 5.5,
+    "fatG": 11.5,
     "category": "sauce/stew",
     "verified": false,
     "measures": [
@@ -111,9 +111,9 @@
     "aka": "okok mfumbwa koko sucré sweet",
     "basis": "100g",
     "kcalPer100": 175,
-    "proteinG": 7,
-    "carbsG": 14,
-    "fatG": 10,
+    "proteinG": 6,
+    "carbsG": 9,
+    "fatG": 12,
     "category": "sauce/stew",
     "verified": false,
     "measures": [
@@ -146,9 +146,9 @@
     "aka": "kpem kpwem kpem",
     "basis": "100g",
     "kcalPer100": 120,
-    "proteinG": 5,
-    "carbsG": 7,
-    "fatG": 8,
+    "proteinG": 4.5,
+    "carbsG": 6,
+    "fatG": 8.5,
     "category": "sauce/stew",
     "verified": false,
     "measures": [
@@ -181,9 +181,9 @@
     "aka": "sanga",
     "basis": "100g",
     "kcalPer100": 120,
-    "proteinG": 4,
+    "proteinG": 3.5,
     "carbsG": 18,
-    "fatG": 4,
+    "fatG": 3.5,
     "category": "dish",
     "verified": false,
     "measures": [
@@ -211,9 +211,9 @@
     "aka": "njama njama huckleberry huckleberry",
     "basis": "100g",
     "kcalPer100": 90,
-    "proteinG": 5,
-    "carbsG": 8,
-    "fatG": 4,
+    "proteinG": 3.5,
+    "carbsG": 5,
+    "fatG": 6,
     "category": "vegetable",
     "verified": false,
     "measures": [
@@ -246,9 +246,9 @@
     "aka": "folong zom amaranth amaranth/zom",
     "basis": "100g",
     "kcalPer100": 70,
-    "proteinG": 4,
-    "carbsG": 7,
-    "fatG": 3,
+    "proteinG": 3,
+    "carbsG": 4,
+    "fatG": 4.5,
     "category": "vegetable",
     "verified": false,
     "measures": [
@@ -281,8 +281,8 @@
     "aka": "gombo okra sauce okra sauce",
     "basis": "100g",
     "kcalPer100": 90,
-    "proteinG": 4,
-    "carbsG": 5,
+    "proteinG": 3,
+    "carbsG": 6,
     "fatG": 6,
     "category": "sauce",
     "verified": false,
@@ -316,9 +316,9 @@
     "aka": "gombo sec dried okra dried okra",
     "basis": "100g",
     "kcalPer100": 110,
-    "proteinG": 5,
+    "proteinG": 3.5,
     "carbsG": 7,
-    "fatG": 7,
+    "fatG": 7.5,
     "category": "sauce",
     "verified": false,
     "measures": [
@@ -352,8 +352,8 @@
     "basis": "100g",
     "kcalPer100": 100,
     "proteinG": 3,
-    "carbsG": 6,
-    "fatG": 7,
+    "carbsG": 6.5,
+    "fatG": 6.5,
     "category": "sauce",
     "verified": false,
     "measures": [
@@ -388,7 +388,7 @@
     "kcalPer100": 190,
     "proteinG": 8,
     "carbsG": 8,
-    "fatG": 14,
+    "fatG": 13.5,
     "category": "sauce",
     "verified": false,
     "measures": [
@@ -421,9 +421,9 @@
     "aka": "tomate tomato stew tomato stew",
     "basis": "100g",
     "kcalPer100": 90,
-    "proteinG": 3,
-    "carbsG": 8,
-    "fatG": 5,
+    "proteinG": 2.5,
+    "carbsG": 6,
+    "fatG": 6,
     "category": "sauce",
     "verified": false,
     "measures": [
@@ -456,9 +456,9 @@
     "aka": "achu jaune yellow achu soup",
     "basis": "100g",
     "kcalPer100": 150,
-    "proteinG": 4,
-    "carbsG": 5,
-    "fatG": 13,
+    "proteinG": 3,
+    "carbsG": 7,
+    "fatG": 11.5,
     "category": "sauce",
     "verified": false,
     "measures": [
@@ -492,8 +492,8 @@
     "basis": "100g",
     "kcalPer100": 70,
     "proteinG": 2,
-    "carbsG": 7,
-    "fatG": 4,
+    "carbsG": 8,
+    "fatG": 3,
     "category": "sauce",
     "verified": false,
     "measures": [
@@ -531,8 +531,8 @@
     "aka": "mbongo tchobi black black stew",
     "basis": "100g",
     "kcalPer100": 130,
-    "proteinG": 10,
-    "carbsG": 4,
+    "proteinG": 11,
+    "carbsG": 3,
     "fatG": 8,
     "category": "sauce/stew",
     "verified": false,
@@ -601,7 +601,7 @@
     "aka": "egusi pistache pistachio melon pistache sauce",
     "basis": "100g",
     "kcalPer100": 200,
-    "proteinG": 10,
+    "proteinG": 9,
     "carbsG": 6,
     "fatG": 15,
     "category": "sauce/stew",
@@ -637,8 +637,8 @@
     "basis": "100g",
     "kcalPer100": 190,
     "proteinG": 10,
-    "carbsG": 6,
-    "fatG": 14,
+    "carbsG": 7,
+    "fatG": 13,
     "category": "steamed dish",
     "verified": false,
     "measures": [
@@ -661,9 +661,9 @@
     "aka": "koki bean cake haricot koki beans/gateau haricot",
     "basis": "100g",
     "kcalPer100": 185,
-    "proteinG": 10,
-    "carbsG": 14,
-    "fatG": 10,
+    "proteinG": 9,
+    "carbsG": 15,
+    "fatG": 9,
     "category": "steamed dish",
     "verified": false,
     "measures": [
@@ -686,7 +686,7 @@
     "aka": "ekwang",
     "basis": "100g",
     "kcalPer100": 170,
-    "proteinG": 4,
+    "proteinG": 3.5,
     "carbsG": 20,
     "fatG": 8,
     "category": "dish",
@@ -718,7 +718,7 @@
     "kcalPer100": 180,
     "proteinG": 4,
     "carbsG": 21,
-    "fatG": 9,
+    "fatG": 8.5,
     "category": "dish",
     "verified": false,
     "measures": [
@@ -746,9 +746,9 @@
     "aka": "kondre plantain",
     "basis": "100g",
     "kcalPer100": 130,
-    "proteinG": 8,
-    "carbsG": 14,
-    "fatG": 5,
+    "proteinG": 5,
+    "carbsG": 17,
+    "fatG": 4,
     "category": "plantain stew",
     "verified": false,
     "measures": [
@@ -776,8 +776,8 @@
     "aka": "ndomba mintsan fish/meat in leaves",
     "basis": "100g",
     "kcalPer100": 110,
-    "proteinG": 12,
-    "carbsG": 4,
+    "proteinG": 14,
+    "carbsG": 2,
     "fatG": 5,
     "category": "dish",
     "verified": false,
@@ -802,8 +802,8 @@
     "basis": "100g",
     "kcalPer100": 120,
     "proteinG": 4,
-    "carbsG": 6,
-    "fatG": 9,
+    "carbsG": 7,
+    "fatG": 8,
     "category": "sauce",
     "verified": false,
     "measures": [
@@ -836,9 +836,9 @@
     "aka": "pepper soup peppe pèppè soup",
     "basis": "100g",
     "kcalPer100": 50,
-    "proteinG": 6,
-    "carbsG": 2,
-    "fatG": 2,
+    "proteinG": 7,
+    "carbsG": 1.5,
+    "fatG": 1.5,
     "category": "soup",
     "verified": false,
     "measures": [
@@ -876,9 +876,9 @@
     "aka": "corn chaff maïs haricot",
     "basis": "100g",
     "kcalPer100": 140,
-    "proteinG": 4,
-    "carbsG": 20,
-    "fatG": 5,
+    "proteinG": 6,
+    "carbsG": 21,
+    "fatG": 3.5,
     "category": "dish",
     "verified": false,
     "measures": [
@@ -906,9 +906,9 @@
     "aka": "achu taro taro pilé",
     "basis": "100g",
     "kcalPer100": 110,
-    "proteinG": 2,
-    "carbsG": 21,
-    "fatG": 2,
+    "proteinG": 1.5,
+    "carbsG": 25,
+    "fatG": 0.3,
     "category": "swallow",
     "verified": false,
     "measures": [
@@ -941,9 +941,9 @@
     "aka": "water fufu manioc cassava fufu de manioc",
     "basis": "100g",
     "kcalPer100": 120,
-    "proteinG": 1,
+    "proteinG": 0.8,
     "carbsG": 29,
-    "fatG": 0,
+    "fatG": 0.2,
     "category": "swallow",
     "verified": false,
     "measures": [
@@ -978,7 +978,7 @@
     "kcalPer100": 110,
     "proteinG": 2,
     "carbsG": 24,
-    "fatG": 1,
+    "fatG": 0.6,
     "category": "swallow",
     "verified": false,
     "measures": [
@@ -1011,8 +1011,8 @@
     "aka": "garri gari sec dry",
     "basis": "100g",
     "kcalPer100": 357,
-    "proteinG": 1,
-    "carbsG": 87,
+    "proteinG": 1.5,
+    "carbsG": 84,
     "fatG": 0.5,
     "category": "staple",
     "verified": false,
@@ -1048,7 +1048,7 @@
     "kcalPer100": 100,
     "proteinG": 0.5,
     "carbsG": 24,
-    "fatG": 0,
+    "fatG": 0.2,
     "category": "staple",
     "verified": false,
     "measures": [
@@ -1081,9 +1081,9 @@
     "aka": "boule mil millet sorghum la boule",
     "basis": "100g",
     "kcalPer100": 105,
-    "proteinG": 3,
-    "carbsG": 21,
-    "fatG": 1,
+    "proteinG": 2.8,
+    "carbsG": 22,
+    "fatG": 0.8,
     "category": "swallow",
     "verified": false,
     "measures": [
@@ -1146,9 +1146,9 @@
     "aka": "riz sauté fried rice",
     "basis": "100g",
     "kcalPer100": 175,
-    "proteinG": 3,
-    "carbsG": 25,
-    "fatG": 7,
+    "proteinG": 4,
+    "carbsG": 26,
+    "fatG": 6,
     "category": "staple",
     "verified": false,
     "measures": [
@@ -1181,9 +1181,9 @@
     "aka": "plantain bouilli boiled",
     "basis": "100g",
     "kcalPer100": 116,
-    "proteinG": 1,
-    "carbsG": 27,
-    "fatG": 0.5,
+    "proteinG": 1.3,
+    "carbsG": 28,
+    "fatG": 0.3,
     "category": "staple",
     "verified": false,
     "measures": [
@@ -1216,9 +1216,9 @@
     "aka": "plantain frit fried dodo",
     "basis": "100g",
     "kcalPer100": 200,
-    "proteinG": 1,
-    "carbsG": 28,
-    "fatG": 9,
+    "proteinG": 1.5,
+    "carbsG": 30,
+    "fatG": 8,
     "category": "side",
     "verified": false,
     "measures": [
@@ -1246,9 +1246,9 @@
     "aka": "plantain braisé roasted boli boli",
     "basis": "100g",
     "kcalPer100": 125,
-    "proteinG": 1,
-    "carbsG": 28,
-    "fatG": 1,
+    "proteinG": 1.3,
+    "carbsG": 30,
+    "fatG": 0.4,
     "category": "street food",
     "verified": false,
     "measures": [
@@ -1276,9 +1276,9 @@
     "aka": "macabo cocoyam bouilli cocoyam",
     "basis": "100g",
     "kcalPer100": 112,
-    "proteinG": 2,
-    "carbsG": 25,
-    "fatG": 0.5,
+    "proteinG": 1.5,
+    "carbsG": 26,
+    "fatG": 0.2,
     "category": "staple",
     "verified": false,
     "measures": [
@@ -1311,8 +1311,8 @@
     "aka": "igname yam bouillie yam",
     "basis": "100g",
     "kcalPer100": 116,
-    "proteinG": 2,
-    "carbsG": 26,
+    "proteinG": 1.5,
+    "carbsG": 27,
     "fatG": 0.2,
     "category": "staple",
     "verified": false,
@@ -1346,9 +1346,9 @@
     "aka": "patate douce sweet potato",
     "basis": "100g",
     "kcalPer100": 90,
-    "proteinG": 2,
+    "proteinG": 1.6,
     "carbsG": 20,
-    "fatG": 0.3,
+    "fatG": 0.1,
     "category": "staple",
     "verified": false,
     "measures": [
@@ -1381,7 +1381,7 @@
     "aka": "manioc cassava bouilli cassava",
     "basis": "100g",
     "kcalPer100": 160,
-    "proteinG": 1,
+    "proteinG": 1.4,
     "carbsG": 38,
     "fatG": 0.3,
     "category": "staple",
@@ -1417,8 +1417,8 @@
     "basis": "100g",
     "kcalPer100": 150,
     "proteinG": 1,
-    "carbsG": 35,
-    "fatG": 0.5,
+    "carbsG": 36,
+    "fatG": 0.3,
     "category": "staple",
     "verified": false,
     "measures": [
@@ -1452,8 +1452,8 @@
     "basis": "100g",
     "kcalPer100": 150,
     "proteinG": 1,
-    "carbsG": 35,
-    "fatG": 0.5,
+    "carbsG": 36,
+    "fatG": 0.3,
     "category": "staple",
     "verified": false,
     "measures": [
@@ -1481,9 +1481,9 @@
     "aka": "mintumba cassava pudding",
     "basis": "100g",
     "kcalPer100": 180,
-    "proteinG": 2,
+    "proteinG": 1.5,
     "carbsG": 30,
-    "fatG": 6,
+    "fatG": 5.5,
     "category": "steamed dish",
     "verified": false,
     "measures": [
@@ -1513,7 +1513,7 @@
     "kcalPer100": 150,
     "proteinG": 0.5,
     "carbsG": 36,
-    "fatG": 0.5,
+    "fatG": 0.3,
     "category": "staple",
     "verified": false,
     "measures": [
@@ -1546,9 +1546,9 @@
     "aka": "frites fries chips fries",
     "basis": "100g",
     "kcalPer100": 310,
-    "proteinG": 4,
-    "carbsG": 38,
-    "fatG": 16,
+    "proteinG": 3.4,
+    "carbsG": 41,
+    "fatG": 15,
     "category": "side",
     "verified": false,
     "measures": [
@@ -1576,9 +1576,9 @@
     "aka": "spaghetti sauté fried",
     "basis": "100g",
     "kcalPer100": 150,
-    "proteinG": 4,
-    "carbsG": 23,
-    "fatG": 5,
+    "proteinG": 4.5,
+    "carbsG": 22,
+    "fatG": 4.5,
     "category": "dish",
     "verified": false,
     "measures": [
@@ -1608,7 +1608,7 @@
     "kcalPer100": 171.4,
     "proteinG": 7,
     "carbsG": 18,
-    "fatG": 8,
+    "fatG": 8.5,
     "category": "dish",
     "verified": false,
     "measures": [
@@ -1638,7 +1638,7 @@
     "kcalPer100": 150,
     "proteinG": 22,
     "carbsG": 0,
-    "fatG": 7,
+    "fatG": 6.5,
     "category": "protein",
     "verified": false,
     "measures": [
@@ -1666,9 +1666,9 @@
     "aka": "maquereau mackerel braisé",
     "basis": "100g",
     "kcalPer100": 205,
-    "proteinG": 18,
+    "proteinG": 21,
     "carbsG": 0,
-    "fatG": 15,
+    "fatG": 13.5,
     "category": "protein",
     "verified": false,
     "measures": [
@@ -1696,9 +1696,9 @@
     "aka": "poulet braisé grilled chicken",
     "basis": "100g",
     "kcalPer100": 190,
-    "proteinG": 25,
+    "proteinG": 26,
     "carbsG": 0,
-    "fatG": 10,
+    "fatG": 9.5,
     "category": "protein",
     "verified": false,
     "measures": [
@@ -1726,9 +1726,9 @@
     "aka": "poulet dg directeur general",
     "basis": "100g",
     "kcalPer100": 200,
-    "proteinG": 15,
-    "carbsG": 8,
-    "fatG": 12,
+    "proteinG": 11,
+    "carbsG": 17,
+    "fatG": 9,
     "category": "dish",
     "verified": false,
     "measures": [
@@ -1756,9 +1756,9 @@
     "aka": "kati kati",
     "basis": "100g",
     "kcalPer100": 190,
-    "proteinG": 25,
-    "carbsG": 0,
-    "fatG": 10,
+    "proteinG": 17,
+    "carbsG": 1,
+    "fatG": 13,
     "category": "protein",
     "verified": false,
     "measures": [
@@ -1786,9 +1786,9 @@
     "aka": "porc braisé grilled pork grilled pork",
     "basis": "100g",
     "kcalPer100": 290,
-    "proteinG": 20,
+    "proteinG": 22,
     "carbsG": 0,
-    "fatG": 23,
+    "fatG": 22,
     "category": "protein",
     "verified": false,
     "measures": [
@@ -1816,9 +1816,9 @@
     "aka": "soya brochette skewer suya brochette de boeuf",
     "basis": "100g",
     "kcalPer100": 288.9,
-    "proteinG": 30,
-    "carbsG": 5,
-    "fatG": 16,
+    "proteinG": 26,
+    "carbsG": 3,
+    "fatG": 18.5,
     "category": "protein",
     "verified": false,
     "measures": [
@@ -1841,9 +1841,9 @@
     "aka": "brochette porc pork skewer",
     "basis": "100g",
     "kcalPer100": 320,
-    "proteinG": 22,
-    "carbsG": 2,
-    "fatG": 25,
+    "proteinG": 25.5,
+    "carbsG": 2.2,
+    "fatG": 23.3,
     "category": "protein",
     "verified": false,
     "measures": [
@@ -1867,7 +1867,7 @@
     "basis": "100g",
     "kcalPer100": 380,
     "proteinG": 45,
-    "carbsG": 10,
+    "carbsG": 12,
     "fatG": 17,
     "category": "snack",
     "verified": false,
@@ -1896,9 +1896,9 @@
     "aka": "viande meat sauce boeuf boeuf en sauce",
     "basis": "100g",
     "kcalPer100": 180,
-    "proteinG": 18,
-    "carbsG": 5,
-    "fatG": 10,
+    "proteinG": 16,
+    "carbsG": 2,
+    "fatG": 11.5,
     "category": "protein",
     "verified": false,
     "measures": [
@@ -1926,9 +1926,9 @@
     "aka": "escargots snails nyama nyama ngub/snails",
     "basis": "100g",
     "kcalPer100": 90,
-    "proteinG": 15,
-    "carbsG": 3,
-    "fatG": 2,
+    "proteinG": 17,
+    "carbsG": 2.1,
+    "fatG": 1.5,
     "category": "protein",
     "verified": false,
     "measures": [
@@ -1956,8 +1956,8 @@
     "aka": "escargots pimentés peppered snails",
     "basis": "100g",
     "kcalPer100": 145,
-    "proteinG": 14,
-    "carbsG": 4,
+    "proteinG": 15,
+    "carbsG": 2.5,
     "fatG": 8,
     "category": "protein",
     "verified": false,
@@ -1987,8 +1987,8 @@
     "basis": "100g",
     "kcalPer100": 150,
     "proteinG": 20,
-    "carbsG": 4,
-    "fatG": 6,
+    "carbsG": 1,
+    "fatG": 7.5,
     "category": "protein",
     "verified": false,
     "measures": [
@@ -2011,9 +2011,9 @@
     "aka": "njanga crayfish dried crevettes dried crayfish",
     "basis": "100g",
     "kcalPer100": 320,
-    "proteinG": 45,
+    "proteinG": 55,
     "carbsG": 3,
-    "fatG": 14,
+    "fatG": 9,
     "category": "condiment",
     "verified": false,
     "measures": [
@@ -2041,9 +2041,9 @@
     "aka": "poisson fumé smoked fish smoked fish",
     "basis": "100g",
     "kcalPer100": 290,
-    "proteinG": 45,
+    "proteinG": 55,
     "carbsG": 0,
-    "fatG": 12,
+    "fatG": 7.5,
     "category": "protein",
     "verified": false,
     "measures": [
@@ -2071,9 +2071,9 @@
     "aka": "makayabu cod salted morue stockfish/salted fish",
     "basis": "100g",
     "kcalPer100": 180,
-    "proteinG": 28,
-    "carbsG": 2,
-    "fatG": 7,
+    "proteinG": 25,
+    "carbsG": 0,
+    "fatG": 8.5,
     "category": "protein",
     "verified": false,
     "measures": [
@@ -2096,9 +2096,9 @@
     "aka": "oeuf egg bouilli boiled boiled egg",
     "basis": "100g",
     "kcalPer100": 156,
-    "proteinG": 13,
-    "carbsG": 1,
-    "fatG": 11,
+    "proteinG": 12.6,
+    "carbsG": 1.1,
+    "fatG": 10.6,
     "category": "protein",
     "verified": false,
     "measures": [
@@ -2122,7 +2122,7 @@
     "basis": "100g",
     "kcalPer100": 183.3,
     "proteinG": 12,
-    "carbsG": 2,
+    "carbsG": 1.2,
     "fatG": 14,
     "category": "protein",
     "verified": false,
@@ -2146,9 +2146,9 @@
     "aka": "haricot beans rouge red beans",
     "basis": "100g",
     "kcalPer100": 130,
-    "proteinG": 8,
-    "carbsG": 22,
-    "fatG": 1,
+    "proteinG": 9.3,
+    "carbsG": 21.8,
+    "fatG": 0.7,
     "category": "staple",
     "verified": false,
     "measures": [
@@ -2176,9 +2176,9 @@
     "aka": "haricot beans huile oil",
     "basis": "100g",
     "kcalPer100": 165,
-    "proteinG": 7,
-    "carbsG": 21,
-    "fatG": 6,
+    "proteinG": 8,
+    "carbsG": 19,
+    "fatG": 5.5,
     "category": "staple",
     "verified": false,
     "measures": [
@@ -2221,9 +2221,9 @@
     "aka": "beignet puff puff soufflé puff-puff/boule",
     "basis": "100g",
     "kcalPer100": 271.4,
-    "proteinG": 4,
-    "carbsG": 33,
-    "fatG": 14,
+    "proteinG": 5.5,
+    "carbsG": 38,
+    "fatG": 11,
     "category": "snack",
     "verified": false,
     "measures": [
@@ -2242,8 +2242,8 @@
     "basis": "100g",
     "kcalPer100": 242.9,
     "proteinG": 7,
-    "carbsG": 29,
-    "fatG": 11,
+    "carbsG": 28,
+    "fatG": 10.5,
     "category": "snack",
     "verified": false,
     "measures": [
@@ -2261,9 +2261,9 @@
     "aka": "bhb beignet haricot bouillie beignet-haricot-bouillie",
     "basis": "100g",
     "kcalPer100": 130,
-    "proteinG": 3,
-    "carbsG": 20,
-    "fatG": 4,
+    "proteinG": 5.6,
+    "carbsG": 16,
+    "fatG": 4.8,
     "category": "combo",
     "verified": false,
     "measures": [
@@ -2291,9 +2291,9 @@
     "aka": "accra banane banana fritter beignet banane",
     "basis": "100g",
     "kcalPer100": 275,
-    "proteinG": 3,
-    "carbsG": 36,
-    "fatG": 13,
+    "proteinG": 3.5,
+    "carbsG": 40,
+    "fatG": 11,
     "category": "snack",
     "verified": false,
     "measures": [
@@ -2311,9 +2311,9 @@
     "aka": "croquettes",
     "basis": "100g",
     "kcalPer100": 450,
-    "proteinG": 5,
-    "carbsG": 52,
-    "fatG": 25,
+    "proteinG": 6,
+    "carbsG": 50,
+    "fatG": 24,
     "category": "snack",
     "verified": false,
     "measures": [
@@ -2342,8 +2342,8 @@
     "basis": "100g",
     "kcalPer100": 480,
     "proteinG": 7,
-    "carbsG": 62,
-    "fatG": 23,
+    "carbsG": 60,
+    "fatG": 22,
     "category": "snack",
     "verified": false,
     "measures": [
@@ -2371,9 +2371,9 @@
     "aka": "chips plantain crisps plantain chips",
     "basis": "100g",
     "kcalPer100": 520,
-    "proteinG": 2,
-    "carbsG": 65,
-    "fatG": 28,
+    "proteinG": 2.5,
+    "carbsG": 58,
+    "fatG": 29,
     "category": "snack",
     "verified": false,
     "measures": [
@@ -2402,8 +2402,8 @@
     "basis": "100g",
     "kcalPer100": 333.3,
     "proteinG": 5,
-    "carbsG": 50,
-    "fatG": 13,
+    "carbsG": 45,
+    "fatG": 14,
     "category": "snack",
     "verified": false,
     "measures": [
@@ -2431,9 +2431,9 @@
     "aka": "pain bread baguette baguette",
     "basis": "100g",
     "kcalPer100": 265,
-    "proteinG": 8,
-    "carbsG": 52,
-    "fatG": 3,
+    "proteinG": 9,
+    "carbsG": 50,
+    "fatG": 3.2,
     "category": "staple",
     "verified": false,
     "measures": [
@@ -2471,8 +2471,8 @@
     "aka": "pain chargé sandwich sandwich complet",
     "basis": "100g",
     "kcalPer100": 220,
-    "proteinG": 9,
-    "carbsG": 28,
+    "proteinG": 8,
+    "carbsG": 30,
     "fatG": 8,
     "category": "combo",
     "verified": false,
@@ -2501,9 +2501,9 @@
     "aka": "pain beurre butter bread",
     "basis": "100g",
     "kcalPer100": 237,
-    "proteinG": 7,
-    "carbsG": 30,
-    "fatG": 10,
+    "proteinG": 7.5,
+    "carbsG": 40,
+    "fatG": 6,
     "category": "combo",
     "verified": false,
     "measures": [
@@ -2531,9 +2531,9 @@
     "aka": "bouillie mais pap corn porridge corn pap",
     "basis": "100g",
     "kcalPer100": 70,
-    "proteinG": 2,
-    "carbsG": 14,
-    "fatG": 1,
+    "proteinG": 1.5,
+    "carbsG": 14.5,
+    "fatG": 0.6,
     "category": "porridge",
     "verified": false,
     "measures": [
@@ -2566,9 +2566,9 @@
     "aka": "bouillie riz rice pap rice pap",
     "basis": "100g",
     "kcalPer100": 70,
-    "proteinG": 1,
+    "proteinG": 1.3,
     "carbsG": 15,
-    "fatG": 1,
+    "fatG": 0.4,
     "category": "porridge",
     "verified": false,
     "measures": [
@@ -2601,9 +2601,9 @@
     "aka": "dakere millet couscous",
     "basis": "100g",
     "kcalPer100": 140,
-    "proteinG": 3,
-    "carbsG": 25,
-    "fatG": 3,
+    "proteinG": 4,
+    "carbsG": 26,
+    "fatG": 2.5,
     "category": "dessert",
     "verified": false,
     "measures": [
@@ -2631,9 +2631,9 @@
     "aka": "kossam lait caillé fermented milk lait caillé",
     "basis": "100ml",
     "kcalPer100": 70,
-    "proteinG": 3,
-    "carbsG": 8,
-    "fatG": 3,
+    "proteinG": 3.5,
+    "carbsG": 9,
+    "fatG": 2,
     "category": "drink",
     "verified": false,
     "measures": [
@@ -2661,9 +2661,9 @@
     "aka": "folere bissap hibiscus zobo bissap/hibiscus",
     "basis": "100ml",
     "kcalPer100": 40,
-    "proteinG": 0.3,
+    "proteinG": 0.1,
     "carbsG": 10,
-    "fatG": 0.1,
+    "fatG": 0,
     "category": "drink",
     "verified": false,
     "measures": [
@@ -2696,9 +2696,9 @@
     "aka": "gingembre ginger juice gnamakoudji",
     "basis": "100ml",
     "kcalPer100": 50,
-    "proteinG": 0.3,
-    "carbsG": 12,
-    "fatG": 0.1,
+    "proteinG": 0.1,
+    "carbsG": 12.5,
+    "fatG": 0,
     "category": "drink",
     "verified": false,
     "measures": [
@@ -2733,7 +2733,7 @@
     "kcalPer100": 60,
     "proteinG": 0.5,
     "carbsG": 14,
-    "fatG": 0.5,
+    "fatG": 0.2,
     "category": "drink",
     "verified": false,
     "measures": [
@@ -2766,9 +2766,9 @@
     "aka": "matango palm wine vin vin de palme/palm wine",
     "basis": "100ml",
     "kcalPer100": 45,
-    "proteinG": 0.3,
+    "proteinG": 0.2,
     "carbsG": 5,
-    "fatG": 0,
+    "fatG": 0.1,
     "category": "drink",
     "verified": false,
     "measures": [
@@ -2797,8 +2797,8 @@
     "basis": "100ml",
     "kcalPer100": 50,
     "proteinG": 0.5,
-    "carbsG": 4,
-    "fatG": 0.5,
+    "carbsG": 8,
+    "fatG": 0.1,
     "category": "drink",
     "verified": false,
     "measures": [
@@ -2832,8 +2832,8 @@
     "basis": "100ml",
     "kcalPer100": 50,
     "proteinG": 0.5,
-    "carbsG": 4,
-    "fatG": 0.5,
+    "carbsG": 8,
+    "fatG": 0.1,
     "category": "drink",
     "verified": false,
     "measures": [
@@ -2942,7 +2942,7 @@
     "basis": "100ml",
     "kcalPer100": 0.3,
     "proteinG": 0,
-    "carbsG": 0,
+    "carbsG": 0.1,
     "fatG": 0,
     "category": "drink",
     "verified": true,
@@ -3021,7 +3021,7 @@
     "aka": "thé tea citron lemon",
     "basis": "100ml",
     "kcalPer100": 2.5,
-    "proteinG": 0.1,
+    "proteinG": 0,
     "carbsG": 0.5,
     "fatG": 0,
     "category": "drink",
@@ -3098,7 +3098,7 @@
     "kcalPer100": 496,
     "proteinG": 26,
     "carbsG": 38,
-    "fatG": 26,
+    "fatG": 27,
     "category": "condiment",
     "verified": false,
     "measures": [
@@ -3131,9 +3131,9 @@
     "aka": "matinal milo cocoa cacao cocoa drink powder",
     "basis": "100g",
     "kcalPer100": 420,
-    "proteinG": 6,
-    "carbsG": 80,
-    "fatG": 9,
+    "proteinG": 9.5,
+    "carbsG": 76.4,
+    "fatG": 8.5,
     "category": "drink powder",
     "verified": false,
     "measures": [
@@ -3251,9 +3251,9 @@
     "aka": "arachides groundnuts peanuts grillées groundnuts roasted",
     "basis": "100g",
     "kcalPer100": 570,
-    "proteinG": 26,
-    "carbsG": 13,
-    "fatG": 46,
+    "proteinG": 25,
+    "carbsG": 16,
+    "fatG": 49,
     "category": "snack",
     "verified": false,
     "measures": [
@@ -3286,9 +3286,9 @@
     "aka": "arachides bouillies boiled groundnuts",
     "basis": "100g",
     "kcalPer100": 320,
-    "proteinG": 13,
-    "carbsG": 20,
-    "fatG": 20,
+    "proteinG": 15,
+    "carbsG": 12,
+    "fatG": 24,
     "category": "snack",
     "verified": false,
     "measures": [
@@ -3326,9 +3326,9 @@
     "aka": "pâte arachide peanut butter peanut paste",
     "basis": "100g",
     "kcalPer100": 590,
-    "proteinG": 23,
-    "carbsG": 13,
-    "fatG": 51,
+    "proteinG": 23.4,
+    "carbsG": 18.7,
+    "fatG": 46.8,
     "category": "condiment",
     "verified": false,
     "measures": [
@@ -3361,9 +3361,9 @@
     "aka": "kola cola nut noix cola nut",
     "basis": "100g",
     "kcalPer100": 166.7,
-    "proteinG": 3,
+    "proteinG": 1,
     "carbsG": 35,
-    "fatG": 2,
+    "fatG": 0.5,
     "category": "stimulant",
     "verified": false,
     "measures": [
@@ -3392,8 +3392,8 @@
     "basis": "100g",
     "kcalPer100": 170,
     "proteinG": 2,
-    "carbsG": 7,
-    "fatG": 15,
+    "carbsG": 5,
+    "fatG": 17,
     "category": "fruit",
     "verified": false,
     "measures": [
@@ -3421,9 +3421,9 @@
     "aka": "avocat avocado avocado",
     "basis": "100g",
     "kcalPer100": 160,
-    "proteinG": 2,
-    "carbsG": 7,
-    "fatG": 14,
+    "proteinG": 1.8,
+    "carbsG": 7.8,
+    "fatG": 13.5,
     "category": "fruit",
     "verified": false,
     "measures": [
@@ -3451,8 +3451,8 @@
     "aka": "papaye pawpaw papaya pawpaw",
     "basis": "100g",
     "kcalPer100": 43,
-    "proteinG": 0.5,
-    "carbsG": 10,
+    "proteinG": 0.4,
+    "carbsG": 9.7,
     "fatG": 0.3,
     "category": "fruit",
     "verified": false,
@@ -3481,9 +3481,9 @@
     "aka": "mangue mango mango",
     "basis": "100g",
     "kcalPer100": 60,
-    "proteinG": 0.5,
-    "carbsG": 14,
-    "fatG": 0.2,
+    "proteinG": 0.7,
+    "carbsG": 13.5,
+    "fatG": 0.4,
     "category": "fruit",
     "verified": false,
     "measures": [
@@ -3506,9 +3506,9 @@
     "aka": "goyave guava guava",
     "basis": "100g",
     "kcalPer100": 68,
-    "proteinG": 2.5,
-    "carbsG": 13,
-    "fatG": 0.5,
+    "proteinG": 2.3,
+    "carbsG": 12.6,
+    "fatG": 0.9,
     "category": "fruit",
     "verified": false,
     "measures": [
@@ -3536,7 +3536,7 @@
     "aka": "corossol soursop soursop",
     "basis": "100g",
     "kcalPer100": 66,
-    "proteinG": 1,
+    "proteinG": 0.9,
     "carbsG": 15,
     "fatG": 0.3,
     "category": "fruit",
@@ -3567,7 +3567,7 @@
     "basis": "100g",
     "kcalPer100": 50,
     "proteinG": 0.5,
-    "carbsG": 12,
+    "carbsG": 11.8,
     "fatG": 0.1,
     "category": "fruit",
     "verified": false,
@@ -3597,7 +3597,7 @@
     "basis": "100g",
     "kcalPer100": 87.5,
     "proteinG": 1,
-    "carbsG": 20,
+    "carbsG": 20.3,
     "fatG": 0.3,
     "category": "fruit",
     "verified": false,
@@ -3626,8 +3626,8 @@
     "aka": "orange",
     "basis": "100g",
     "kcalPer100": 47.7,
-    "proteinG": 0.9,
-    "carbsG": 11,
+    "proteinG": 0.8,
+    "carbsG": 10.9,
     "fatG": 0.1,
     "category": "fruit",
     "verified": false,
@@ -3656,8 +3656,8 @@
     "aka": "pamplemousse grapefruit grapefruit",
     "basis": "100g",
     "kcalPer100": 42,
-    "proteinG": 0.8,
-    "carbsG": 10,
+    "proteinG": 0.7,
+    "carbsG": 9.6,
     "fatG": 0.1,
     "category": "fruit",
     "verified": false,
@@ -3716,9 +3716,9 @@
     "aka": "noix coco coconut coconut flesh",
     "basis": "100g",
     "kcalPer100": 354,
-    "proteinG": 3,
-    "carbsG": 12,
-    "fatG": 33,
+    "proteinG": 3.3,
+    "carbsG": 15,
+    "fatG": 33.5,
     "category": "fruit",
     "verified": false,
     "measures": [
@@ -3746,8 +3746,8 @@
     "aka": "pastèque watermelon watermelon",
     "basis": "100g",
     "kcalPer100": 30,
-    "proteinG": 0.6,
-    "carbsG": 7,
+    "proteinG": 0.5,
+    "carbsG": 6.6,
     "fatG": 0.2,
     "category": "fruit",
     "verified": false,
@@ -3776,8 +3776,8 @@
     "aka": "tomate tomato",
     "basis": "100g",
     "kcalPer100": 18,
-    "proteinG": 0.9,
-    "carbsG": 3.5,
+    "proteinG": 0.8,
+    "carbsG": 3.3,
     "fatG": 0.2,
     "category": "vegetable",
     "verified": false,
@@ -3811,9 +3811,9 @@
     "aka": "gombo okra frais fresh okra",
     "basis": "100g",
     "kcalPer100": 33,
-    "proteinG": 2,
-    "carbsG": 6,
-    "fatG": 0.1,
+    "proteinG": 1.6,
+    "carbsG": 6.3,
+    "fatG": 0.2,
     "category": "vegetable",
     "verified": false,
     "measures": [
@@ -3841,7 +3841,7 @@
     "aka": "aubergine garden egg zong eggplant garden egg/zong",
     "basis": "100g",
     "kcalPer100": 25,
-    "proteinG": 1,
+    "proteinG": 0.9,
     "carbsG": 5,
     "fatG": 0.2,
     "category": "vegetable",
@@ -3871,9 +3871,9 @@
     "aka": "légumes vegetables sautés greens mixed greens",
     "basis": "100g",
     "kcalPer100": 80,
-    "proteinG": 2,
+    "proteinG": 2.5,
     "carbsG": 5,
-    "fatG": 6,
+    "fatG": 5.5,
     "category": "vegetable",
     "verified": false,
     "measures": [
@@ -3906,9 +3906,9 @@
     "aka": "salade salad simple",
     "basis": "100g",
     "kcalPer100": 30,
-    "proteinG": 1.5,
-    "carbsG": 5,
-    "fatG": 0.3,
+    "proteinG": 1.4,
+    "carbsG": 5.3,
+    "fatG": 0.4,
     "category": "vegetable",
     "verified": false,
     "measures": [
@@ -3941,9 +3941,9 @@
     "aka": "salade salad mayonnaise",
     "basis": "100g",
     "kcalPer100": 130,
-    "proteinG": 2,
-    "carbsG": 6,
-    "fatG": 11,
+    "proteinG": 1.5,
+    "carbsG": 5,
+    "fatG": 11.5,
     "category": "vegetable",
     "verified": false,
     "measures": [
@@ -3976,9 +3976,9 @@
     "aka": "piment chilli pepper hot hot pepper",
     "basis": "100g",
     "kcalPer100": 40,
-    "proteinG": 1.5,
-    "carbsG": 7,
-    "fatG": 0.5,
+    "proteinG": 1.6,
+    "carbsG": 7.6,
+    "fatG": 0.3,
     "category": "condiment",
     "verified": true,
     "measures": [
@@ -4006,8 +4006,8 @@
     "aka": "piment pepper sauce huile pepper sauce",
     "basis": "100g",
     "kcalPer100": 300,
-    "proteinG": 1,
-    "carbsG": 5,
+    "proteinG": 2,
+    "carbsG": 6,
     "fatG": 30,
     "category": "condiment",
     "verified": false,
@@ -4051,9 +4051,9 @@
     "aka": "maggi bouillon cube stock",
     "basis": "100g",
     "kcalPer100": 100,
-    "proteinG": 2,
-    "carbsG": 18,
-    "fatG": 2,
+    "proteinG": 7.2,
+    "carbsG": 14.5,
+    "fatG": 1.4,
     "category": "condiment",
     "verified": false,
     "measures": [
@@ -4082,8 +4082,8 @@
     "basis": "100g",
     "kcalPer100": 680,
     "proteinG": 1,
-    "carbsG": 2,
-    "fatG": 74,
+    "carbsG": 1,
+    "fatG": 75,
     "category": "condiment",
     "verified": true,
     "measures": [
@@ -4111,9 +4111,9 @@
     "aka": "ndole riz rice complet plate plat complet",
     "basis": "100g",
     "kcalPer100": 166.7,
-    "proteinG": 10,
-    "carbsG": 14,
-    "fatG": 8,
+    "proteinG": 7,
+    "carbsG": 20,
+    "fatG": 6,
     "category": "combo",
     "verified": false,
     "measures": [
@@ -4141,9 +4141,9 @@
     "aka": "eru fufu complet plate plat complet",
     "basis": "100g",
     "kcalPer100": 144.4,
-    "proteinG": 7,
-    "carbsG": 14,
-    "fatG": 7,
+    "proteinG": 6.2,
+    "carbsG": 17.8,
+    "fatG": 5.3,
     "category": "combo",
     "verified": false,
     "measures": [
@@ -4171,9 +4171,9 @@
     "aka": "achu jaune complet plate plat complet",
     "basis": "100g",
     "kcalPer100": 140,
-    "proteinG": 3,
-    "carbsG": 17,
-    "fatG": 7,
+    "proteinG": 6,
+    "carbsG": 17.3,
+    "fatG": 5.2,
     "category": "combo",
     "verified": false,
     "measures": [
@@ -4201,8 +4201,8 @@
     "aka": "poisson miondo complet plate fish",
     "basis": "100g",
     "kcalPer100": 156,
-    "proteinG": 11,
-    "carbsG": 14,
+    "proteinG": 7,
+    "carbsG": 20,
     "fatG": 6,
     "category": "combo",
     "verified": false,
@@ -4231,9 +4231,9 @@
     "aka": "riz arachide complet plate rice",
     "basis": "100g",
     "kcalPer100": 160,
-    "proteinG": 5,
-    "carbsG": 19,
-    "fatG": 7,
+    "proteinG": 7,
+    "carbsG": 20,
+    "fatG": 6,
     "category": "combo",
     "verified": false,
     "measures": [
@@ -4261,9 +4261,9 @@
     "aka": "taro jaune yellow bamileke",
     "basis": "100g",
     "kcalPer100": 140,
-    "proteinG": 3,
-    "carbsG": 17,
-    "fatG": 7,
+    "proteinG": 6,
+    "carbsG": 17.3,
+    "fatG": 5.2,
     "category": "combo",
     "verified": false,
     "measures": [
@@ -4280,6 +4280,921 @@
       {
         "label": "piece",
         "grams": 500,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_134",
+    "nameFr": "Poulet croustillant (frit)",
+    "nameEn": "Crispy chicken (deep-fried)",
+    "aka": "poulet croustillant frit crispy fried chicken kfc",
+    "basis": "100g",
+    "kcalPer100": 290,
+    "proteinG": 24,
+    "carbsG": 12,
+    "fatG": 17,
+    "category": "fast food",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 120,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_135",
+    "nameFr": "Poulet croustillant (au four)",
+    "nameEn": "Crispy chicken (oven-baked)",
+    "aka": "poulet croustillant four baked crispy chicken",
+    "basis": "100g",
+    "kcalPer100": 195,
+    "proteinG": 27,
+    "carbsG": 7,
+    "fatG": 6.5,
+    "category": "fast food",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 120,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_136",
+    "nameFr": "Nuggets de poulet",
+    "nameEn": "Chicken nuggets",
+    "aka": "nuggets poulet chicken",
+    "basis": "100g",
+    "kcalPer100": 300,
+    "proteinG": 15,
+    "carbsG": 16,
+    "fatG": 19,
+    "category": "fast food",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 18,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_137",
+    "nameFr": "Ailes de poulet grillées",
+    "nameEn": "Grilled chicken wings",
+    "aka": "ailes wings poulet grilled",
+    "basis": "100g",
+    "kcalPer100": 215,
+    "proteinG": 27,
+    "carbsG": 0,
+    "fatG": 12,
+    "category": "fast food",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 35,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_138",
+    "nameFr": "Ailes de poulet frites",
+    "nameEn": "Fried chicken wings",
+    "aka": "ailes wings poulet frites fried",
+    "basis": "100g",
+    "kcalPer100": 320,
+    "proteinG": 24,
+    "carbsG": 8,
+    "fatG": 21,
+    "category": "fast food",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 40,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_139",
+    "nameFr": "Hamburger",
+    "nameEn": "Hamburger",
+    "aka": "hamburger burger boeuf",
+    "basis": "100g",
+    "kcalPer100": 250,
+    "proteinG": 13,
+    "carbsG": 24,
+    "fatG": 11,
+    "category": "fast food",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 180,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_140",
+    "nameFr": "Cheeseburger",
+    "nameEn": "Cheeseburger",
+    "aka": "cheeseburger burger fromage",
+    "basis": "100g",
+    "kcalPer100": 280,
+    "proteinG": 14,
+    "carbsG": 23,
+    "fatG": 15,
+    "category": "fast food",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 200,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_141",
+    "nameFr": "Burger poulet",
+    "nameEn": "Chicken burger",
+    "aka": "burger poulet chicken sandwich",
+    "basis": "100g",
+    "kcalPer100": 260,
+    "proteinG": 15,
+    "carbsG": 25,
+    "fatG": 11.5,
+    "category": "fast food",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 190,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_142",
+    "nameFr": "Shawarma",
+    "nameEn": "Shawarma",
+    "aka": "shawarma chawarma kebab durum",
+    "basis": "100g",
+    "kcalPer100": 215,
+    "proteinG": 13,
+    "carbsG": 20,
+    "fatG": 9,
+    "category": "fast food",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 300,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_143",
+    "nameFr": "Sandwich poulet",
+    "nameEn": "Chicken sandwich",
+    "aka": "sandwich poulet chicken",
+    "basis": "100g",
+    "kcalPer100": 230,
+    "proteinG": 14,
+    "carbsG": 24,
+    "fatG": 8.5,
+    "category": "fast food",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 220,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_144",
+    "nameFr": "Club sandwich",
+    "nameEn": "Club sandwich",
+    "aka": "club sandwich",
+    "basis": "100g",
+    "kcalPer100": 260,
+    "proteinG": 13,
+    "carbsG": 24,
+    "fatG": 12.5,
+    "category": "fast food",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 250,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_145",
+    "nameFr": "Croque-monsieur",
+    "nameEn": "Croque-monsieur",
+    "aka": "croque monsieur toast jambon fromage",
+    "basis": "100g",
+    "kcalPer100": 290,
+    "proteinG": 15,
+    "carbsG": 24,
+    "fatG": 15,
+    "category": "fast food",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 160,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_146",
+    "nameFr": "Hot-dog",
+    "nameEn": "Hot dog",
+    "aka": "hot dog saucisse pain",
+    "basis": "100g",
+    "kcalPer100": 250,
+    "proteinG": 10,
+    "carbsG": 22,
+    "fatG": 13.5,
+    "category": "fast food",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 150,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_147",
+    "nameFr": "Pizza margherita",
+    "nameEn": "Margherita pizza",
+    "aka": "pizza margherita fromage",
+    "basis": "100g",
+    "kcalPer100": 260,
+    "proteinG": 11,
+    "carbsG": 30,
+    "fatG": 10,
+    "category": "fast food",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "slice",
+        "grams": 110,
+        "sortOrder": 1
+      },
+      {
+        "label": "piece",
+        "grams": 110,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_148",
+    "nameFr": "Pizza viande",
+    "nameEn": "Meat pizza",
+    "aka": "pizza viande peperoni meat",
+    "basis": "100g",
+    "kcalPer100": 295,
+    "proteinG": 13,
+    "carbsG": 28,
+    "fatG": 14.5,
+    "category": "fast food",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "slice",
+        "grams": 120,
+        "sortOrder": 1
+      },
+      {
+        "label": "piece",
+        "grams": 120,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_149",
+    "nameFr": "Frites de patate douce",
+    "nameEn": "Sweet potato fries",
+    "aka": "frites patate douce sweet potato fries",
+    "basis": "100g",
+    "kcalPer100": 280,
+    "proteinG": 2.5,
+    "carbsG": 38,
+    "fatG": 13,
+    "category": "fast food",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_150",
+    "nameFr": "Rondelles d'oignon frites",
+    "nameEn": "Onion rings",
+    "aka": "rondelles oignon onion rings",
+    "basis": "100g",
+    "kcalPer100": 330,
+    "proteinG": 4.5,
+    "carbsG": 38,
+    "fatG": 17.5,
+    "category": "fast food",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 12,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_151",
+    "nameFr": "Poisson pané frit",
+    "nameEn": "Fried breaded fish",
+    "aka": "poisson pane frit fish fingers",
+    "basis": "100g",
+    "kcalPer100": 240,
+    "proteinG": 14,
+    "carbsG": 17,
+    "fatG": 12.5,
+    "category": "fast food",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 30,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_152",
+    "nameFr": "Pomme pilée (purée)",
+    "nameEn": "Mashed potato",
+    "aka": "pomme pilee puree mashed potato ecrasee",
+    "basis": "100g",
+    "kcalPer100": 110,
+    "proteinG": 2,
+    "carbsG": 16,
+    "fatG": 4,
+    "category": "staple",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 210,
+        "sortOrder": 1
+      },
+      {
+        "label": "ladle",
+        "grams": 150,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_153",
+    "nameFr": "Macabo râpé",
+    "nameEn": "Grated cocoyam (macabo râpé)",
+    "aka": "macabo rape grated cocoyam",
+    "basis": "100g",
+    "kcalPer100": 165,
+    "proteinG": 2.5,
+    "carbsG": 24,
+    "fatG": 6.5,
+    "category": "dish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "ladle",
+        "grams": 150,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_154",
+    "nameFr": "Macabo râpé au poisson",
+    "nameEn": "Grated cocoyam with fish",
+    "aka": "macabo rape poisson grated cocoyam fish",
+    "basis": "100g",
+    "kcalPer100": 180,
+    "proteinG": 7,
+    "carbsG": 21,
+    "fatG": 7,
+    "category": "dish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "ladle",
+        "grams": 150,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_155",
+    "nameFr": "Pomme de terre sautée",
+    "nameEn": "Sauteed potato",
+    "aka": "pomme terre sautee potato",
+    "basis": "100g",
+    "kcalPer100": 145,
+    "proteinG": 2.2,
+    "carbsG": 21,
+    "fatG": 5.5,
+    "category": "staple",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_156",
+    "nameFr": "Pancakes",
+    "nameEn": "Pancakes",
+    "aka": "pancake pancakes crepe epaisse",
+    "basis": "100g",
+    "kcalPer100": 230,
+    "proteinG": 6,
+    "carbsG": 32,
+    "fatG": 8.5,
+    "category": "fast food",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 60,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_157",
+    "nameFr": "Crêpes",
+    "nameEn": "Crepes",
+    "aka": "crepe crepes pancake fin",
+    "basis": "100g",
+    "kcalPer100": 200,
+    "proteinG": 6,
+    "carbsG": 26,
+    "fatG": 7.5,
+    "category": "fast food",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 60,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_158",
+    "nameFr": "Gaufres",
+    "nameEn": "Waffles",
+    "aka": "gaufre gaufres waffle",
+    "basis": "100g",
+    "kcalPer100": 290,
+    "proteinG": 7,
+    "carbsG": 33,
+    "fatG": 14,
+    "category": "fast food",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 75,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_159",
+    "nameFr": "Beignet américain (donut)",
+    "nameEn": "Doughnut",
+    "aka": "donut doughnut beignet americain",
+    "basis": "100g",
+    "kcalPer100": 400,
+    "proteinG": 5,
+    "carbsG": 45,
+    "fatG": 22,
+    "category": "snack",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 60,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_160",
+    "nameFr": "Sirop / miel (nappage)",
+    "nameEn": "Syrup or honey topping",
+    "aka": "sirop miel syrup honey nappage",
+    "basis": "100g",
+    "kcalPer100": 300,
+    "proteinG": 0.3,
+    "carbsG": 75,
+    "fatG": 0,
+    "category": "condiment",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "teaspoon",
+        "grams": 7,
+        "sortOrder": 1
+      },
+      {
+        "label": "tablespoon",
+        "grams": 21,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_161",
+    "nameFr": "Saucisse grillée",
+    "nameEn": "Grilled sausage",
+    "aka": "saucisse sausage grillee",
+    "basis": "100g",
+    "kcalPer100": 300,
+    "proteinG": 13,
+    "carbsG": 2,
+    "fatG": 26.5,
+    "category": "protein",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 70,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_162",
+    "nameFr": "Popcorn nature",
+    "nameEn": "Plain popcorn",
+    "aka": "popcorn mais souffle",
+    "basis": "100g",
+    "kcalPer100": 385,
+    "proteinG": 12,
+    "carbsG": 74,
+    "fatG": 4.5,
+    "category": "snack",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 8,
+        "sortOrder": 1
+      },
+      {
+        "label": "handful",
+        "grams": 10,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_163",
+    "nameFr": "Popcorn sucré/beurré",
+    "nameEn": "Sweet or buttered popcorn",
+    "aka": "popcorn sucre beurre buttered",
+    "basis": "100g",
+    "kcalPer100": 480,
+    "proteinG": 7,
+    "carbsG": 62,
+    "fatG": 23,
+    "category": "snack",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 11,
+        "sortOrder": 1
+      },
+      {
+        "label": "handful",
+        "grams": 12,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_164",
+    "nameFr": "Glace (crème glacée)",
+    "nameEn": "Ice cream",
+    "aka": "glace creme glacee ice cream",
+    "basis": "100g",
+    "kcalPer100": 210,
+    "proteinG": 3.5,
+    "carbsG": 24,
+    "fatG": 11,
+    "category": "snack",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 130,
+        "sortOrder": 1
+      },
+      {
+        "label": "scoop",
+        "grams": 60,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_165",
+    "nameFr": "Milkshake",
+    "nameEn": "Milkshake",
+    "aka": "milkshake lait frappe",
+    "basis": "100g",
+    "kcalPer100": 110,
+    "proteinG": 3.2,
+    "carbsG": 17,
+    "fatG": 3.2,
+    "category": "drink",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "ml",
+        "grams": 1.03,
+        "sortOrder": 1
+      },
+      {
+        "label": "cup",
+        "grams": 245,
+        "sortOrder": 2
+      },
+      {
+        "label": "glass",
+        "grams": 250,
+        "sortOrder": 3
+      }
+    ]
+  },
+  {
+    "id": "bundled_166",
+    "nameFr": "Ketchup",
+    "nameEn": "Ketchup",
+    "aka": "ketchup sauce tomate sucree",
+    "basis": "100g",
+    "kcalPer100": 100,
+    "proteinG": 1.2,
+    "carbsG": 24,
+    "fatG": 0.2,
+    "category": "condiment",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "teaspoon",
+        "grams": 6,
+        "sortOrder": 1
+      },
+      {
+        "label": "tablespoon",
+        "grams": 17,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_167",
+    "nameFr": "Riz cantonais",
+    "nameEn": "Fried rice (cantonese style)",
+    "aka": "riz cantonais fried rice",
+    "basis": "100g",
+    "kcalPer100": 165,
+    "proteinG": 5.5,
+    "carbsG": 24,
+    "fatG": 5,
+    "category": "staple",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "ladle",
+        "grams": 150,
         "sortOrder": 2
       }
     ]
