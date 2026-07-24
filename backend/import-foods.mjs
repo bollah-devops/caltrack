@@ -31,6 +31,11 @@ function normalizeStatus(s) {
   return s.toLowerCase().includes("verified") ? "verified" : "estimate";
 }
 
+function toNumOrNull(s) {
+  const v = parseFloat(s);
+  return Number.isNaN(v) ? null : v;
+}
+
 /**
  * Parse the measures string into an array of {label, grams, sort_order}.
  * Input:  "gram:1|tablespoon:15|cup:240|ladle:150"
@@ -106,9 +111,9 @@ async function main() {
           (r.category || "").trim() || null,
           basis,
           kcalPer100,
-          parseFloat(r.protein_g) || null,
-          parseFloat(r.carbs_g) || null,
-          parseFloat(r.fat_g) || null,
+          toNumOrNull(r.protein_g),
+          toNumOrNull(r.carbs_g),
+          toNumOrNull(r.fat_g),
           normalizeStatus(r.status),
           (r.notes || "").trim() || null,
         ]
