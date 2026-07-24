@@ -117,6 +117,7 @@ export const translations: Record<string, Record<Lang, string>> = {
   carbs:            { fr: "Glucides",              en: "Carbs" },
   fat:              { fr: "Lipides",               en: "Fat" },
   macros:           { fr: "Macros",                en: "Macros" },
+  protein_target:   { fr: "Objectif protéines",   en: "Protein target" },
   no_data:          { fr: "Aucune donnée",         en: "No data" },
   daily_cals:       { fr: "Calories / jour",       en: "Calories / day" },
   last_14_days:     { fr: "14 derniers jours",     en: "Last 14 days" },

@@ -283,6 +283,8 @@ export default function HomeScreen({ lang = "fr", onGoToWeight }: Props) {
             proteinG={macros.proteinG}
             carbsG={macros.carbsG}
             fatG={macros.fatG}
+            totalKcal={totalKcal}
+            proteinTarget={currentWeight ? Math.round(1.6 * currentWeight) : null}
             t={t}
           />
         )}
@@ -535,11 +537,13 @@ function donutArc(
 // ─── MacroDonut ───────────────────────────────────────────────────────────────
 
 function MacroDonut({
-  proteinG, carbsG, fatG, t,
+  proteinG, carbsG, fatG, totalKcal, proteinTarget, t,
 }: {
   proteinG: number;
   carbsG: number;
   fatG: number;
+  totalKcal: number;
+  proteinTarget: number | null;
   t: ReturnType<typeof makeT>;
 }) {
   const SIZE = 100;
@@ -548,8 +552,11 @@ function MacroDonut({
   const outerR = 44;
   const innerR = 28;
 
-  const totalKcal = proteinG * 4 + carbsG * 4 + fatG * 9;
-  if (totalKcal === 0) return null;
+  const macroKcal = proteinG * 4 + carbsG * 4 + fatG * 9;
+  if (macroKcal === 0) return null;
+
+  const pct = (kcal: number) =>
+    totalKcal > 0 ? Math.round((kcal / totalKcal) * 100) : 0;
 
   const parts = [
     { value: proteinG * 4, color: C.accent },
@@ -563,35 +570,68 @@ function MacroDonut({
   const segments: { d: string; color: string }[] = [];
   let start = 0;
   for (const p of parts) {
-    const deg = (p.value / totalKcal) * (360 - gapTotal);
+    const deg = (p.value / macroKcal) * (360 - gapTotal);
     if (deg >= 0.5) {
       segments.push({ d: donutArc(cx, cy, outerR, innerR, start, start + deg), color: p.color });
       start += deg + gapDeg;
     }
   }
 
+  const proteinRatio = proteinTarget
+    ? Math.min(Math.round(proteinG) / proteinTarget, 1)
+    : null;
+
   return (
     <View style={styles.donutCard}>
-      <Svg width={SIZE} height={SIZE}>
-        {segments.map((seg, i) => (
-          <Path key={i} d={seg.d} fill={seg.color} />
-        ))}
-      </Svg>
-      <View style={styles.macroLegend}>
-        <Text style={styles.macroTitle}>{t("macros")}</Text>
-        <MacroRow color={C.accent} label={t("protein")} value={`${Math.round(proteinG)}g`} />
-        <MacroRow color={C.warn}   label={t("carbs")}   value={`${Math.round(carbsG)}g`} />
-        <MacroRow color={C.fat}    label={t("fat")}     value={`${Math.round(fatG)}g`} />
+      {/* Donut + legend row */}
+      <View style={styles.donutRow}>
+        <Svg width={SIZE} height={SIZE}>
+          {segments.map((seg, i) => (
+            <Path key={i} d={seg.d} fill={seg.color} />
+          ))}
+        </Svg>
+        <View style={styles.macroLegend}>
+          <Text style={styles.macroTitle}>{t("macros")}</Text>
+          <MacroRow color={C.accent} label={t("protein")} value={`${Math.round(proteinG)}g`} pct={pct(proteinG * 4)} />
+          <MacroRow color={C.warn}   label={t("carbs")}   value={`${Math.round(carbsG)}g`}  pct={pct(carbsG * 4)} />
+          <MacroRow color={C.fat}    label={t("fat")}     value={`${Math.round(fatG)}g`}    pct={pct(fatG * 9)} />
+        </View>
       </View>
+
+      {/* Protein target */}
+      {proteinTarget != null && (
+        <View style={styles.proteinTarget}>
+          <View style={styles.proteinTargetRow}>
+            <Text style={styles.proteinTargetLabel}>{t("protein_target")}</Text>
+            <Text style={styles.proteinTargetVal}>
+              {Math.round(proteinG)} / {proteinTarget} g
+            </Text>
+          </View>
+          <View style={styles.proteinBarBg}>
+            <View
+              style={[
+                styles.proteinBarFill,
+                { width: `${Math.round((proteinRatio ?? 0) * 100)}%` as any,
+                  backgroundColor: (proteinRatio ?? 0) >= 1 ? C.good : C.accent },
+              ]}
+            />
+          </View>
+        </View>
+      )}
     </View>
   );
 }
 
-function MacroRow({ color, label, value }: { color: string; label: string; value: string }) {
+function MacroRow({
+  color, label, value, pct,
+}: {
+  color: string; label: string; value: string; pct: number;
+}) {
   return (
     <View style={styles.macroRow}>
       <View style={[styles.macroDot, { backgroundColor: color }]} />
       <Text style={styles.macroRowTxt}>{label}</Text>
+      <Text style={styles.macroRowPct}>{pct}%</Text>
       <Text style={styles.macroRowVal}>{value}</Text>
     </View>
   );
@@ -707,8 +747,8 @@ const styles = StyleSheet.create({
   donutCard: {
     backgroundColor: C.card, borderRadius: 16, borderWidth: 1,
     borderColor: C.line, padding: 12, marginBottom: 12,
-    flexDirection: "row", alignItems: "center", gap: 16,
   },
+  donutRow:    { flexDirection: "row", alignItems: "center", gap: 16 },
   macroLegend: { flex: 1, gap: 4 },
   macroTitle: {
     fontSize: 11, letterSpacing: 1, textTransform: "uppercase",
@@ -717,7 +757,22 @@ const styles = StyleSheet.create({
   macroRow:    { flexDirection: "row", alignItems: "center", gap: 6 },
   macroDot:    { width: 8, height: 8, borderRadius: 4 },
   macroRowTxt: { fontSize: 12, color: C.muted, flex: 1 },
-  macroRowVal: { fontSize: 12, color: C.ink, fontFamily: "Georgia" },
+  macroRowPct: { fontSize: 11, color: C.muted, minWidth: 30, textAlign: "right" as const },
+  macroRowVal: { fontSize: 12, color: C.ink, fontFamily: "Georgia", minWidth: 36, textAlign: "right" as const },
+
+  // Protein target bar
+  proteinTarget: {
+    borderTopWidth: 1, borderColor: C.line,
+    marginTop: 10, paddingTop: 10,
+  },
+  proteinTargetRow: { flexDirection: "row", justifyContent: "space-between", marginBottom: 6 },
+  proteinTargetLabel: {
+    fontSize: 11, letterSpacing: 1, textTransform: "uppercase",
+    color: C.muted, fontWeight: "700",
+  },
+  proteinTargetVal: { fontSize: 12, color: C.accent, fontFamily: "Georgia" },
+  proteinBarBg:   { height: 4, borderRadius: 2, backgroundColor: C.line },
+  proteinBarFill: { height: 4, borderRadius: 2 },
 
   // Progress strip
   strip: {
