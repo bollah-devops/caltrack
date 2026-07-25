@@ -11,6 +11,7 @@
  */
 
 import type { Lang } from "../lib/i18n";
+import type { CustomFood } from "../db/localStore";
 import rawBundled from "./bundledFoods.json";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
@@ -168,6 +169,94 @@ export function resolveFoodName(
   const raw = (rawBundled as any[]).find((f) => f.id === foodId);
   if (!raw) return fallback;
   return lang === "en" ? (raw.nameEn || raw.nameFr) : raw.nameFr;
+}
+
+// ─── Barcode lookup ────────────────────────────────────────────────────────────
+
+export type BarcodeResult =
+  | { type: "found"; food: FoodItem }
+  | { type: "not_found"; barcode: string }
+  | { type: "offline";   barcode: string };
+
+const OFF_BASE = "https://world.openfoodfacts.org/api/v0/product";
+const OFF_TIMEOUT_MS = 6000;
+
+/** Convert a CustomFood (user-created or cached OFF result) to a FoodItem. */
+export function customFoodToItem(cf: CustomFood, lang: Lang): FoodItem {
+  return {
+    id:         `custom_${cf.id}`,
+    name:       lang === "en" ? (cf.nameEn || cf.nameFr) : cf.nameFr,
+    nameFr:     cf.nameFr,
+    nameEn:     cf.nameEn ?? null,
+    aka:        null,
+    basis:      "100g",
+    kcalPer100: cf.kcalPer100,
+    proteinG:   cf.proteinPer100,
+    carbsG:     cf.carbsPer100,
+    fatG:       cf.fatPer100,
+    category:   null,
+    verified:   false,
+    measures:   [{ label: "gram", grams: 1, sortOrder: 0 }],
+  };
+}
+
+/**
+ * Barcode resolution order:
+ *   1. Local custom_foods table (instant, offline)
+ *   2. Open Food Facts API (requires connectivity)
+ * Returns "offline" on network error, "not_found" if OFF has no entry.
+ */
+export async function lookupBarcode(
+  barcode: string,
+  lang: Lang
+): Promise<BarcodeResult> {
+  // Lazy-import localStore to avoid circular dep at module init
+  const { getCustomFoodByBarcode } = await import("../db/localStore");
+
+  const local = await getCustomFoodByBarcode(barcode);
+  if (local) return { type: "found", food: customFoodToItem(local, lang) };
+
+  // Try Open Food Facts
+  let data: any;
+  try {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), OFF_TIMEOUT_MS);
+    let res: Response;
+    try {
+      res = await fetch(`${OFF_BASE}/${barcode}.json`, { signal: controller.signal });
+    } finally {
+      clearTimeout(timer);
+    }
+    if (!res.ok) return { type: "not_found", barcode };
+    data = await res.json();
+  } catch {
+    return { type: "offline", barcode };
+  }
+
+  if (data.status !== 1 || !data.product) return { type: "not_found", barcode };
+
+  const p = data.product;
+  const n = p.nutriments ?? {};
+  const kcal = n["energy-kcal_100g"] ?? n["energy-kcal"] ?? 0;
+
+  const food: FoodItem = {
+    id:         `off_${barcode}`,
+    name:       lang === "en"
+      ? (p.product_name_en || p.product_name || p.product_name_fr || barcode)
+      : (p.product_name_fr || p.product_name || barcode),
+    nameFr:     p.product_name_fr || p.product_name || barcode,
+    nameEn:     p.product_name_en || p.product_name || null,
+    aka:        null,
+    basis:      "100g",
+    kcalPer100: typeof kcal === "number" ? Math.round(kcal) : 0,
+    proteinG:   n.proteins_100g ?? 0,
+    carbsG:     n.carbohydrates_100g ?? 0,
+    fatG:       n.fat_100g ?? 0,
+    category:   null,
+    verified:   false,
+    measures:   [{ label: "gram", grams: 1, sortOrder: 0 }],
+  };
+  return { type: "found", food };
 }
 
 function toBundledItem(f: any, lang: Lang): FoodItem {

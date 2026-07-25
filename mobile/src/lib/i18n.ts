@@ -134,6 +134,23 @@ export const translations: Record<string, Record<Lang, string>> = {
   floor_note:       { fr: "Minimum sécuritaire appliqué. Plus lent, c'est plus sain.",
                       en: "Safe minimum applied. Slower is healthier." },
 
+  // --- barcode scanner ---
+  scan_barcode:      { fr: "Scanner un code-barres",  en: "Scan a barcode" },
+  scanning:          { fr: "Pointez vers un code-barres",
+                       en: "Point at a barcode" },
+  camera_permission: { fr: "L'accès à la caméra est nécessaire pour scanner les codes-barres.",
+                       en: "Camera access is needed to scan barcodes." },
+  grant_permission:  { fr: "Autoriser la caméra",     en: "Grant camera access" },
+  product_not_found: { fr: "Produit inconnu — ajoutez-le manuellement.",
+                       en: "Product not found — add it manually." },
+  add_product:       { fr: "Ajouter ce produit",      en: "Add this product" },
+  product_name:      { fr: "Nom du produit",           en: "Product name" },
+  kcal_per_100g:     { fr: "kcal pour 100 g",          en: "kcal per 100 g" },
+  save_product:      { fr: "Enregistrer et ajouter",   en: "Save and add" },
+  scan_again:        { fr: "Scanner à nouveau",        en: "Scan again" },
+  no_internet_scan:  { fr: "Hors ligne — le produit sera sauvegardé localement pour les prochains scans.",
+                       en: "Offline — product saved locally for future scans." },
+
   // --- custom meals / recipe builder ---
   my_meals:         { fr: "Mes repas",                en: "My meals" },
   foods_tab:        { fr: "Aliments",                 en: "Foods" },

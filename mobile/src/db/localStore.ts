@@ -166,7 +166,37 @@ async function initSchema(db: SQLite.SQLiteDatabase): Promise<void> {
       sort_order    INTEGER NOT NULL DEFAULT 0
     );
     CREATE INDEX IF NOT EXISTS idx_meal_items_meal_id ON custom_meal_items(meal_id);
+
+    CREATE TABLE IF NOT EXISTS custom_foods (
+      id              TEXT PRIMARY KEY,
+      barcode         TEXT UNIQUE,
+      name_fr         TEXT NOT NULL,
+      name_en         TEXT,
+      kcal_per_100    REAL NOT NULL,
+      protein_per_100 REAL NOT NULL DEFAULT 0,
+      carbs_per_100   REAL NOT NULL DEFAULT 0,
+      fat_per_100     REAL NOT NULL DEFAULT 0,
+      source          TEXT NOT NULL DEFAULT 'user',
+      created_at      TEXT NOT NULL,
+      updated_at      TEXT NOT NULL,
+      is_deleted      INTEGER NOT NULL DEFAULT 0
+    );
+    CREATE INDEX IF NOT EXISTS idx_custom_foods_barcode ON custom_foods(barcode);
   `);
+}
+
+// ─── Custom foods (barcode-scanned / user-created) ────────────────────────────
+
+export interface CustomFood {
+  id: string;
+  barcode: string | null;
+  nameFr: string;
+  nameEn: string | null;
+  kcalPer100: number;
+  proteinPer100: number;
+  carbsPer100: number;
+  fatPer100: number;
+  source: "user" | "off";
 }
 
 // ─── Custom meals ─────────────────────────────────────────────────────────────
@@ -471,6 +501,57 @@ export async function deleteWeightLog(id: string): Promise<void> {
 export interface DayKcal {
   date: string;  // YYYY-MM-DD
   kcal: number;
+}
+
+// ─── Custom food CRUD ─────────────────────────────────────────────────────────
+
+export async function saveCustomFood(data: {
+  barcode?: string | null;
+  nameFr: string;
+  nameEn?: string | null;
+  kcalPer100: number;
+  proteinPer100?: number;
+  carbsPer100?: number;
+  fatPer100?: number;
+  source?: "user" | "off";
+}): Promise<CustomFood> {
+  const db = await getDb();
+  const id = uuid();
+  const now = new Date().toISOString();
+  await db.runAsync(
+    `INSERT OR REPLACE INTO custom_foods
+       (id, barcode, name_fr, name_en, kcal_per_100, protein_per_100,
+        carbs_per_100, fat_per_100, source, created_at, updated_at)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+    [id, data.barcode ?? null, data.nameFr, data.nameEn ?? null,
+     data.kcalPer100, data.proteinPer100 ?? 0, data.carbsPer100 ?? 0,
+     data.fatPer100 ?? 0, data.source ?? "user", now, now]
+  );
+  return {
+    id, barcode: data.barcode ?? null, nameFr: data.nameFr,
+    nameEn: data.nameEn ?? null, kcalPer100: data.kcalPer100,
+    proteinPer100: data.proteinPer100 ?? 0,
+    carbsPer100: data.carbsPer100 ?? 0,
+    fatPer100: data.fatPer100 ?? 0,
+    source: data.source ?? "user",
+  };
+}
+
+export async function getCustomFoodByBarcode(barcode: string): Promise<CustomFood | null> {
+  const db = await getDb();
+  const row = await db.getFirstAsync<any>(
+    `SELECT * FROM custom_foods WHERE barcode = ? AND is_deleted = 0`,
+    [barcode]
+  );
+  if (!row) return null;
+  return {
+    id: row.id, barcode: row.barcode, nameFr: row.name_fr,
+    nameEn: row.name_en ?? null, kcalPer100: row.kcal_per_100,
+    proteinPer100: row.protein_per_100 ?? 0,
+    carbsPer100: row.carbs_per_100 ?? 0,
+    fatPer100: row.fat_per_100 ?? 0,
+    source: row.source,
+  };
 }
 
 // ─── Custom meal CRUD ─────────────────────────────────────────────────────────

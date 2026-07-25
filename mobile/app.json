@@ -11,11 +11,18 @@
       "package": "com.caltrack.app",
       "adaptiveIcon": {
         "backgroundColor": "#B93A6A"
-      }
+      },
+      "permissions": ["android.permission.CAMERA"]
     },
     "ios": {
       "bundleIdentifier": "com.caltrack.app",
-      "supportsTablet": false
-    }
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Used to scan food barcodes."
+      }
+    },
+    "plugins": [
+      ["expo-camera", { "cameraPermission": "Used to scan food barcodes." }]
+    ]
   }
 }
