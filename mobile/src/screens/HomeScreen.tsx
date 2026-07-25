@@ -63,9 +63,10 @@ const MEALS: Meal[] = ["breakfast", "lunch", "dinner", "snack"];
 interface Props {
   lang?: Lang;
   onGoToWeight: () => void;
+  profileVersion?: number;
 }
 
-export default function HomeScreen({ lang = "fr", onGoToWeight }: Props) {
+export default function HomeScreen({ lang = "fr", onGoToWeight, profileVersion = 0 }: Props) {
   const t = makeT(lang);
   const today = todayISO();
 
@@ -89,7 +90,7 @@ export default function HomeScreen({ lang = "fr", onGoToWeight }: Props) {
 
   const searchTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  // ── Load on mount ──
+  // ── Load on mount and when profile is saved ──
   useEffect(() => {
     async function load() {
       const [p, e, s, wLogs, str] = await Promise.all([
@@ -107,7 +108,7 @@ export default function HomeScreen({ lang = "fr", onGoToWeight }: Props) {
       setLoading(false);
     }
     load();
-  }, []);
+  }, [profileVersion]);
 
   // ── Debounced food search ──
   useEffect(() => {

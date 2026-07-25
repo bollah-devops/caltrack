@@ -3,13 +3,11 @@
  *
  * Boot sequence:
  *   1. getProfile() opens SQLite and runs schema migrations.
- *   2. No profile → OnboardingScreen.
- *   3. Profile → 3-tab app: Home | History | Weight.
+ *   2. No profile → OnboardingScreen (language auto-detected from device locale).
+ *   3. Profile → 4-tab app: Home | History | Weight | Profile.
  *
- * Features:
- *   - Fixed header: app title + FR/EN language toggle
- *   - 3-tab bottom bar with Ionicons, safe-area insets
- *   - Home tab passes onGoToWeight so the quick-action can switch tabs
+ * Language: detected from device locale on first run, stored in profile.
+ * Changeable in the Profile tab. No header toggle.
  */
 
 import { Ionicons } from "@expo/vector-icons";
@@ -23,7 +21,7 @@ import {
   View,
 } from "react-native";
 import { SafeAreaProvider, useSafeAreaInsets } from "react-native-safe-area-context";
-import { getProfile, Profile, saveProfile } from "./src/db/localStore";
+import { getProfile, Profile } from "./src/db/localStore";
 import { Lang, makeT, resolveDefaultLang } from "./src/lib/i18n";
 import { C } from "./src/lib/theme";
 import OnboardingScreen from "./src/screens/OnboardingScreen";
@@ -44,10 +42,11 @@ export default function App() {
 function AppInner() {
   const insets = useSafeAreaInsets();
 
-  const [ready, setReady]     = useState(false);
-  const [profile, setProfile] = useState<Profile | null>(null);
-  const [lang, setLang]       = useState<Lang>("fr");
-  const [tab, setTab]         = useState<Tab>("home");
+  const [ready, setReady]         = useState(false);
+  const [profile, setProfile]     = useState<Profile | null>(null);
+  const [lang, setLang]           = useState<Lang>("fr");
+  const [tab, setTab]             = useState<Tab>("home");
+  const [profileVersion, setProfileVersion] = useState(0);
 
   const t = makeT(lang);
 
@@ -64,16 +63,6 @@ function AppInner() {
         setReady(true);
       });
   }, []);
-
-  async function toggleLang() {
-    const newLang: Lang = lang === "fr" ? "en" : "fr";
-    setLang(newLang);
-    if (profile) {
-      const updated = { ...profile, lang: newLang };
-      await saveProfile(updated);
-      setProfile(updated);
-    }
-  }
 
   // ── Splash ────────────────────────────────────────────────────────────────
   if (!ready) {
@@ -93,13 +82,13 @@ function AppInner() {
         <StatusBar style="dark" />
         <View style={[styles.header, { paddingTop: Math.max(insets.top, 12) }]}>
           <Text style={styles.headerTitle}>CalTrack</Text>
-          <LangToggle lang={lang} onToggle={toggleLang} />
         </View>
         <OnboardingScreen
           lang={lang}
           onComplete={async () => {
             const p = await getProfile();
             setProfile(p);
+            if (p?.lang) setLang(p.lang as Lang);
           }}
         />
       </View>
@@ -114,13 +103,12 @@ function AppInner() {
       {/* Fixed header */}
       <View style={[styles.header, { paddingTop: Math.max(insets.top, 12) }]}>
         <Text style={styles.headerTitle}>CalTrack</Text>
-        <LangToggle lang={lang} onToggle={toggleLang} />
       </View>
 
       {/* Screen area — all 3 tabs stay mounted, visibility toggled */}
       <View style={{ flex: 1 }}>
         <View style={[StyleSheet.absoluteFill, { display: tab === "home" ? "flex" : "none" }]}>
-          <HomeScreen lang={lang} onGoToWeight={() => setTab("weight")} />
+          <HomeScreen lang={lang} onGoToWeight={() => setTab("weight")} profileVersion={profileVersion} />
         </View>
         <View style={[StyleSheet.absoluteFill, { display: tab === "history" ? "flex" : "none" }]}>
           <HistoryScreen lang={lang} />
@@ -135,6 +123,8 @@ function AppInner() {
             onComplete={async () => {
               const p = await getProfile();
               setProfile(p);
+              if (p?.lang) setLang(p.lang as Lang);
+              setProfileVersion((v) => v + 1);
               setTab("home");
             }}
           />
@@ -192,18 +182,6 @@ function TabItem({
   );
 }
 
-// ─── LangToggle ───────────────────────────────────────────────────────────────
-
-function LangToggle({ lang, onToggle }: { lang: Lang; onToggle: () => void }) {
-  return (
-    <Pressable onPress={onToggle} style={styles.langBtn}>
-      <Text style={[styles.langTxt, lang === "fr" && styles.langActive]}>FR</Text>
-      <Text style={styles.langSep}>/</Text>
-      <Text style={[styles.langTxt, lang === "en" && styles.langActive]}>EN</Text>
-    </Pressable>
-  );
-}
-
 // ─── Styles ───────────────────────────────────────────────────────────────────
 
 const styles = StyleSheet.create({
@@ -222,22 +200,11 @@ const styles = StyleSheet.create({
   // Header
   header: {
     backgroundColor: C.card, borderBottomWidth: 1, borderBottomColor: C.line,
-    flexDirection: "row", alignItems: "center", justifyContent: "space-between",
     paddingHorizontal: 20, paddingBottom: 12,
   },
   headerTitle: {
     fontSize: 20, fontStyle: "italic", color: C.ink, fontFamily: "Georgia",
   },
-
-  // Lang toggle
-  langBtn: {
-    flexDirection: "row", alignItems: "center", gap: 4,
-    paddingVertical: 6, paddingHorizontal: 10,
-    borderRadius: 999, borderWidth: 1, borderColor: C.line,
-  },
-  langTxt:    { fontSize: 12, fontWeight: "700", color: C.muted },
-  langSep:    { fontSize: 12, color: C.line },
-  langActive: { color: C.accent },
 
   // Tab bar
   tabBar: {

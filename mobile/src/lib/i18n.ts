@@ -16,6 +16,7 @@ export const translations: Record<string, Record<Lang, string>> = {
   tab_history:      { fr: "Historique",          en: "History" },
   tab_weight:       { fr: "Poids",               en: "Weight" },
   tab_settings:     { fr: "Profil",              en: "Profile" },
+  language:         { fr: "Langue",              en: "Language" },
 
   // --- today screen ---
   left_to_eat:      { fr: "Restant à manger",    en: "Left to eat today" },

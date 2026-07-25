@@ -36,8 +36,10 @@ interface Props {
 }
 
 export default function OnboardingScreen({ lang = "fr", initialProfile, onComplete }: Props) {
-  const t = makeT(lang);
   const isEditing = initialProfile != null;
+  // When editing, the user can switch language inside the form; on first run, lang is fixed
+  const [localLang, setLocalLang] = useState<Lang>((initialProfile?.lang as Lang) ?? lang);
+  const t = makeT(localLang);
   const [sex, setSex] = useState<Sex | null>((initialProfile?.sex as Sex) ?? null);
   const [age, setAge] = useState(initialProfile?.age?.toString() ?? "");
   const [height, setHeight] = useState(initialProfile?.heightCm?.toString() ?? "");
@@ -88,6 +90,17 @@ export default function OnboardingScreen({ lang = "fr", initialProfile, onComple
 
   return (
     <ScrollView style={{ backgroundColor: C.bg }} contentContainerStyle={styles.container}>
+
+      {/* LANGUAGE (profile tab only) */}
+      {isEditing && (
+        <View style={styles.card}>
+          <Text style={styles.label}>{t("language")}</Text>
+          <View style={styles.row}>
+            {pill("Français", localLang === "fr", () => setLocalLang("fr"))}
+            {pill("English",  localLang === "en", () => setLocalLang("en"))}
+          </View>
+        </View>
+      )}
 
       {/* SEX */}
       <View style={styles.card}>
@@ -198,7 +211,7 @@ export default function OnboardingScreen({ lang = "fr", initialProfile, onComple
                 goalWeightKg: payload.goalWeightKg ?? null,
                 dailyTarget: payload.dailyTarget,
                 maintenance: payload.maintenance,
-                lang,
+                lang: localLang,
               });
               onComplete(payload);
             }}
