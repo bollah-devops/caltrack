@@ -44,18 +44,20 @@ type BuilderPhase = "list" | "search" | "measure";
 interface Props {
   lang: Lang;
   initialMeal: CustomMeal | null;
+  /** Pre-seed items when creating a new meal (e.g. from "Save as meal"). */
+  preseedItems?: NewCustomMealItem[];
   onBack: () => void;
   onSaved: () => void;
 }
 
-export default function MealBuilderModal({ lang, initialMeal, onBack, onSaved }: Props) {
+export default function MealBuilderModal({ lang, initialMeal, preseedItems, onBack, onSaved }: Props) {
   const t = makeT(lang);
   const isEditing = initialMeal != null;
 
   // Meal state
   const [name, setName]           = useState(initialMeal?.name ?? "");
   const [items, setItems]         = useState<NewCustomMealItem[]>(
-    initialMeal?.items.map(itemToNew) ?? []
+    initialMeal ? initialMeal.items.map(itemToNew) : (preseedItems ?? [])
   );
   const [saving, setSaving]       = useState(false);
   const [phase, setPhase]         = useState<BuilderPhase>("list");
@@ -70,13 +72,15 @@ export default function MealBuilderModal({ lang, initialMeal, onBack, onSaved }:
 
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  // Reset when initialMeal changes (e.g. switching from create to edit)
+  // Reset when switching meals or receiving new pre-seeded items
   useEffect(() => {
     setName(initialMeal?.name ?? "");
-    setItems(initialMeal?.items.map(itemToNew) ?? []);
+    setItems(
+      initialMeal ? initialMeal.items.map(itemToNew) : (preseedItems ?? [])
+    );
     setPhase("list");
     setSaving(false);
-  }, [initialMeal]);
+  }, [initialMeal, preseedItems]);
 
   // Debounced search
   useEffect(() => {

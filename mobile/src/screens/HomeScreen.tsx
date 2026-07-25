@@ -100,6 +100,9 @@ export default function HomeScreen({ lang = "fr", onGoToWeight, profile }: Props
   const [editingMeal, setEditingMeal]         = useState<CustomMeal | null>(null);
   const [deleteConfirmId, setDeleteConfirmId] = useState<string | null>(null);
 
+  // Pre-seeded items for builder (Save as meal)
+  const [preseedItems, setPreseedItems] = useState<import("../db/localStore").NewCustomMealItem[]>([]);
+
   // Scanner / manual product
   const [scanBarcode, setScanBarcode]   = useState("");
   const [scanOffline, setScanOffline]   = useState(false);
@@ -173,6 +176,39 @@ export default function HomeScreen({ lang = "fr", onGoToWeight, profile }: Props
     : 0;
 
   // ── Handlers ──
+  function openMyMeals() {
+    setActiveMeal("lunch");
+    setQuery(""); setResults([]); setPicked(null);
+    setMeasureIdx(0); setQuantity("1");
+    setModalView("meals");
+    setDeleteConfirmId(null);
+    setScanLoading(false);
+    setPreseedItems([]);
+    setModalOpen(true);
+  }
+
+  function handleSaveAsMeal(meal: Meal) {
+    const entries = byMeal[meal];
+    if (entries.length === 0) return;
+    setPreseedItems(entries.map((e) => ({
+      foodId: e.foodId,
+      foodName: e.foodName,
+      measureLabel: e.measureLabel,
+      quantity: e.quantity,
+      grams: e.grams,
+      kcal: e.kcal,
+      proteinG: e.proteinG,
+      carbsG: e.carbsG,
+      fatG: e.fatG,
+    })));
+    setEditingMeal(null);
+    setActiveMeal(meal);
+    setDeleteConfirmId(null);
+    setScanLoading(false);
+    setModalView("builder");
+    setModalOpen(true);
+  }
+
   function openModal(meal: Meal) {
     setActiveMeal(meal);
     setQuery(""); setResults([]); setPicked(null);
@@ -396,6 +432,11 @@ export default function HomeScreen({ lang = "fr", onGoToWeight, profile }: Props
           </Pressable>
         </View>
 
+        {/* My Meals shortcut */}
+        <Pressable style={styles.myMealsShortcut} onPress={openMyMeals}>
+          <Text style={styles.myMealsShortcutTxt}>🍽  {t("my_meals")} →</Text>
+        </Pressable>
+
         {/* ── 3. Meal sections ── */}
         {MEALS.map((meal) => (
           <MealSection
@@ -405,6 +446,8 @@ export default function HomeScreen({ lang = "fr", onGoToWeight, profile }: Props
             noEntriesLabel={t("no_entries")}
             addLabel={t("add_to_meal")}
             onAdd={() => openModal(meal)}
+            onSaveAsMeal={byMeal[meal].length > 0 ? () => handleSaveAsMeal(meal) : undefined}
+            saveAsLabel={t("save_as_meal")}
             renderEntry={renderEntry}
           />
         ))}
@@ -444,8 +487,10 @@ export default function HomeScreen({ lang = "fr", onGoToWeight, profile }: Props
             <MealBuilderModal
               lang={lang}
               initialMeal={editingMeal}
-              onBack={() => setModalView("meals")}
+              preseedItems={preseedItems}
+              onBack={() => { setPreseedItems([]); setModalView("meals"); }}
               onSaved={async () => {
+                setPreseedItems([]);
                 setModalView("meals");
                 setCustomMeals(await getCustomMeals());
               }}
@@ -933,13 +978,15 @@ function MacroRow({
 // ─── MealSection ──────────────────────────────────────────────────────────────
 
 function MealSection({
-  label, entries, noEntriesLabel, addLabel, onAdd, renderEntry,
+  label, entries, noEntriesLabel, addLabel, onAdd, onSaveAsMeal, saveAsLabel, renderEntry,
 }: {
   label: string;
   entries: LogEntry[];
   noEntriesLabel: string;
   addLabel: string;
   onAdd: () => void;
+  onSaveAsMeal?: () => void;
+  saveAsLabel?: string;
   renderEntry: ({ item }: { item: LogEntry }) => React.ReactElement;
 }) {
   const total = entries.reduce((s, e) => s + e.kcal, 0);
@@ -947,9 +994,16 @@ function MealSection({
     <View style={styles.card}>
       <View style={styles.mealHeader}>
         <Text style={styles.mealTitle}>{label}</Text>
-        {entries.length > 0 && (
-          <Text style={styles.mealTotal}>{total} kcal</Text>
-        )}
+        <View style={{ flexDirection: "row", alignItems: "center", gap: 10 }}>
+          {entries.length > 0 && onSaveAsMeal && saveAsLabel && (
+            <Pressable onPress={onSaveAsMeal} style={styles.saveAsBtn}>
+              <Text style={styles.saveAsTxt}>💾 {saveAsLabel}</Text>
+            </Pressable>
+          )}
+          {entries.length > 0 && (
+            <Text style={styles.mealTotal}>{total} kcal</Text>
+          )}
+        </View>
       </View>
       {entries.length === 0 ? (
         <Text style={styles.muted}>{noEntriesLabel}</Text>
@@ -1192,6 +1246,18 @@ const styles = StyleSheet.create({
     backgroundColor: C.over,
   },
   confirmDeleteTxt: { fontSize: 12, color: "#fff", fontWeight: "700" },
+
+  // My Meals home screen shortcut
+  myMealsShortcut: {
+    flexDirection: "row", alignItems: "center", justifyContent: "center",
+    borderWidth: 1, borderColor: C.accent, borderRadius: 12,
+    paddingVertical: 10, backgroundColor: C.accentSoft, marginBottom: 12,
+  },
+  myMealsShortcutTxt: { fontSize: 14, color: C.accent, fontWeight: "700" },
+
+  // Save as meal (in MealSection header)
+  saveAsBtn: { paddingVertical: 2 },
+  saveAsTxt: { fontSize: 11, color: C.accent, fontWeight: "600" },
 
   // Scan button (in food search)
   scanBtn: {

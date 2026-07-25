@@ -164,6 +164,7 @@ export const translations: Record<string, Record<Lang, string>> = {
   meal_ingredients: { fr: "Ingrédients",              en: "Ingredients" },
   meal_total:       { fr: "Total",                    en: "Total" },
   save_meal:        { fr: "Enregistrer le repas",     en: "Save meal" },
+  save_as_meal:     { fr: "Enregistrer comme repas", en: "Save as a meal" },
   log_all:          { fr: "Tout enregistrer",         en: "Log all" },
   delete_meal:      { fr: "Supprimer",                en: "Delete" },
   add_item:         { fr: "Ajouter un aliment",       en: "Add a food" },
