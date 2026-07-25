@@ -142,7 +142,59 @@ async function initSchema(db: SQLite.SQLiteDatabase): Promise<void> {
       updated_at TEXT NOT NULL,
       is_deleted INTEGER NOT NULL DEFAULT 0
     );
+
+    CREATE TABLE IF NOT EXISTS custom_meals (
+      id         TEXT PRIMARY KEY,
+      name       TEXT NOT NULL,
+      created_at TEXT NOT NULL,
+      updated_at TEXT NOT NULL,
+      is_deleted INTEGER NOT NULL DEFAULT 0
+    );
+
+    CREATE TABLE IF NOT EXISTS custom_meal_items (
+      id            TEXT PRIMARY KEY,
+      meal_id       TEXT NOT NULL,
+      food_id       TEXT,
+      food_name     TEXT NOT NULL,
+      measure_label TEXT NOT NULL,
+      quantity      REAL NOT NULL,
+      grams         REAL NOT NULL,
+      kcal          INTEGER NOT NULL,
+      protein_g     REAL NOT NULL DEFAULT 0,
+      carbs_g       REAL NOT NULL DEFAULT 0,
+      fat_g         REAL NOT NULL DEFAULT 0,
+      sort_order    INTEGER NOT NULL DEFAULT 0
+    );
+    CREATE INDEX IF NOT EXISTS idx_meal_items_meal_id ON custom_meal_items(meal_id);
   `);
+}
+
+// ─── Custom meals ─────────────────────────────────────────────────────────────
+
+export interface NewCustomMealItem {
+  foodId?: string | null;
+  foodName: string;
+  measureLabel: string;
+  quantity: number;
+  grams: number;
+  kcal: number;
+  proteinG: number;
+  carbsG: number;
+  fatG: number;
+}
+
+export interface CustomMealItem extends NewCustomMealItem {
+  id: string;
+  mealId: string;
+  sortOrder: number;
+}
+
+export interface CustomMeal {
+  id: string;
+  name: string;
+  items: CustomMealItem[];
+  createdAt: string;
+  updatedAt: string;
 }
 
 // ─── Profile ──────────────────────────────────────────────────────────────────
@@ -420,6 +472,107 @@ export interface DayKcal {
   date: string;  // YYYY-MM-DD
   kcal: number;
 }
+
+// ─── Custom meal CRUD ─────────────────────────────────────────────────────────
+
+export async function saveCustomMeal(
+  name: string,
+  items: NewCustomMealItem[]
+): Promise<CustomMeal> {
+  const db = await getDb();
+  const id = uuid();
+  const now = new Date().toISOString();
+  await db.runAsync(
+    `INSERT INTO custom_meals (id, name, created_at, updated_at) VALUES (?, ?, ?, ?)`,
+    [id, name, now, now]
+  );
+  const savedItems: CustomMealItem[] = [];
+  for (let i = 0; i < items.length; i++) {
+    const it = items[i];
+    const itemId = uuid();
+    await db.runAsync(
+      `INSERT INTO custom_meal_items
+         (id, meal_id, food_id, food_name, measure_label, quantity, grams, kcal,
+          protein_g, carbs_g, fat_g, sort_order)
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+      [itemId, id, it.foodId ?? null, it.foodName, it.measureLabel,
+       it.quantity, it.grams, it.kcal, it.proteinG, it.carbsG, it.fatG, i]
+    );
+    savedItems.push({
+      ...it, id: itemId, mealId: id, foodId: it.foodId ?? null, sortOrder: i,
+    });
+  }
+  return { id, name, items: savedItems, createdAt: now, updatedAt: now };
+}
+
+export async function updateCustomMeal(
+  id: string,
+  name: string,
+  items: NewCustomMealItem[]
+): Promise<void> {
+  const db = await getDb();
+  const now = new Date().toISOString();
+  await db.runAsync(
+    `UPDATE custom_meals SET name = ?, updated_at = ? WHERE id = ?`,
+    [name, now, id]
+  );
+  await db.runAsync(`DELETE FROM custom_meal_items WHERE meal_id = ?`, [id]);
+  for (let i = 0; i < items.length; i++) {
+    const it = items[i];
+    await db.runAsync(
+      `INSERT INTO custom_meal_items
+         (id, meal_id, food_id, food_name, measure_label, quantity, grams, kcal,
+          protein_g, carbs_g, fat_g, sort_order)
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+      [uuid(), id, it.foodId ?? null, it.foodName, it.measureLabel,
+       it.quantity, it.grams, it.kcal, it.proteinG, it.carbsG, it.fatG, i]
+    );
+  }
+}
+
+export async function getCustomMeals(): Promise<CustomMeal[]> {
+  const db = await getDb();
+  const meals = await db.getAllAsync<any>(
+    `SELECT * FROM custom_meals WHERE is_deleted = 0 ORDER BY created_at ASC`
+  );
+  if (meals.length === 0) return [];
+
+  const ids = meals.map((m: any) => m.id);
+  const placeholders = ids.map(() => "?").join(",");
+  const rows = await db.getAllAsync<any>(
+    `SELECT * FROM custom_meal_items
+      WHERE meal_id IN (${placeholders})
+      ORDER BY meal_id, sort_order`,
+    ids
+  );
+
+  const byMeal: Record<string, CustomMealItem[]> = {};
+  for (const r of rows) {
+    if (!byMeal[r.meal_id]) byMeal[r.meal_id] = [];
+    byMeal[r.meal_id].push({
+      id: r.id, mealId: r.meal_id, foodId: r.food_id ?? null,
+      foodName: r.food_name, measureLabel: r.measure_label,
+      quantity: r.quantity, grams: r.grams, kcal: r.kcal,
+      proteinG: r.protein_g ?? 0, carbsG: r.carbs_g ?? 0, fatG: r.fat_g ?? 0,
+      sortOrder: r.sort_order,
+    });
+  }
+  return meals.map((m: any) => ({
+    id: m.id, name: m.name,
+    items: byMeal[m.id] ?? [],
+    createdAt: m.created_at, updatedAt: m.updated_at,
+  }));
+}
+
+export async function deleteCustomMeal(id: string): Promise<void> {
+  const db = await getDb();
+  await db.runAsync(
+    `UPDATE custom_meals SET is_deleted = 1, updated_at = ? WHERE id = ?`,
+    [new Date().toISOString(), id]
+  );
+}
+
+// ─── Daily kcal history (for bar chart) ───────────────────────────────────────
 
 /**
  * Returns the last `days` calendar days (including today) with their kcal

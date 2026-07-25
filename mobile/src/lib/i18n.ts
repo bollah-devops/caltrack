@@ -134,6 +134,23 @@ export const translations: Record<string, Record<Lang, string>> = {
   floor_note:       { fr: "Minimum sécuritaire appliqué. Plus lent, c'est plus sain.",
                       en: "Safe minimum applied. Slower is healthier." },
 
+  // --- custom meals / recipe builder ---
+  my_meals:         { fr: "Mes repas",                en: "My meals" },
+  foods_tab:        { fr: "Aliments",                 en: "Foods" },
+  new_meal:         { fr: "Nouveau repas",            en: "New meal" },
+  edit_meal:        { fr: "Modifier le repas",        en: "Edit meal" },
+  create_meal:      { fr: "Créer un repas",           en: "Create a meal" },
+  no_custom_meals:  { fr: "Aucun repas enregistré — créez-en un pour loguer plusieurs aliments en un tap.",
+                      en: "No saved meals yet — create one to log several foods in one tap." },
+  meal_name:        { fr: "Nom du repas",             en: "Meal name" },
+  meal_name_ph:     { fr: "ex. Mon petit-déj",        en: "e.g. My breakfast" },
+  meal_ingredients: { fr: "Ingrédients",              en: "Ingredients" },
+  meal_total:       { fr: "Total",                    en: "Total" },
+  save_meal:        { fr: "Enregistrer le repas",     en: "Save meal" },
+  log_all:          { fr: "Tout enregistrer",         en: "Log all" },
+  delete_meal:      { fr: "Supprimer",                en: "Delete" },
+  add_item:         { fr: "Ajouter un aliment",       en: "Add a food" },
+
   // --- standard measure labels (shown on picker chips) ---
   measure_gram:      { fr: "g",            en: "g" },
   measure_ml:        { fr: "ml",           en: "ml" },

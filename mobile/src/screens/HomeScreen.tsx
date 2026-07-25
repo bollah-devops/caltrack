@@ -27,7 +27,10 @@ import { Svg, Path } from "react-native-svg";
 import { computeKcal, computeMacros, FoodItem, FoodMeasure, resolveFoodName, searchFoods } from "../api/foods";
 import {
   addLogEntry,
+  CustomMeal,
+  deleteCustomMeal,
   deleteLogEntry,
+  getCustomMeals,
   getEntriesForDate,
   getStepsForDate,
   getStepsStreak,
@@ -37,6 +40,7 @@ import {
   Profile,
   setStepsDone,
 } from "../db/localStore";
+import MealBuilderModal from "./MealBuilderModal";
 import { Lang, makeT } from "../lib/i18n";
 import { C } from "../lib/theme";
 
@@ -88,6 +92,12 @@ export default function HomeScreen({ lang = "fr", onGoToWeight, profile }: Props
 
   const searchTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
+  // My meals
+  const [modalView, setModalView]             = useState<"foods" | "meals" | "builder">("foods");
+  const [customMeals, setCustomMeals]         = useState<CustomMeal[]>([]);
+  const [editingMeal, setEditingMeal]         = useState<CustomMeal | null>(null);
+  const [deleteConfirmId, setDeleteConfirmId] = useState<string | null>(null);
+
   // ── Load entries/steps/weight on mount ──
   useEffect(() => {
     async function load() {
@@ -105,6 +115,11 @@ export default function HomeScreen({ lang = "fr", onGoToWeight, profile }: Props
     }
     load();
   }, []);
+
+  // ── Load custom meals when modal opens ──
+  useEffect(() => {
+    if (modalOpen) getCustomMeals().then(setCustomMeals);
+  }, [modalOpen]);
 
   // ── Debounced food search ──
   useEffect(() => {
@@ -150,6 +165,8 @@ export default function HomeScreen({ lang = "fr", onGoToWeight, profile }: Props
     setActiveMeal(meal);
     setQuery(""); setResults([]); setPicked(null);
     setMeasureIdx(0); setQuantity("1");
+    setModalView("foods");
+    setDeleteConfirmId(null);
     setModalOpen(true);
   }
 
@@ -184,6 +201,31 @@ export default function HomeScreen({ lang = "fr", onGoToWeight, profile }: Props
   async function handleDelete(id: string) {
     await deleteLogEntry(id);
     setEntries((prev) => prev.filter((e) => e.id !== id));
+  }
+
+  async function handleLogMeal(meal: CustomMeal) {
+    for (const item of meal.items) {
+      await addLogEntry({
+        logDate: today, meal: activeMeal,
+        foodId: item.foodId,
+        foodName: item.foodName,
+        measureLabel: item.measureLabel,
+        quantity: item.quantity,
+        grams: item.grams,
+        kcal: item.kcal,
+        proteinG: item.proteinG,
+        carbsG: item.carbsG,
+        fatG: item.fatG,
+      });
+    }
+    setEntries(await getEntriesForDate(today));
+    closeModal();
+  }
+
+  async function handleDeleteMeal(id: string) {
+    await deleteCustomMeal(id);
+    setCustomMeals((prev) => prev.filter((m) => m.id !== id));
+    setDeleteConfirmId(null);
   }
 
   async function handleSteps() {
@@ -348,160 +390,266 @@ export default function HomeScreen({ lang = "fr", onGoToWeight, profile }: Props
         onRequestClose={closeModal}
       >
         <View style={styles.modal}>
-          {/* Header */}
-          <View style={styles.modalHeader}>
-            {picked ? (
-              <Pressable onPress={() => setPicked(null)} style={styles.backBtn}>
-                <Text style={styles.backTxt}>
-                  ← {t("search_placeholder").split("…")[0].trim()}
-                </Text>
-              </Pressable>
-            ) : (
-              <Text style={styles.modalTitle}>{t("add_food")}</Text>
-            )}
-            <Pressable onPress={closeModal}>
-              <Text style={styles.closeTxt}>✕</Text>
-            </Pressable>
-          </View>
-
-          {/* Meal selector */}
-          <ScrollView
-            horizontal
-            showsHorizontalScrollIndicator={false}
-            style={styles.mealPills}
-          >
-            {MEALS.map((m) => (
-              <Pressable
-                key={m}
-                onPress={() => setActiveMeal(m)}
-                style={[styles.mealPill, activeMeal === m && styles.mealPillOn]}
-              >
-                <Text
-                  style={[
-                    styles.mealPillTxt,
-                    activeMeal === m && styles.mealPillTxtOn,
-                  ]}
-                >
-                  {t(m)}
-                </Text>
-              </Pressable>
-            ))}
-          </ScrollView>
-
-          {/* Phase 1 — Search */}
-          {!picked && (
+          {modalView === "builder" ? (
+            <MealBuilderModal
+              lang={lang}
+              initialMeal={editingMeal}
+              onBack={() => setModalView("meals")}
+              onSaved={async () => {
+                setModalView("meals");
+                setCustomMeals(await getCustomMeals());
+              }}
+            />
+          ) : (
             <>
-              <TextInput
-                style={styles.searchInput}
-                value={query}
-                onChangeText={setQuery}
-                placeholder={t("search_placeholder")}
-                placeholderTextColor={C.muted}
-                autoFocus
-                clearButtonMode="while-editing"
-              />
-              {searching && (
-                <ActivityIndicator color={C.accent} style={{ marginTop: 16 }} />
-              )}
-              <FlatList
-                data={results}
-                keyExtractor={(f) => f.id}
-                keyboardShouldPersistTaps="handled"
-                style={{ flex: 1 }}
-                renderItem={({ item }) => (
-                  <Pressable
-                    style={styles.resultRow}
-                    onPress={() => selectFood(item)}
-                  >
-                    <View style={{ flex: 1 }}>
-                      <Text style={styles.resultName}>{item.name}</Text>
-                      {item.nameEn && item.nameFr && item.nameEn !== item.nameFr && (
-                        <Text style={styles.resultSub}>
-                          {lang === "fr" ? item.nameEn : item.nameFr}
-                        </Text>
-                      )}
-                    </View>
-                    <Text style={styles.resultKcal}>
-                      {item.kcalPer100}{"\n"}
-                      <Text style={styles.resultUnit}>kcal/100g</Text>
+              {/* Header */}
+              <View style={styles.modalHeader}>
+                {picked ? (
+                  <Pressable onPress={() => setPicked(null)} style={styles.backBtn}>
+                    <Text style={styles.backTxt}>
+                      ← {t("search_placeholder").split("…")[0].trim()}
                     </Text>
                   </Pressable>
+                ) : (
+                  <Text style={styles.modalTitle}>{t("add_food")}</Text>
                 )}
-              />
-            </>
-          )}
-
-          {/* Phase 2 — Measure picker */}
-          {picked && (
-            <ScrollView style={{ flex: 1 }} keyboardShouldPersistTaps="handled">
-              <View style={[styles.card, { marginTop: 0, marginBottom: 14 }]}>
-                <Text style={styles.pickedName}>{picked.name}</Text>
-                <Text style={styles.pickedKcal}>
-                  {picked.kcalPer100} kcal / 100 g
-                </Text>
+                <Pressable onPress={closeModal}>
+                  <Text style={styles.closeTxt}>✕</Text>
+                </Pressable>
               </View>
 
-              <Text style={styles.pickerLabel}>{t("choose_measure")}</Text>
+              {/* Meal selector */}
               <ScrollView
                 horizontal
                 showsHorizontalScrollIndicator={false}
-                style={styles.chipScroll}
-                contentContainerStyle={styles.chipRow}
+                style={styles.mealPills}
               >
-                {picked.measures.map((m, i) => (
+                {MEALS.map((m) => (
                   <Pressable
-                    key={i}
-                    onPress={() => setMeasureIdx(i)}
-                    style={[styles.chip, measureIdx === i && styles.chipOn]}
+                    key={m}
+                    onPress={() => setActiveMeal(m)}
+                    style={[styles.mealPill, activeMeal === m && styles.mealPillOn]}
                   >
                     <Text
-                      style={[styles.chipTxt, measureIdx === i && styles.chipTxtOn]}
+                      style={[
+                        styles.mealPillTxt,
+                        activeMeal === m && styles.mealPillTxtOn,
+                      ]}
                     >
-                      {measureDisplay(m.label, t)}
+                      {t(m)}
                     </Text>
-                    {m.label !== "gram" && (
-                      <Text
-                        style={[
-                          styles.chipGrams,
-                          measureIdx === i && styles.chipGramsOn,
-                        ]}
-                      >
-                        {m.grams} g
-                      </Text>
-                    )}
                   </Pressable>
                 ))}
               </ScrollView>
 
-              <Text style={[styles.pickerLabel, { marginTop: 20 }]}>
-                {t("quantity")}
-              </Text>
-              <TextInput
-                style={styles.qtyInput}
-                value={quantity}
-                onChangeText={(v) => setQuantity(v.replace(/[^\d.]/g, ""))}
-                keyboardType="decimal-pad"
-                selectTextOnFocus
-              />
-
-              {qty > 0 && measure && (
-                <View style={styles.previewBox}>
-                  <Text style={styles.previewTxt}>
-                    {qty} {measureDisplay(measure.label, t)}
-                    {" = "}{previewGrams} g{" = "}
-                    <Text style={styles.previewKcal}>{previewKcal} kcal</Text>
+              {/* Tab toggle: Foods | My Meals */}
+              <View style={styles.tabToggle}>
+                <Pressable
+                  style={[styles.tabToggleBtn, modalView === "foods" && styles.tabToggleBtnOn]}
+                  onPress={() => { setModalView("foods"); setPicked(null); }}
+                >
+                  <Text style={[styles.tabToggleTxt, modalView === "foods" && styles.tabToggleTxtOn]}>
+                    {t("foods_tab")}
                   </Text>
-                </View>
+                </Pressable>
+                <Pressable
+                  style={[styles.tabToggleBtn, modalView === "meals" && styles.tabToggleBtnOn]}
+                  onPress={() => setModalView("meals")}
+                >
+                  <Text style={[styles.tabToggleTxt, modalView === "meals" && styles.tabToggleTxtOn]}>
+                    {t("my_meals")}
+                  </Text>
+                </Pressable>
+              </View>
+
+              {/* Foods tab */}
+              {modalView === "foods" && (
+                <>
+                  {/* Phase 1 — Search */}
+                  {!picked && (
+                    <>
+                      <TextInput
+                        style={styles.searchInput}
+                        value={query}
+                        onChangeText={setQuery}
+                        placeholder={t("search_placeholder")}
+                        placeholderTextColor={C.muted}
+                        autoFocus
+                        clearButtonMode="while-editing"
+                      />
+                      {searching && (
+                        <ActivityIndicator color={C.accent} style={{ marginTop: 16 }} />
+                      )}
+                      <FlatList
+                        data={results}
+                        keyExtractor={(f) => f.id}
+                        keyboardShouldPersistTaps="handled"
+                        style={{ flex: 1 }}
+                        renderItem={({ item }) => (
+                          <Pressable
+                            style={styles.resultRow}
+                            onPress={() => selectFood(item)}
+                          >
+                            <View style={{ flex: 1 }}>
+                              <Text style={styles.resultName}>{item.name}</Text>
+                              {item.nameEn && item.nameFr && item.nameEn !== item.nameFr && (
+                                <Text style={styles.resultSub}>
+                                  {lang === "fr" ? item.nameEn : item.nameFr}
+                                </Text>
+                              )}
+                            </View>
+                            <Text style={styles.resultKcal}>
+                              {item.kcalPer100}{"\n"}
+                              <Text style={styles.resultUnit}>kcal/100g</Text>
+                            </Text>
+                          </Pressable>
+                        )}
+                      />
+                    </>
+                  )}
+
+                  {/* Phase 2 — Measure picker */}
+                  {picked && (
+                    <ScrollView style={{ flex: 1 }} keyboardShouldPersistTaps="handled">
+                      <View style={[styles.card, { marginTop: 0, marginBottom: 14 }]}>
+                        <Text style={styles.pickedName}>{picked.name}</Text>
+                        <Text style={styles.pickedKcal}>
+                          {picked.kcalPer100} kcal / 100 g
+                        </Text>
+                      </View>
+
+                      <Text style={styles.pickerLabel}>{t("choose_measure")}</Text>
+                      <ScrollView
+                        horizontal
+                        showsHorizontalScrollIndicator={false}
+                        style={styles.chipScroll}
+                        contentContainerStyle={styles.chipRow}
+                      >
+                        {picked.measures.map((m, i) => (
+                          <Pressable
+                            key={i}
+                            onPress={() => setMeasureIdx(i)}
+                            style={[styles.chip, measureIdx === i && styles.chipOn]}
+                          >
+                            <Text
+                              style={[styles.chipTxt, measureIdx === i && styles.chipTxtOn]}
+                            >
+                              {measureDisplay(m.label, t)}
+                            </Text>
+                            {m.label !== "gram" && (
+                              <Text
+                                style={[
+                                  styles.chipGrams,
+                                  measureIdx === i && styles.chipGramsOn,
+                                ]}
+                              >
+                                {m.grams} g
+                              </Text>
+                            )}
+                          </Pressable>
+                        ))}
+                      </ScrollView>
+
+                      <Text style={[styles.pickerLabel, { marginTop: 20 }]}>
+                        {t("quantity")}
+                      </Text>
+                      <TextInput
+                        style={styles.qtyInput}
+                        value={quantity}
+                        onChangeText={(v) => setQuantity(v.replace(/[^\d.]/g, ""))}
+                        keyboardType="decimal-pad"
+                        selectTextOnFocus
+                      />
+
+                      {qty > 0 && measure && (
+                        <View style={styles.previewBox}>
+                          <Text style={styles.previewTxt}>
+                            {qty} {measureDisplay(measure.label, t)}
+                            {" = "}{previewGrams} g{" = "}
+                            <Text style={styles.previewKcal}>{previewKcal} kcal</Text>
+                          </Text>
+                        </View>
+                      )}
+
+                      <Pressable
+                        style={[styles.cta, (!qty || qty <= 0) && styles.ctaDisabled]}
+                        onPress={handleLog}
+                        disabled={!qty || qty <= 0}
+                      >
+                        <Text style={styles.ctaTxt}>{t("confirm")}</Text>
+                      </Pressable>
+                    </ScrollView>
+                  )}
+                </>
               )}
 
-              <Pressable
-                style={[styles.cta, (!qty || qty <= 0) && styles.ctaDisabled]}
-                onPress={handleLog}
-                disabled={!qty || qty <= 0}
-              >
-                <Text style={styles.ctaTxt}>{t("confirm")}</Text>
-              </Pressable>
-            </ScrollView>
+              {/* My Meals tab */}
+              {modalView === "meals" && (
+                <ScrollView style={{ flex: 1 }} keyboardShouldPersistTaps="handled">
+                  {customMeals.length === 0 ? (
+                    <Text style={[styles.muted, { padding: 24, textAlign: "center" }]}>
+                      {t("no_custom_meals")}
+                    </Text>
+                  ) : (
+                    customMeals.map((meal) => (
+                      <View key={meal.id} style={styles.mealCardRow}>
+                        {deleteConfirmId === meal.id ? (
+                          <View style={styles.deleteConfirm}>
+                            <Text style={styles.deleteConfirmTxt} numberOfLines={1}>
+                              {lang === "fr"
+                                ? `Supprimer « ${meal.name} » ?`
+                                : `Delete "${meal.name}"?`}
+                            </Text>
+                            <View style={{ flexDirection: "row", gap: 8 }}>
+                              <Pressable style={styles.cancelBtn} onPress={() => setDeleteConfirmId(null)}>
+                                <Text style={styles.cancelTxt}>
+                                  {lang === "fr" ? "Annuler" : "Cancel"}
+                                </Text>
+                              </Pressable>
+                              <Pressable style={styles.confirmDeleteBtn} onPress={() => handleDeleteMeal(meal.id)}>
+                                <Text style={styles.confirmDeleteTxt}>{t("delete_meal")}</Text>
+                              </Pressable>
+                            </View>
+                          </View>
+                        ) : (
+                          <>
+                            <Pressable style={styles.mealCardMain} onPress={() => handleLogMeal(meal)}>
+                              <Text style={styles.mealCardName}>{meal.name}</Text>
+                              <Text style={styles.mealCardMeta}>
+                                {meal.items.length}
+                                {lang === "fr"
+                                  ? ` aliment${meal.items.length > 1 ? "s" : ""}`
+                                  : ` item${meal.items.length > 1 ? "s" : ""}`}
+                                {"  ·  "}
+                                {meal.items.reduce((s, i) => s + i.kcal, 0)} kcal
+                              </Text>
+                            </Pressable>
+                            <Pressable
+                              onPress={() => { setEditingMeal(meal); setModalView("builder"); }}
+                              style={styles.mealActionBtn}
+                            >
+                              <Text style={styles.mealActionTxt}>✏</Text>
+                            </Pressable>
+                            <Pressable
+                              onPress={() => setDeleteConfirmId(meal.id)}
+                              style={styles.mealActionBtn}
+                            >
+                              <Text style={[styles.mealActionTxt, { color: C.over }]}>✕</Text>
+                            </Pressable>
+                          </>
+                        )}
+                      </View>
+                    ))
+                  )}
+                  <Pressable
+                    style={styles.createMealBtn}
+                    onPress={() => { setEditingMeal(null); setModalView("builder"); }}
+                  >
+                    <Text style={styles.createMealTxt}>+ {t("create_meal")}</Text>
+                  </Pressable>
+                </ScrollView>
+              )}
+            </>
           )}
         </View>
       </Modal>
@@ -860,4 +1008,47 @@ const styles = StyleSheet.create({
   },
   ctaDisabled: { opacity: 0.4 },
   ctaTxt:      { color: "#fff", fontWeight: "700", fontSize: 16 },
+
+  // Tab toggle (Foods | My Meals)
+  tabToggle: {
+    flexDirection: "row", marginHorizontal: 16, marginBottom: 12,
+    backgroundColor: C.line, borderRadius: 10, padding: 3,
+  },
+  tabToggleBtn:   { flex: 1, paddingVertical: 8, borderRadius: 8, alignItems: "center" as const },
+  tabToggleBtnOn: { backgroundColor: C.card },
+  tabToggleTxt:   { fontSize: 13, fontWeight: "600", color: C.muted },
+  tabToggleTxtOn: { color: C.ink },
+
+  // My Meals list rows
+  mealCardRow: {
+    flexDirection: "row", alignItems: "center",
+    paddingHorizontal: 16, paddingVertical: 14,
+    borderBottomWidth: 1, borderColor: C.line,
+  },
+  mealCardMain: { flex: 1 },
+  mealCardName: { fontSize: 15, fontWeight: "600", color: C.ink },
+  mealCardMeta: { fontSize: 12, color: C.muted, marginTop: 2 },
+  mealActionBtn:{ padding: 10 },
+  mealActionTxt:{ fontSize: 16, color: C.muted },
+
+  // Delete confirmation inline
+  deleteConfirm: { flex: 1, flexDirection: "row", alignItems: "center", gap: 8 },
+  deleteConfirmTxt: { fontSize: 13, color: C.ink, flex: 1 },
+  cancelBtn: {
+    paddingVertical: 6, paddingHorizontal: 10, borderRadius: 8,
+    borderWidth: 1, borderColor: C.line,
+  },
+  cancelTxt:        { fontSize: 12, color: C.muted },
+  confirmDeleteBtn: {
+    paddingVertical: 6, paddingHorizontal: 10, borderRadius: 8,
+    backgroundColor: C.over,
+  },
+  confirmDeleteTxt: { fontSize: 12, color: "#fff", fontWeight: "700" },
+
+  // Create meal button
+  createMealBtn: {
+    margin: 16, borderWidth: 1.5, borderColor: C.accent,
+    borderRadius: 12, paddingVertical: 12, alignItems: "center" as const,
+  },
+  createMealTxt: { color: C.accent, fontWeight: "700", fontSize: 14 },
 });
