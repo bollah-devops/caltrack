@@ -29,7 +29,6 @@ import {
   addLogEntry,
   deleteLogEntry,
   getEntriesForDate,
-  getProfile,
   getStepsForDate,
   getStepsStreak,
   getWeightLogs,
@@ -63,16 +62,15 @@ const MEALS: Meal[] = ["breakfast", "lunch", "dinner", "snack"];
 interface Props {
   lang?: Lang;
   onGoToWeight: () => void;
-  profileVersion?: number;
+  profile: Profile | null;
 }
 
-export default function HomeScreen({ lang = "fr", onGoToWeight, profileVersion = 0 }: Props) {
+export default function HomeScreen({ lang = "fr", onGoToWeight, profile }: Props) {
   const t = makeT(lang);
   const today = todayISO();
 
   // Core state
   const [loading, setLoading]           = useState(true);
-  const [profile, setProfile]           = useState<Profile | null>(null);
   const [entries, setEntries]           = useState<LogEntry[]>([]);
   const [stepsDone, setStepsDoneState]  = useState(false);
   const [latestWeight, setLatestWeight] = useState<number | null>(null);
@@ -90,17 +88,15 @@ export default function HomeScreen({ lang = "fr", onGoToWeight, profileVersion =
 
   const searchTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  // ── Load on mount and when profile is saved ──
+  // ── Load entries/steps/weight on mount ──
   useEffect(() => {
     async function load() {
-      const [p, e, s, wLogs, str] = await Promise.all([
-        getProfile(),
+      const [e, s, wLogs, str] = await Promise.all([
         getEntriesForDate(today),
         getStepsForDate(today),
         getWeightLogs(1),
         getStepsStreak(),
       ]);
-      setProfile(p);
       setEntries(e);
       setStepsDoneState(s?.stepsDone ?? false);
       setLatestWeight(wLogs[0]?.weightKg ?? null);
@@ -108,7 +104,7 @@ export default function HomeScreen({ lang = "fr", onGoToWeight, profileVersion =
       setLoading(false);
     }
     load();
-  }, [profileVersion]);
+  }, []);
 
   // ── Debounced food search ──
   useEffect(() => {

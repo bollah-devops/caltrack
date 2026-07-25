@@ -108,7 +108,7 @@ function AppInner() {
       {/* Screen area — all 3 tabs stay mounted, visibility toggled */}
       <View style={{ flex: 1 }}>
         <View style={[StyleSheet.absoluteFill, { display: tab === "home" ? "flex" : "none" }]}>
-          <HomeScreen lang={lang} onGoToWeight={() => setTab("weight")} profileVersion={profileVersion} />
+          <HomeScreen lang={lang} onGoToWeight={() => setTab("weight")} profile={profile} />
         </View>
         <View style={[StyleSheet.absoluteFill, { display: tab === "history" ? "flex" : "none" }]}>
           <HistoryScreen lang={lang} />
@@ -122,9 +122,9 @@ function AppInner() {
             initialProfile={profile ?? undefined}
             onComplete={async () => {
               const p = await getProfile();
+              console.log("[CT] App onComplete read back dailyTarget=", p?.dailyTarget, "activity=", p?.activity);
               setProfile(p);
               if (p?.lang) setLang(p.lang as Lang);
-              setProfileVersion((v) => v + 1);
               setTab("home");
             }}
           />

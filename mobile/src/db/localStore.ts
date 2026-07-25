@@ -148,6 +148,7 @@ async function initSchema(db: SQLite.SQLiteDatabase): Promise<void> {
 // ─── Profile ──────────────────────────────────────────────────────────────────
 
 export async function saveProfile(p: Profile): Promise<void> {
+  console.log("[CT] saveProfile activity=", p.activity, "dailyTarget=", p.dailyTarget, "maintenance=", p.maintenance);
   const db = await getDb();
   await db.runAsync(
     `INSERT OR REPLACE INTO profiles
@@ -169,6 +170,7 @@ export async function getProfile(): Promise<Profile | null> {
     `SELECT * FROM profiles WHERE id = 1`
   );
   if (!row) return null;
+  console.log("[CT] getProfile activity=", row.activity, "dailyTarget=", row.daily_target);
   return {
     sex:           row.sex,
     age:           row.age,
