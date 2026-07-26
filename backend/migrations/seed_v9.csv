@@ -1,0 +1,531 @@
+name_fr,name_en,search_aka,region,category,basis,kcal_per_100,measures,default_measure,local_portion,status,notes,protein_g,carbs_g,fat_g
+Ndolé,Ndole,ndole ndolé ndolé,Littoral/Sawa,sauce/stew,100g,160.0,gram:1|tablespoon:15|cup:240|ladle:150,gram,1 louche,estimate — verify,bitterleaf groundnut stew with meat/shrimp,8.0,6.0,11.0
+Eru,Eru,eru okazi afang waterleaf,Southwest/Centre,sauce/stew,100g,140.0,gram:1|tablespoon:15|cup:240|ladle:150,gram,1 louche,estimate — verify,eru (okazi) leaf with waterleaf and red palm oil,5.0,5.0,11.0
+Okok salé,Okok (savoury),okok mfumbwa koko salé savoury,Centre/Beti,sauce/stew,100g,150.0,gram:1|tablespoon:15|cup:240|ladle:150,gram,1 louche,estimate — verify,"okok leaf, savoury preparation with palm oil and meat/fish",5.5,5.5,11.5
+Okok sucré,Okok (sweet),okok mfumbwa koko sucré sweet,Centre/Beti,sauce/stew,100g,175.0,gram:1|tablespoon:15|cup:240|ladle:150,gram,1 louche,estimate — verify,"okok leaf, sweet preparation with groundnut and sugarcane juice",6.0,9.0,12.0
+Kpwem,Kpwem (cassava leaf),kpem kpwem kpem,Centre/Beti,sauce/stew,100g,120.0,gram:1|tablespoon:15|cup:240|ladle:150,gram,1 louche,estimate — verify,young cassava leaves often with groundnut,4.5,6.0,8.5
+Sanga,Sanga,sanga,Centre,dish,100g,120.0,gram:1|cup:200|1 plat moyen:250.0,gram,1 plat moyen,estimate — verify,fresh corn with cassava leaves,3.5,18.0,3.5
+Njama njama sauté,Sauteed huckleberry (njama njama),njama njama huckleberry huckleberry,Northwest,vegetable,100g,90.0,gram:1|cup:100|handful:30|1 portion:150.0,gram,1 portion,estimate — verify,sauteed with oil and onion,3.5,5.0,6.0
+Folong sauté,Sauteed amaranth (folong),folong zom amaranth amaranth/zom,Centre,vegetable,100g,70.0,gram:1|cup:100|handful:30|1 portion:150.0,gram,1 portion,estimate — verify,,3.0,4.0,4.5
+Sauce gombo,Okra sauce,gombo okra sauce okra sauce,national,sauce,100g,90.0,gram:1|tablespoon:15|cup:240|ladle:150,gram,1 louche,estimate — verify,,3.0,6.0,6.0
+Sauce gombo sec,Dried okra sauce,gombo sec dried okra dried okra,Grand Nord,sauce,100g,110.0,gram:1|tablespoon:15|cup:240|ladle:150,gram,1 louche,estimate — verify,,3.5,7.0,7.5
+Sauce follère,Roselle leaf sauce (follère),follere folere roselle roselle leaf sauce,Grand Nord,sauce,100g,100.0,gram:1|tablespoon:15|cup:240|ladle:150,gram,1 louche,estimate — verify,,3.0,6.5,6.5
+Sauce arachide,Groundnut sauce (mafé),arachide mafe groundnut peanut mafé/groundnut sauce,national,sauce,100g,190.0,gram:1|tablespoon:15|cup:240|ladle:150,gram,1 louche,estimate — verify,,8.0,8.0,13.5
+Sauce tomate,Tomato sauce,tomate tomato stew tomato stew,national,sauce,100g,90.0,gram:1|tablespoon:15|cup:240|ladle:150,gram,1 louche,estimate — verify,includes typical oil,2.5,6.0,6.0
+Sauce jaune,Yellow soup (achu soup),achu jaune yellow achu soup,Northwest/West,sauce,100g,150.0,gram:1|tablespoon:15|cup:240|ladle:150,gram,1 louche,estimate — verify,palm oil and limestone base,3.0,7.0,11.5
+Nkui,Nkui,nkui,West/Bamileke,sauce,100g,70.0,gram:1|tablespoon:15|cup:240|ladle:150|1 bol:200.0,gram,1 bol,estimate — verify,slippery bark-based sauce low oil,2.0,8.0,3.0
+Mbongo tchobi,Mbongo tchobi (black stew),mbongo tchobi black black stew,Littoral/Bassa,sauce/stew,100g,130.0,gram:1|tablespoon:15|cup:240|ladle:150,gram,1 louche,estimate — verify,burnt-spice black sauce with fish,11.0,3.0,8.0
+Sauce mbanga,Palm nut soup (mbanga),mbanga palm nut palm nut soup,Southwest,soup,100g,180.0,gram:1|tablespoon:15|cup:240|ladle:150,gram,1 louche,estimate — verify,,5.0,6.0,15.0
+Sauce pistache (egusi),Egusi / pistachio soup,egusi pistache pistachio melon pistache sauce,national,sauce/stew,100g,200.0,gram:1|tablespoon:15|cup:240|ladle:150,gram,1 louche,estimate — verify,melon seed rich,9.0,6.0,15.0
+Pistache vapeur (ngon),Steamed egusi pudding (ngon),pistache ngon egusi steamed egusi pudding/ngon,Centre,steamed dish,100g,190.0,gram:1|cup:200,gram,1 paquet moyen,estimate — verify,steamed in leaves,10.0,7.0,13.0
+Koki (gâteau de haricot),Koki (bean cake),koki bean cake haricot koki beans/gateau haricot,West/national,steamed dish,100g,185.0,gram:1|cup:200,gram,1 paquet moyen,estimate — verify,cowpea pudding with palm oil,9.0,15.0,9.0
+Ekwang,Ekwang,ekwang,Southwest/Bakweri,dish,100g,170.0,gram:1|cup:200|1 portion:250.0,gram,1 portion,estimate — verify,grated cocoyam wrapped in leaves,3.5,20.0,8.0
+Kwacoco bible,Kwacoco bible,kwacoco kwacoco,Southwest,dish,100g,180.0,gram:1|cup:200|1 paquet:250.0,gram,1 paquet,estimate — verify,grated cocoyam with fish and oil,4.0,21.0,8.5
+Kondre,Kondre (plantain stew),kondre plantain,West,plantain stew,100g,130.0,gram:1|cup:200|1 plat moyen:300.0,gram,1 plat moyen,estimate — verify,plantain with meat,5.0,17.0,4.0
+Ndomba,Ndomba (fish/meat in leaves),ndomba mintsan fish/meat in leaves,Centre/Littoral,dish,100g,110.0,gram:1|cup:200,gram,1 paquet,estimate — verify,steamed with spices minimal oil,14.0,2.0,5.0
+Mbol,Mbol,mbol,Centre/Beti,sauce,100g,120.0,gram:1|tablespoon:15|cup:240|ladle:150,gram,1 louche,estimate — verify,groundnut-free spiced sauce,4.0,7.0,8.0
+Pepper soup (pèppè),Pepper soup,pepper soup peppe pèppè soup,national,soup,100g,50.0,gram:1|tablespoon:15|cup:240|ladle:150|1 bol:300.0,gram,1 bol,estimate — verify,light spicy broth,7.0,1.5,1.5
+Corn chaff,Corn chaff (corn & beans),corn chaff maïs haricot,Northwest,dish,100g,140.0,gram:1|cup:200|1 plat moyen:300.0,gram,1 plat moyen,estimate — verify,corn and beans with palm oil,6.0,21.0,3.5
+Achu (taro pilé),Achu (pounded taro),achu taro taro pilé,Northwest/West,swallow,100g,110.0,gram:1|cup:200|tablespoon:15|1 boule moyenne:250.0,gram,1 boule moyenne,estimate — verify,pounded cocoyam/taro,1.5,25.0,0.3
+Water fufu (fufu de manioc),Water fufu (cassava),water fufu manioc cassava fufu de manioc,Southwest/national,swallow,100g,120.0,gram:1|cup:200|tablespoon:15|1 boule moyenne:250.0,gram,1 boule moyenne,estimate — verify,fermented cassava,0.8,29.0,0.2
+Fufu de maïs,Corn fufu,corn fufu maïs couscous couscous de maïs,Northwest/West,swallow,100g,110.0,gram:1|cup:200|tablespoon:15|1 boule moyenne:250.0,gram,1 boule moyenne,estimate — verify,,2.0,24.0,0.6
+Garri (sec),Garri (dry),garri gari sec dry,national,staple,100g,357.0,gram:1|tablespoon:10|cup:150|1 verre:100.0,gram,1 verre,estimate — verify,dry before soaking,1.5,84.0,0.5
+Garri à l'eau,Soaked garri,garri gari soaked eau garri à l'eau,national,staple,100g,100.0,gram:1|tablespoon:10|cup:150|1 bol:300.0,gram,1 bol,estimate — verify,soaked with water,0.5,24.0,0.2
+Boule de mil,Millet ball (la boule),boule mil millet sorghum la boule,Grand Nord,swallow,100g,105.0,gram:1|cup:200|tablespoon:15|1 boule moyenne:250.0,gram,1 boule moyenne,estimate — verify,millet or sorghum paste,2.8,22.0,0.8
+Riz blanc cuit,White rice (cooked),riz rice blanc white,national,staple,100g,130.0,gram:1|cup:200|tablespoon:15,gram,1 tasse cuite,estimate — verify,,2.7,28.0,0.3
+Riz sauté,Fried rice,riz sauté fried rice,national,staple,100g,175.0,gram:1|cup:200|tablespoon:15|1 plat moyen:250.0,gram,1 plat moyen,estimate — verify,fried rice with oil and vegetables,4.0,26.0,6.0
+Plantain bouilli,Boiled plantain,plantain bouilli boiled,national,staple,100g,116.0,gram:1|cup:200|tablespoon:15|1 doigt moyen:150.0,gram,1 doigt moyen,estimate — verify,,1.3,28.0,0.3
+Plantain mûr frit,Fried ripe plantain,plantain frit fried dodo,national,side,100g,200.0,gram:1|cup:200|1 portion:100.0,gram,1 portion,estimate — verify,,1.5,30.0,8.0
+Plantain braisé (bôbolô),Roasted plantain (boli),plantain braisé roasted boli boli,national,street food,100g,125.0,gram:1|cup:200|1 doigt moyen:150.0,gram,1 doigt moyen,estimate — verify,,1.3,30.0,0.4
+Macabo bouilli,Boiled cocoyam (macabo),macabo cocoyam bouilli cocoyam,national,staple,100g,112.0,gram:1|cup:200|tablespoon:15|1 morceau moyen:150.0,gram,1 morceau moyen,estimate — verify,,1.5,26.0,0.2
+Igname bouillie,Boiled yam,igname yam bouillie yam,national,staple,100g,116.0,gram:1|cup:200|tablespoon:15|1 morceau moyen:150.0,gram,1 morceau moyen,estimate — verify,,1.5,27.0,0.2
+Patate douce bouillie,Boiled sweet potato,patate douce sweet potato,national,staple,100g,90.0,gram:1|cup:200|tablespoon:15|1 morceau moyen:150.0,gram,1 morceau moyen,estimate — verify,,1.6,20.0,0.1
+Manioc bouilli,Boiled cassava,manioc cassava bouilli cassava,national,staple,100g,160.0,gram:1|cup:200|tablespoon:15|1 morceau moyen:150.0,gram,1 morceau moyen,estimate — verify,,1.4,38.0,0.3
+Bâton de manioc (bobolo),Cassava stick (bobolo),baton bobolo manioc cassava bobolo,Centre/Littoral,staple,100g,150.0,gram:1|cup:200|tablespoon:15|piece:150,gram,1 bâton moyen (150g),estimate — verify,150 kcal per 100g,1.0,36.0,0.3
+Miondo,Miondo (cassava stick),miondo mintumba,Littoral,staple,100g,150.0,gram:1|cup:200|tablespoon:15,gram,1 paquet (200g),estimate — verify,150 kcal per 100g,1.0,36.0,0.3
+Mintumba,Mintumba (cassava cake),mintumba cassava pudding,Littoral,steamed dish,100g,180.0,gram:1|cup:200|1 morceau:150.0,gram,1 morceau,estimate — verify,cassava with palm oil steamed,1.5,30.0,5.5
+Tapioca,Tapioca,tapioca,national,staple,100g,150.0,gram:1|cup:200|tablespoon:15|1 bol prepare:250.0,gram,1 bol prepare,estimate — verify,soaked pearls with milk/sugar varies,0.5,36.0,0.3
+Pommes frites,French fries,frites fries chips fries,urban,side,100g,310.0,gram:1|cup:200|1 portion:150.0,gram,1 portion,estimate — verify,,3.4,41.0,15.0
+Spaghetti sauté,Fried spaghetti,spaghetti sauté fried,urban/street,dish,100g,150.0,gram:1|cup:200|1 plat moyen:300.0,gram,1 plat moyen,estimate — verify,with vegetables and oil,4.5,22.0,4.5
+Omelette spaghetti,Spaghetti omelette,omelette spaghetti,street,dish,100g,171.4,gram:1|cup:200|piece:350,gram,1 plat tournedos,estimate — verify,street breakfast classic,7.0,18.0,8.5
+Poisson braisé,Grilled fish,poisson braisé grilled fish bar grilled fish/bar/tilapia,national,protein,100g,150.0,gram:1|piece:100|1 poisson moyen:300.0,gram,1 poisson moyen,estimate — verify,with oil brushing average,22.0,0.0,6.5
+Maquereau braisé,Grilled mackerel,maquereau mackerel braisé,national,protein,100g,205.0,gram:1|piece:100|1 poisson moyen:250.0,gram,1 poisson moyen,estimate — verify,oilier fish,21.0,0.0,13.5
+Poulet braisé,Grilled chicken,poulet braisé grilled chicken,national,protein,100g,190.0,gram:1|piece:100|1 quart de poulet:250.0,gram,1 quart de poulet,estimate — verify,,26.0,0.0,9.5
+Poulet DG,Poulet DG,poulet dg directeur general,urban,dish,100g,200.0,gram:1|cup:200|1 plat complet:400.0,gram,1 plat complet,estimate — verify,chicken plantain vegetables in oil,11.0,17.0,9.0
+Kati kati,Kati kati (grilled chicken),kati kati,Northwest,protein,100g,190.0,gram:1|piece:100|1 portion:200.0,gram,1 portion,estimate — verify,grilled chicken in palm oil,17.0,1.0,13.0
+Porc braisé,Grilled pork,porc braisé grilled pork grilled pork,urban,protein,100g,290.0,gram:1|piece:100|1 portion:200.0,gram,1 portion,estimate — verify,fatty cuts common,22.0,0.0,22.0
+Soya (brochette de bœuf),Soya (beef skewer),soya brochette skewer suya brochette de boeuf,street/national,protein,100g,288.9,gram:1|piece:45,gram,1 baton,estimate — verify,per skewer,26.0,3.0,18.5
+Brochette de porc,Pork skewer,brochette porc pork skewer,street,protein,100g,320.0,gram:1|piece:50,gram,1 baton,estimate — verify,,25.5,2.2,23.3
+Kilishi,Kilishi (spiced dried beef),kilishi dried beef,Grand Nord,snack,100g,380.0,gram:1|cup:200|1 sachet moyen:50.0,gram,1 sachet moyen,estimate — verify,spiced dried beef,45.0,12.0,17.0
+Viande en sauce,Meat in sauce,viande meat sauce boeuf boeuf en sauce,national,protein,100g,180.0,gram:1|piece:100|1 louche avec viande:150.0,gram,1 louche avec viande,estimate — verify,,16.0,2.0,11.5
+Escargots,Snails,escargots snails nyama nyama ngub/snails,Centre/Sud,protein,100g,90.0,gram:1|piece:100|1 portion:150.0,gram,1 portion,estimate — verify,boiled,17.0,2.1,1.5
+Escargots pimentés,Peppered snails,escargots pimentés peppered snails,Centre/Sud,protein,100g,145.0,gram:1|piece:100|1 portion:150.0,gram,1 portion,estimate — verify,with oil,15.0,2.5,8.0
+Crevettes sautées (njanga),Sauteed shrimp (njanga),crevettes njanga shrimp prawns njanga fresh,Littoral,protein,100g,150.0,gram:1|piece:100,gram,1 portion,estimate — verify,,20.0,1.0,7.5
+Njanga sec (crevettes séchées),Dried crayfish (njanga),njanga crayfish dried crevettes dried crayfish,national,condiment,100g,320.0,gram:1|cup:200|1 poignee:20.0,gram,1 poignee,estimate — verify,,55.0,3.0,9.0
+Poisson fumé,Smoked fish,poisson fumé smoked fish smoked fish,national,protein,100g,290.0,gram:1|piece:100|1 morceau:80.0,gram,1 morceau,estimate — verify,,55.0,0.0,7.5
+Makayabu (morue salée),Salted cod (makayabu),makayabu cod salted morue stockfish/salted fish,Littoral,protein,100g,180.0,gram:1|piece:100,gram,1 morceau,estimate — verify,,25.0,0.0,8.5
+Œuf bouilli,Boiled egg,oeuf egg bouilli boiled boiled egg,national,protein,100g,156.0,gram:1|piece:50,gram,1 oeuf,estimate — verify,,12.6,1.1,10.6
+Œuf en omelette,Omelette egg,oeuf omelette egg,national,protein,100g,183.3,gram:1|piece:60,gram,1 oeuf avec huile,estimate — verify,,12.0,1.2,14.0
+Haricot rouge cuit,Cooked red beans,haricot beans rouge red beans,national,staple,100g,130.0,gram:1|cup:200|tablespoon:15,gram,1 louche,estimate — verify,plain,9.3,21.8,0.7
+Haricot à l'huile,Beans in oil,haricot beans huile oil,street,staple,100g,165.0,gram:1|ml:0.92|teaspoon:4.5|tablespoon:14|cup:218|1 louche:200.0,gram,1 louche,estimate — verify,with palm/veg oil,8.0,19.0,5.5
+Beignet soufflé (puff-puff),Puff-puff (fried dough),beignet puff puff soufflé puff-puff/boule,street,snack,100g,271.4,gram:1,gram,,estimate — verify,weigh in grams; piece sizes vary by seller,5.5,38.0,11.0
+Beignet haricot (accra),Bean fritter (accra),beignet haricot accra akara accra haricot,street,snack,100g,242.9,gram:1,gram,,estimate — verify,weigh in grams; piece sizes vary by seller,7.0,28.0,10.5
+BHB complet (beignet-haricot-bouillie),BHB combo (fritter-beans-pap),bhb beignet haricot bouillie beignet-haricot-bouillie,street,combo,100g,130.0,gram:1|cup:200|piece:500,gram,1 portion standard,estimate — verify,2 beignets + haricot + bouillie,5.6,16.0,4.8
+Accra banane,Banana fritter,accra banane banana fritter beignet banane,street,snack,100g,275.0,gram:1,gram,,estimate — verify,weigh in grams; piece sizes vary by seller,3.5,40.0,11.0
+Croquettes,Croquettes,croquettes,street,snack,100g,450.0,gram:1|cup:200|1 sachet:60.0,gram,1 sachet,estimate — verify,,6.0,50.0,24.0
+Chin-chin,Chin-chin,chin chin,street,snack,100g,480.0,gram:1|cup:200|1 sachet:60.0,gram,1 sachet,estimate — verify,,7.0,60.0,22.0
+Chips de plantain,Plantain chips,chips plantain crisps plantain chips,street,snack,100g,520.0,gram:1|cup:200|1 sachet moyen:50.0,gram,1 sachet moyen,estimate — verify,,2.5,58.0,29.0
+Gâteau local,Local cake,gateau cake cake local,street,snack,100g,333.3,gram:1|cup:200|piece:45,gram,1 part,estimate — verify,,5.0,45.0,14.0
+Pain (baguette),Bread (baguette),pain bread baguette baguette,national,staple,100g,265.0,gram:1|cup:200|tablespoon:15|piece:250|1 demi-baguette:125.0,gram,1 demi-baguette,estimate — verify,,9.0,50.0,3.2
+Pain chargé,Loaded sandwich,pain chargé sandwich sandwich complet,street,combo,100g,220.0,gram:1|cup:200|piece:250,gram,1 sandwich,estimate — verify,bread + omelette/spaghetti/mayo,8.0,30.0,8.0
+Pain beurré,Buttered bread,pain beurre butter bread,street,combo,100g,237.0,gram:1|cup:200|piece:135,gram,1 demi-baguette beurree,estimate — verify,,7.5,40.0,6.0
+Bouillie de maïs (pap),Corn pap (porridge),bouillie mais pap corn porridge corn pap,national,porridge,100g,70.0,gram:1|cup:200|tablespoon:15|1 bol:300.0,gram,1 bol,estimate — verify,plain without extra sugar,1.5,14.5,0.6
+Bouillie de riz,Rice pap (porridge),bouillie riz rice pap rice pap,national,porridge,100g,70.0,gram:1|cup:200|tablespoon:15|1 bol:300.0,gram,1 bol,estimate — verify,,1.3,15.0,0.4
+Dakéré,Dakéré (millet couscous),dakere millet couscous,Grand Nord,dessert,100g,140.0,gram:1|cup:200|1 bol:250.0,gram,1 bol,estimate — verify,millet couscous with fermented milk sugar,4.0,26.0,2.5
+Kossam (lait caillé),Kossam (fermented milk),kossam lait caillé fermented milk lait caillé,Grand Nord,drink,100ml,70.0,gram:1|cup:245|glass:250,gram,1 sachet/bol,estimate — verify,fermented milk often sweetened,3.5,9.0,2.0
+Folère (bissap),Hibiscus drink (folère/bissap),folere bissap hibiscus zobo bissap/hibiscus,national,drink,100ml,40.0,gram:1|cup:240|glass:250|bottle_50cl:500,gram,1 bouteille 50cl,estimate — verify,sweetened,0.1,10.0,0.0
+Jus de gingembre,Ginger juice,gingembre ginger juice gnamakoudji,national,drink,100ml,50.0,gram:1|cup:240|glass:250|bottle_50cl:500,gram,1 bouteille 50cl,estimate — verify,sweetened,0.1,12.5,0.0
+Jus de baobab (bouye),Baobab juice (bouye),baobab bouye juice bouye,Grand Nord,drink,100ml,60.0,gram:1|cup:240|glass:250|bottle_50cl:500,gram,1 verre,estimate — verify,,0.5,14.0,0.2
+Matango (vin de palme),Palm wine (matango),matango palm wine vin vin de palme/palm wine,Centre/Sud/Littoral,drink,100ml,45.0,gram:1|bottle_65cl:656|glass:250,gram,1 verre,estimate — verify,"fresh tapped — calories mainly from alcohol, not macros",0.2,5.0,0.1
+Bilibili (bière de mil),Millet beer (bilibili),bilibili millet beer bière bière de mil,Grand Nord,drink,100ml,50.0,gram:1|bottle_65cl:656|glass:250|1 calebasse:400.0,gram,1 calebasse,estimate — verify,"millet beer — calories mainly from alcohol, not macros",0.5,8.0,0.1
+Sha (bière de maïs),Corn beer (sha),sha corn beer corn beer,Northwest,drink,100ml,50.0,gram:1|bottle_65cl:656|glass:250|1 verre:300.0,gram,1 verre,estimate — verify,"calories mainly from alcohol, not macros",0.5,8.0,0.1
+Bière (33/Castel),Beer (33/Castel),biere beer 33 castel beer,national,drink,100ml,43.0,gram:1|bottle_65cl:656|glass:250|1 bouteille 65cl:650.0,gram,1 bouteille 65cl,estimate — verify,"calories mainly from alcohol, not macros",0.5,3.5,0.0
+Top / soda,Soft drink (soda),top soda soft drink soft drink,national,drink,100ml,42.0,gram:1|can_33cl:343|bottle_50cl:520|glass:250|1 bouteille 30cl:300.0,gram,1 bouteille 30cl,estimate — verify,,0.0,10.5,0.0
+Coca Zero,Coca-Cola Zero,coca zero diet diet soda,urban,drink,100ml,0.3,gram:1|can_33cl:343|bottle_50cl:520|glass:250|piece:330.0,gram,1 canette 33cl,verified,,0.0,0.1,0.0
+Café noir sans sucre,Black coffee (no sugar),café coffee noir black,national,drink,100ml,1.0,gram:1|cup:240|glass:250|bottle_50cl:500|piece:200.0,gram,1 tasse,verified,,0.1,0.0,0.0
+Thé au citron,Lemon tea,thé tea citron lemon,national,drink,100ml,2.5,gram:1|cup:240|glass:250|bottle_50cl:500|piece:200.0,gram,1 tasse sans sucre,estimate — verify,,0.0,0.5,0.0
+Sucre,Sugar,sucre sugar,national,condiment,100g,400.0,gram:1|teaspoon:4|tablespoon:12.5|cup:200,gram,1 morceau/cuillere,verified,,0.0,100.0,0.0
+Lait en poudre,Powdered milk,lait poudre powdered milk powdered milk,national,condiment,100g,496.0,gram:1|teaspoon:3|tablespoon:9|cup:128,gram,1 cuillere a soupe,estimate — verify,,26.0,38.0,27.0
+Matinal / Milo (cacao),Cocoa drink (Matinal/Milo),matinal milo cocoa cacao cocoa drink powder,national,drink powder,100g,420.0,gram:1|teaspoon:4.6|tablespoon:14|cup:100|2 cuilleres a cafe:10.0,gram,2 cuilleres a cafe,estimate — verify,,9.5,76.4,8.5
+Huile de palme,Palm oil,huile palme palm oil palm oil,national,fat,100g,884.0,gram:1|ml:0.92|teaspoon:4.5|tablespoon:14|cup:218,gram,1 cuillere a soupe,verified,,0.0,0.0,100.0
+Huile végétale,Vegetable oil,huile végétale vegetable oil,national,fat,100g,884.0,gram:1|ml:0.92|teaspoon:4.5|tablespoon:14|cup:218,gram,1 cuillere a soupe,verified,,0.0,0.0,100.0
+Arachides grillées,Roasted groundnuts,arachides groundnuts peanuts grillées groundnuts roasted,national,snack,100g,570.0,gram:1|handful:30|tablespoon:9|cup:145,gram,1 poignee,estimate — verify,,25.0,16.0,49.0
+Arachides bouillies,Boiled groundnuts,arachides bouillies boiled groundnuts,national,snack,100g,320.0,gram:1|handful:30|tablespoon:9|cup:145|1 poignee:40.0,gram,1 poignee,estimate — verify,,15.0,12.0,24.0
+Pâte d'arachide,Peanut butter,pâte arachide peanut butter peanut paste,national,condiment,100g,590.0,gram:1|teaspoon:5.3|tablespoon:16|cup:258,gram,1 cuillere a soupe,estimate — verify,,23.4,18.7,46.8
+Noix de kola,Kola nut,kola cola nut noix cola nut,national,stimulant,100g,166.7,gram:1|cup:200|piece:15,gram,1 noix,estimate — verify,,1.0,35.0,0.5
+Safou (prune),Safou (African plum),safou prune plum prune/African plum,national,fruit,100g,170.0,gram:1|cup:200|piece:50,gram,1 safou roti,estimate — verify,rich in healthy fat,2.0,5.0,17.0
+Avocat,Avocado,avocat avocado avocado,national,fruit,100g,160.0,gram:1|cup:200|1 demi-avocat:100.0,gram,1 demi-avocat,estimate — verify,,1.8,7.8,13.5
+Papaye,Pawpaw / papaya,papaye pawpaw papaya pawpaw,national,fruit,100g,43.0,gram:1|cup:200|1 tranche:150.0,gram,1 tranche,estimate — verify,,0.4,9.7,0.3
+Mangue,Mango,mangue mango mango,national,fruit,100g,60.0,gram:1|cup:200,gram,1 mangue moyenne,estimate — verify,,0.7,13.5,0.4
+Goyave,Guava,goyave guava guava,national,fruit,100g,68.0,gram:1|cup:200|1 fruit:100.0,gram,1 fruit,estimate — verify,,2.3,12.6,0.9
+Corossol,Soursop,corossol soursop soursop,national,fruit,100g,66.0,gram:1|cup:200|1 portion:150.0,gram,1 portion,estimate — verify,,0.9,15.0,0.3
+Ananas,Pineapple,ananas pineapple pineapple,national,fruit,100g,50.0,gram:1|cup:200|1 tranche epaisse:150.0,gram,1 tranche epaisse,estimate — verify,,0.5,11.8,0.1
+Banane douce,Sweet banana,banane banana sweet sweet banana,national,fruit,100g,87.5,gram:1|cup:200|piece:120,gram,1 banane moyenne,estimate — verify,,1.0,20.3,0.3
+Orange,Orange,orange,national,fruit,100g,47.7,gram:1|cup:200|piece:130,gram,1 orange moyenne,estimate — verify,,0.8,10.9,0.1
+Pamplemousse,Grapefruit,pamplemousse grapefruit grapefruit,national,fruit,100g,42.0,gram:1|cup:200|1 demi-fruit:120.0,gram,1 demi-fruit,estimate — verify,,0.7,9.6,0.1
+Canne à sucre,Sugarcane,canne sucre sugarcane sugarcane,national,fruit,100g,60.0,gram:1|cup:200|1 troncon machouille:100.0,gram,1 troncon machouille,estimate — verify,,0.2,15.0,0.1
+Noix de coco,Coconut,noix coco coconut coconut flesh,national,fruit,100g,354.0,gram:1|cup:200|1 morceau:50.0,gram,1 morceau,estimate — verify,,3.3,15.0,33.5
+Pastèque,Watermelon,pastèque watermelon watermelon,national,fruit,100g,30.0,gram:1|cup:200|1 tranche:300.0,gram,1 tranche,estimate — verify,,0.5,6.6,0.2
+Tomate,Tomato,tomate tomato,national,vegetable,100g,18.0,gram:1|cup:100|handful:30|1 tomate moyenne:120.0,gram,1 tomate moyenne,estimate — verify,,0.8,3.3,0.2
+Gombo frais,Fresh okra,gombo okra frais fresh okra,national,vegetable,100g,33.0,gram:1|cup:100|handful:30,gram,1 poignee,estimate — verify,,1.6,6.3,0.2
+Aubergine locale (zong),Garden egg (zong),aubergine garden egg zong eggplant garden egg/zong,national,vegetable,100g,25.0,gram:1|cup:100|handful:30,gram,3 petites,estimate — verify,,0.9,5.0,0.2
+Légumes sautés,Sauteed vegetables,légumes vegetables sautés greens mixed greens,national,vegetable,100g,80.0,gram:1|cup:100|handful:30|1 portion:150.0,gram,1 portion,estimate — verify,with oil,2.5,5.0,5.5
+Salade simple,Simple salad,salade salad simple,urban,vegetable,100g,30.0,gram:1|cup:100|handful:30|1 assiette:150.0,gram,1 assiette,estimate — verify,no dressing,1.4,5.3,0.4
+Salade avec mayonnaise,Salad with mayonnaise,salade salad mayonnaise,urban,vegetable,100g,130.0,gram:1|teaspoon:5|tablespoon:15|1 assiette:150.0,gram,1 assiette,estimate — verify,mayo adds most calories,1.5,5.0,11.5
+Piment frais,Fresh chilli pepper,piment chilli pepper hot hot pepper,national,condiment,100g,40.0,gram:1|cup:200|1 dose:10.0,gram,1 dose,verified,negligible in normal amounts,1.6,7.6,0.3
+Sauce piment à l'huile,Pepper sauce (in oil),piment pepper sauce huile pepper sauce,national,condiment,100g,300.0,gram:1|ml:0.92|teaspoon:4.5|tablespoon:14|cup:218|1 cuillere a soupe:15.0,gram,1 cuillere a soupe,estimate — verify,oil-based,2.0,6.0,30.0
+Maggi / cube bouillon,Bouillon cube (Maggi),maggi bouillon cube stock,national,condiment,100g,100.0,gram:1|cup:200|piece:10,gram,1 cube,estimate — verify,sodium warning not calories,7.2,14.5,1.4
+Mayonnaise,Mayonnaise,mayonnaise mayo,urban,condiment,100g,680.0,gram:1|teaspoon:5|tablespoon:15,gram,1 cuillere a soupe,verified,,1.0,1.0,75.0
+Ndolé + riz (plat complet),Ndole with rice (full plate),ndole riz rice complet plate plat complet,restaurant,combo,100g,166.7,gram:1|cup:200|piece:450.0,gram,1 plat standard,estimate — verify,sauce + rice + meat,7.0,20.0,6.0
+Eru + water fufu (plat complet),Eru with water fufu (full plate),eru fufu complet plate plat complet,restaurant,combo,100g,144.4,gram:1|cup:200|piece:450.0,gram,1 plat standard,estimate — verify,,6.2,17.8,5.3
+Achu + sauce jaune (plat complet),Achu with yellow soup (full plate),achu jaune complet plate plat complet,restaurant,combo,100g,140.0,gram:1|cup:200|piece:500.0,gram,1 plat standard,estimate — verify,,6.0,17.3,5.2
+Poisson braisé + miondo (plat complet),Grilled fish with miondo (full plate),poisson miondo complet plate fish,restaurant,combo,100g,156.0,gram:1|cup:200|piece:500.0,gram,1 plat standard,estimate — verify,fish + 1 paquet miondo + piment,7.0,20.0,6.0
+Riz + sauce arachide (plat complet),Rice with groundnut sauce (full plate),riz arachide complet plate rice,restaurant,combo,100g,160.0,gram:1|cup:200|piece:450.0,gram,1 plat standard,estimate — verify,,7.0,20.0,6.0
+Taro sauce jaune,Taro with yellow sauce,taro jaune yellow bamileke,West/Bamileke,combo,100g,140.0,gram:1|cup:200|piece:500.0,gram,1 plat standard,estimate — verify,regional signature dish,6.0,17.3,5.2
+Poulet croustillant (frit),Crispy chicken (deep-fried),poulet croustillant frit crispy fried chicken kfc,urban,fast food,100g,290,gram:1|piece:120,gram,,estimate — verify,battered and deep-fried — the coating and oil carry the calories,24.0,12.0,17.0
+Poulet croustillant (au four),Crispy chicken (oven-baked),poulet croustillant four baked crispy chicken,urban,fast food,100g,195,gram:1|piece:120,gram,,estimate — verify,breaded then oven-baked — much lighter than deep-fried,27.0,7.0,6.5
+Nuggets de poulet,Chicken nuggets,nuggets poulet chicken,urban,fast food,100g,300,gram:1|piece:18,gram,,estimate — verify,deep-fried,15.0,16.0,19.0
+Ailes de poulet grillées,Grilled chicken wings,ailes wings poulet grilled,urban,fast food,100g,215,gram:1|piece:35,gram,,estimate — verify,,27.0,0.0,12.0
+Ailes de poulet frites,Fried chicken wings,ailes wings poulet frites fried,urban,fast food,100g,320,gram:1|piece:40,gram,,estimate — verify,,24.0,8.0,21.0
+Hamburger,Hamburger,hamburger burger boeuf,urban,fast food,100g,250,gram:1|piece:180,gram,,estimate — verify,,13.0,24.0,11.0
+Cheeseburger,Cheeseburger,cheeseburger burger fromage,urban,fast food,100g,280,gram:1|piece:200,gram,,estimate — verify,,14.0,23.0,15.0
+Burger poulet,Chicken burger,burger poulet chicken sandwich,urban,fast food,100g,260,gram:1|piece:190,gram,,estimate — verify,,15.0,25.0,11.5
+Shawarma,Shawarma,shawarma chawarma kebab durum,urban,fast food,100g,215,gram:1|piece:300,gram,,estimate — verify,,13.0,20.0,9.0
+Sandwich poulet,Chicken sandwich,sandwich poulet chicken,urban,fast food,100g,230,gram:1|piece:220,gram,,estimate — verify,,14.0,24.0,8.5
+Club sandwich,Club sandwich,club sandwich,urban,fast food,100g,260,gram:1|piece:250,gram,,estimate — verify,,13.0,24.0,12.5
+Croque-monsieur,Croque-monsieur,croque monsieur toast jambon fromage,urban,fast food,100g,290,gram:1|piece:160,gram,,estimate — verify,,15.0,24.0,15.0
+Hot-dog,Hot dog,hot dog saucisse pain,urban,fast food,100g,250,gram:1|piece:150,gram,,estimate — verify,,10.0,22.0,13.5
+Pizza margherita,Margherita pizza,pizza margherita fromage,urban,fast food,100g,260,gram:1|slice:110|piece:110,gram,,estimate — verify,,11.0,30.0,10.0
+Pizza viande,Meat pizza,pizza viande peperoni meat,urban,fast food,100g,295,gram:1|slice:120|piece:120,gram,,estimate — verify,,13.0,28.0,14.5
+Frites de patate douce,Sweet potato fries,frites patate douce sweet potato fries,urban,fast food,100g,280,gram:1|cup:200,gram,,estimate — verify,,2.5,38.0,13.0
+Rondelles d'oignon frites,Onion rings,rondelles oignon onion rings,urban,fast food,100g,330,gram:1|piece:12,gram,,estimate — verify,,4.5,38.0,17.5
+Poisson pané frit,Fried breaded fish,poisson pane frit fish fingers,urban,fast food,100g,240,gram:1|piece:30,gram,,estimate — verify,,14.0,17.0,12.5
+Pomme pilée (purée),Mashed potato,pomme pilee puree mashed potato ecrasee,urban,staple,100g,110,gram:1|cup:210|ladle:150,gram,,estimate — verify,with butter or oil; plain boiled mash is lower,2.0,16.0,4.0
+Macabo râpé,Grated cocoyam (macabo râpé),macabo rape grated cocoyam,urban,dish,100g,165,gram:1|cup:200|ladle:150,gram,,estimate — verify,grated cocoyam cooked with palm oil,2.5,24.0,6.5
+Macabo râpé au poisson,Grated cocoyam with fish,macabo rape poisson grated cocoyam fish,urban,dish,100g,180,gram:1|cup:200|ladle:150,gram,,estimate — verify,,7.0,21.0,7.0
+Pomme de terre sautée,Sauteed potato,pomme terre sautee potato,urban,staple,100g,145,gram:1|cup:200,gram,,estimate — verify,,2.2,21.0,5.5
+Pancakes,Pancakes,pancake pancakes crepe epaisse,urban,fast food,100g,230,gram:1|piece:60,gram,,estimate — verify,without syrup or topping,6.0,32.0,8.5
+Crêpes,Crepes,crepe crepes pancake fin,urban,fast food,100g,200,gram:1|piece:60,gram,,estimate — verify,,6.0,26.0,7.5
+Gaufres,Waffles,gaufre gaufres waffle,urban,fast food,100g,290,gram:1|piece:75,gram,,estimate — verify,,7.0,33.0,14.0
+Beignet américain (donut),Doughnut,donut doughnut beignet americain,urban,snack,100g,400,gram:1|piece:60,gram,,estimate — verify,,5.0,45.0,22.0
+Sirop / miel (nappage),Syrup or honey topping,sirop miel syrup honey nappage,urban,condiment,100g,300,gram:1|teaspoon:7|tablespoon:21,gram,,estimate — verify,log separately from pancakes — easy to forget,0.3,75.0,0.0
+Saucisse grillée,Grilled sausage,saucisse sausage grillee,urban,protein,100g,300,gram:1|piece:70,gram,,estimate — verify,,13.0,2.0,26.5
+Popcorn nature,Plain popcorn,popcorn mais souffle,urban,snack,100g,385,gram:1|cup:8|handful:10,gram,,estimate — verify,,12.0,74.0,4.5
+Popcorn sucré/beurré,Sweet or buttered popcorn,popcorn sucre beurre buttered,urban,snack,100g,480,gram:1|cup:11|handful:12,gram,,estimate — verify,,7.0,62.0,23.0
+Glace (crème glacée),Ice cream,glace creme glacee ice cream,urban,snack,100g,210,gram:1|cup:130|scoop:60,gram,,estimate — verify,,3.5,24.0,11.0
+Milkshake,Milkshake,milkshake lait frappe,urban,drink,100g,110,gram:1|ml:1.03|cup:245|glass:250,gram,,estimate — verify,,3.2,17.0,3.2
+Ketchup,Ketchup,ketchup sauce tomate sucree,urban,condiment,100g,100,gram:1|teaspoon:6|tablespoon:17,gram,,estimate — verify,,1.2,24.0,0.2
+Riz cantonais,Fried rice (cantonese style),riz cantonais fried rice,urban,staple,100g,165,gram:1|cup:200|ladle:150,gram,,estimate — verify,,5.5,24.0,5.0
+Chou,Cabbage,chou cabbage chou blanc,international,vegetable,100g,25,gram:1|cup:90|piece:900,gram,,estimate — verify,,1.3,5.8,0.1
+Chou rouge,Red cabbage,chou rouge red cabbage,international,vegetable,100g,31,gram:1|cup:90,gram,,estimate — verify,,1.4,7.4,0.2
+Poivron rouge,Red bell pepper,poivron rouge red bell pepper capsicum,international,vegetable,100g,31,gram:1|cup:150|piece:120,gram,,estimate — verify,,1.0,6.0,0.3
+Poivron vert,Green bell pepper,poivron vert green bell pepper,international,vegetable,100g,20,gram:1|cup:150|piece:120,gram,,estimate — verify,,0.9,4.6,0.2
+Carotte,Carrot,carotte carrot,international,vegetable,100g,41,gram:1|cup:128|piece:60,gram,,estimate — verify,,0.9,9.6,0.2
+Concombre,Cucumber,concombre cucumber,international,vegetable,100g,15,gram:1|cup:120|piece:300,gram,,estimate — verify,,0.7,3.6,0.1
+Laitue,Lettuce,laitue lettuce salade verte,international,vegetable,100g,15,gram:1|cup:36,gram,,estimate — verify,,1.4,2.9,0.2
+Épinards crus,Raw spinach,epinard spinach,international,vegetable,100g,23,gram:1|cup:30,gram,,estimate — verify,,2.9,3.6,0.4
+Épinards cuits,Cooked spinach,epinard cuit cooked spinach,international,vegetable,100g,45,gram:1|cup:180,gram,,estimate — verify,with a little oil,3.0,4.0,2.2
+Brocoli,Broccoli,brocoli broccoli,international,vegetable,100g,34,gram:1|cup:91,gram,,estimate — verify,,2.8,6.6,0.4
+Chou-fleur,Cauliflower,chou fleur cauliflower,international,vegetable,100g,25,gram:1|cup:100,gram,,estimate — verify,,1.9,5.0,0.3
+Haricots verts,Green beans,haricot vert green beans,international,vegetable,100g,31,gram:1|cup:125,gram,,estimate — verify,,1.8,7.0,0.2
+Courgette,Zucchini,courgette zucchini,international,vegetable,100g,17,gram:1|cup:124|piece:200,gram,,estimate — verify,,1.2,3.1,0.3
+Aubergine,Eggplant,aubergine eggplant,international,vegetable,100g,25,gram:1|cup:82|piece:400,gram,,estimate — verify,,1.0,5.9,0.2
+Ail,Garlic,ail garlic,international,condiment,100g,149,gram:1|clove:3|teaspoon:3,gram,,estimate — verify,,6.4,33.0,0.5
+Gingembre frais,Fresh ginger,gingembre ginger,international,condiment,100g,80,gram:1|teaspoon:2|tablespoon:6,gram,,estimate — verify,,1.8,18.0,0.8
+Champignons,Mushrooms,champignon mushroom,international,vegetable,100g,22,gram:1|cup:70,gram,,estimate — verify,,3.1,3.3,0.3
+Betterave,Beetroot,betterave beetroot,international,vegetable,100g,43,gram:1|cup:136,gram,,estimate — verify,,1.6,9.6,0.2
+Petits pois,Green peas,petits pois green peas,international,vegetable,100g,81,gram:1|cup:145,gram,,estimate — verify,,5.4,14.5,0.4
+Maïs doux,Sweet corn,mais doux sweet corn,international,vegetable,100g,86,gram:1|cup:154|piece:90,gram,,estimate — verify,,3.3,19.0,1.2
+Céleri,Celery,celeri celery,international,vegetable,100g,16,gram:1|cup:101|piece:40,gram,,estimate — verify,,0.7,3.0,0.2
+Poireau,Leek,poireau leek,international,vegetable,100g,61,gram:1|cup:89|piece:90,gram,,estimate — verify,,1.5,14.0,0.3
+Pomme,Apple,pomme apple,international,fruit,100g,52,gram:1|piece:180|cup:125,gram,,estimate — verify,,0.3,14.0,0.2
+Poire,Pear,poire pear,international,fruit,100g,57,gram:1|piece:180,gram,,estimate — verify,,0.4,15.0,0.1
+Fraises,Strawberries,fraise strawberry,international,fruit,100g,32,gram:1|cup:150|piece:12,gram,,estimate — verify,,0.7,7.7,0.3
+Raisins,Grapes,raisin grape,international,fruit,100g,69,gram:1|cup:150,gram,,estimate — verify,,0.7,18.0,0.2
+Raisins secs,Raisins,raisin sec raisins sultanas,international,fruit,100g,299,gram:1|cup:145|tablespoon:9,gram,,estimate — verify,,3.1,79.0,0.5
+Dattes,Dates,datte dates,international,fruit,100g,282,gram:1|piece:8|cup:147,gram,,estimate — verify,,2.5,75.0,0.4
+Kiwi,Kiwi,kiwi,international,fruit,100g,61,gram:1|piece:75,gram,,estimate — verify,,1.1,15.0,0.5
+Citron,Lemon,citron lemon,international,fruit,100g,29,gram:1|piece:60|tablespoon:15,gram,,estimate — verify,,1.1,9.3,0.3
+Prune,Plum,prune plum,international,fruit,100g,46,gram:1|piece:66,gram,,estimate — verify,,0.7,11.4,0.3
+Pêche,Peach,peche peach,international,fruit,100g,39,gram:1|piece:150,gram,,estimate — verify,,0.9,10.0,0.3
+Cerises,Cherries,cerise cherry,international,fruit,100g,63,gram:1|cup:154,gram,,estimate — verify,,1.1,16.0,0.2
+Myrtilles,Blueberries,myrtille blueberry,international,fruit,100g,57,gram:1|cup:148,gram,,estimate — verify,,0.7,14.5,0.3
+Grenade,Pomegranate,grenade pomegranate,international,fruit,100g,83,gram:1|piece:280|cup:174,gram,,estimate — verify,,1.7,19.0,1.2
+Figue,Fig,figue fig,international,fruit,100g,74,gram:1|piece:50,gram,,estimate — verify,,0.8,19.0,0.3
+Salade de fruits,Fruit salad,salade fruits fruit salad,international,fruit,100g,50,gram:1|cup:250,gram,,estimate — verify,,0.6,12.5,0.2
+Yaourt nature,Plain yoghurt,yaourt yoghurt yogurt nature plain,international,dairy,100g,61,gram:1|ml:1.03|cup:245|pot:125,gram,,estimate — verify,,3.5,4.7,3.3
+Yaourt sucré/aromatisé,Sweetened yoghurt,yaourt sucre yoghurt sweet flavoured,international,dairy,100g,95,gram:1|ml:1.03|cup:245|pot:125,gram,,estimate — verify,,3.5,15.0,2.5
+Yaourt grec nature,Greek yoghurt,yaourt grec greek yogurt,international,dairy,100g,97,gram:1|cup:245|pot:150,gram,,estimate — verify,high protein,9.0,4.0,5.0
+Lait entier,Whole milk,lait entier whole milk,international,dairy,100g,61,gram:1|ml:1.03|cup:245|glass:250,gram,,estimate — verify,,3.2,4.8,3.3
+Lait demi-écrémé,Semi-skimmed milk,lait demi ecreme semi skimmed milk,international,dairy,100g,47,gram:1|ml:1.03|cup:245|glass:250,gram,,estimate — verify,,3.4,4.9,1.7
+Lait écrémé,Skimmed milk,lait ecreme skimmed milk,international,dairy,100g,34,gram:1|ml:1.03|cup:245|glass:250,gram,,estimate — verify,,3.4,5.0,0.2
+Fromage (cheddar/gouda),Cheese (cheddar/gouda),fromage cheese cheddar gouda,international,dairy,100g,400,gram:1|slice:25|cup:113,gram,,estimate — verify,,25.0,2.0,33.0
+Fromage blanc,Cottage/quark cheese,fromage blanc cottage quark,international,dairy,100g,98,gram:1|cup:226|tablespoon:30,gram,,estimate — verify,,11.0,3.4,4.3
+Beurre,Butter,beurre butter,international,fat,100g,717,gram:1|teaspoon:5|tablespoon:14,gram,,estimate — verify,,0.9,0.1,81.0
+Margarine,Margarine,margarine,international,fat,100g,717,gram:1|teaspoon:5|tablespoon:14,gram,,estimate — verify,,0.2,0.7,80.0
+Crème fraîche,Cream,creme fraiche cream,international,dairy,100g,290,gram:1|tablespoon:15|cup:240,gram,,estimate — verify,,2.5,3.0,30.0
+Œufs brouillés,Scrambled eggs,oeuf brouille scrambled eggs,international,protein,100g,150,gram:1|piece:60|cup:220,gram,,estimate — verify,with a little butter/oil,10.0,1.6,11.0
+Blanc d'œuf,Egg white,blanc oeuf egg white,international,protein,100g,52,gram:1|piece:33,gram,,estimate — verify,lean protein,11.0,0.7,0.2
+Blanc de poulet grillé,Grilled chicken breast,blanc poulet chicken breast grilled,international,protein,100g,165,gram:1|piece:120,gram,,estimate — verify,lean,31.0,0.0,3.6
+Cuisse de poulet,Chicken thigh,cuisse poulet chicken thigh,international,protein,100g,210,gram:1|piece:110,gram,,estimate — verify,,26.0,0.0,11.0
+Dinde,Turkey,dinde turkey,international,protein,100g,135,gram:1|slice:30,gram,,estimate — verify,,29.0,0.0,1.7
+Bœuf haché (maigre),Lean minced beef,boeuf hache mince beef lean,international,protein,100g,215,gram:1|cup:225,gram,,estimate — verify,,26.0,0.0,12.0
+Steak de bœuf,Beef steak,steak boeuf beef,international,protein,100g,250,gram:1|piece:200,gram,,estimate — verify,,26.0,0.0,16.0
+Côtelette de porc,Pork chop,cotelette porc pork chop,international,protein,100g,240,gram:1|piece:150,gram,,estimate — verify,,26.0,0.0,15.0
+Jambon,Ham,jambon ham,international,protein,100g,145,gram:1|slice:30,gram,,estimate — verify,,21.0,1.5,6.0
+Bacon,Bacon,bacon lard,international,protein,100g,400,gram:1|slice:15,gram,,estimate — verify,,25.0,1.0,33.0
+Thon en boîte (eau),Canned tuna (in water),thon boite tuna canned water,international,protein,100g,116,gram:1|can:145|cup:150,gram,,estimate — verify,lean protein,26.0,0.0,1.0
+Thon en boîte (huile),Canned tuna (in oil),thon boite tuna canned oil,international,protein,100g,190,gram:1|can:145,gram,,estimate — verify,,25.0,0.0,10.0
+Saumon,Salmon,saumon salmon,international,protein,100g,208,gram:1|piece:150,gram,,estimate — verify,omega-3 rich,20.0,0.0,13.0
+Sardines fraîches,Fresh sardines,sardine fraiche fresh,international,protein,100g,208,gram:1|piece:40,gram,,estimate — verify,,25.0,0.0,11.5
+Tofu,Tofu,tofu soja soy,international,protein,100g,76,gram:1|cup:250|piece:100,gram,,estimate — verify,,8.0,1.9,4.8
+Pain complet,Wholemeal bread,pain complet wholemeal brown bread,international,staple,100g,247,gram:1|slice:35,gram,,estimate — verify,more fibre than white,13.0,41.0,3.4
+Pain de mie,Sliced white bread,pain mie sliced bread toast,international,staple,100g,265,gram:1|slice:28,gram,,estimate — verify,,9.0,49.0,3.2
+Riz complet cuit,Cooked brown rice,riz complet brown rice,international,staple,100g,112,gram:1|cup:195,gram,,estimate — verify,,2.6,23.0,0.9
+Pâtes cuites,Cooked pasta,pates pasta spaghetti macaroni,international,staple,100g,158,gram:1|cup:140,gram,,estimate — verify,,5.8,31.0,0.9
+Pâtes complètes cuites,Cooked wholemeal pasta,pates completes wholemeal pasta,international,staple,100g,124,gram:1|cup:140,gram,,estimate — verify,,5.3,26.0,0.5
+Couscous cuit,Cooked couscous,couscous,international,staple,100g,112,gram:1|cup:157,gram,,estimate — verify,,3.8,23.0,0.2
+Quinoa cuit,Cooked quinoa,quinoa,international,staple,100g,120,gram:1|cup:185,gram,,estimate — verify,,4.4,21.0,1.9
+Flocons d'avoine,Oats (dry),avoine oats flocons oatmeal porridge,international,staple,100g,389,gram:1|cup:81|tablespoon:6,gram,,estimate — verify,dry weight,17.0,66.0,7.0
+Porridge d'avoine,Cooked oat porridge,porridge avoine oatmeal cooked,international,porridge,100g,71,gram:1|cup:234|ladle:150,gram,,estimate — verify,made with water,2.5,12.0,1.5
+Céréales petit-déjeuner,Breakfast cereal,cereales cereal cornflakes,international,staple,100g,380,gram:1|cup:30,gram,,estimate — verify,,7.0,84.0,1.5
+Semoule cuite,Cooked semolina,semoule semolina,international,staple,100g,120,gram:1|cup:180,gram,,estimate — verify,,4.0,25.0,0.3
+Tortilla / wrap,Tortilla wrap,tortilla wrap galette,international,staple,100g,310,gram:1|piece:50,gram,,estimate — verify,,8.0,52.0,7.5
+Lentilles cuites,Cooked lentils,lentille lentil,international,staple,100g,116,gram:1|cup:198|ladle:150,gram,,estimate — verify,,9.0,20.0,0.4
+Pois chiches cuits,Cooked chickpeas,pois chiche chickpea garbanzo,international,staple,100g,164,gram:1|cup:164,gram,,estimate — verify,,8.9,27.0,2.6
+Haricots blancs,White beans,haricot blanc white bean,international,staple,100g,139,gram:1|cup:179,gram,,estimate — verify,,9.7,25.0,0.4
+Houmous,Hummus,houmous hummus,international,condiment,100g,166,gram:1|tablespoon:15|cup:246,gram,,estimate — verify,,8.0,14.0,10.0
+Amandes,Almonds,amande almond,international,snack,100g,579,gram:1|handful:28|cup:143,gram,,estimate — verify,,21.0,22.0,50.0
+Noix,Walnuts,noix walnut,international,snack,100g,654,gram:1|handful:28|cup:117,gram,,estimate — verify,,15.0,14.0,65.0
+Noix de cajou,Cashew nuts,cajou cashew,international,snack,100g,553,gram:1|handful:28|cup:137,gram,,estimate — verify,,18.0,30.0,44.0
+Pistaches,Pistachios,pistache pistachio,international,snack,100g,560,gram:1|handful:28|cup:123,gram,,estimate — verify,,20.0,28.0,45.0
+Graines de courge,Pumpkin seeds,graine courge pumpkin seed,international,snack,100g,559,gram:1|handful:28|tablespoon:10,gram,,estimate — verify,,30.0,11.0,49.0
+Graines de sésame,Sesame seeds,sesame seed,international,condiment,100g,573,gram:1|tablespoon:9|teaspoon:3,gram,,estimate — verify,,18.0,23.0,50.0
+Beurre de cacahuète,Peanut butter,beurre cacahuete peanut butter,international,condiment,100g,588,gram:1|tablespoon:16|teaspoon:5,gram,,estimate — verify,,25.0,20.0,50.0
+Huile d'olive,Olive oil,huile olive olive oil,international,fat,100g,884,gram:1|ml:0.92|teaspoon:4.5|tablespoon:14,gram,,estimate — verify,,0.0,0.0,100.0
+Huile de tournesol,Sunflower oil,huile tournesol sunflower oil,international,fat,100g,884,gram:1|ml:0.92|teaspoon:4.5|tablespoon:14,gram,,estimate — verify,,0.0,0.0,100.0
+Vinaigrette,Salad dressing,vinaigrette dressing,international,condiment,100g,290,gram:1|tablespoon:15,gram,,estimate — verify,,0.5,6.0,29.0
+Moutarde,Mustard,moutarde mustard,international,condiment,100g,66,gram:1|teaspoon:5|tablespoon:15,gram,,estimate — verify,,4.0,6.0,3.0
+Sauce soja,Soy sauce,sauce soja soy sauce,international,condiment,100g,53,gram:1|ml:1.1|teaspoon:6|tablespoon:18,gram,,estimate — verify,very high sodium,8.0,5.0,0.1
+Confiture,Jam,confiture jam marmalade,international,condiment,100g,278,gram:1|teaspoon:7|tablespoon:20,gram,,estimate — verify,,0.4,69.0,0.1
+Miel,Honey,miel honey,international,condiment,100g,304,gram:1|teaspoon:7|tablespoon:21,gram,,estimate — verify,,0.3,82.0,0.0
+Chocolat noir,Dark chocolate,chocolat noir dark chocolate,international,snack,100g,546,gram:1|square:10|piece:100,gram,,estimate — verify,,7.8,46.0,31.0
+Chocolat au lait,Milk chocolate,chocolat lait milk chocolate,international,snack,100g,535,gram:1|square:10|piece:100,gram,,estimate — verify,,7.6,59.0,30.0
+Pâte à tartiner (Nutella),Chocolate spread,pate tartiner nutella spread,international,condiment,100g,539,gram:1|teaspoon:6|tablespoon:20,gram,,estimate — verify,,6.0,57.0,31.0
+Salade César,Caesar salad,salade cesar caesar,international,dish,100g,190,gram:1|cup:100|plate:250,gram,,estimate — verify,with dressing,8.0,6.0,15.0
+Soupe de légumes,Vegetable soup,soupe legumes vegetable soup,international,soup,100g,45,gram:1|ml:1|bowl:300|ladle:150,gram,,estimate — verify,,1.5,7.0,1.3
+Purée de pommes de terre,Mashed potato,puree pomme terre mashed potato,international,staple,100g,110,gram:1|cup:210|ladle:150,gram,,estimate — verify,,2.0,16.0,4.0
+Gratin de pommes de terre,Potato gratin,gratin dauphinois potato,international,dish,100g,145,gram:1|cup:200|plate:250,gram,,estimate — verify,,4.0,14.0,8.0
+Lasagnes,Lasagna,lasagne lasagna,international,dish,100g,160,gram:1|plate:300|piece:250,gram,,estimate — verify,,9.0,14.0,7.5
+Spaghetti bolognaise,Spaghetti bolognese,spaghetti bolognaise bolognese,international,dish,100g,145,gram:1|plate:350|cup:250,gram,,estimate — verify,,7.0,18.0,4.5
+Riz sauté asiatique,Asian fried rice,riz saute asiatique fried rice chinois,international,dish,100g,165,gram:1|plate:300|cup:200,gram,,estimate — verify,,5.5,24.0,5.0
+Nouilles sautées,Stir-fried noodles,nouilles sautees noodles chow mein,international,dish,100g,170,gram:1|plate:300|cup:200,gram,,estimate — verify,,6.0,25.0,5.0
+Sushi (assortiment),Sushi (assorted),sushi maki nigiri,international,dish,100g,145,gram:1|piece:30|plate:200,gram,,estimate — verify,,6.0,25.0,2.0
+Curry de poulet,Chicken curry,curry poulet chicken curry,international,dish,100g,150,gram:1|plate:300|ladle:150,gram,,estimate — verify,,13.0,6.0,8.5
+Rouleaux de printemps,Spring rolls,rouleau printemps spring roll nem,international,dish,100g,180,gram:1|piece:60,gram,,estimate — verify,fried,6.0,22.0,7.5
+Samoussa,Samosa,samoussa samosa,international,snack,100g,290,gram:1|piece:50,gram,,estimate — verify,,6.0,30.0,16.0
+Falafel,Falafel,falafel,international,dish,100g,333,gram:1|piece:17,gram,,estimate — verify,,13.0,32.0,18.0
+Omelette au fromage,Cheese omelette,omelette fromage cheese omelette,international,protein,100g,200,gram:1|piece:150,gram,,estimate — verify,,13.0,2.0,15.5
+Quiche,Quiche,quiche lorraine,international,dish,100g,280,gram:1|slice:120,gram,,estimate — verify,,10.0,20.0,18.0
+Tarte aux pommes,Apple pie,tarte pomme apple pie,international,snack,100g,265,gram:1|slice:125,gram,,estimate — verify,,2.5,37.0,12.0
+Yaourt à boire,Drinking yoghurt,yaourt boire drinking yogurt,international,drink,100g,70,gram:1|ml:1.03|bottle:250|glass:250,gram,,estimate — verify,,3.0,11.0,1.4
+Smoothie aux fruits,Fruit smoothie,smoothie fruit,international,drink,100g,60,gram:1|ml:1.02|glass:250|cup:240,gram,,estimate — verify,,1.0,14.0,0.3
+Jus d'orange,Orange juice,jus orange juice,international,drink,100g,45,gram:1|ml:1.04|glass:250|cup:248,gram,,estimate — verify,,0.7,10.4,0.2
+Eau,Water,eau water,international,drink,100g,0,gram:1|ml:1|glass:250|bottle:500|cup:240,gram,,estimate — verify,zero calories,0.0,0.0,0.0
+Thé vert sans sucre,Green tea (no sugar),the vert green tea,international,drink,100g,1,gram:1|ml:1|cup:240,gram,,estimate — verify,,0.0,0.2,0.0
+Café au lait,Coffee with milk,cafe lait latte coffee milk,international,drink,100g,40,gram:1|ml:1.02|cup:240|glass:250,gram,,estimate — verify,no sugar,2.2,3.5,1.9
+Cappuccino,Cappuccino,cappuccino,international,drink,100g,55,gram:1|ml:1.02|cup:180,gram,,estimate — verify,no sugar,3.0,4.5,2.5
+Vin rouge,Red wine,vin rouge red wine,international,drink,100g,85,gram:1|ml:0.99|glass:150|bottle:750,gram,,estimate — verify,calories mainly from alcohol,0.1,2.6,0.0
+Vin blanc,White wine,vin blanc white wine,international,drink,100g,82,gram:1|ml:0.99|glass:150,gram,,estimate — verify,calories mainly from alcohol,0.1,2.6,0.0
+Whisky / spiritueux,"Spirits (whisky, gin)",whisky gin vodka spiritueux,international,drink,100g,250,gram:1|ml:0.94|shot:40,gram,,estimate — verify,calories mainly from alcohol,0.0,0.1,0.0
+Riz jollof,Jollof rice,jollof rice riz,Nigeria,rice dish,100g,160,gram:1|plate:350|cup:250,gram,,estimate — verify,tomato-pepper rice,3.5,26.0,4.5
+Riz frit nigérian,Nigerian fried rice,fried rice riz frit,Nigeria,rice dish,100g,175,gram:1|plate:350|cup:250,gram,,estimate — verify,,4.5,25.0,6.0
+Riz au gras (concoction),Concoction rice,concoction rice palm oil,Nigeria,rice dish,100g,165,gram:1|plate:350|cup:250,gram,,estimate — verify,,4.0,25.0,5.5
+Ofada rice + ayamase,Ofada rice with ayamase,ofada ayamase designer stew,Nigeria,rice dish,100g,190,gram:1|plate:350|cup:250,gram,,estimate — verify,green pepper palm oil stew,6.0,24.0,8.5
+Soupe egusi,Egusi soup,egusi melon seed soup,Nigeria,soup/stew,100g,200,gram:1|ladle:150|cup:240,gram,,estimate — verify,melon seed & palm oil,9.0,6.0,15.0
+Soupe ogbono,Ogbono soup,ogbono draw soup,Nigeria,soup/stew,100g,180,gram:1|ladle:150|cup:240,gram,,estimate — verify,drawy seed soup,7.0,6.0,13.0
+Soupe okra (okro),Okro soup,okro okra soup,Nigeria,soup/stew,100g,90,gram:1|ladle:150|cup:240,gram,,estimate — verify,,4.0,7.0,5.0
+Efo riro,Efo riro,efo riro spinach stew,Nigeria,soup/stew,100g,120,gram:1|ladle:150|cup:240,gram,,estimate — verify,vegetable stew with palm oil,6.0,5.0,8.5
+Soupe afang,Afang soup,afang soup,Nigeria,soup/stew,100g,140,gram:1|ladle:150|cup:240,gram,,estimate — verify,,7.0,6.0,9.0
+Edikang ikong,Edikang ikong,edikang ikong vegetable soup,Nigeria,soup/stew,100g,150,gram:1|ladle:150|cup:240,gram,,estimate — verify,rich vegetable soup,8.0,5.0,10.0
+Soupe banga,Banga soup,banga palm nut soup,Nigeria,soup/stew,100g,180,gram:1|ladle:150|cup:240,gram,,estimate — verify,,6.0,5.0,15.0
+Soupe oha,Oha soup,oha ora soup,Nigeria,soup/stew,100g,130,gram:1|ladle:150|cup:240,gram,,estimate — verify,,6.0,6.0,8.0
+Soupe nsala (white soup),Nsala (white soup),nsala white soup,Nigeria,soup/stew,100g,110,gram:1|ladle:150|cup:240,gram,,estimate — verify,,9.0,5.0,5.0
+Bitterleaf soup (onugbu),Bitterleaf soup,bitterleaf onugbu soup,Nigeria,soup/stew,100g,140,gram:1|ladle:150|cup:240,gram,,estimate — verify,,6.0,5.0,9.5
+Gbegiri,Gbegiri (bean soup),gbegiri bean soup,Nigeria,soup/stew,100g,90,gram:1|ladle:150|cup:240,gram,,estimate — verify,,6.0,10.0,2.5
+Ewedu,Ewedu soup,ewedu jute soup,Nigeria,soup,100g,55,gram:1|ladle:150|cup:240,gram,,estimate — verify,,3.0,5.0,2.0
+Pepper soup nigérian,Nigerian pepper soup,pepper soup,Nigeria,soup,100g,55,gram:1|bowl:300|ladle:150,gram,,estimate — verify,,7.0,2.0,2.0
+Amala,Amala,amala yam flour swallow,Nigeria,swallow,100g,110,gram:1|ball:180|cup:200,gram,,estimate — verify,yam flour,1.5,26.0,0.4
+Igname pilée (pounded yam),Pounded yam,pounded yam iyan,Nigeria,swallow,100g,120,gram:1|ball:180|cup:200,gram,,estimate — verify,,1.6,28.0,0.2
+Eba (garri),Eba,eba garri swallow,Nigeria,swallow,100g,160,gram:1|ball:180|cup:200,gram,,estimate — verify,,1.2,38.0,0.3
+Semo (semoule),Semovita swallow,semo semovita,Nigeria,swallow,100g,140,gram:1|ball:180|cup:200,gram,,estimate — verify,,3.5,30.0,0.6
+Fufu (Nigeria),Fufu (Nigerian),fufu akpu swallow,Nigeria,swallow,100g,120,gram:1|ball:180|cup:200,gram,,estimate — verify,,1.0,29.0,0.2
+Tuwo shinkafa,Tuwo shinkafa,tuwo shinkafa rice swallow,Nigeria,swallow,100g,120,gram:1|ball:180|cup:200,gram,,estimate — verify,,2.2,27.0,0.3
+Moi moi,Moi moi,moi moi bean pudding,Nigeria,steamed dish,100g,170,gram:1|piece:150|cup:200,gram,,estimate — verify,steamed bean pudding,9.0,15.0,9.0
+Akara,Akara (bean fritter),akara bean fritter,Nigeria,snack,100g,230,gram:1|piece:35,gram,,estimate — verify,fried,7.0,15.0,16.0
+Igname au potage (yam porridge),Yam porridge (asaro),yam porridge asaro,Nigeria,dish,100g,120,gram:1|plate:350|cup:250,gram,,estimate — verify,,2.5,22.0,3.0
+Beans porridge (ewa),Beans porridge,ewa beans porridge,Nigeria,dish,100g,140,gram:1|ladle:150|cup:240,gram,,estimate — verify,,8.0,20.0,4.0
+Ewa agoyin,Ewa agoyin,ewa agoyin beans,Nigeria,dish,100g,155,gram:1|ladle:150|cup:240,gram,,estimate — verify,"mashed beans, pepper-oil sauce",8.0,20.0,5.5
+Suya,Suya,suya spiced beef skewer,Nigeria,protein,100g,280,gram:1|stick:50|piece:50,gram,,estimate — verify,yaji-spiced grilled beef,26.0,3.0,18.0
+Kilishi (Nigeria),Kilishi (Nigerian),kilishi dried beef,Nigeria,snack,100g,380,gram:1|piece:20|handful:40,gram,,estimate — verify,,45.0,12.0,17.0
+Nkwobi,Nkwobi,nkwobi cow foot,Nigeria,dish,100g,230,gram:1|plate:250,gram,,estimate — verify,"spiced cow foot, palm oil",18.0,4.0,16.0
+Isi ewu,Isi ewu,isi ewu goat head,Nigeria,dish,100g,220,gram:1|plate:250,gram,,estimate — verify,,17.0,4.0,15.0
+Abacha,Abacha (African salad),abacha african salad ugba,Nigeria,dish,100g,180,gram:1|plate:200,gram,,estimate — verify,,4.0,26.0,7.0
+Boli (plantain braisé),Boli (roasted plantain),boli roasted plantain,Nigeria,street food,100g,125,gram:1|piece:150,gram,,estimate — verify,,1.3,30.0,0.4
+Dodo (plantain frit),Dodo (fried plantain),dodo fried plantain,Nigeria,side,100g,200,gram:1|cup:150,gram,,estimate — verify,,1.5,30.0,8.0
+Puff-puff (Nigeria),Puff-puff,puff puff nigeria,Nigeria,snack,100g,270,gram:1|gram:1,gram,,estimate — verify,weigh in grams,5.5,38.0,11.0
+Chin chin (Nigeria),Chin chin,chin chin,Nigeria,snack,100g,480,gram:1|handful:40|cup:120,gram,,estimate — verify,,7.0,60.0,22.0
+Meat pie nigérian,Nigerian meat pie,meat pie,Nigeria,snack,100g,300,gram:1|piece:120,gram,,estimate — verify,,9.0,30.0,16.0
+Small chops,Small chops,small chops party,Nigeria,snack,100g,320,gram:1|handful:50,gram,,estimate — verify,,8.0,32.0,18.0
+Zobo,Zobo (hibiscus drink),zobo hibiscus drink,Nigeria,drink,100g,38,gram:1|ml:1.02|glass:250,gram,,estimate — verify,sweetened,0.1,9.5,0.0
+Kunu,Kunu,kunu millet drink,Nigeria,drink,100g,60,gram:1|ml:1.02|glass:250,gram,,estimate — verify,,1.5,13.0,0.5
+Fura da nono,Fura da nono,fura nono millet milk,Nigeria,drink,100g,90,gram:1|ml:1.03|glass:250,gram,,estimate — verify,,3.5,13.0,2.5
+Pap (akamu/ogi),Pap (akamu),pap akamu ogi,Nigeria,porridge,100g,70,gram:1|bowl:300|ladle:150,gram,,estimate — verify,,1.3,15.0,0.4
+Masa (waina),Masa,masa waina rice cake,Nigeria,snack,100g,180,gram:1|piece:40,gram,,estimate — verify,,3.5,32.0,4.0
+Waakye,Waakye,waakye rice beans,Ghana,rice dish,100g,150,gram:1|plate:350|cup:250,gram,,estimate — verify,rice & beans,5.0,26.0,2.5
+Jollof ghanéen,Ghanaian jollof,ghana jollof rice,Ghana,rice dish,100g,160,gram:1|plate:350|cup:250,gram,,estimate — verify,,3.5,27.0,4.0
+Banku,Banku,banku fermented corn cassava,Ghana,swallow,100g,130,gram:1|ball:180|cup:200,gram,,estimate — verify,,2.5,28.0,0.6
+Kenkey,Kenkey,kenkey komi fermented corn,Ghana,swallow,100g,130,gram:1|ball:180,gram,,estimate — verify,,2.5,29.0,0.5
+Fufu ghanéen,Ghanaian fufu,ghana fufu cassava plantain,Ghana,swallow,100g,125,gram:1|ball:180|cup:200,gram,,estimate — verify,,1.2,29.0,0.3
+Tuo zaafi (TZ),Tuo zaafi,tuo zaafi tz,Ghana,swallow,100g,110,gram:1|ball:180|cup:200,gram,,estimate — verify,,2.5,25.0,0.4
+Omo tuo (rice balls),Omo tuo (rice balls),omo tuo rice balls,Ghana,swallow,100g,130,gram:1|ball:180,gram,,estimate — verify,,2.5,28.0,0.3
+Soupe légère (light soup),Light soup (nkrakra),light soup nkrakra,Ghana,soup,100g,55,gram:1|bowl:300|ladle:150,gram,,estimate — verify,,6.0,3.0,2.0
+Soupe d'arachide (groundnut),Groundnut soup,groundnut soup nkatenkwan,Ghana,soup/stew,100g,180,gram:1|ladle:150|cup:240,gram,,estimate — verify,,8.0,8.0,13.0
+Soupe palme (abenkwan),Palm nut soup,palm nut soup abenkwan,Ghana,soup/stew,100g,180,gram:1|ladle:150|cup:240,gram,,estimate — verify,,6.0,5.0,15.0
+Kontomire (palava sauce),Kontomire stew,kontomire palava cocoyam leaf,Ghana,soup/stew,100g,150,gram:1|ladle:150|cup:240,gram,,estimate — verify,"cocoyam leaf, egusi, oil",6.0,6.0,10.5
+Red red,Red red,red red beans plantain,Ghana,dish,100g,165,gram:1|ladle:150|cup:240,gram,,estimate — verify,beans in palm oil with gari,8.0,24.0,5.0
+Kelewele,Kelewele,kelewele spiced fried plantain,Ghana,snack,100g,210,gram:1|cup:150,gram,,estimate — verify,,1.5,32.0,9.0
+Gari fortor,Gari fortor,gari fortor,Ghana,dish,100g,190,gram:1|ladle:150|cup:240,gram,,estimate — verify,,4.0,30.0,6.0
+Shito,Shito (pepper sauce),shito black pepper sauce,Ghana,condiment,100g,450,gram:1|teaspoon:6|tablespoon:18,gram,,estimate — verify,oily fish pepper sauce,7.0,10.0,44.0
+Bofrot (Ghana puff),Bofrot,bofrot ghana doughnut,Ghana,snack,100g,290,gram:1|piece:45,gram,,estimate — verify,,5.0,42.0,12.0
+Koose,Koose (bean fritter),koose bean fritter,Ghana,snack,100g,230,gram:1|piece:35,gram,,estimate — verify,,7.0,15.0,16.0
+Hausa koko,Hausa koko,hausa koko millet porridge,Ghana,porridge,100g,60,gram:1|bowl:300,gram,,estimate — verify,,1.5,12.0,0.6
+Kelewele + arachides,Kelewele with peanuts,kelewele peanuts,Ghana,snack,100g,280,gram:1|cup:150,gram,,estimate — verify,,6.0,30.0,15.0
+Jollof + poulet (assiette),Jollof with chicken (plate),jollof chicken plate,Ghana,combo,100g,185,gram:1|plate:400,gram,,estimate — verify,,9.0,24.0,6.0
+Thiéboudienne,Thieboudienne (fish & rice),thieboudienne ceebu jen fish rice,Sénégal,rice dish,100g,170,gram:1|plate:350|cup:250,gram,,estimate — verify,national dish,8.0,24.0,5.0
+Thiébou yapp,Thiebou yapp (meat rice),thiebou yapp meat rice,Sénégal,rice dish,100g,180,gram:1|plate:350|cup:250,gram,,estimate — verify,,8.0,24.0,6.0
+Yassa poulet,Chicken yassa,yassa poulet chicken onion lemon,Sénégal,dish,100g,160,gram:1|plate:350|cup:250,gram,,estimate — verify,onion-lemon chicken,13.0,12.0,7.0
+Yassa poisson,Fish yassa,yassa poisson fish,Sénégal,dish,100g,145,gram:1|plate:350|cup:250,gram,,estimate — verify,,14.0,11.0,5.5
+Mafé (Sénégal),Mafe (groundnut stew),mafe maafe groundnut peanut stew,Sénégal,soup/stew,100g,190,gram:1|ladle:150|cup:240,gram,,estimate — verify,,8.0,8.0,13.5
+Domoda,Domoda,domoda peanut stew,Sénégal,soup/stew,100g,185,gram:1|ladle:150|cup:240,gram,,estimate — verify,Gambian-style peanut stew,7.0,10.0,12.0
+Caldou,Caldou,caldou fish lemon,Sénégal,dish,100g,110,gram:1|plate:350|cup:250,gram,,estimate — verify,light fish & lemon,13.0,8.0,3.0
+Soupou kandia,Soupou kandia (okra),soupou kandia okra soup,Sénégal,soup/stew,100g,130,gram:1|ladle:150|cup:240,gram,,estimate — verify,,8.0,7.0,8.0
+Thiou,Thiou,thiou tomato stew,Sénégal,soup/stew,100g,150,gram:1|ladle:150|cup:240,gram,,estimate — verify,,9.0,10.0,8.0
+Ndambe,Ndambe (bean stew),ndambe bean stew,Sénégal,dish,100g,165,gram:1|ladle:150|cup:240,gram,,estimate — verify,,8.0,22.0,5.0
+Fataya,Fataya (fish pastry),fataya pastel fish pastry,Sénégal,snack,100g,280,gram:1|piece:60,gram,,estimate — verify,fried,8.0,28.0,15.0
+Accara (Sénégal),Accara (bean fritter),accara akara bean fritter,Sénégal,snack,100g,230,gram:1|piece:35,gram,,estimate — verify,,7.0,15.0,16.0
+Thiakry (dégué),Thiakry (degue),thiakry degue millet couscous milk,Sénégal,dessert,100g,140,gram:1|cup:250|bowl:250,gram,,estimate — verify,,4.0,26.0,2.5
+Sombi,Sombi (rice pudding),sombi rice pudding,Sénégal,dessert,100g,120,gram:1|bowl:250,gram,,estimate — verify,,2.5,22.0,2.5
+Bissap,Bissap (hibiscus),bissap hibiscus juice,Sénégal,drink,100g,40,gram:1|ml:1.02|glass:250,gram,,estimate — verify,sweetened,0.1,10.0,0.0
+Bouye (jus de baobab),Bouye (baobab juice),bouye baobab juice,Sénégal,drink,100g,60,gram:1|ml:1.03|glass:250,gram,,estimate — verify,,0.5,14.0,0.2
+Lakh,Lakh (millet porridge),lakh millet porridge sow,Sénégal,porridge,100g,110,gram:1|bowl:300,gram,,estimate — verify,,3.0,20.0,2.0
+Ngalax,Ngalax,ngalax millet peanut,Sénégal,dessert,100g,180,gram:1|bowl:250,gram,,estimate — verify,,5.0,26.0,6.5
+Attiéké,Attieke (cassava couscous),attieke cassava couscous,Côte d'Ivoire,side,100g,150,gram:1|cup:150|plate:200,gram,,estimate — verify,,1.5,34.0,0.3
+Attiéké poisson,Attieke with fish,attieke poisson garba,Côte d'Ivoire,combo,100g,165,gram:1|plate:350,gram,,estimate — verify,,9.0,26.0,4.0
+Garba,Garba (attieke & tuna),garba attieke tuna,Côte d'Ivoire,street dish,100g,190,gram:1|plate:300,gram,,estimate — verify,,10.0,25.0,6.0
+Alloco,Alloco (fried plantain),alloco fried plantain,Côte d'Ivoire,street food,100g,200,gram:1|cup:150,gram,,estimate — verify,,1.5,30.0,8.0
+Kedjenou,Kedjenou (slow chicken),kedjenou chicken,Côte d'Ivoire,dish,100g,140,gram:1|plate:350|cup:250,gram,,estimate — verify,,15.0,4.0,7.0
+Foutou,Foutou,foutou banane plantain cassava,Côte d'Ivoire,swallow,100g,125,gram:1|ball:180|cup:200,gram,,estimate — verify,,1.3,29.0,0.3
+Foutou banane,Foutou banane,foutou banane plantain,Côte d'Ivoire,swallow,100g,130,gram:1|ball:180|cup:200,gram,,estimate — verify,,1.2,30.0,0.3
+Sauce graine,Sauce graine (palm nut),sauce graine palm nut,Côte d'Ivoire,soup/stew,100g,180,gram:1|ladle:150|cup:240,gram,,estimate — verify,,6.0,6.0,15.0
+Sauce arachide (Ivoire),Peanut sauce,sauce arachide peanut,Côte d'Ivoire,soup/stew,100g,190,gram:1|ladle:150|cup:240,gram,,estimate — verify,,8.0,8.0,13.5
+Sauce gombo (Ivoire),Okra sauce,sauce gombo okra,Côte d'Ivoire,soup/stew,100g,90,gram:1|ladle:150|cup:240,gram,,estimate — verify,,3.0,7.0,5.0
+Kabato,Kabato,kabato corn swallow,Côte d'Ivoire,swallow,100g,110,gram:1|ball:180|cup:200,gram,,estimate — verify,,2.5,25.0,0.4
+Placali,Placali,placali cassava swallow,Côte d'Ivoire,swallow,100g,120,gram:1|ball:180|cup:200,gram,,estimate — verify,,1.0,29.0,0.2
+Aloko poulet,Aloko with chicken,aloko poulet plantain chicken,Côte d'Ivoire,combo,100g,210,gram:1|plate:350,gram,,estimate — verify,,10.0,26.0,8.0
+Bangui / kutuk(u),Bandji (palm wine),bandji bangui palm wine,Côte d'Ivoire,drink,100g,45,gram:1|ml:1|glass:250,gram,,estimate — verify,alcohol,0.2,5.0,0.1
+To (tô),To (millet paste),to toh millet corn paste,Mali,swallow,100g,105,gram:1|ball:180|cup:200,gram,,estimate — verify,,2.5,24.0,0.5
+Riz gras (riz au gras),Riz gras (fatty rice),riz gras fatty rice,Mali,rice dish,100g,180,gram:1|plate:350|cup:250,gram,,estimate — verify,,5.0,26.0,6.5
+Tiga dèguè na,Tiga dege na (peanut stew),tiga dege peanut stew mali,Mali,soup/stew,100g,190,gram:1|ladle:150|cup:240,gram,,estimate — verify,,8.0,9.0,13.0
+Fonio,Fonio (cooked),fonio grain,Mali,staple,100g,130,gram:1|cup:180,gram,,estimate — verify,,2.5,28.0,0.5
+Widjila,Widjila,widjila,Mali,dish,100g,150,gram:1|plate:350|cup:250,gram,,estimate — verify,,5.0,25.0,3.5
+Sauce feuilles (Guinée),Cassava leaf sauce,cassava leaf sauce guinee,Guinée,soup/stew,100g,150,gram:1|ladle:150|cup:240,gram,,estimate — verify,with palm oil & peanut,6.0,8.0,10.0
+Riz sauce feuille,Rice with leaf sauce,rice leaf sauce,Guinée,combo,100g,170,gram:1|plate:350|cup:250,gram,,estimate — verify,,6.0,25.0,5.0
+Fouti (Guinée),Fouti,fouti rice guinee,Guinée,rice dish,100g,150,gram:1|plate:350|cup:250,gram,,estimate — verify,,3.5,28.0,3.0
+Pâte (akassa),Akassa (corn paste),akassa pate corn,Bénin,swallow,100g,110,gram:1|ball:180|cup:200,gram,,estimate — verify,,2.0,25.0,0.4
+Amiwo,Amiwo (spiced corn paste),amiwo corn paste,Bénin,swallow,100g,130,gram:1|ball:180|cup:200,gram,,estimate — verify,,3.0,26.0,2.0
+Sauce arachide (Bénin),Peanut sauce,sauce arachide peanut benin,Bénin,soup/stew,100g,190,gram:1|ladle:150|cup:240,gram,,estimate — verify,,8.0,8.0,13.5
+Wagasi,Wagasi (Fulani cheese),wagasi cheese fromage peul,Bénin,protein,100g,280,gram:1|piece:50,gram,,estimate — verify,,18.0,3.0,22.0
+Ablo,Ablo (steamed bread),ablo steamed rice bread,Togo,staple,100g,180,gram:1|piece:60,gram,,estimate — verify,,4.0,36.0,2.0
+Djenkoumé,Djenkoume (red corn paste),djenkoume gboma,Togo,swallow,100g,140,gram:1|ball:180|cup:200,gram,,estimate — verify,,3.0,27.0,2.5
+Gboma dessi,Gboma dessi (spinach stew),gboma dessi spinach,Togo,soup/stew,100g,130,gram:1|ladle:150|cup:240,gram,,estimate — verify,,6.0,6.0,8.5
+Fufu (Togo/Bénin),Fufu,fufu yam togo benin,Togo,swallow,100g,120,gram:1|ball:180|cup:200,gram,,estimate — verify,,1.5,28.0,0.3
+Fufu (Congo),Fufu (Congolese),fufu foufou luku cassava congo,RD Congo,swallow,100g,120,gram:1|ball:180|cup:200,gram,,estimate — verify,,1.0,29.0,0.2
+Chikwangue (kwanga),Chikwangue (kwanga),chikwangue kwanga cassava bread,RD Congo,staple,100g,150,gram:1|piece:150,gram,,estimate — verify,,1.0,36.0,0.3
+Pondu (saka saka),Pondu (cassava leaves),pondu saka saka cassava leaf,RD Congo,soup/stew,100g,140,gram:1|ladle:150|cup:240,gram,,estimate — verify,with palm oil,6.0,7.0,9.5
+Poulet à la moambe,Moambe chicken,moambe poulet palm butter chicken,RD Congo,soup/stew,100g,190,gram:1|ladle:150|cup:240,gram,,estimate — verify,national dish,13.0,4.0,13.5
+Liboke ya mbisi,Liboke (fish in leaves),liboke fish leaves maboke,RD Congo,dish,100g,110,gram:1|piece:200,gram,,estimate — verify,steamed in leaves,16.0,1.0,5.0
+Makayabu,Makayabu (salted fish),makayabu salted cod fish,RD Congo,protein,100g,180,gram:1|piece:100,gram,,estimate — verify,,25.0,0.0,8.5
+Madesu (haricots),Madesu (beans),madesu beans palm oil,RD Congo,dish,100g,150,gram:1|ladle:150|cup:240,gram,,estimate — verify,,8.0,20.0,4.0
+Fumbwa,Fumbwa (wild spinach),fumbwa wild spinach peanut,RD Congo,soup/stew,100g,160,gram:1|ladle:150|cup:240,gram,,estimate — verify,,7.0,7.0,11.0
+Mikate (beignet),Mikate (beignet),mikate beignet congo doughnut,RD Congo,snack,100g,270,gram:1|piece:40,gram,,estimate — verify,,5.0,38.0,11.0
+Ntaba (chèvre grillée),Ntaba (grilled goat),ntaba grilled goat,RD Congo,protein,100g,240,gram:1|piece:100,gram,,estimate — verify,,26.0,0.0,15.0
+Mbika (egusi congolais),Mbika (egusi),mbika egusi seed,RD Congo,soup/stew,100g,200,gram:1|ladle:150|cup:240,gram,,estimate — verify,,9.0,6.0,15.0
+Loso na madesu,Rice and beans,loso madesu rice beans,RD Congo,combo,100g,150,gram:1|plate:350|cup:250,gram,,estimate — verify,,6.0,26.0,3.0
+Bitekuteku,Bitekuteku (amaranth),bitekuteku amaranth greens,RD Congo,vegetable,100g,80,gram:1|ladle:150|cup:240,gram,,estimate — verify,,3.0,5.0,5.0
+Ngai ngai (oseille),Ngai ngai (sorrel),ngai ngai sorrel sauce,RD Congo,soup/stew,100g,90,gram:1|ladle:150|cup:240,gram,,estimate — verify,,3.0,6.0,5.5
+Saka saka (Congo),Saka saka,saka saka cassava leaf congo brazza,Congo,soup/stew,100g,140,gram:1|ladle:150|cup:240,gram,,estimate — verify,,6.0,7.0,9.5
+Poulet moambé (Congo),Moambe chicken (Congo),moambe poulet congo,Congo,soup/stew,100g,190,gram:1|ladle:150|cup:240,gram,,estimate — verify,,13.0,4.0,13.5
+Maboké,Maboke (fish in leaves),maboke liboke fish leaves,Congo,dish,100g,110,gram:1|piece:200,gram,,estimate — verify,,16.0,1.0,5.0
+Mossaka,Mossaka (aubergine stew),mossaka eggplant fish,Congo,soup/stew,100g,130,gram:1|ladle:150|cup:240,gram,,estimate — verify,,7.0,6.0,8.0
+Foufou (Congo B),Foufou,foufou cassava congo,Congo,swallow,100g,120,gram:1|ball:180|cup:200,gram,,estimate — verify,,1.0,29.0,0.2
+Boule (Tchad),Boule (millet paste),boule millet sorghum tchad chad,Tchad,swallow,100g,105,gram:1|ball:180|cup:200,gram,,estimate — verify,,2.8,23.0,0.8
+Daraba,Daraba (okra vegetable stew),daraba okra vegetable stew,Tchad,soup/stew,100g,120,gram:1|ladle:150|cup:240,gram,,estimate — verify,,4.0,10.0,7.0
+Kissar,Kissar (sorghum crepe),kissar kisra sorghum crepe,Tchad,staple,100g,180,gram:1|piece:80,gram,,estimate — verify,,5.0,36.0,1.5
+Jarret / bouillon,La bouillie tchadienne,bouillie porridge chad,Tchad,porridge,100g,75,gram:1|bowl:300,gram,,estimate — verify,,2.0,15.0,0.8
+Maffé tchadien,Chadian peanut stew,maffe peanut stew chad,Tchad,soup/stew,100g,190,gram:1|ladle:150|cup:240,gram,,estimate — verify,,8.0,9.0,13.0
+Riz sauce gombo (Tchad),Rice with okra sauce,rice okra sauce chad,Tchad,combo,100g,150,gram:1|plate:350|cup:250,gram,,estimate — verify,,4.0,26.0,3.5
+Poulet nyembwe,Nyembwe chicken,nyembwe poulet palm nut chicken,Gabon,soup/stew,100g,200,gram:1|ladle:150|cup:240,gram,,estimate — verify,national dish,13.0,4.0,15.0
+Odika (chocolat sauvage),Odika sauce,odika wild mango sauce,Gabon,soup/stew,100g,210,gram:1|ladle:150|cup:240,gram,,estimate — verify,,6.0,7.0,18.0
+Feuilles de manioc (Gabon),Cassava leaves (Gabon),cassava leaf gabon,Gabon,soup/stew,100g,140,gram:1|ladle:150|cup:240,gram,,estimate — verify,,6.0,7.0,9.5
+Bâton de manioc (Gabon),Cassava stick (Gabon),baton manioc cassava gabon,Gabon,staple,100g,150,gram:1|piece:150,gram,,estimate — verify,,1.0,36.0,0.3
+Gozo (RCA),Gozo (cassava paste),gozo cassava paste central african,Centrafrique,swallow,100g,120,gram:1|ball:180|cup:200,gram,,estimate — verify,,1.0,29.0,0.2
+Sauce gombo (RCA),Okra sauce (CAR),okra sauce central african,Centrafrique,soup/stew,100g,90,gram:1|ladle:150|cup:240,gram,,estimate — verify,,3.0,7.0,5.0
+Kanda (boulettes),Kanda (meatballs in sauce),kanda meatballs central african,Centrafrique,dish,100g,180,gram:1|ladle:150|cup:240,gram,,estimate — verify,,12.0,5.0,12.0
+Saucisse crue,Raw sausage,saucisse crue raw sausage,international,charcuterie,100g,300,gram:1|piece:70,gram,,estimate — verify,,13.0,2.0,26.5
+Saucisse frite,Fried sausage,saucisse frite fried sausage,international,charcuterie,100g,340,gram:1|piece:65,gram,,estimate — verify,,15.0,2.0,30.0
+Merguez,Merguez,merguez sausage,international,charcuterie,100g,280,gram:1|piece:60,gram,,estimate — verify,,15.0,1.5,24.0
+Chipolata,Chipolata,chipolata sausage,international,charcuterie,100g,290,gram:1|piece:40,gram,,estimate — verify,,13.0,2.0,25.5
+Saucisson sec,Dry-cured sausage (saucisson),saucisson sec salami dry,international,charcuterie,100g,410,gram:1|slice:8,gram,,estimate — verify,,24.0,2.0,34.0
+Salami,Salami,salami,international,charcuterie,100g,380,gram:1|slice:10,gram,,estimate — verify,,22.0,1.5,32.0
+Chorizo,Chorizo,chorizo,international,charcuterie,100g,455,gram:1|slice:10,gram,,estimate — verify,,24.0,2.0,38.0
+Mortadelle,Mortadella,mortadelle mortadella,international,charcuterie,100g,310,gram:1|slice:25,gram,,estimate — verify,,16.0,3.0,25.0
+Jambon blanc,Cooked ham,jambon blanc cooked ham,international,charcuterie,100g,107,gram:1|slice:40,gram,,estimate — verify,,18.0,1.0,3.5
+Jambon cru (sec),Cured ham (prosciutto),jambon cru prosciutto serrano,international,charcuterie,100g,240,gram:1|slice:20,gram,,estimate — verify,,27.0,0.5,14.0
+Bacon (lardons),Bacon / lardons,bacon lardons,international,charcuterie,100g,400,gram:1|slice:15|tablespoon:15,gram,,estimate — verify,,25.0,1.0,33.0
+Pâté / rillettes,Pate / rillettes,pate rillettes,international,charcuterie,100g,320,gram:1|tablespoon:20|teaspoon:7,gram,,estimate — verify,,13.0,2.0,29.0
+Corned beef,Corned beef,corned beef,international,charcuterie,100g,250,gram:1|slice:30|tablespoon:20,gram,,estimate — verify,,24.0,1.0,16.0
+Hot-dog (saucisse),Hot dog sausage,hot dog saucisse frankfurter,international,charcuterie,100g,290,gram:1|piece:50,gram,,estimate — verify,,11.0,3.0,26.0
+Bœuf haché cru (maigre),Raw lean minced beef,boeuf hache cru raw mince,international,meat,100g,215,gram:1|cup:225,gram,,estimate — verify,,20.0,0.0,15.0
+Bœuf haché cuit,Cooked minced beef,boeuf hache cuit cooked mince,international,meat,100g,250,gram:1|cup:200,gram,,estimate — verify,,26.0,0.0,16.0
+Steak grillé,Grilled beef steak,steak grille grilled steak,international,meat,100g,250,gram:1|piece:200,gram,,estimate — verify,,27.0,0.0,16.0
+Steak frit / poêlé,Pan-fried steak,steak poele pan fried,international,meat,100g,270,gram:1|piece:200,gram,,estimate — verify,,26.0,0.0,18.0
+Rôti de bœuf,Roast beef,roti boeuf roast beef,international,meat,100g,210,gram:1|slice:60,gram,,estimate — verify,,28.0,0.0,11.0
+Bœuf bouilli (pot-au-feu),Boiled beef,boeuf bouilli boiled beef,international,meat,100g,180,gram:1|piece:100,gram,,estimate — verify,,26.0,0.0,8.5
+Tripes / abats bœuf,Beef tripe / offal,tripes abats offal tripe,international,meat,100g,130,gram:1|cup:150,gram,,estimate — verify,,15.0,2.0,7.0
+Foie de bœuf,Beef liver,foie boeuf beef liver,international,meat,100g,135,gram:1|slice:80,gram,,estimate — verify,,20.0,4.0,4.0
+Rognons,Kidneys,rognons kidney,international,meat,100g,100,gram:1|piece:100,gram,,estimate — verify,,17.0,1.0,3.0
+Queue de bœuf,Oxtail,queue boeuf oxtail,international,meat,100g,260,gram:1|piece:100,gram,,estimate — verify,,27.0,0.0,17.0
+Chèvre grillée,Grilled goat,chevre grillee grilled goat,international,meat,100g,165,gram:1|piece:100,gram,,estimate — verify,,27.0,0.0,6.0
+Chèvre en sauce,Goat in sauce,chevre sauce goat stew,international,meat,100g,190,gram:1|piece:100,gram,,estimate — verify,,24.0,2.0,10.0
+Agneau grillé,Grilled lamb,agneau grille grilled lamb,international,meat,100g,250,gram:1|piece:100,gram,,estimate — verify,,25.0,0.0,17.0
+Côtelette d'agneau,Lamb chop,cotelette agneau lamb chop,international,meat,100g,290,gram:1|piece:90,gram,,estimate — verify,,24.0,0.0,21.0
+Porc grillé,Grilled pork,porc grille grilled pork,international,meat,100g,240,gram:1|piece:100,gram,,estimate — verify,,27.0,0.0,15.0
+Porc rôti,Roast pork,porc roti roast pork,international,meat,100g,230,gram:1|slice:60,gram,,estimate — verify,,27.0,0.0,14.0
+Travers de porc (côtes),Pork ribs,travers porc ribs spare ribs,international,meat,100g,290,gram:1|piece:120,gram,,estimate — verify,,22.0,0.0,22.0
+Pied de porc,Pig trotter,pied porc trotter,international,meat,100g,215,gram:1|piece:120,gram,,estimate — verify,,22.0,0.0,14.0
+Poulet cru (blanc),Raw chicken breast,poulet cru raw chicken breast,international,meat,100g,120,gram:1|piece:120,gram,,estimate — verify,,22.6,0.0,2.6
+Poulet frit,Fried chicken,poulet frit fried chicken,international,meat,100g,250,gram:1|piece:120,gram,,estimate — verify,,22.0,8.0,15.0
+Poulet rôti,Roast chicken,poulet roti roast chicken,international,meat,100g,190,gram:1|piece:120,gram,,estimate — verify,,27.0,0.0,9.0
+Aile de poulet,Chicken wing,aile poulet chicken wing,international,meat,100g,230,gram:1|piece:35,gram,,estimate — verify,,27.0,0.0,13.0
+Gésiers,Chicken gizzards,gesiers gizzard,international,meat,100g,150,gram:1|cup:145,gram,,estimate — verify,,27.0,0.0,4.0
+Foie de volaille,Chicken liver,foie volaille chicken liver,international,meat,100g,120,gram:1|piece:30,gram,,estimate — verify,,17.0,1.0,5.0
+Dinde (blanc),Turkey breast,dinde turkey breast,international,meat,100g,135,gram:1|slice:30,gram,,estimate — verify,,29.0,0.0,1.7
+Canard,Duck,canard duck,international,meat,100g,240,gram:1|piece:100,gram,,estimate — verify,,19.0,0.0,18.0
+Tilapia grillé,Grilled tilapia,tilapia grille grilled,international,fish,100g,128,gram:1|piece:150,gram,,estimate — verify,,26.0,0.0,2.7
+Tilapia frit,Fried tilapia,tilapia frit fried,international,fish,100g,200,gram:1|piece:150,gram,,estimate — verify,,24.0,3.0,10.0
+Maquereau grillé,Grilled mackerel,maquereau grille mackerel,international,fish,100g,205,gram:1|piece:150,gram,,estimate — verify,omega-3 rich,21.0,0.0,13.5
+Maquereau fumé,Smoked mackerel,maquereau fume smoked mackerel,international,fish,100g,230,gram:1|piece:100,gram,,estimate — verify,,19.0,0.0,17.0
+Sardine fraîche,Fresh sardine,sardine fraiche fresh,international,fish,100g,208,gram:1|piece:40,gram,,estimate — verify,,25.0,0.0,11.5
+Sardine en boîte,Canned sardines,sardine boite canned,international,fish,100g,210,gram:1|can:120,gram,,estimate — verify,,25.0,0.0,11.0
+Bar / dorade grillé,Grilled sea bass / bream,bar dorade grille sea bass bream,international,fish,100g,125,gram:1|piece:200,gram,,estimate — verify,,24.0,0.0,3.0
+Capitaine (silure),Catfish,capitaine silure catfish,international,fish,100g,145,gram:1|piece:150,gram,,estimate — verify,,18.0,0.0,8.0
+Thon frais,Fresh tuna,thon frais fresh tuna,international,fish,100g,130,gram:1|piece:120,gram,,estimate — verify,,28.0,0.0,1.5
+Saumon grillé,Grilled salmon,saumon grille grilled salmon,international,fish,100g,208,gram:1|piece:150,gram,,estimate — verify,omega-3 rich,22.0,0.0,13.0
+Saumon fumé,Smoked salmon,saumon fume smoked salmon,international,fish,100g,180,gram:1|slice:30,gram,,estimate — verify,,22.0,0.0,10.0
+Morue / stockfish,Cod / stockfish,morue stockfish cod,international,fish,100g,290,gram:1|piece:80,gram,,estimate — verify,"dried, high protein",62.0,0.0,2.5
+Crevettes,Prawns / shrimp,crevettes prawns shrimp,international,fish,100g,99,gram:1|cup:145|piece:10,gram,,estimate — verify,,24.0,0.2,0.3
+Calmar / poulpe,Squid / octopus,calmar poulpe squid octopus,international,fish,100g,92,gram:1|piece:100,gram,,estimate — verify,,16.0,3.0,1.4
+Crabe,Crab,crabe crab,international,fish,100g,97,gram:1|piece:100,gram,,estimate — verify,,19.0,0.0,1.5
+Moules,Mussels,moules mussels,international,fish,100g,86,gram:1|cup:150,gram,,estimate — verify,,12.0,4.0,2.2
+Bar de mer entier,Whole fish (grilled),poisson entier whole fish,international,fish,100g,130,gram:1|piece:250,gram,,estimate — verify,,24.0,0.0,3.5
+Œuf cru,Raw egg,oeuf cru raw egg,international,protein,100g,143,gram:1|piece:50,gram,,estimate — verify,,12.6,0.7,9.5
+Œuf au plat (frit),Fried egg,oeuf plat frit fried egg,international,protein,100g,196,gram:1|piece:55,gram,,estimate — verify,with oil,13.6,0.8,15.3
+Œuf poché,Poached egg,oeuf poche poached egg,international,protein,100g,143,gram:1|piece:50,gram,,estimate — verify,,12.5,0.7,9.5
+Œuf dur,Hard-boiled egg,oeuf dur boiled egg,international,protein,100g,155,gram:1|piece:50,gram,,estimate — verify,,13.0,1.1,11.0
+Fromage frais,Fresh soft cheese,fromage frais cream cheese,international,dairy,100g,250,gram:1|tablespoon:15,gram,,estimate — verify,,6.0,4.0,23.0
+Mozzarella,Mozzarella,mozzarella,international,dairy,100g,280,gram:1|piece:125|slice:20,gram,,estimate — verify,,22.0,2.2,20.0
+Parmesan,Parmesan,parmesan,international,dairy,100g,392,gram:1|tablespoon:5,gram,,estimate — verify,,36.0,4.0,25.0
+Feta,Feta,feta,international,dairy,100g,264,gram:1|cup:150,gram,,estimate — verify,,14.0,4.0,21.0
+Oignon,Onion,oignon onion,international,vegetable,100g,40,gram:1|piece:110|cup:160,gram,,estimate — verify,,1.1,9.3,0.1
+Oignon frit,Fried onion,oignon frit fried onion,international,vegetable,100g,130,gram:1|cup:100,gram,,estimate — verify,,1.5,12.0,8.5
+Tomate cerise,Cherry tomato,tomate cerise cherry tomato,international,vegetable,100g,18,gram:1|piece:15|cup:150,gram,,estimate — verify,,0.9,3.9,0.2
+Épinard cuit,Cooked spinach,epinard cuit cooked spinach,international,vegetable,100g,23,gram:1|cup:180,gram,,estimate — verify,,3.0,3.8,0.4
+Chou frisé (kale),Kale,chou frise kale,international,vegetable,100g,35,gram:1|cup:67,gram,,estimate — verify,,2.9,4.4,1.5
+Haricot vert cuit,Cooked green beans,haricot vert cuit green beans,international,vegetable,100g,35,gram:1|cup:125,gram,,estimate — verify,,1.9,7.9,0.3
+Patate douce cuite,Cooked sweet potato,patate douce sweet potato,international,vegetable,100g,90,gram:1|piece:130|cup:200,gram,,estimate — verify,,2.0,20.7,0.1
+Patate douce frite,Sweet potato fries,patate douce frite sweet potato fries,international,vegetable,100g,280,gram:1|cup:120,gram,,estimate — verify,,2.5,38.0,13.0
+Pomme de terre bouillie,Boiled potato,pomme terre bouillie boiled potato,international,vegetable,100g,87,gram:1|piece:150|cup:150,gram,,estimate — verify,,1.9,20.0,0.1
+Pomme de terre au four,Baked potato,pomme terre four baked potato,international,vegetable,100g,93,gram:1|piece:170,gram,,estimate — verify,,2.5,21.0,0.1
+Courge / potiron,Pumpkin / squash,courge potiron pumpkin squash,international,vegetable,100g,26,gram:1|cup:116,gram,,estimate — verify,,1.0,6.5,0.1
+Radis,Radish,radis radish,international,vegetable,100g,16,gram:1|piece:5|cup:116,gram,,estimate — verify,,0.7,3.4,0.1
+Navet,Turnip,navet turnip,international,vegetable,100g,28,gram:1|piece:120,gram,,estimate — verify,,0.9,6.4,0.1
+Poireau cuit,Cooked leek,poireau cuit cooked leek,international,vegetable,100g,31,gram:1|piece:90,gram,,estimate — verify,,0.8,7.6,0.2
+Asperges,Asparagus,asperges asparagus,international,vegetable,100g,20,gram:1|piece:20|cup:134,gram,,estimate — verify,,2.2,3.9,0.1
+Artichaut,Artichoke,artichaut artichoke,international,vegetable,100g,47,gram:1|piece:120,gram,,estimate — verify,,3.3,10.5,0.2
+Maïs en épi,Corn on the cob,mais epi corn cob,international,vegetable,100g,96,gram:1|piece:90,gram,,estimate — verify,,3.4,21.0,1.5
+Champignon de Paris,Button mushroom,champignon paris button mushroom,international,vegetable,100g,22,gram:1|cup:70|piece:18,gram,,estimate — verify,,3.1,3.3,0.3
+Champignon sauté,Sauteed mushroom,champignon saute sauteed mushroom,international,vegetable,100g,80,gram:1|cup:150,gram,,estimate — verify,with oil,3.5,4.0,6.0
+Pleurotes,Oyster mushroom,pleurotes oyster mushroom,international,vegetable,100g,33,gram:1|cup:86,gram,,estimate — verify,,3.3,6.1,0.4
+Champignon noir,Black fungus (wood ear),champignon noir wood ear,international,vegetable,100g,25,gram:1|cup:100,gram,,estimate — verify,,0.5,7.0,0.0
+Banane,Banana,banane banana,international,fruit,100g,89,gram:1|piece:120,gram,,estimate — verify,,1.1,23.0,0.3
+Melon,Melon,melon cantaloupe,international,fruit,100g,34,gram:1|cup:160|slice:160,gram,,estimate — verify,,0.8,8.2,0.2
+Fruit de la passion,Passion fruit,fruit passion maracuja,international,fruit,100g,97,gram:1|piece:18,gram,,estimate — verify,,2.2,23.0,0.7
+Litchi,Lychee,litchi lychee,international,fruit,100g,66,gram:1|piece:10|cup:190,gram,,estimate — verify,,0.8,17.0,0.4
+Mandarine,Mandarin,mandarine mandarin clementine,international,fruit,100g,53,gram:1|piece:75,gram,,estimate — verify,,0.8,13.3,0.3
+Abricot,Apricot,abricot apricot,international,fruit,100g,48,gram:1|piece:35,gram,,estimate — verify,,1.4,11.0,0.4
+Framboises,Raspberries,framboise raspberry,international,fruit,100g,52,gram:1|cup:123,gram,,estimate — verify,,1.2,12.0,0.7
+Mûres,Blackberries,mure blackberry,international,fruit,100g,43,gram:1|cup:144,gram,,estimate — verify,,1.4,10.0,0.5
+Cassis,Blackcurrant,cassis blackcurrant,international,fruit,100g,63,gram:1|cup:112,gram,,estimate — verify,,1.4,15.0,0.4
+Noix de coco fraîche,Fresh coconut,noix coco coconut,international,fruit,100g,354,gram:1|cup:80,gram,,estimate — verify,,3.3,15.0,33.5
+Fruits secs (mélange),Mixed dried fruit,fruits secs dried fruit,international,fruit,100g,310,gram:1|handful:40|cup:150,gram,,estimate — verify,,3.0,74.0,1.0

@@ -21,7 +21,7 @@ import { parse } from "csv-parse/sync";
 import pg from "pg";
 
 const csvPath =
-  process.argv[2] || "./migrations/seed_v8.csv";
+  process.argv[2] || "./migrations/seed_v9.csv";
 const DATABASE_URL =
   process.env.DATABASE_URL ||
   "postgres://calorie:devpassword@localhost:5432/calorie";

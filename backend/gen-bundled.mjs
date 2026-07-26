@@ -5,7 +5,7 @@
  *   node gen-bundled.mjs [path/to/csv] [path/to/output.json]
  *
  * Defaults:
- *   CSV:  ./migrations/seed_v8.csv
+ *   CSV:  ./migrations/seed_v9.csv
  *   JSON: ../mobile/src/api/bundledFoods.json
  */
 
@@ -13,7 +13,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { parse } from "csv-parse/sync";
 
-const csvPath = process.argv[2] || "./migrations/seed_v8.csv";
+const csvPath = process.argv[2] || "./migrations/seed_v9.csv";
 const outPath =
   process.argv[3] || "../mobile/src/api/bundledFoods.json";
 

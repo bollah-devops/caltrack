@@ -12813,5 +12813,2505 @@
         "sortOrder": 2
       }
     ]
+  },
+  {
+    "id": "bundled_434",
+    "nameFr": "Saucisse crue",
+    "nameEn": "Raw sausage",
+    "aka": "saucisse crue raw sausage",
+    "basis": "100g",
+    "kcalPer100": 300,
+    "proteinG": 13,
+    "carbsG": 2,
+    "fatG": 26.5,
+    "category": "charcuterie",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 70,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_435",
+    "nameFr": "Saucisse frite",
+    "nameEn": "Fried sausage",
+    "aka": "saucisse frite fried sausage",
+    "basis": "100g",
+    "kcalPer100": 340,
+    "proteinG": 15,
+    "carbsG": 2,
+    "fatG": 30,
+    "category": "charcuterie",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 65,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_436",
+    "nameFr": "Merguez",
+    "nameEn": "Merguez",
+    "aka": "merguez sausage",
+    "basis": "100g",
+    "kcalPer100": 280,
+    "proteinG": 15,
+    "carbsG": 1.5,
+    "fatG": 24,
+    "category": "charcuterie",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 60,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_437",
+    "nameFr": "Chipolata",
+    "nameEn": "Chipolata",
+    "aka": "chipolata sausage",
+    "basis": "100g",
+    "kcalPer100": 290,
+    "proteinG": 13,
+    "carbsG": 2,
+    "fatG": 25.5,
+    "category": "charcuterie",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 40,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_438",
+    "nameFr": "Saucisson sec",
+    "nameEn": "Dry-cured sausage (saucisson)",
+    "aka": "saucisson sec salami dry",
+    "basis": "100g",
+    "kcalPer100": 410,
+    "proteinG": 24,
+    "carbsG": 2,
+    "fatG": 34,
+    "category": "charcuterie",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "slice",
+        "grams": 8,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_439",
+    "nameFr": "Salami",
+    "nameEn": "Salami",
+    "aka": "salami",
+    "basis": "100g",
+    "kcalPer100": 380,
+    "proteinG": 22,
+    "carbsG": 1.5,
+    "fatG": 32,
+    "category": "charcuterie",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "slice",
+        "grams": 10,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_440",
+    "nameFr": "Chorizo",
+    "nameEn": "Chorizo",
+    "aka": "chorizo",
+    "basis": "100g",
+    "kcalPer100": 455,
+    "proteinG": 24,
+    "carbsG": 2,
+    "fatG": 38,
+    "category": "charcuterie",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "slice",
+        "grams": 10,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_441",
+    "nameFr": "Mortadelle",
+    "nameEn": "Mortadella",
+    "aka": "mortadelle mortadella",
+    "basis": "100g",
+    "kcalPer100": 310,
+    "proteinG": 16,
+    "carbsG": 3,
+    "fatG": 25,
+    "category": "charcuterie",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "slice",
+        "grams": 25,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_442",
+    "nameFr": "Jambon blanc",
+    "nameEn": "Cooked ham",
+    "aka": "jambon blanc cooked ham",
+    "basis": "100g",
+    "kcalPer100": 107,
+    "proteinG": 18,
+    "carbsG": 1,
+    "fatG": 3.5,
+    "category": "charcuterie",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "slice",
+        "grams": 40,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_443",
+    "nameFr": "Jambon cru (sec)",
+    "nameEn": "Cured ham (prosciutto)",
+    "aka": "jambon cru prosciutto serrano",
+    "basis": "100g",
+    "kcalPer100": 240,
+    "proteinG": 27,
+    "carbsG": 0.5,
+    "fatG": 14,
+    "category": "charcuterie",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "slice",
+        "grams": 20,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_444",
+    "nameFr": "Bacon (lardons)",
+    "nameEn": "Bacon / lardons",
+    "aka": "bacon lardons",
+    "basis": "100g",
+    "kcalPer100": 400,
+    "proteinG": 25,
+    "carbsG": 1,
+    "fatG": 33,
+    "category": "charcuterie",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "slice",
+        "grams": 15,
+        "sortOrder": 1
+      },
+      {
+        "label": "tablespoon",
+        "grams": 15,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_445",
+    "nameFr": "Pâté / rillettes",
+    "nameEn": "Pate / rillettes",
+    "aka": "pate rillettes",
+    "basis": "100g",
+    "kcalPer100": 320,
+    "proteinG": 13,
+    "carbsG": 2,
+    "fatG": 29,
+    "category": "charcuterie",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "tablespoon",
+        "grams": 20,
+        "sortOrder": 1
+      },
+      {
+        "label": "teaspoon",
+        "grams": 7,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_446",
+    "nameFr": "Corned beef",
+    "nameEn": "Corned beef",
+    "aka": "corned beef",
+    "basis": "100g",
+    "kcalPer100": 250,
+    "proteinG": 24,
+    "carbsG": 1,
+    "fatG": 16,
+    "category": "charcuterie",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "slice",
+        "grams": 30,
+        "sortOrder": 1
+      },
+      {
+        "label": "tablespoon",
+        "grams": 20,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_447",
+    "nameFr": "Hot-dog (saucisse)",
+    "nameEn": "Hot dog sausage",
+    "aka": "hot dog saucisse frankfurter",
+    "basis": "100g",
+    "kcalPer100": 290,
+    "proteinG": 11,
+    "carbsG": 3,
+    "fatG": 26,
+    "category": "charcuterie",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 50,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_448",
+    "nameFr": "Bœuf haché cru (maigre)",
+    "nameEn": "Raw lean minced beef",
+    "aka": "boeuf hache cru raw mince",
+    "basis": "100g",
+    "kcalPer100": 215,
+    "proteinG": 20,
+    "carbsG": 0,
+    "fatG": 15,
+    "category": "meat",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 225,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_449",
+    "nameFr": "Bœuf haché cuit",
+    "nameEn": "Cooked minced beef",
+    "aka": "boeuf hache cuit cooked mince",
+    "basis": "100g",
+    "kcalPer100": 250,
+    "proteinG": 26,
+    "carbsG": 0,
+    "fatG": 16,
+    "category": "meat",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_450",
+    "nameFr": "Steak grillé",
+    "nameEn": "Grilled beef steak",
+    "aka": "steak grille grilled steak",
+    "basis": "100g",
+    "kcalPer100": 250,
+    "proteinG": 27,
+    "carbsG": 0,
+    "fatG": 16,
+    "category": "meat",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 200,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_451",
+    "nameFr": "Steak frit / poêlé",
+    "nameEn": "Pan-fried steak",
+    "aka": "steak poele pan fried",
+    "basis": "100g",
+    "kcalPer100": 270,
+    "proteinG": 26,
+    "carbsG": 0,
+    "fatG": 18,
+    "category": "meat",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 200,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_452",
+    "nameFr": "Rôti de bœuf",
+    "nameEn": "Roast beef",
+    "aka": "roti boeuf roast beef",
+    "basis": "100g",
+    "kcalPer100": 210,
+    "proteinG": 28,
+    "carbsG": 0,
+    "fatG": 11,
+    "category": "meat",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "slice",
+        "grams": 60,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_453",
+    "nameFr": "Bœuf bouilli (pot-au-feu)",
+    "nameEn": "Boiled beef",
+    "aka": "boeuf bouilli boiled beef",
+    "basis": "100g",
+    "kcalPer100": 180,
+    "proteinG": 26,
+    "carbsG": 0,
+    "fatG": 8.5,
+    "category": "meat",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 100,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_454",
+    "nameFr": "Tripes / abats bœuf",
+    "nameEn": "Beef tripe / offal",
+    "aka": "tripes abats offal tripe",
+    "basis": "100g",
+    "kcalPer100": 130,
+    "proteinG": 15,
+    "carbsG": 2,
+    "fatG": 7,
+    "category": "meat",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 150,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_455",
+    "nameFr": "Foie de bœuf",
+    "nameEn": "Beef liver",
+    "aka": "foie boeuf beef liver",
+    "basis": "100g",
+    "kcalPer100": 135,
+    "proteinG": 20,
+    "carbsG": 4,
+    "fatG": 4,
+    "category": "meat",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "slice",
+        "grams": 80,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_456",
+    "nameFr": "Rognons",
+    "nameEn": "Kidneys",
+    "aka": "rognons kidney",
+    "basis": "100g",
+    "kcalPer100": 100,
+    "proteinG": 17,
+    "carbsG": 1,
+    "fatG": 3,
+    "category": "meat",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 100,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_457",
+    "nameFr": "Queue de bœuf",
+    "nameEn": "Oxtail",
+    "aka": "queue boeuf oxtail",
+    "basis": "100g",
+    "kcalPer100": 260,
+    "proteinG": 27,
+    "carbsG": 0,
+    "fatG": 17,
+    "category": "meat",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 100,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_458",
+    "nameFr": "Chèvre grillée",
+    "nameEn": "Grilled goat",
+    "aka": "chevre grillee grilled goat",
+    "basis": "100g",
+    "kcalPer100": 165,
+    "proteinG": 27,
+    "carbsG": 0,
+    "fatG": 6,
+    "category": "meat",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 100,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_459",
+    "nameFr": "Chèvre en sauce",
+    "nameEn": "Goat in sauce",
+    "aka": "chevre sauce goat stew",
+    "basis": "100g",
+    "kcalPer100": 190,
+    "proteinG": 24,
+    "carbsG": 2,
+    "fatG": 10,
+    "category": "meat",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 100,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_460",
+    "nameFr": "Agneau grillé",
+    "nameEn": "Grilled lamb",
+    "aka": "agneau grille grilled lamb",
+    "basis": "100g",
+    "kcalPer100": 250,
+    "proteinG": 25,
+    "carbsG": 0,
+    "fatG": 17,
+    "category": "meat",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 100,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_461",
+    "nameFr": "Côtelette d'agneau",
+    "nameEn": "Lamb chop",
+    "aka": "cotelette agneau lamb chop",
+    "basis": "100g",
+    "kcalPer100": 290,
+    "proteinG": 24,
+    "carbsG": 0,
+    "fatG": 21,
+    "category": "meat",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 90,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_462",
+    "nameFr": "Porc grillé",
+    "nameEn": "Grilled pork",
+    "aka": "porc grille grilled pork",
+    "basis": "100g",
+    "kcalPer100": 240,
+    "proteinG": 27,
+    "carbsG": 0,
+    "fatG": 15,
+    "category": "meat",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 100,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_463",
+    "nameFr": "Porc rôti",
+    "nameEn": "Roast pork",
+    "aka": "porc roti roast pork",
+    "basis": "100g",
+    "kcalPer100": 230,
+    "proteinG": 27,
+    "carbsG": 0,
+    "fatG": 14,
+    "category": "meat",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "slice",
+        "grams": 60,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_464",
+    "nameFr": "Travers de porc (côtes)",
+    "nameEn": "Pork ribs",
+    "aka": "travers porc ribs spare ribs",
+    "basis": "100g",
+    "kcalPer100": 290,
+    "proteinG": 22,
+    "carbsG": 0,
+    "fatG": 22,
+    "category": "meat",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 120,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_465",
+    "nameFr": "Pied de porc",
+    "nameEn": "Pig trotter",
+    "aka": "pied porc trotter",
+    "basis": "100g",
+    "kcalPer100": 215,
+    "proteinG": 22,
+    "carbsG": 0,
+    "fatG": 14,
+    "category": "meat",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 120,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_466",
+    "nameFr": "Poulet cru (blanc)",
+    "nameEn": "Raw chicken breast",
+    "aka": "poulet cru raw chicken breast",
+    "basis": "100g",
+    "kcalPer100": 120,
+    "proteinG": 22.6,
+    "carbsG": 0,
+    "fatG": 2.6,
+    "category": "meat",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 120,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_467",
+    "nameFr": "Poulet frit",
+    "nameEn": "Fried chicken",
+    "aka": "poulet frit fried chicken",
+    "basis": "100g",
+    "kcalPer100": 250,
+    "proteinG": 22,
+    "carbsG": 8,
+    "fatG": 15,
+    "category": "meat",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 120,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_468",
+    "nameFr": "Poulet rôti",
+    "nameEn": "Roast chicken",
+    "aka": "poulet roti roast chicken",
+    "basis": "100g",
+    "kcalPer100": 190,
+    "proteinG": 27,
+    "carbsG": 0,
+    "fatG": 9,
+    "category": "meat",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 120,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_469",
+    "nameFr": "Aile de poulet",
+    "nameEn": "Chicken wing",
+    "aka": "aile poulet chicken wing",
+    "basis": "100g",
+    "kcalPer100": 230,
+    "proteinG": 27,
+    "carbsG": 0,
+    "fatG": 13,
+    "category": "meat",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 35,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_470",
+    "nameFr": "Gésiers",
+    "nameEn": "Chicken gizzards",
+    "aka": "gesiers gizzard",
+    "basis": "100g",
+    "kcalPer100": 150,
+    "proteinG": 27,
+    "carbsG": 0,
+    "fatG": 4,
+    "category": "meat",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 145,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_471",
+    "nameFr": "Foie de volaille",
+    "nameEn": "Chicken liver",
+    "aka": "foie volaille chicken liver",
+    "basis": "100g",
+    "kcalPer100": 120,
+    "proteinG": 17,
+    "carbsG": 1,
+    "fatG": 5,
+    "category": "meat",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 30,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_472",
+    "nameFr": "Dinde (blanc)",
+    "nameEn": "Turkey breast",
+    "aka": "dinde turkey breast",
+    "basis": "100g",
+    "kcalPer100": 135,
+    "proteinG": 29,
+    "carbsG": 0,
+    "fatG": 1.7,
+    "category": "meat",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "slice",
+        "grams": 30,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_473",
+    "nameFr": "Canard",
+    "nameEn": "Duck",
+    "aka": "canard duck",
+    "basis": "100g",
+    "kcalPer100": 240,
+    "proteinG": 19,
+    "carbsG": 0,
+    "fatG": 18,
+    "category": "meat",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 100,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_474",
+    "nameFr": "Tilapia grillé",
+    "nameEn": "Grilled tilapia",
+    "aka": "tilapia grille grilled",
+    "basis": "100g",
+    "kcalPer100": 128,
+    "proteinG": 26,
+    "carbsG": 0,
+    "fatG": 2.7,
+    "category": "fish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 150,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_475",
+    "nameFr": "Tilapia frit",
+    "nameEn": "Fried tilapia",
+    "aka": "tilapia frit fried",
+    "basis": "100g",
+    "kcalPer100": 200,
+    "proteinG": 24,
+    "carbsG": 3,
+    "fatG": 10,
+    "category": "fish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 150,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_476",
+    "nameFr": "Maquereau grillé",
+    "nameEn": "Grilled mackerel",
+    "aka": "maquereau grille mackerel",
+    "basis": "100g",
+    "kcalPer100": 205,
+    "proteinG": 21,
+    "carbsG": 0,
+    "fatG": 13.5,
+    "category": "fish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 150,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_477",
+    "nameFr": "Maquereau fumé",
+    "nameEn": "Smoked mackerel",
+    "aka": "maquereau fume smoked mackerel",
+    "basis": "100g",
+    "kcalPer100": 230,
+    "proteinG": 19,
+    "carbsG": 0,
+    "fatG": 17,
+    "category": "fish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 100,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_478",
+    "nameFr": "Sardine fraîche",
+    "nameEn": "Fresh sardine",
+    "aka": "sardine fraiche fresh",
+    "basis": "100g",
+    "kcalPer100": 208,
+    "proteinG": 25,
+    "carbsG": 0,
+    "fatG": 11.5,
+    "category": "fish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 40,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_479",
+    "nameFr": "Sardine en boîte",
+    "nameEn": "Canned sardines",
+    "aka": "sardine boite canned",
+    "basis": "100g",
+    "kcalPer100": 210,
+    "proteinG": 25,
+    "carbsG": 0,
+    "fatG": 11,
+    "category": "fish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "can",
+        "grams": 120,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_480",
+    "nameFr": "Bar / dorade grillé",
+    "nameEn": "Grilled sea bass / bream",
+    "aka": "bar dorade grille sea bass bream",
+    "basis": "100g",
+    "kcalPer100": 125,
+    "proteinG": 24,
+    "carbsG": 0,
+    "fatG": 3,
+    "category": "fish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 200,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_481",
+    "nameFr": "Capitaine (silure)",
+    "nameEn": "Catfish",
+    "aka": "capitaine silure catfish",
+    "basis": "100g",
+    "kcalPer100": 145,
+    "proteinG": 18,
+    "carbsG": 0,
+    "fatG": 8,
+    "category": "fish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 150,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_482",
+    "nameFr": "Thon frais",
+    "nameEn": "Fresh tuna",
+    "aka": "thon frais fresh tuna",
+    "basis": "100g",
+    "kcalPer100": 130,
+    "proteinG": 28,
+    "carbsG": 0,
+    "fatG": 1.5,
+    "category": "fish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 120,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_483",
+    "nameFr": "Saumon grillé",
+    "nameEn": "Grilled salmon",
+    "aka": "saumon grille grilled salmon",
+    "basis": "100g",
+    "kcalPer100": 208,
+    "proteinG": 22,
+    "carbsG": 0,
+    "fatG": 13,
+    "category": "fish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 150,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_484",
+    "nameFr": "Saumon fumé",
+    "nameEn": "Smoked salmon",
+    "aka": "saumon fume smoked salmon",
+    "basis": "100g",
+    "kcalPer100": 180,
+    "proteinG": 22,
+    "carbsG": 0,
+    "fatG": 10,
+    "category": "fish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "slice",
+        "grams": 30,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_485",
+    "nameFr": "Morue / stockfish",
+    "nameEn": "Cod / stockfish",
+    "aka": "morue stockfish cod",
+    "basis": "100g",
+    "kcalPer100": 290,
+    "proteinG": 62,
+    "carbsG": 0,
+    "fatG": 2.5,
+    "category": "fish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 80,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_486",
+    "nameFr": "Crevettes",
+    "nameEn": "Prawns / shrimp",
+    "aka": "crevettes prawns shrimp",
+    "basis": "100g",
+    "kcalPer100": 99,
+    "proteinG": 24,
+    "carbsG": 0.2,
+    "fatG": 0.3,
+    "category": "fish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 145,
+        "sortOrder": 1
+      },
+      {
+        "label": "piece",
+        "grams": 10,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_487",
+    "nameFr": "Calmar / poulpe",
+    "nameEn": "Squid / octopus",
+    "aka": "calmar poulpe squid octopus",
+    "basis": "100g",
+    "kcalPer100": 92,
+    "proteinG": 16,
+    "carbsG": 3,
+    "fatG": 1.4,
+    "category": "fish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 100,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_488",
+    "nameFr": "Crabe",
+    "nameEn": "Crab",
+    "aka": "crabe crab",
+    "basis": "100g",
+    "kcalPer100": 97,
+    "proteinG": 19,
+    "carbsG": 0,
+    "fatG": 1.5,
+    "category": "fish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 100,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_489",
+    "nameFr": "Moules",
+    "nameEn": "Mussels",
+    "aka": "moules mussels",
+    "basis": "100g",
+    "kcalPer100": 86,
+    "proteinG": 12,
+    "carbsG": 4,
+    "fatG": 2.2,
+    "category": "fish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 150,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_490",
+    "nameFr": "Bar de mer entier",
+    "nameEn": "Whole fish (grilled)",
+    "aka": "poisson entier whole fish",
+    "basis": "100g",
+    "kcalPer100": 130,
+    "proteinG": 24,
+    "carbsG": 0,
+    "fatG": 3.5,
+    "category": "fish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 250,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_491",
+    "nameFr": "Œuf cru",
+    "nameEn": "Raw egg",
+    "aka": "oeuf cru raw egg",
+    "basis": "100g",
+    "kcalPer100": 143,
+    "proteinG": 12.6,
+    "carbsG": 0.7,
+    "fatG": 9.5,
+    "category": "protein",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 50,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_492",
+    "nameFr": "Œuf au plat (frit)",
+    "nameEn": "Fried egg",
+    "aka": "oeuf plat frit fried egg",
+    "basis": "100g",
+    "kcalPer100": 196,
+    "proteinG": 13.6,
+    "carbsG": 0.8,
+    "fatG": 15.3,
+    "category": "protein",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 55,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_493",
+    "nameFr": "Œuf poché",
+    "nameEn": "Poached egg",
+    "aka": "oeuf poche poached egg",
+    "basis": "100g",
+    "kcalPer100": 143,
+    "proteinG": 12.5,
+    "carbsG": 0.7,
+    "fatG": 9.5,
+    "category": "protein",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 50,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_494",
+    "nameFr": "Œuf dur",
+    "nameEn": "Hard-boiled egg",
+    "aka": "oeuf dur boiled egg",
+    "basis": "100g",
+    "kcalPer100": 155,
+    "proteinG": 13,
+    "carbsG": 1.1,
+    "fatG": 11,
+    "category": "protein",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 50,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_495",
+    "nameFr": "Fromage frais",
+    "nameEn": "Fresh soft cheese",
+    "aka": "fromage frais cream cheese",
+    "basis": "100g",
+    "kcalPer100": 250,
+    "proteinG": 6,
+    "carbsG": 4,
+    "fatG": 23,
+    "category": "dairy",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "tablespoon",
+        "grams": 15,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_496",
+    "nameFr": "Mozzarella",
+    "nameEn": "Mozzarella",
+    "aka": "mozzarella",
+    "basis": "100g",
+    "kcalPer100": 280,
+    "proteinG": 22,
+    "carbsG": 2.2,
+    "fatG": 20,
+    "category": "dairy",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 125,
+        "sortOrder": 1
+      },
+      {
+        "label": "slice",
+        "grams": 20,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_497",
+    "nameFr": "Parmesan",
+    "nameEn": "Parmesan",
+    "aka": "parmesan",
+    "basis": "100g",
+    "kcalPer100": 392,
+    "proteinG": 36,
+    "carbsG": 4,
+    "fatG": 25,
+    "category": "dairy",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "tablespoon",
+        "grams": 5,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_498",
+    "nameFr": "Feta",
+    "nameEn": "Feta",
+    "aka": "feta",
+    "basis": "100g",
+    "kcalPer100": 264,
+    "proteinG": 14,
+    "carbsG": 4,
+    "fatG": 21,
+    "category": "dairy",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 150,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_499",
+    "nameFr": "Oignon",
+    "nameEn": "Onion",
+    "aka": "oignon onion",
+    "basis": "100g",
+    "kcalPer100": 40,
+    "proteinG": 1.1,
+    "carbsG": 9.3,
+    "fatG": 0.1,
+    "category": "vegetable",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 110,
+        "sortOrder": 1
+      },
+      {
+        "label": "cup",
+        "grams": 160,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_500",
+    "nameFr": "Oignon frit",
+    "nameEn": "Fried onion",
+    "aka": "oignon frit fried onion",
+    "basis": "100g",
+    "kcalPer100": 130,
+    "proteinG": 1.5,
+    "carbsG": 12,
+    "fatG": 8.5,
+    "category": "vegetable",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 100,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_501",
+    "nameFr": "Tomate cerise",
+    "nameEn": "Cherry tomato",
+    "aka": "tomate cerise cherry tomato",
+    "basis": "100g",
+    "kcalPer100": 18,
+    "proteinG": 0.9,
+    "carbsG": 3.9,
+    "fatG": 0.2,
+    "category": "vegetable",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 15,
+        "sortOrder": 1
+      },
+      {
+        "label": "cup",
+        "grams": 150,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_502",
+    "nameFr": "Épinard cuit",
+    "nameEn": "Cooked spinach",
+    "aka": "epinard cuit cooked spinach",
+    "basis": "100g",
+    "kcalPer100": 23,
+    "proteinG": 3,
+    "carbsG": 3.8,
+    "fatG": 0.4,
+    "category": "vegetable",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 180,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_503",
+    "nameFr": "Chou frisé (kale)",
+    "nameEn": "Kale",
+    "aka": "chou frise kale",
+    "basis": "100g",
+    "kcalPer100": 35,
+    "proteinG": 2.9,
+    "carbsG": 4.4,
+    "fatG": 1.5,
+    "category": "vegetable",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 67,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_504",
+    "nameFr": "Haricot vert cuit",
+    "nameEn": "Cooked green beans",
+    "aka": "haricot vert cuit green beans",
+    "basis": "100g",
+    "kcalPer100": 35,
+    "proteinG": 1.9,
+    "carbsG": 7.9,
+    "fatG": 0.3,
+    "category": "vegetable",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 125,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_505",
+    "nameFr": "Patate douce cuite",
+    "nameEn": "Cooked sweet potato",
+    "aka": "patate douce sweet potato",
+    "basis": "100g",
+    "kcalPer100": 90,
+    "proteinG": 2,
+    "carbsG": 20.7,
+    "fatG": 0.1,
+    "category": "vegetable",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 130,
+        "sortOrder": 1
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_506",
+    "nameFr": "Patate douce frite",
+    "nameEn": "Sweet potato fries",
+    "aka": "patate douce frite sweet potato fries",
+    "basis": "100g",
+    "kcalPer100": 280,
+    "proteinG": 2.5,
+    "carbsG": 38,
+    "fatG": 13,
+    "category": "vegetable",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 120,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_507",
+    "nameFr": "Pomme de terre bouillie",
+    "nameEn": "Boiled potato",
+    "aka": "pomme terre bouillie boiled potato",
+    "basis": "100g",
+    "kcalPer100": 87,
+    "proteinG": 1.9,
+    "carbsG": 20,
+    "fatG": 0.1,
+    "category": "vegetable",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 150,
+        "sortOrder": 1
+      },
+      {
+        "label": "cup",
+        "grams": 150,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_508",
+    "nameFr": "Pomme de terre au four",
+    "nameEn": "Baked potato",
+    "aka": "pomme terre four baked potato",
+    "basis": "100g",
+    "kcalPer100": 93,
+    "proteinG": 2.5,
+    "carbsG": 21,
+    "fatG": 0.1,
+    "category": "vegetable",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 170,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_509",
+    "nameFr": "Courge / potiron",
+    "nameEn": "Pumpkin / squash",
+    "aka": "courge potiron pumpkin squash",
+    "basis": "100g",
+    "kcalPer100": 26,
+    "proteinG": 1,
+    "carbsG": 6.5,
+    "fatG": 0.1,
+    "category": "vegetable",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 116,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_510",
+    "nameFr": "Radis",
+    "nameEn": "Radish",
+    "aka": "radis radish",
+    "basis": "100g",
+    "kcalPer100": 16,
+    "proteinG": 0.7,
+    "carbsG": 3.4,
+    "fatG": 0.1,
+    "category": "vegetable",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 5,
+        "sortOrder": 1
+      },
+      {
+        "label": "cup",
+        "grams": 116,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_511",
+    "nameFr": "Navet",
+    "nameEn": "Turnip",
+    "aka": "navet turnip",
+    "basis": "100g",
+    "kcalPer100": 28,
+    "proteinG": 0.9,
+    "carbsG": 6.4,
+    "fatG": 0.1,
+    "category": "vegetable",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 120,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_512",
+    "nameFr": "Poireau cuit",
+    "nameEn": "Cooked leek",
+    "aka": "poireau cuit cooked leek",
+    "basis": "100g",
+    "kcalPer100": 31,
+    "proteinG": 0.8,
+    "carbsG": 7.6,
+    "fatG": 0.2,
+    "category": "vegetable",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 90,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_513",
+    "nameFr": "Asperges",
+    "nameEn": "Asparagus",
+    "aka": "asperges asparagus",
+    "basis": "100g",
+    "kcalPer100": 20,
+    "proteinG": 2.2,
+    "carbsG": 3.9,
+    "fatG": 0.1,
+    "category": "vegetable",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 20,
+        "sortOrder": 1
+      },
+      {
+        "label": "cup",
+        "grams": 134,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_514",
+    "nameFr": "Artichaut",
+    "nameEn": "Artichoke",
+    "aka": "artichaut artichoke",
+    "basis": "100g",
+    "kcalPer100": 47,
+    "proteinG": 3.3,
+    "carbsG": 10.5,
+    "fatG": 0.2,
+    "category": "vegetable",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 120,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_515",
+    "nameFr": "Maïs en épi",
+    "nameEn": "Corn on the cob",
+    "aka": "mais epi corn cob",
+    "basis": "100g",
+    "kcalPer100": 96,
+    "proteinG": 3.4,
+    "carbsG": 21,
+    "fatG": 1.5,
+    "category": "vegetable",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 90,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_516",
+    "nameFr": "Champignon de Paris",
+    "nameEn": "Button mushroom",
+    "aka": "champignon paris button mushroom",
+    "basis": "100g",
+    "kcalPer100": 22,
+    "proteinG": 3.1,
+    "carbsG": 3.3,
+    "fatG": 0.3,
+    "category": "vegetable",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 70,
+        "sortOrder": 1
+      },
+      {
+        "label": "piece",
+        "grams": 18,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_517",
+    "nameFr": "Champignon sauté",
+    "nameEn": "Sauteed mushroom",
+    "aka": "champignon saute sauteed mushroom",
+    "basis": "100g",
+    "kcalPer100": 80,
+    "proteinG": 3.5,
+    "carbsG": 4,
+    "fatG": 6,
+    "category": "vegetable",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 150,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_518",
+    "nameFr": "Pleurotes",
+    "nameEn": "Oyster mushroom",
+    "aka": "pleurotes oyster mushroom",
+    "basis": "100g",
+    "kcalPer100": 33,
+    "proteinG": 3.3,
+    "carbsG": 6.1,
+    "fatG": 0.4,
+    "category": "vegetable",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 86,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_519",
+    "nameFr": "Champignon noir",
+    "nameEn": "Black fungus (wood ear)",
+    "aka": "champignon noir wood ear",
+    "basis": "100g",
+    "kcalPer100": 25,
+    "proteinG": 0.5,
+    "carbsG": 7,
+    "fatG": 0,
+    "category": "vegetable",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 100,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_520",
+    "nameFr": "Banane",
+    "nameEn": "Banana",
+    "aka": "banane banana",
+    "basis": "100g",
+    "kcalPer100": 89,
+    "proteinG": 1.1,
+    "carbsG": 23,
+    "fatG": 0.3,
+    "category": "fruit",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 120,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_521",
+    "nameFr": "Melon",
+    "nameEn": "Melon",
+    "aka": "melon cantaloupe",
+    "basis": "100g",
+    "kcalPer100": 34,
+    "proteinG": 0.8,
+    "carbsG": 8.2,
+    "fatG": 0.2,
+    "category": "fruit",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 160,
+        "sortOrder": 1
+      },
+      {
+        "label": "slice",
+        "grams": 160,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_522",
+    "nameFr": "Fruit de la passion",
+    "nameEn": "Passion fruit",
+    "aka": "fruit passion maracuja",
+    "basis": "100g",
+    "kcalPer100": 97,
+    "proteinG": 2.2,
+    "carbsG": 23,
+    "fatG": 0.7,
+    "category": "fruit",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 18,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_523",
+    "nameFr": "Litchi",
+    "nameEn": "Lychee",
+    "aka": "litchi lychee",
+    "basis": "100g",
+    "kcalPer100": 66,
+    "proteinG": 0.8,
+    "carbsG": 17,
+    "fatG": 0.4,
+    "category": "fruit",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 10,
+        "sortOrder": 1
+      },
+      {
+        "label": "cup",
+        "grams": 190,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_524",
+    "nameFr": "Mandarine",
+    "nameEn": "Mandarin",
+    "aka": "mandarine mandarin clementine",
+    "basis": "100g",
+    "kcalPer100": 53,
+    "proteinG": 0.8,
+    "carbsG": 13.3,
+    "fatG": 0.3,
+    "category": "fruit",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 75,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_525",
+    "nameFr": "Abricot",
+    "nameEn": "Apricot",
+    "aka": "abricot apricot",
+    "basis": "100g",
+    "kcalPer100": 48,
+    "proteinG": 1.4,
+    "carbsG": 11,
+    "fatG": 0.4,
+    "category": "fruit",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 35,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_526",
+    "nameFr": "Framboises",
+    "nameEn": "Raspberries",
+    "aka": "framboise raspberry",
+    "basis": "100g",
+    "kcalPer100": 52,
+    "proteinG": 1.2,
+    "carbsG": 12,
+    "fatG": 0.7,
+    "category": "fruit",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 123,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_527",
+    "nameFr": "Mûres",
+    "nameEn": "Blackberries",
+    "aka": "mure blackberry",
+    "basis": "100g",
+    "kcalPer100": 43,
+    "proteinG": 1.4,
+    "carbsG": 10,
+    "fatG": 0.5,
+    "category": "fruit",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 144,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_528",
+    "nameFr": "Cassis",
+    "nameEn": "Blackcurrant",
+    "aka": "cassis blackcurrant",
+    "basis": "100g",
+    "kcalPer100": 63,
+    "proteinG": 1.4,
+    "carbsG": 15,
+    "fatG": 0.4,
+    "category": "fruit",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 112,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_529",
+    "nameFr": "Noix de coco fraîche",
+    "nameEn": "Fresh coconut",
+    "aka": "noix coco coconut",
+    "basis": "100g",
+    "kcalPer100": 354,
+    "proteinG": 3.3,
+    "carbsG": 15,
+    "fatG": 33.5,
+    "category": "fruit",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 80,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_530",
+    "nameFr": "Fruits secs (mélange)",
+    "nameEn": "Mixed dried fruit",
+    "aka": "fruits secs dried fruit",
+    "basis": "100g",
+    "kcalPer100": 310,
+    "proteinG": 3,
+    "carbsG": 74,
+    "fatG": 1,
+    "category": "fruit",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "handful",
+        "grams": 40,
+        "sortOrder": 1
+      },
+      {
+        "label": "cup",
+        "grams": 150,
+        "sortOrder": 2
+      }
+    ]
   }
 ]
