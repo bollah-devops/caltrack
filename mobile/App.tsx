@@ -12,7 +12,7 @@
 
 import { Ionicons } from "@expo/vector-icons";
 import { StatusBar } from "expo-status-bar";
-import React, { useEffect, useState } from "react";
+import React, { Component, useEffect, useState } from "react";
 import {
   ActivityIndicator,
   Pressable,
@@ -31,11 +31,40 @@ import WeightScreen from "./src/screens/WeightScreen";
 
 type Tab = "home" | "history" | "weight" | "settings";
 
+// ─── Error boundary ────────────────────────────────────────────────────────────
+
+class ErrorBoundary extends Component<
+  { children: React.ReactNode },
+  { error: Error | null }
+> {
+  constructor(props: { children: React.ReactNode }) {
+    super(props);
+    this.state = { error: null };
+  }
+  static getDerivedStateFromError(error: Error) {
+    return { error };
+  }
+  render() {
+    const { error } = this.state;
+    if (error) {
+      return (
+        <View style={styles.errBox}>
+          <Text style={styles.errTitle}>Quelque chose s'est mal passé</Text>
+          <Text style={styles.errMsg}>{error.message}</Text>
+        </View>
+      );
+    }
+    return this.props.children;
+  }
+}
+
 export default function App() {
   return (
-    <SafeAreaProvider>
-      <AppInner />
-    </SafeAreaProvider>
+    <ErrorBoundary>
+      <SafeAreaProvider>
+        <AppInner />
+      </SafeAreaProvider>
+    </ErrorBoundary>
   );
 }
 
@@ -51,7 +80,10 @@ function AppInner() {
   const t = makeT(lang);
 
   useEffect(() => {
-    const deviceLocale = Intl.DateTimeFormat().resolvedOptions().locale;
+    let deviceLocale = "fr";
+    try {
+      deviceLocale = Intl.DateTimeFormat().resolvedOptions().locale;
+    } catch {}
     getProfile()
       .then((p) => {
         setProfile(p);
@@ -185,6 +217,19 @@ function TabItem({
 // ─── Styles ───────────────────────────────────────────────────────────────────
 
 const styles = StyleSheet.create({
+  // Error boundary
+  errBox: {
+    flex: 1, backgroundColor: C.bg,
+    justifyContent: "center", alignItems: "center", padding: 32,
+  },
+  errTitle: {
+    fontSize: 17, fontWeight: "700", color: C.ink,
+    textAlign: "center", marginBottom: 12,
+  },
+  errMsg: {
+    fontSize: 13, color: C.muted, textAlign: "center", lineHeight: 20,
+  },
+
   // Splash
   splash: {
     flex: 1, backgroundColor: C.bg,

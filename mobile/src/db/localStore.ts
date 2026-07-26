@@ -67,16 +67,19 @@ let _db: SQLite.SQLiteDatabase | null = null;
 
 async function getDb(): Promise<SQLite.SQLiteDatabase> {
   if (!_db) {
-    _db = await SQLite.openDatabaseAsync("caltrack.db");
-    await initSchema(_db);
+    const db = await SQLite.openDatabaseAsync("caltrack.db");
+    await initSchema(db);
+    _db = db; // only cache after schema is fully ready
   }
   return _db;
 }
 
 async function initSchema(db: SQLite.SQLiteDatabase): Promise<void> {
-  await db.execAsync(`
-    PRAGMA journal_mode = WAL;
+  // WAL mode must be a separate call — mixing PRAGMA + DDL in one execAsync
+  // fails on some Android SQLite builds.
+  await db.execAsync(`PRAGMA journal_mode = WAL;`);
 
+  await db.execAsync(`
     CREATE TABLE IF NOT EXISTS profiles (
       id              INTEGER PRIMARY KEY CHECK (id = 1),
       sex             TEXT NOT NULL,
