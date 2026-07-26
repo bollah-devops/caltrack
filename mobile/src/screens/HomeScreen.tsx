@@ -10,7 +10,7 @@
  * The add-food modal (search → measure picker) lives here too.
  */
 
-import React, { Component, useCallback, useEffect, useRef, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import {
   ActivityIndicator,
   Dimensions,
@@ -24,7 +24,7 @@ import {
   View,
 } from "react-native";
 import { Svg, Path } from "react-native-svg";
-import { BarcodeResult, computeKcal, computeMacros, customFoodToItem, FoodItem, FoodMeasure, lookupBarcode, resolveFoodName, searchFoods } from "../api/foods";
+import { computeKcal, computeMacros, FoodItem, FoodMeasure, resolveFoodName, searchFoods } from "../api/foods";
 import {
   addLogEntry,
   CustomMeal,
@@ -38,14 +38,9 @@ import {
   LogEntry,
   Meal,
   Profile,
-  saveCustomFood,
   setStepsDone,
 } from "../db/localStore";
 import MealBuilderModal from "./MealBuilderModal";
-// Lazy-load the scanner so expo-camera's native module is NOT required at
-// startup. If the native module is missing it will only fail when the user
-// taps "Scan", not when the app boots.
-const BarcodeScannerView = React.lazy(() => import("./BarcodeScannerView"));
 import { Lang, makeT } from "../lib/i18n";
 import { C } from "../lib/theme";
 
@@ -65,40 +60,6 @@ function todayISO(): string {
 }
 
 const MEALS: Meal[] = ["breakfast", "lunch", "dinner", "snack"];
-
-// ─── Scanner error boundary ───────────────────────────────────────────────────
-// Catches native module errors from expo-camera so they don't crash the app.
-
-class ScannerErrorBoundary extends Component<
-  { children: React.ReactNode; onClose: () => void },
-  { error: string | null }
-> {
-  constructor(props: { children: React.ReactNode; onClose: () => void }) {
-    super(props);
-    this.state = { error: null };
-  }
-  static getDerivedStateFromError(e: Error) {
-    return { error: e.message };
-  }
-  render() {
-    if (this.state.error) {
-      return (
-        <View style={{ flex: 1, justifyContent: "center", alignItems: "center", padding: 32, backgroundColor: C.bg }}>
-          <Text style={{ color: C.over, fontSize: 15, fontWeight: "700", marginBottom: 12, textAlign: "center" }}>
-            {`Camera unavailable\n`}
-          </Text>
-          <Text style={{ color: C.ink, fontSize: 12, textAlign: "center", marginBottom: 24 }}>
-            {this.state.error}
-          </Text>
-          <Pressable onPress={this.props.onClose} style={{ backgroundColor: C.accent, borderRadius: 10, paddingVertical: 12, paddingHorizontal: 24 }}>
-            <Text style={{ color: "#fff", fontWeight: "700" }}>Close</Text>
-          </Pressable>
-        </View>
-      );
-    }
-    return this.props.children;
-  }
-}
 
 // ─── Component ────────────────────────────────────────────────────────────────
 
@@ -132,7 +93,7 @@ export default function HomeScreen({ lang = "fr", onGoToWeight, profile }: Props
   const searchTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   // My meals
-  const [modalView, setModalView]             = useState<"foods" | "meals" | "builder" | "scanner" | "manual_product">("foods");
+  const [modalView, setModalView]             = useState<"foods" | "meals" | "builder">("foods");
   const [customMeals, setCustomMeals]         = useState<CustomMeal[]>([]);
   const [editingMeal, setEditingMeal]         = useState<CustomMeal | null>(null);
   const [deleteConfirmId, setDeleteConfirmId] = useState<string | null>(null);
@@ -140,15 +101,6 @@ export default function HomeScreen({ lang = "fr", onGoToWeight, profile }: Props
   // Pre-seeded items for builder (Save as meal)
   const [preseedItems, setPreseedItems] = useState<import("../db/localStore").NewCustomMealItem[]>([]);
 
-  // Scanner / manual product
-  const [scanBarcode, setScanBarcode]   = useState("");
-  const [scanOffline, setScanOffline]   = useState(false);
-  const [scanLoading, setScanLoading]   = useState(false);
-  const [mName, setMName]               = useState("");
-  const [mKcal, setMKcal]               = useState("");
-  const [mProtein, setMProtein]         = useState("");
-  const [mCarbs, setMCarbs]             = useState("");
-  const [mFat, setMFat]                 = useState("");
 
   // ── Load entries/steps/weight on mount ──
   useEffect(() => {
@@ -219,7 +171,6 @@ export default function HomeScreen({ lang = "fr", onGoToWeight, profile }: Props
     setMeasureIdx(0); setQuantity("1");
     setModalView("meals");
     setDeleteConfirmId(null);
-    setScanLoading(false);
     setPreseedItems([]);
     setModalOpen(true);
   }
@@ -241,7 +192,6 @@ export default function HomeScreen({ lang = "fr", onGoToWeight, profile }: Props
     setEditingMeal(null);
     setActiveMeal(meal);
     setDeleteConfirmId(null);
-    setScanLoading(false);
     setModalView("builder");
     setModalOpen(true);
   }
@@ -252,7 +202,6 @@ export default function HomeScreen({ lang = "fr", onGoToWeight, profile }: Props
     setMeasureIdx(0); setQuantity("1");
     setModalView("foods");
     setDeleteConfirmId(null);
-    setScanLoading(false);
     setModalOpen(true);
   }
 
@@ -312,37 +261,6 @@ export default function HomeScreen({ lang = "fr", onGoToWeight, profile }: Props
     await deleteCustomMeal(id);
     setCustomMeals((prev) => prev.filter((m) => m.id !== id));
     setDeleteConfirmId(null);
-  }
-
-  async function handleBarcodeScan(barcode: string) {
-    setScanLoading(true);
-    const result: BarcodeResult = await lookupBarcode(barcode, lang);
-    setScanLoading(false);
-    if (result.type === "found") {
-      setPicked(result.food);
-      setModalView("foods"); // measure picker shows since picked is set
-    } else {
-      setScanBarcode(barcode);
-      setScanOffline(result.type === "offline");
-      setMName(""); setMKcal(""); setMProtein(""); setMCarbs(""); setMFat("");
-      setModalView("manual_product");
-    }
-  }
-
-  async function handleSaveManualProduct() {
-    const kcal = parseFloat(mKcal);
-    if (!mName.trim() || !kcal) return;
-    const cf = await saveCustomFood({
-      barcode: scanBarcode || null,
-      nameFr: mName.trim(),
-      kcalPer100: kcal,
-      proteinPer100: parseFloat(mProtein) || 0,
-      carbsPer100:   parseFloat(mCarbs)   || 0,
-      fatPer100:     parseFloat(mFat)     || 0,
-      source: "user",
-    });
-    setPicked(customFoodToItem(cf, lang));
-    setModalView("foods"); // measure picker shows
   }
 
   async function handleSteps() {
@@ -514,21 +432,7 @@ export default function HomeScreen({ lang = "fr", onGoToWeight, profile }: Props
         onRequestClose={closeModal}
       >
         <View style={styles.modal}>
-          {modalView === "scanner" ? (
-            <ScannerErrorBoundary onClose={() => setModalView("foods")}>
-              <React.Suspense fallback={
-                <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-                  <ActivityIndicator color={C.accent} />
-                </View>
-              }>
-                <BarcodeScannerView
-                  lang={lang}
-                  onScanned={handleBarcodeScan}
-                  onClose={() => setModalView("foods")}
-                />
-              </React.Suspense>
-            </ScannerErrorBoundary>
-          ) : modalView === "builder" ? (
+          {modalView === "builder" ? (
             <MealBuilderModal
               lang={lang}
               initialMeal={editingMeal}
@@ -544,18 +448,13 @@ export default function HomeScreen({ lang = "fr", onGoToWeight, profile }: Props
             <>
               {/* Header */}
               <View style={styles.modalHeader}>
-                {(picked || modalView === "manual_product") ? (
+                {picked ? (
                   <Pressable
-                    onPress={() => {
-                      if (modalView === "manual_product") setModalView("foods");
-                      else setPicked(null);
-                    }}
+                    onPress={() => setPicked(null)}
                     style={styles.backBtn}
                   >
                     <Text style={styles.backTxt}>
-                      ← {modalView === "manual_product"
-                        ? t("scan_barcode")
-                        : t("search_placeholder").split("…")[0].trim()}
+                      ← {t("search_placeholder").split("…")[0].trim()}
                     </Text>
                   </Pressable>
                 ) : (
@@ -566,8 +465,8 @@ export default function HomeScreen({ lang = "fr", onGoToWeight, profile }: Props
                 </Pressable>
               </View>
 
-              {/* Meal selector — hidden during manual product entry */}
-              {modalView !== "manual_product" && <ScrollView
+              {/* Meal selector */}
+              {<ScrollView
                 horizontal
                 showsHorizontalScrollIndicator={false}
                 style={styles.mealPills}
@@ -590,8 +489,7 @@ export default function HomeScreen({ lang = "fr", onGoToWeight, profile }: Props
                 ))}
               </ScrollView>}
 
-              {/* Tab toggle: Foods | My Meals — hidden during manual product entry */}
-              {modalView !== "manual_product" &&
+              {/* Tab toggle: Foods | My Meals */}
               <View style={styles.tabToggle}>
                 <Pressable
                   style={[styles.tabToggleBtn, modalView === "foods" && styles.tabToggleBtnOn]}
@@ -609,7 +507,7 @@ export default function HomeScreen({ lang = "fr", onGoToWeight, profile }: Props
                     {t("my_meals")}
                   </Text>
                 </Pressable>
-              </View>}
+              </View>
 
               {/* Foods tab */}
               {modalView === "foods" && (
@@ -626,15 +524,6 @@ export default function HomeScreen({ lang = "fr", onGoToWeight, profile }: Props
                         autoFocus
                         clearButtonMode="while-editing"
                       />
-                      {/* Scan button */}
-                      <Pressable
-                        style={styles.scanBtn}
-                        onPress={() => setModalView("scanner")}
-                      >
-                        <Text style={styles.scanBtnTxt}>
-                          {"📷  "}{t("scan_barcode")}
-                        </Text>
-                      </Pressable>
                       {searching && (
                         <ActivityIndicator color={C.accent} style={{ marginTop: 16 }} />
                       )}
@@ -804,86 +693,6 @@ export default function HomeScreen({ lang = "fr", onGoToWeight, profile }: Props
                     onPress={() => { setEditingMeal(null); setModalView("builder"); }}
                   >
                     <Text style={styles.createMealTxt}>+ {t("create_meal")}</Text>
-                  </Pressable>
-                </ScrollView>
-              )}
-              {/* Manual product form */}
-              {modalView === "manual_product" && (
-                <ScrollView style={{ flex: 1 }} keyboardShouldPersistTaps="handled"
-                  contentContainerStyle={styles.manualScroll}>
-                  {scanOffline && (
-                    <View style={styles.offlineBanner}>
-                      <Text style={styles.offlineTxt}>{t("no_internet_scan")}</Text>
-                    </View>
-                  )}
-                  <Text style={styles.manualTitle}>{t("product_not_found")}</Text>
-                  {scanBarcode ? (
-                    <Text style={styles.manualBarcode}>{scanBarcode}</Text>
-                  ) : null}
-
-                  <Text style={styles.manualLabel}>{t("product_name")}</Text>
-                  <TextInput
-                    style={styles.manualInput}
-                    value={mName}
-                    onChangeText={setMName}
-                    placeholder={lang === "fr" ? "ex. Biscuits Amina" : "e.g. Amina Biscuits"}
-                    placeholderTextColor={C.muted}
-                    autoCapitalize="words"
-                  />
-
-                  <Text style={styles.manualLabel}>{t("kcal_per_100g")} *</Text>
-                  <TextInput
-                    style={styles.manualInput}
-                    value={mKcal}
-                    onChangeText={(v) => setMKcal(v.replace(/[^\d.]/g, ""))}
-                    keyboardType="numeric"
-                    placeholder="450"
-                    placeholderTextColor={C.muted}
-                  />
-
-                  <Text style={[styles.manualLabel, { marginTop: 4 }]}>
-                    {lang === "fr" ? "Macros (optionnel)" : "Macros (optional)"}
-                  </Text>
-                  <View style={styles.macroRow3}>
-                    <TextInput
-                      style={[styles.manualInput, { flex: 1 }]}
-                      value={mProtein}
-                      onChangeText={(v) => setMProtein(v.replace(/[^\d.]/g, ""))}
-                      keyboardType="numeric"
-                      placeholder={lang === "fr" ? "Prot. g" : "Prot. g"}
-                      placeholderTextColor={C.muted}
-                    />
-                    <TextInput
-                      style={[styles.manualInput, { flex: 1 }]}
-                      value={mCarbs}
-                      onChangeText={(v) => setMCarbs(v.replace(/[^\d.]/g, ""))}
-                      keyboardType="numeric"
-                      placeholder={lang === "fr" ? "Gluc. g" : "Carbs g"}
-                      placeholderTextColor={C.muted}
-                    />
-                    <TextInput
-                      style={[styles.manualInput, { flex: 1 }]}
-                      value={mFat}
-                      onChangeText={(v) => setMFat(v.replace(/[^\d.]/g, ""))}
-                      keyboardType="numeric"
-                      placeholder={lang === "fr" ? "Lip. g" : "Fat g"}
-                      placeholderTextColor={C.muted}
-                    />
-                  </View>
-
-                  <Pressable
-                    style={[styles.cta, (!mName.trim() || !mKcal) && styles.ctaDisabled]}
-                    onPress={handleSaveManualProduct}
-                    disabled={!mName.trim() || !mKcal}
-                  >
-                    <Text style={styles.ctaTxt}>{t("save_product")}</Text>
-                  </Pressable>
-
-                  <Pressable
-                    style={styles.scanAgainBtn}
-                    onPress={() => setModalView("scanner")}
-                  >
-                    <Text style={styles.scanAgainTxt}>📷  {t("scan_again")}</Text>
                   </Pressable>
                 </ScrollView>
               )}
