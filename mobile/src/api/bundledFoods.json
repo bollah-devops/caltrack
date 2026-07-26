@@ -15313,5 +15313,1545 @@
         "sortOrder": 2
       }
     ]
+  },
+  {
+    "id": "bundled_531",
+    "nameFr": "Taboulé",
+    "nameEn": "Tabbouleh",
+    "aka": "taboule tabbouleh parsley bulgur",
+    "basis": "100g",
+    "kcalPer100": 130,
+    "proteinG": 3,
+    "carbsG": 16,
+    "fatG": 6.5,
+    "category": "dish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 150,
+        "sortOrder": 1
+      },
+      {
+        "label": "plate",
+        "grams": 200,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_532",
+    "nameFr": "Fattoush",
+    "nameEn": "Fattoush",
+    "aka": "fattoush salad",
+    "basis": "100g",
+    "kcalPer100": 120,
+    "proteinG": 2.5,
+    "carbsG": 12,
+    "fatG": 7.5,
+    "category": "dish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "plate",
+        "grams": 200,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_533",
+    "nameFr": "Kebab / kofta",
+    "nameEn": "Kebab / kofta",
+    "aka": "kebab kofta kefta grilled meat",
+    "basis": "100g",
+    "kcalPer100": 250,
+    "proteinG": 18,
+    "carbsG": 3,
+    "fatG": 18,
+    "category": "protein",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 60,
+        "sortOrder": 1
+      },
+      {
+        "label": "skewer",
+        "grams": 100,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_534",
+    "nameFr": "Chich taouk",
+    "nameEn": "Shish taouk",
+    "aka": "chich taouk shish tawook chicken skewer",
+    "basis": "100g",
+    "kcalPer100": 165,
+    "proteinG": 27,
+    "carbsG": 2,
+    "fatG": 5.5,
+    "category": "protein",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "skewer",
+        "grams": 100,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_535",
+    "nameFr": "Moutabal / baba ganoush",
+    "nameEn": "Baba ganoush",
+    "aka": "moutabal baba ganoush eggplant dip",
+    "basis": "100g",
+    "kcalPer100": 150,
+    "proteinG": 3,
+    "carbsG": 9,
+    "fatG": 12,
+    "category": "condiment",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "tablespoon",
+        "grams": 30,
+        "sortOrder": 1
+      },
+      {
+        "label": "cup",
+        "grams": 250,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_536",
+    "nameFr": "Manakish",
+    "nameEn": "Manakish (zaatar flatbread)",
+    "aka": "manakish manaeesh zaatar flatbread",
+    "basis": "100g",
+    "kcalPer100": 280,
+    "proteinG": 8,
+    "carbsG": 36,
+    "fatG": 12,
+    "category": "dish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 120,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_537",
+    "nameFr": "Foul medames",
+    "nameEn": "Foul medames (fava beans)",
+    "aka": "foul medames ful fava beans",
+    "basis": "100g",
+    "kcalPer100": 120,
+    "proteinG": 7,
+    "carbsG": 16,
+    "fatG": 3.5,
+    "category": "dish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "bowl",
+        "grams": 300,
+        "sortOrder": 1
+      },
+      {
+        "label": "cup",
+        "grams": 240,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_538",
+    "nameFr": "Koshari",
+    "nameEn": "Koshari",
+    "aka": "koshari kushari rice lentil pasta",
+    "basis": "100g",
+    "kcalPer100": 165,
+    "proteinG": 5.5,
+    "carbsG": 30,
+    "fatG": 3,
+    "category": "dish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "plate",
+        "grams": 350,
+        "sortOrder": 1
+      },
+      {
+        "label": "cup",
+        "grams": 250,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_539",
+    "nameFr": "Riz kabsa / mandi",
+    "nameEn": "Kabsa / mandi rice",
+    "aka": "kabsa mandi spiced rice meat",
+    "basis": "100g",
+    "kcalPer100": 185,
+    "proteinG": 9,
+    "carbsG": 26,
+    "fatG": 6,
+    "category": "rice dish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "plate",
+        "grams": 350,
+        "sortOrder": 1
+      },
+      {
+        "label": "cup",
+        "grams": 250,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_540",
+    "nameFr": "Chakchouka",
+    "nameEn": "Shakshuka",
+    "aka": "chakchouka shakshuka eggs tomato",
+    "basis": "100g",
+    "kcalPer100": 115,
+    "proteinG": 6,
+    "carbsG": 7,
+    "fatG": 7,
+    "category": "dish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "plate",
+        "grams": 300,
+        "sortOrder": 1
+      },
+      {
+        "label": "piece",
+        "grams": 250,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_541",
+    "nameFr": "Labneh",
+    "nameEn": "Labneh",
+    "aka": "labneh strained yogurt",
+    "basis": "100g",
+    "kcalPer100": 150,
+    "proteinG": 6,
+    "carbsG": 7,
+    "fatG": 10,
+    "category": "dairy",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "tablespoon",
+        "grams": 20,
+        "sortOrder": 1
+      },
+      {
+        "label": "cup",
+        "grams": 230,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_542",
+    "nameFr": "Baklava",
+    "nameEn": "Baklava",
+    "aka": "baklava pastry honey nuts",
+    "basis": "100g",
+    "kcalPer100": 430,
+    "proteinG": 6,
+    "carbsG": 45,
+    "fatG": 26,
+    "category": "dessert",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 50,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_543",
+    "nameFr": "Pain pita",
+    "nameEn": "Pita bread",
+    "aka": "pita pain arabe flatbread",
+    "basis": "100g",
+    "kcalPer100": 275,
+    "proteinG": 9,
+    "carbsG": 55,
+    "fatG": 1.2,
+    "category": "staple",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 60,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_544",
+    "nameFr": "Falafel (assiette)",
+    "nameEn": "Falafel plate",
+    "aka": "falafel plate wrap",
+    "basis": "100g",
+    "kcalPer100": 333,
+    "proteinG": 13,
+    "carbsG": 32,
+    "fatG": 18,
+    "category": "dish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 17,
+        "sortOrder": 1
+      },
+      {
+        "label": "wrap",
+        "grams": 250,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_545",
+    "nameFr": "Dolma / feuilles de vigne",
+    "nameEn": "Dolma (stuffed vine leaves)",
+    "aka": "dolma vine leaves stuffed",
+    "basis": "100g",
+    "kcalPer100": 180,
+    "proteinG": 3,
+    "carbsG": 20,
+    "fatG": 10,
+    "category": "dish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 25,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_546",
+    "nameFr": "Steak-frites",
+    "nameEn": "Steak and fries",
+    "aka": "steak frites",
+    "basis": "100g",
+    "kcalPer100": 230,
+    "proteinG": 14,
+    "carbsG": 20,
+    "fatG": 11,
+    "category": "dish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "plate",
+        "grams": 400,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_547",
+    "nameFr": "Ratatouille",
+    "nameEn": "Ratatouille",
+    "aka": "ratatouille vegetable stew",
+    "basis": "100g",
+    "kcalPer100": 75,
+    "proteinG": 1.5,
+    "carbsG": 8,
+    "fatG": 4.5,
+    "category": "dish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "ladle",
+        "grams": 150,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_548",
+    "nameFr": "Cassoulet",
+    "nameEn": "Cassoulet",
+    "aka": "cassoulet bean sausage stew",
+    "basis": "100g",
+    "kcalPer100": 180,
+    "proteinG": 11,
+    "carbsG": 15,
+    "fatG": 9,
+    "category": "dish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "bowl",
+        "grams": 300,
+        "sortOrder": 1
+      },
+      {
+        "label": "cup",
+        "grams": 240,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_549",
+    "nameFr": "Risotto",
+    "nameEn": "Risotto",
+    "aka": "risotto rice",
+    "basis": "100g",
+    "kcalPer100": 165,
+    "proteinG": 4,
+    "carbsG": 24,
+    "fatG": 5.5,
+    "category": "dish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "plate",
+        "grams": 300,
+        "sortOrder": 1
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_550",
+    "nameFr": "Pâtes carbonara",
+    "nameEn": "Pasta carbonara",
+    "aka": "carbonara pasta spaghetti",
+    "basis": "100g",
+    "kcalPer100": 190,
+    "proteinG": 8,
+    "carbsG": 22,
+    "fatG": 8,
+    "category": "dish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "plate",
+        "grams": 350,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_551",
+    "nameFr": "Bruschetta",
+    "nameEn": "Bruschetta",
+    "aka": "bruschetta toast tomato",
+    "basis": "100g",
+    "kcalPer100": 210,
+    "proteinG": 5,
+    "carbsG": 26,
+    "fatG": 9,
+    "category": "snack",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 50,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_552",
+    "nameFr": "Fish and chips",
+    "nameEn": "Fish and chips",
+    "aka": "fish and chips poisson frites",
+    "basis": "100g",
+    "kcalPer100": 230,
+    "proteinG": 12,
+    "carbsG": 24,
+    "fatG": 10,
+    "category": "dish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "plate",
+        "grams": 350,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_553",
+    "nameFr": "Petit-déjeuner anglais",
+    "nameEn": "English breakfast",
+    "aka": "english breakfast fry up",
+    "basis": "100g",
+    "kcalPer100": 180,
+    "proteinG": 10,
+    "carbsG": 10,
+    "fatG": 12,
+    "category": "dish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "plate",
+        "grams": 400,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_554",
+    "nameFr": "Paella",
+    "nameEn": "Paella",
+    "aka": "paella rice seafood",
+    "basis": "100g",
+    "kcalPer100": 160,
+    "proteinG": 8,
+    "carbsG": 22,
+    "fatG": 4.5,
+    "category": "rice dish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "plate",
+        "grams": 350,
+        "sortOrder": 1
+      },
+      {
+        "label": "cup",
+        "grams": 250,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_555",
+    "nameFr": "Tortilla española",
+    "nameEn": "Spanish omelette",
+    "aka": "tortilla espagnole potato omelette",
+    "basis": "100g",
+    "kcalPer100": 165,
+    "proteinG": 6,
+    "carbsG": 13,
+    "fatG": 10,
+    "category": "dish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "slice",
+        "grams": 120,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_556",
+    "nameFr": "Schnitzel",
+    "nameEn": "Schnitzel",
+    "aka": "schnitzel escalope panee",
+    "basis": "100g",
+    "kcalPer100": 280,
+    "proteinG": 18,
+    "carbsG": 15,
+    "fatG": 17,
+    "category": "protein",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 150,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_557",
+    "nameFr": "Goulash",
+    "nameEn": "Goulash",
+    "aka": "goulash beef stew",
+    "basis": "100g",
+    "kcalPer100": 130,
+    "proteinG": 11,
+    "carbsG": 7,
+    "fatG": 6,
+    "category": "dish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "bowl",
+        "grams": 300,
+        "sortOrder": 1
+      },
+      {
+        "label": "cup",
+        "grams": 240,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_558",
+    "nameFr": "Moussaka",
+    "nameEn": "Moussaka",
+    "aka": "moussaka eggplant meat",
+    "basis": "100g",
+    "kcalPer100": 165,
+    "proteinG": 8,
+    "carbsG": 10,
+    "fatG": 10,
+    "category": "dish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "plate",
+        "grams": 300,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_559",
+    "nameFr": "Crêpe salée (galette)",
+    "nameEn": "Savoury crepe (galette)",
+    "aka": "crepe salee galette buckwheat",
+    "basis": "100g",
+    "kcalPer100": 180,
+    "proteinG": 7,
+    "carbsG": 20,
+    "fatG": 8,
+    "category": "dish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 120,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_560",
+    "nameFr": "Mac and cheese",
+    "nameEn": "Mac and cheese",
+    "aka": "mac and cheese macaroni",
+    "basis": "100g",
+    "kcalPer100": 190,
+    "proteinG": 8,
+    "carbsG": 20,
+    "fatG": 9,
+    "category": "dish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 200,
+        "sortOrder": 1
+      },
+      {
+        "label": "plate",
+        "grams": 250,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_561",
+    "nameFr": "Côtes BBQ (ribs)",
+    "nameEn": "BBQ ribs",
+    "aka": "bbq ribs pork ribs barbecue",
+    "basis": "100g",
+    "kcalPer100": 290,
+    "proteinG": 22,
+    "carbsG": 6,
+    "fatG": 20,
+    "category": "protein",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 120,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_562",
+    "nameFr": "Buffalo wings",
+    "nameEn": "Buffalo wings",
+    "aka": "buffalo wings chicken",
+    "basis": "100g",
+    "kcalPer100": 280,
+    "proteinG": 25,
+    "carbsG": 3,
+    "fatG": 18,
+    "category": "protein",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 30,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_563",
+    "nameFr": "Bagel",
+    "nameEn": "Bagel",
+    "aka": "bagel",
+    "basis": "100g",
+    "kcalPer100": 250,
+    "proteinG": 10,
+    "carbsG": 48,
+    "fatG": 1.5,
+    "category": "staple",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 100,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_564",
+    "nameFr": "Pancakes au sirop",
+    "nameEn": "Pancakes with syrup",
+    "aka": "pancakes syrup",
+    "basis": "100g",
+    "kcalPer100": 280,
+    "proteinG": 5,
+    "carbsG": 45,
+    "fatG": 8,
+    "category": "dish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 60,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_565",
+    "nameFr": "Cornbread",
+    "nameEn": "Cornbread",
+    "aka": "cornbread pain de mais",
+    "basis": "100g",
+    "kcalPer100": 330,
+    "proteinG": 7,
+    "carbsG": 50,
+    "fatG": 11,
+    "category": "staple",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 65,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_566",
+    "nameFr": "Chili con carne",
+    "nameEn": "Chili con carne",
+    "aka": "chili con carne beans beef",
+    "basis": "100g",
+    "kcalPer100": 130,
+    "proteinG": 9,
+    "carbsG": 12,
+    "fatG": 5,
+    "category": "dish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "bowl",
+        "grams": 300,
+        "sortOrder": 1
+      },
+      {
+        "label": "cup",
+        "grams": 240,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_567",
+    "nameFr": "Purée-sauce (mashed & gravy)",
+    "nameEn": "Mashed potato & gravy",
+    "aka": "mashed potato gravy",
+    "basis": "100g",
+    "kcalPer100": 120,
+    "proteinG": 3,
+    "carbsG": 18,
+    "fatG": 4.5,
+    "category": "dish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 210,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_568",
+    "nameFr": "Coleslaw",
+    "nameEn": "Coleslaw",
+    "aka": "coleslaw cabbage salad",
+    "basis": "100g",
+    "kcalPer100": 150,
+    "proteinG": 1.5,
+    "carbsG": 12,
+    "fatG": 11,
+    "category": "side",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 120,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_569",
+    "nameFr": "Hot wings / nuggets",
+    "nameEn": "Chicken nuggets",
+    "aka": "nuggets chicken",
+    "basis": "100g",
+    "kcalPer100": 300,
+    "proteinG": 15,
+    "carbsG": 16,
+    "fatG": 19,
+    "category": "protein",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 18,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_570",
+    "nameFr": "Cheesecake",
+    "nameEn": "Cheesecake",
+    "aka": "cheesecake",
+    "basis": "100g",
+    "kcalPer100": 320,
+    "proteinG": 6,
+    "carbsG": 26,
+    "fatG": 22,
+    "category": "dessert",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "slice",
+        "grams": 125,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_571",
+    "nameFr": "Brownie",
+    "nameEn": "Brownie",
+    "aka": "brownie chocolate",
+    "basis": "100g",
+    "kcalPer100": 470,
+    "proteinG": 6,
+    "carbsG": 50,
+    "fatG": 29,
+    "category": "dessert",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 60,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_572",
+    "nameFr": "Pad thaï",
+    "nameEn": "Pad thai",
+    "aka": "pad thai noodles",
+    "basis": "100g",
+    "kcalPer100": 170,
+    "proteinG": 8,
+    "carbsG": 24,
+    "fatG": 5,
+    "category": "dish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "plate",
+        "grams": 350,
+        "sortOrder": 1
+      },
+      {
+        "label": "cup",
+        "grams": 250,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_573",
+    "nameFr": "Curry (général)",
+    "nameEn": "Curry (general)",
+    "aka": "curry",
+    "basis": "100g",
+    "kcalPer100": 150,
+    "proteinG": 10,
+    "carbsG": 10,
+    "fatG": 8,
+    "category": "dish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "plate",
+        "grams": 300,
+        "sortOrder": 1
+      },
+      {
+        "label": "ladle",
+        "grams": 150,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_574",
+    "nameFr": "Curry de légumes",
+    "nameEn": "Vegetable curry",
+    "aka": "curry legumes vegetable",
+    "basis": "100g",
+    "kcalPer100": 110,
+    "proteinG": 4,
+    "carbsG": 14,
+    "fatG": 5,
+    "category": "dish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "plate",
+        "grams": 300,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_575",
+    "nameFr": "Riz frit (chinois)",
+    "nameEn": "Chinese fried rice",
+    "aka": "riz frit chinois fried rice",
+    "basis": "100g",
+    "kcalPer100": 165,
+    "proteinG": 5.5,
+    "carbsG": 24,
+    "fatG": 5,
+    "category": "rice dish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "plate",
+        "grams": 350,
+        "sortOrder": 1
+      },
+      {
+        "label": "cup",
+        "grams": 250,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_576",
+    "nameFr": "Nouilles sautées (chow mein)",
+    "nameEn": "Chow mein",
+    "aka": "nouilles sautees chow mein noodles",
+    "basis": "100g",
+    "kcalPer100": 170,
+    "proteinG": 6,
+    "carbsG": 25,
+    "fatG": 5,
+    "category": "dish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "plate",
+        "grams": 350,
+        "sortOrder": 1
+      },
+      {
+        "label": "cup",
+        "grams": 250,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_577",
+    "nameFr": "Raviolis / dumplings",
+    "nameEn": "Dumplings",
+    "aka": "raviolis dumplings gyoza dim sum",
+    "basis": "100g",
+    "kcalPer100": 200,
+    "proteinG": 7,
+    "carbsG": 24,
+    "fatG": 8,
+    "category": "dish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 20,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_578",
+    "nameFr": "Pho",
+    "nameEn": "Pho (noodle soup)",
+    "aka": "pho vietnamese noodle soup",
+    "basis": "100g",
+    "kcalPer100": 75,
+    "proteinG": 6,
+    "carbsG": 10,
+    "fatG": 1.5,
+    "category": "soup",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "bowl",
+        "grams": 400,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_579",
+    "nameFr": "Bibimbap",
+    "nameEn": "Bibimbap",
+    "aka": "bibimbap korean rice bowl",
+    "basis": "100g",
+    "kcalPer100": 155,
+    "proteinG": 7,
+    "carbsG": 22,
+    "fatG": 4.5,
+    "category": "dish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "bowl",
+        "grams": 400,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_580",
+    "nameFr": "Poulet teriyaki",
+    "nameEn": "Teriyaki chicken",
+    "aka": "teriyaki chicken poulet",
+    "basis": "100g",
+    "kcalPer100": 180,
+    "proteinG": 15,
+    "carbsG": 12,
+    "fatG": 7,
+    "category": "dish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "plate",
+        "grams": 350,
+        "sortOrder": 1
+      },
+      {
+        "label": "cup",
+        "grams": 250,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_581",
+    "nameFr": "Nems / rouleaux frits",
+    "nameEn": "Fried spring rolls",
+    "aka": "nems rouleaux spring rolls",
+    "basis": "100g",
+    "kcalPer100": 180,
+    "proteinG": 6,
+    "carbsG": 22,
+    "fatG": 7.5,
+    "category": "snack",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 60,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_582",
+    "nameFr": "Rouleaux de printemps frais",
+    "nameEn": "Fresh summer rolls",
+    "aka": "rouleaux printemps frais summer rolls",
+    "basis": "100g",
+    "kcalPer100": 95,
+    "proteinG": 4,
+    "carbsG": 16,
+    "fatG": 1.5,
+    "category": "snack",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 90,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_583",
+    "nameFr": "Riz basmati vapeur",
+    "nameEn": "Steamed basmati rice",
+    "aka": "riz basmati steamed rice",
+    "basis": "100g",
+    "kcalPer100": 130,
+    "proteinG": 2.7,
+    "carbsG": 28,
+    "fatG": 0.3,
+    "category": "staple",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "cup",
+        "grams": 195,
+        "sortOrder": 1
+      },
+      {
+        "label": "plate",
+        "grams": 250,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_584",
+    "nameFr": "Naan",
+    "nameEn": "Naan bread",
+    "aka": "naan indian bread",
+    "basis": "100g",
+    "kcalPer100": 310,
+    "proteinG": 9,
+    "carbsG": 50,
+    "fatG": 8,
+    "category": "staple",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 90,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_585",
+    "nameFr": "Samoussa (Asian)",
+    "nameEn": "Samosa",
+    "aka": "samoussa samosa",
+    "basis": "100g",
+    "kcalPer100": 290,
+    "proteinG": 6,
+    "carbsG": 30,
+    "fatG": 16,
+    "category": "snack",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "piece",
+        "grams": 50,
+        "sortOrder": 1
+      }
+    ]
+  },
+  {
+    "id": "bundled_586",
+    "nameFr": "Poulet tikka masala",
+    "nameEn": "Chicken tikka masala",
+    "aka": "tikka masala chicken curry",
+    "basis": "100g",
+    "kcalPer100": 160,
+    "proteinG": 13,
+    "carbsG": 7,
+    "fatG": 9,
+    "category": "dish",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "plate",
+        "grams": 350,
+        "sortOrder": 1
+      },
+      {
+        "label": "ladle",
+        "grams": 150,
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "id": "bundled_587",
+    "nameFr": "Soupe miso",
+    "nameEn": "Miso soup",
+    "aka": "miso soup soupe",
+    "basis": "100g",
+    "kcalPer100": 40,
+    "proteinG": 3,
+    "carbsG": 4,
+    "fatG": 1.5,
+    "category": "soup",
+    "verified": false,
+    "measures": [
+      {
+        "label": "gram",
+        "grams": 1,
+        "sortOrder": 0
+      },
+      {
+        "label": "bowl",
+        "grams": 250,
+        "sortOrder": 1
+      }
+    ]
   }
 ]
