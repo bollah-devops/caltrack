@@ -16,6 +16,7 @@ import React, { Component, useEffect, useState } from "react";
 import {
   ActivityIndicator,
   Pressable,
+  ScrollView,
   StyleSheet,
   Text,
   View,
@@ -31,27 +32,75 @@ import WeightScreen from "./src/screens/WeightScreen";
 
 type Tab = "home" | "history" | "weight" | "settings";
 
+// ─── Global error collector ───────────────────────────────────────────────────
+// Runs before React mounts, catches JS errors that happen during module init
+// or in async code outside React's render tree.
+const _preRenderErrors: string[] = [];
+declare const ErrorUtils: { getGlobalHandler(): Function; setGlobalHandler(h: Function): void } | undefined;
+try {
+  if (typeof ErrorUtils !== "undefined") {
+    const prev = ErrorUtils.getGlobalHandler();
+    ErrorUtils.setGlobalHandler((e: Error, fatal: boolean) => {
+      _preRenderErrors.push(
+        `[${fatal ? "FATAL" : "ERROR"}] ${e?.message ?? String(e)}\n${e?.stack ?? "(no stack)"}`
+      );
+      prev?.(e, fatal);
+    });
+  }
+} catch {}
+
+// ─── Error display (pure inline styles — no theme/StyleSheet deps) ────────────
+
+function ErrorScreen({ title, detail }: { title: string; detail: string }) {
+  return (
+    <ScrollView
+      style={{ flex: 1, backgroundColor: "#fff" }}
+      contentContainerStyle={{ padding: 20, paddingTop: 56 }}
+    >
+      <Text style={{ fontSize: 15, fontWeight: "700", color: "#c00", marginBottom: 4 }}>
+        {title}
+      </Text>
+      <Text style={{ fontSize: 10, color: "#333", lineHeight: 16 }}>
+        {detail}
+      </Text>
+      {_preRenderErrors.length > 0 && (
+        <>
+          <Text style={{ fontSize: 13, fontWeight: "700", color: "#c00", marginTop: 20, marginBottom: 4 }}>
+            Pre-render errors:
+          </Text>
+          <Text style={{ fontSize: 10, color: "#333", lineHeight: 16 }}>
+            {_preRenderErrors.join("\n\n---\n\n")}
+          </Text>
+        </>
+      )}
+    </ScrollView>
+  );
+}
+
 // ─── Error boundary ────────────────────────────────────────────────────────────
 
 class ErrorBoundary extends Component<
   { children: React.ReactNode },
-  { error: Error | null }
+  { error: Error | null; info: string }
 > {
   constructor(props: { children: React.ReactNode }) {
     super(props);
-    this.state = { error: null };
+    this.state = { error: null, info: "" };
   }
   static getDerivedStateFromError(error: Error) {
     return { error };
   }
+  componentDidCatch(error: Error, info: React.ErrorInfo) {
+    this.setState({ info: info.componentStack ?? "" });
+  }
   render() {
-    const { error } = this.state;
+    const { error, info } = this.state;
     if (error) {
       return (
-        <View style={styles.errBox}>
-          <Text style={styles.errTitle}>Quelque chose s'est mal passé</Text>
-          <Text style={styles.errMsg}>{error.message}</Text>
-        </View>
+        <ErrorScreen
+          title={`Render crash: ${error.message}`}
+          detail={`${error.stack ?? "(no stack)"}\n\nComponent stack:${info}`}
+        />
       );
     }
     return this.props.children;
@@ -75,7 +124,7 @@ function AppInner() {
   const [profile, setProfile]     = useState<Profile | null>(null);
   const [lang, setLang]           = useState<Lang>("fr");
   const [tab, setTab]             = useState<Tab>("home");
-  const [profileVersion, setProfileVersion] = useState(0);
+  const [bootError, setBootError] = useState<string | null>(null);
 
   const t = makeT(lang);
 
@@ -84,17 +133,27 @@ function AppInner() {
     try {
       deviceLocale = Intl.DateTimeFormat().resolvedOptions().locale;
     } catch {}
+
     getProfile()
       .then((p) => {
         setProfile(p);
         setLang(resolveDefaultLang(deviceLocale, p?.lang as Lang | undefined));
         setReady(true);
       })
-      .catch(() => {
+      .catch((e: unknown) => {
+        const err = e instanceof Error ? e : new Error(String(e));
+        setBootError(
+          `DB init failed: ${err.message}\n\n${err.stack ?? "(no stack)"}`
+        );
         setLang(resolveDefaultLang(deviceLocale));
         setReady(true);
       });
   }, []);
+
+  // Show DB / startup errors visibly so they can be reported
+  if (bootError) {
+    return <ErrorScreen title="Startup error — screenshot this" detail={bootError} />;
+  }
 
   // ── Splash ────────────────────────────────────────────────────────────────
   if (!ready) {
@@ -217,19 +276,6 @@ function TabItem({
 // ─── Styles ───────────────────────────────────────────────────────────────────
 
 const styles = StyleSheet.create({
-  // Error boundary
-  errBox: {
-    flex: 1, backgroundColor: C.bg,
-    justifyContent: "center", alignItems: "center", padding: 32,
-  },
-  errTitle: {
-    fontSize: 17, fontWeight: "700", color: C.ink,
-    textAlign: "center", marginBottom: 12,
-  },
-  errMsg: {
-    fontSize: 13, color: C.muted, textAlign: "center", lineHeight: 20,
-  },
-
   // Splash
   splash: {
     flex: 1, backgroundColor: C.bg,
