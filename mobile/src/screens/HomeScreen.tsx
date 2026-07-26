@@ -10,7 +10,7 @@
  * The add-food modal (search → measure picker) lives here too.
  */
 
-import React, { useCallback, useEffect, useRef, useState } from "react";
+import React, { Component, useCallback, useEffect, useRef, useState } from "react";
 import {
   ActivityIndicator,
   Dimensions,
@@ -42,7 +42,10 @@ import {
   setStepsDone,
 } from "../db/localStore";
 import MealBuilderModal from "./MealBuilderModal";
-import BarcodeScannerView from "./BarcodeScannerView";
+// Lazy-load the scanner so expo-camera's native module is NOT required at
+// startup. If the native module is missing it will only fail when the user
+// taps "Scan", not when the app boots.
+const BarcodeScannerView = React.lazy(() => import("./BarcodeScannerView"));
 import { Lang, makeT } from "../lib/i18n";
 import { C } from "../lib/theme";
 
@@ -62,6 +65,40 @@ function todayISO(): string {
 }
 
 const MEALS: Meal[] = ["breakfast", "lunch", "dinner", "snack"];
+
+// ─── Scanner error boundary ───────────────────────────────────────────────────
+// Catches native module errors from expo-camera so they don't crash the app.
+
+class ScannerErrorBoundary extends Component<
+  { children: React.ReactNode; onClose: () => void },
+  { error: string | null }
+> {
+  constructor(props: { children: React.ReactNode; onClose: () => void }) {
+    super(props);
+    this.state = { error: null };
+  }
+  static getDerivedStateFromError(e: Error) {
+    return { error: e.message };
+  }
+  render() {
+    if (this.state.error) {
+      return (
+        <View style={{ flex: 1, justifyContent: "center", alignItems: "center", padding: 32, backgroundColor: C.bg }}>
+          <Text style={{ color: C.over, fontSize: 15, fontWeight: "700", marginBottom: 12, textAlign: "center" }}>
+            {`Camera unavailable\n`}
+          </Text>
+          <Text style={{ color: C.ink, fontSize: 12, textAlign: "center", marginBottom: 24 }}>
+            {this.state.error}
+          </Text>
+          <Pressable onPress={this.props.onClose} style={{ backgroundColor: C.accent, borderRadius: 10, paddingVertical: 12, paddingHorizontal: 24 }}>
+            <Text style={{ color: "#fff", fontWeight: "700" }}>Close</Text>
+          </Pressable>
+        </View>
+      );
+    }
+    return this.props.children;
+  }
+}
 
 // ─── Component ────────────────────────────────────────────────────────────────
 
@@ -478,11 +515,19 @@ export default function HomeScreen({ lang = "fr", onGoToWeight, profile }: Props
       >
         <View style={styles.modal}>
           {modalView === "scanner" ? (
-            <BarcodeScannerView
-              lang={lang}
-              onScanned={handleBarcodeScan}
-              onClose={() => setModalView("foods")}
-            />
+            <ScannerErrorBoundary onClose={() => setModalView("foods")}>
+              <React.Suspense fallback={
+                <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+                  <ActivityIndicator color={C.accent} />
+                </View>
+              }>
+                <BarcodeScannerView
+                  lang={lang}
+                  onScanned={handleBarcodeScan}
+                  onClose={() => setModalView("foods")}
+                />
+              </React.Suspense>
+            </ScannerErrorBoundary>
           ) : modalView === "builder" ? (
             <MealBuilderModal
               lang={lang}
