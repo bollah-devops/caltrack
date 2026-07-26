@@ -74,18 +74,17 @@ export class FoodsController {
            '[]'
          ) AS measures,
          CASE
+           WHEN unaccent(lower(coalesce(f.name_fr,''))) LIKE unaccent(lower($2))
+             OR unaccent(lower(coalesce(f.name_en,''))) LIKE unaccent(lower($2))
+           THEN 1
            WHEN unaccent(lower(coalesce(f.name_fr,''))) LIKE unaccent(lower($3))
              OR unaccent(lower(coalesce(f.name_en,''))) LIKE unaccent(lower($3))
-           THEN 1
-           WHEN unaccent(lower(coalesce(f.name_fr,''))) LIKE unaccent(lower($4))
-             OR unaccent(lower(coalesce(f.name_en,''))) LIKE unaccent(lower($4))
            THEN 2
            ELSE 3
          END AS rank
        FROM foods f
        LEFT JOIN food_measures m ON m.food_id = f.id
        WHERE f.is_active = TRUE
-         AND (f.country_code = $2 OR f.country_code IS NULL)
          AND (
                unaccent(lower(coalesce(f.name_fr,''))) LIKE unaccent(lower($1))
             OR unaccent(lower(coalesce(f.name_en,''))) LIKE unaccent(lower($1))
@@ -93,8 +92,8 @@ export class FoodsController {
          )
        GROUP BY f.id
        ORDER BY rank ASC, length(f.name_fr) ASC
-       LIMIT $5`,
-      [term, country, prefix, word, cap],
+       LIMIT $4`,
+      [term, prefix, word, cap],
     );
 
     return {

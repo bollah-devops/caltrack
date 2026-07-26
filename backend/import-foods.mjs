@@ -21,7 +21,7 @@ import { parse } from "csv-parse/sync";
 import pg from "pg";
 
 const csvPath =
-  process.argv[2] || "./migrations/seed_cameroon_v5.csv";
+  process.argv[2] || "./migrations/seed_v8.csv";
 const DATABASE_URL =
   process.env.DATABASE_URL ||
   "postgres://calorie:devpassword@localhost:5432/calorie";
@@ -66,14 +66,10 @@ async function main() {
 
   try {
     // Wipe existing seed data so re-runs are idempotent.
-    // Covers both Cameroon ('CM') and international ('INT') seed rows.
+    // All rows in foods are seed data; user foods live in custom_foods.
     await client.query("BEGIN");
-    await client.query(
-      `DELETE FROM food_measures WHERE food_id IN (SELECT id FROM foods WHERE country_code IN ('CM','INT'))`
-    );
-    const { rowCount: deleted } = await client.query(
-      `DELETE FROM foods WHERE country_code IN ('CM','INT')`
-    );
+    await client.query(`DELETE FROM food_measures`);
+    const { rowCount: deleted } = await client.query(`DELETE FROM foods`);
     console.log(`Cleared ${deleted} existing seed foods.`);
 
     let importedFoods = 0;
@@ -98,7 +94,24 @@ async function main() {
       }
 
       const region = (r.region || "").trim();
-      const countryCode = region === "international" ? "INT" : "CM";
+      const REGION_TO_CODE = {
+        "cameroun": "CM", "cameroon": "CM", "": "CM",
+        "international": "XW",
+        "nigeria": "NG",
+        "ghana": "GH",
+        "sénégal": "SN", "senegal": "SN",
+        "côte d'ivoire": "CI", "cote d'ivoire": "CI", "côte divoire": "CI",
+        "mali": "ML",
+        "guinée": "GN", "guinee": "GN", "guinea": "GN",
+        "bénin": "BJ", "benin": "BJ",
+        "togo": "TG",
+        "rd congo": "CD", "rdc": "CD", "rд congo": "CD",
+        "congo": "CG",
+        "tchad": "TD", "chad": "TD",
+        "gabon": "GA",
+        "car": "CF", "centrafrique": "CF",
+      };
+      const countryCode = REGION_TO_CODE[region.toLowerCase()] ?? "XW";
 
       const res = await client.query(
         `INSERT INTO foods
