@@ -22,7 +22,7 @@ import {
   View,
 } from "react-native";
 import { SafeAreaProvider, useSafeAreaInsets } from "react-native-safe-area-context";
-import { getProfile, Profile } from "./src/db/localStore";
+import { getProfile, resetAllData, Profile } from "./src/db/localStore";
 import { Lang, makeT, resolveDefaultLang } from "./src/lib/i18n";
 import { C } from "./src/lib/theme";
 import OnboardingScreen from "./src/screens/OnboardingScreen";
@@ -216,6 +216,11 @@ function AppInner() {
               console.log("[CT] App onComplete read back dailyTarget=", p?.dailyTarget, "activity=", p?.activity);
               setProfile(p);
               if (p?.lang) setLang(p.lang as Lang);
+              setTab("home");
+            }}
+            onReset={async () => {
+              await resetAllData();
+              setProfile(null);
               setTab("home");
             }}
           />

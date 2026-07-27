@@ -656,6 +656,22 @@ export async function deleteCustomMeal(id: string): Promise<void> {
   );
 }
 
+// ─── Reset ────────────────────────────────────────────────────────────────────
+
+/** Wipes all user data from every table. Schema is preserved. */
+export async function resetAllData(): Promise<void> {
+  const db = await getDb();
+  await db.execAsync(`
+    DELETE FROM profiles;
+    DELETE FROM log_entries;
+    DELETE FROM day_records;
+    DELETE FROM weight_logs;
+    DELETE FROM custom_meals;
+    DELETE FROM custom_meal_items;
+    DELETE FROM custom_foods;
+  `);
+}
+
 // ─── Daily kcal history (for bar chart) ───────────────────────────────────────
 
 /**

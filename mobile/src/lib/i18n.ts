@@ -134,6 +134,23 @@ export const translations: Record<string, Record<Lang, string>> = {
   floor_note:       { fr: "Minimum sécuritaire appliqué. Plus lent, c'est plus sain.",
                       en: "Safe minimum applied. Slower is healthier." },
 
+  // --- onboarding input placeholders ---
+  ph_age:           { fr: "ans",                  en: "years" },
+  ph_height:        { fr: "cm",                   en: "cm" },
+  ph_weight:        { fr: "kg",                   en: "kg" },
+  onboarding_hint:  { fr: "Remplissez tous les champs pour continuer",
+                      en: "Fill in all fields to continue" },
+
+  // --- reset ---
+  reset_data:         { fr: "Effacer toutes mes données",
+                        en: "Erase all my data" },
+  reset_confirm_title:{ fr: "Tout effacer ?",
+                        en: "Erase everything?" },
+  reset_confirm_msg:  { fr: "Cela supprimera définitivement votre profil, vos repas, vos pesées et tout votre historique. Cette action est irréversible.",
+                        en: "This will permanently delete your profile, food logs, weigh-ins, and all history. This cannot be undone." },
+  reset_yes:          { fr: "Tout effacer",       en: "Erase everything" },
+  reset_no:           { fr: "Annuler",            en: "Cancel" },
+
   // --- barcode scanner ---
   scan_barcode:      { fr: "Scanner un code-barres",  en: "Scan a barcode" },
   scanning:          { fr: "Pointez vers un code-barres",

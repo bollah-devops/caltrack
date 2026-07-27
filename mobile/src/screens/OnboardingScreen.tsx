@@ -7,7 +7,7 @@
  */
 
 import React, { useState } from "react";
-import { View, Text, TextInput, Pressable, ScrollView, StyleSheet } from "react-native";
+import { Alert, View, Text, TextInput, Pressable, ScrollView, StyleSheet } from "react-native";
 import { calculateCalories, Sex, ActivityLevel, Goal, Pace } from "../lib/calorieEngine";
 import { makeT, Lang } from "../lib/i18n";
 import { saveProfile, Profile } from "../db/localStore";
@@ -33,9 +33,10 @@ interface Props {
     activity: ActivityLevel; goal: Goal; pace: Pace;
     goalWeightKg?: number; dailyTarget: number; maintenance: number;
   }) => void;
+  onReset?: () => void;
 }
 
-export default function OnboardingScreen({ lang = "fr", initialProfile, onComplete }: Props) {
+export default function OnboardingScreen({ lang = "fr", initialProfile, onComplete, onReset }: Props) {
   const isEditing = initialProfile != null;
   // When editing, the user can switch language inside the form; on first run, lang is fixed
   const [localLang, setLocalLang] = useState<Lang>((initialProfile?.lang as Lang) ?? lang);
@@ -113,9 +114,9 @@ export default function OnboardingScreen({ lang = "fr", initialProfile, onComple
 
       {/* STATS */}
       <View style={styles.card}>
-        {field(t("your_age"), age, setAge, "40")}
-        {field(t("your_height"), height, setHeight, "170")}
-        {field(t("your_weight"), weight, setWeight, "78")}
+        {field(t("your_age"), age, setAge, t("ph_age"))}
+        {field(t("your_height"), height, setHeight, t("ph_height"))}
+        {field(t("your_weight"), weight, setWeight, t("ph_weight"))}
       </View>
 
       {/* ACTIVITY LEVEL */}
@@ -154,7 +155,7 @@ export default function OnboardingScreen({ lang = "fr", initialProfile, onComple
               value={goalWeight}
               onChangeText={(v) => setGoalWeight(v.replace(/[^\d.]/g, ""))}
               keyboardType="numeric"
-              placeholder="71"
+              placeholder="kg"
               placeholderTextColor={C.muted}
             />
           </>
@@ -189,36 +190,61 @@ export default function OnboardingScreen({ lang = "fr", initialProfile, onComple
           {result.flooredToMinimum && (
             <Text style={styles.floorNote}>{t("floor_note")}</Text>
           )}
-
-          <Pressable
-            style={styles.cta}
-            onPress={async () => {
-              const payload = {
-                sex: sex!, age: Number(age), heightCm: Number(height),
-                weightKg: Number(weight), activity, goal: goal!, pace,
-                goalWeightKg: goalWeight ? Number(goalWeight) : undefined,
-                dailyTarget: result.dailyTarget, maintenance: result.maintenance,
-              };
-              await saveProfile({
-                sex: payload.sex,
-                age: payload.age,
-                heightCm: payload.heightCm,
-                weightKg: payload.weightKg,
-                activity: payload.activity,
-                goal: payload.goal,
-                pace: payload.pace,
-                startWeightKg: initialProfile?.startWeightKg ?? payload.weightKg,
-                goalWeightKg: payload.goalWeightKg ?? null,
-                dailyTarget: payload.dailyTarget,
-                maintenance: payload.maintenance,
-                lang: localLang,
-              });
-              onComplete(payload);
-            }}
-          >
-            <Text style={styles.ctaText}>{isEditing ? t("save_profile") : t("start_tracking")}</Text>
-          </Pressable>
         </View>
+      )}
+
+      {/* ALWAYS-VISIBLE CONTINUE BUTTON */}
+      {!canCompute && (
+        <Text style={styles.ctaHint}>{t("onboarding_hint")}</Text>
+      )}
+      <Pressable
+        style={[styles.cta, !canCompute && styles.ctaDisabled]}
+        disabled={!canCompute}
+        onPress={async () => {
+          if (!result) return;
+          const payload = {
+            sex: sex!, age: Number(age), heightCm: Number(height),
+            weightKg: Number(weight), activity, goal: goal!, pace,
+            goalWeightKg: goalWeight ? Number(goalWeight) : undefined,
+            dailyTarget: result.dailyTarget, maintenance: result.maintenance,
+          };
+          await saveProfile({
+            sex: payload.sex,
+            age: payload.age,
+            heightCm: payload.heightCm,
+            weightKg: payload.weightKg,
+            activity: payload.activity,
+            goal: payload.goal,
+            pace: payload.pace,
+            startWeightKg: initialProfile?.startWeightKg ?? payload.weightKg,
+            goalWeightKg: payload.goalWeightKg ?? null,
+            dailyTarget: payload.dailyTarget,
+            maintenance: payload.maintenance,
+            lang: localLang,
+          });
+          onComplete(payload);
+        }}
+      >
+        <Text style={styles.ctaText}>{isEditing ? t("save_profile") : t("start_tracking")}</Text>
+      </Pressable>
+
+      {/* RESET (profile edit only) */}
+      {isEditing && onReset && (
+        <Pressable
+          style={styles.resetBtn}
+          onPress={() => {
+            Alert.alert(
+              t("reset_confirm_title"),
+              t("reset_confirm_msg"),
+              [
+                { text: t("reset_no"), style: "cancel" },
+                { text: t("reset_yes"), style: "destructive", onPress: onReset },
+              ]
+            );
+          }}
+        >
+          <Text style={styles.resetText}>{t("reset_data")}</Text>
+        </Pressable>
       )}
     </ScrollView>
   );
@@ -281,8 +307,15 @@ const styles = StyleSheet.create({
   floorNote: { marginTop: 8, fontSize: 13, color: C.accent },
 
   cta: {
-    marginTop: 20, backgroundColor: C.accent, borderRadius: 12,
+    marginTop: 12, backgroundColor: C.accent, borderRadius: 12,
     paddingVertical: 15, alignItems: "center",
   },
+  ctaDisabled: { backgroundColor: C.muted, opacity: 0.5 },
+  ctaHint: {
+    marginTop: 16, textAlign: "center", fontSize: 13, color: C.muted,
+  },
   ctaText: { color: "#fff", fontWeight: "700", fontSize: 16 },
+
+  resetBtn: { marginTop: 32, alignItems: "center", paddingVertical: 8 },
+  resetText: { fontSize: 13, color: C.muted, textDecorationLine: "underline" },
 });
