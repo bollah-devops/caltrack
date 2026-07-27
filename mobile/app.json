@@ -23,7 +23,9 @@
       "bundleIdentifier": "com.caltrack.app",
       "supportsTablet": false
     },
-    "plugins": [],
+    "plugins": [
+      "expo-font"
+    ],
     "extra": {
       "eas": {
         "projectId": "a825af00-7c5a-4ab1-9fba-f6c88dd9e0a8"
