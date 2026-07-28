@@ -65,8 +65,8 @@ export const translations: Record<string, Record<Lang, string>> = {
                       en: "Tip: weigh in once a week, same time of day. ±1 kg swings are water, not fat." },
   no_weigh_ins:     { fr: "Aucune pesée enregistrée",
                       en: "No weigh-ins logged yet" },
-  weigh_today:      { fr: "Votre poids aujourd'hui (kg)",
-                      en: "Your weight today (kg)" },
+  weigh_today:      { fr: "Votre poids aujourd'hui",
+                      en: "Your weight today" },
   vs_prev:          { fr: "vs précédent",         en: "vs previous" },
   steps_10k:        { fr: "10 000 pas",           en: "10k steps" },
   streak_days:      { fr: "jours de suite",       en: "day streak" },
@@ -138,8 +138,16 @@ export const translations: Record<string, Record<Lang, string>> = {
   ph_age:           { fr: "ans",                  en: "years" },
   ph_height:        { fr: "cm",                   en: "cm" },
   ph_weight:        { fr: "kg",                   en: "kg" },
+  ph_weight_lbs:    { fr: "lbs",                  en: "lbs" },
+  ph_height_ft:     { fr: "ft",                   en: "ft" },
+  ph_height_in:     { fr: "in",                   en: "in" },
   onboarding_hint:  { fr: "Remplissez tous les champs pour continuer",
                       en: "Fill in all fields to continue" },
+
+  // --- unit system ---
+  units_system:     { fr: "Système d'unités",     en: "Unit system" },
+  units_metric:     { fr: "Métrique",             en: "Metric" },
+  units_imperial:   { fr: "Impérial",             en: "Imperial" },
 
   // --- reset ---
   reset_data:         { fr: "Effacer toutes mes données",

@@ -43,6 +43,7 @@ import {
 import MealBuilderModal from "./MealBuilderModal";
 import { Lang, makeT } from "../lib/i18n";
 import { C } from "../lib/theme";
+import { Units, displayWeightKg } from "../lib/units";
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
@@ -412,7 +413,9 @@ export default function HomeScreen({ lang = "fr", onGoToWeight, profile }: Props
           <View style={styles.strip}>
             {showWeightProgress && (
               <Text style={styles.stripItem}>
-                {currentWeight} → {profile!.goalWeightKg} kg
+                {displayWeightKg(currentWeight!, (profile!.units as Units) ?? "metric")}
+                {" → "}
+                {displayWeightKg(profile!.goalWeightKg!, (profile!.units as Units) ?? "metric")}
               </Text>
             )}
             {streak > 0 && (

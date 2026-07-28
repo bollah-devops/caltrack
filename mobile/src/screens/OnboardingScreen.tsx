@@ -12,6 +12,7 @@ import { calculateCalories, Sex, ActivityLevel, Goal, Pace } from "../lib/calori
 import { makeT, Lang } from "../lib/i18n";
 import { saveProfile, Profile } from "../db/localStore";
 import { C } from "../lib/theme";
+import { Units, kgToLbs, lbsToKg, ftInToCm, cmToFtIn } from "../lib/units";
 
 const ACTIVITY_LEVELS: ActivityLevel[] = [
   "sedentary", "light", "moderate", "active", "very_active",
@@ -38,31 +39,96 @@ interface Props {
 
 export default function OnboardingScreen({ lang = "fr", initialProfile, onComplete, onReset }: Props) {
   const isEditing = initialProfile != null;
-  // When editing, the user can switch language inside the form; on first run, lang is fixed
   const [localLang, setLocalLang] = useState<Lang>((initialProfile?.lang as Lang) ?? lang);
   const t = makeT(localLang);
-  const [sex, setSex] = useState<Sex | null>((initialProfile?.sex as Sex) ?? null);
-  const [age, setAge] = useState(initialProfile?.age?.toString() ?? "");
-  const [height, setHeight] = useState(initialProfile?.heightCm?.toString() ?? "");
-  const [weight, setWeight] = useState(initialProfile?.weightKg?.toString() ?? "");
-  const [goalWeight, setGoalWeight] = useState(initialProfile?.goalWeightKg?.toString() ?? "");
-  const [activity, setActivity] = useState<ActivityLevel>((initialProfile?.activity as ActivityLevel) ?? "light");
-  const [goal, setGoal] = useState<Goal | null>((initialProfile?.goal as Goal) ?? null);
-  const [pace, setPace] = useState<Pace>((initialProfile?.pace as Pace) ?? "moderate");
+
+  // Unit system — stored in profile, defaults to metric
+  const initUnits: Units = (initialProfile?.units as Units) ?? "metric";
+  const [units, setUnits] = useState<Units>(initUnits);
+
+  const [sex, setSex]     = useState<Sex | null>((initialProfile?.sex as Sex) ?? null);
+  const [age, setAge]     = useState(initialProfile?.age?.toString() ?? "");
+  const [activity, setActivity] = useState<ActivityLevel>(
+    (initialProfile?.activity as ActivityLevel) ?? "light"
+  );
+  const [goal, setGoal]   = useState<Goal | null>((initialProfile?.goal as Goal) ?? null);
+  const [pace, setPace]   = useState<Pace>((initialProfile?.pace as Pace) ?? "moderate");
+
+  // Weight — kept in display units (kg or lbs)
+  const [weight, setWeight] = useState(() => {
+    if (!initialProfile) return "";
+    return initUnits === "imperial"
+      ? kgToLbs(initialProfile.weightKg).toString()
+      : initialProfile.weightKg.toString();
+  });
+
+  // Goal weight — kept in display units
+  const [goalWeight, setGoalWeight] = useState(() => {
+    if (!initialProfile?.goalWeightKg) return "";
+    return initUnits === "imperial"
+      ? kgToLbs(initialProfile.goalWeightKg).toString()
+      : initialProfile.goalWeightKg.toString();
+  });
+
+  // Height — metric: single cm field; imperial: separate ft + in fields
+  const [height, setHeight] = useState(() => {
+    if (!initialProfile || initUnits === "imperial") return "";
+    return initialProfile.heightCm.toString();
+  });
+  const [heightFt, setHeightFt] = useState(() => {
+    if (!initialProfile || initUnits !== "imperial") return "";
+    return cmToFtIn(initialProfile.heightCm).ft.toString();
+  });
+  const [heightIn, setHeightIn] = useState(() => {
+    if (!initialProfile || initUnits !== "imperial") return "";
+    return cmToFtIn(initialProfile.heightCm).inch.toString();
+  });
+
+  // Convert existing input values when user switches unit system
+  function handleUnitsToggle(newUnits: Units) {
+    if (newUnits === units) return;
+    if (newUnits === "imperial") {
+      if (height) {
+        const { ft, inch } = cmToFtIn(Number(height));
+        setHeightFt(ft.toString());
+        setHeightIn(inch.toString());
+      }
+      if (weight) setWeight(kgToLbs(Number(weight)).toString());
+      if (goalWeight) setGoalWeight(kgToLbs(Number(goalWeight)).toString());
+    } else {
+      const ftN = Number(heightFt) || 0;
+      const inN = Number(heightIn) || 0;
+      if (ftN || inN) setHeight(Math.round(ftInToCm(ftN, inN)).toString());
+      if (weight) setWeight(String(Math.round(lbsToKg(Number(weight)) * 10) / 10));
+      if (goalWeight) setGoalWeight(String(Math.round(lbsToKg(Number(goalWeight)) * 10) / 10));
+    }
+    setUnits(newUnits);
+  }
+
+  // Always compute in metric — the engine never changes
+  const heightCmValue = units === "metric"
+    ? Number(height)
+    : ftInToCm(Number(heightFt) || 0, Number(heightIn) || 0);
+  const weightKgValue = units === "metric"
+    ? Number(weight)
+    : lbsToKg(Number(weight));
+  const goalWeightKgValue = goalWeight
+    ? (units === "metric" ? Number(goalWeight) : lbsToKg(Number(goalWeight)))
+    : undefined;
 
   const canCompute =
-    sex && goal && Number(age) > 0 && Number(height) > 0 && Number(weight) > 0;
+    sex && goal && Number(age) > 0 && heightCmValue > 0 && weightKgValue > 0;
 
   const result = canCompute
     ? calculateCalories({
         sex: sex!,
         age: Number(age),
-        heightCm: Number(height),
-        weightKg: Number(weight),
+        heightCm: heightCmValue,
+        weightKg: weightKgValue,
         activity,
         goal: goal!,
         pace,
-        goalWeightKg: goalWeight ? Number(goalWeight) : undefined,
+        goalWeightKg: goalWeightKgValue,
       })
     : null;
 
@@ -103,6 +169,15 @@ export default function OnboardingScreen({ lang = "fr", initialProfile, onComple
         </View>
       )}
 
+      {/* UNIT SYSTEM */}
+      <View style={styles.card}>
+        <Text style={styles.label}>{t("units_system")}</Text>
+        <View style={styles.row}>
+          {pill(t("units_metric"),   units === "metric",   () => handleUnitsToggle("metric"))}
+          {pill(t("units_imperial"), units === "imperial", () => handleUnitsToggle("imperial"))}
+        </View>
+      </View>
+
       {/* SEX */}
       <View style={styles.card}>
         <Text style={styles.label}>{t("onboarding_sex")}</Text>
@@ -115,8 +190,40 @@ export default function OnboardingScreen({ lang = "fr", initialProfile, onComple
       {/* STATS */}
       <View style={styles.card}>
         {field(t("your_age"), age, setAge, t("ph_age"))}
-        {field(t("your_height"), height, setHeight, t("ph_height"))}
-        {field(t("your_weight"), weight, setWeight, t("ph_weight"))}
+
+        {/* Height — metric: single cm field; imperial: ft + in side by side */}
+        {units === "metric" ? (
+          field(t("your_height"), height, setHeight, t("ph_height"))
+        ) : (
+          <View style={{ marginBottom: 16 }}>
+            <Text style={styles.label}>{t("your_height")}</Text>
+            <View style={{ flexDirection: "row", gap: 10 }}>
+              <TextInput
+                style={[styles.input, { flex: 1 }]}
+                value={heightFt}
+                onChangeText={(v) => setHeightFt(v.replace(/[^\d]/g, ""))}
+                keyboardType="numeric"
+                placeholder={t("ph_height_ft")}
+                placeholderTextColor={C.muted}
+              />
+              <TextInput
+                style={[styles.input, { flex: 1 }]}
+                value={heightIn}
+                onChangeText={(v) => setHeightIn(v.replace(/[^\d]/g, ""))}
+                keyboardType="numeric"
+                placeholder={t("ph_height_in")}
+                placeholderTextColor={C.muted}
+              />
+            </View>
+          </View>
+        )}
+
+        {field(
+          t("your_weight"),
+          weight,
+          setWeight,
+          units === "imperial" ? t("ph_weight_lbs") : t("ph_weight")
+        )}
       </View>
 
       {/* ACTIVITY LEVEL */}
@@ -155,7 +262,7 @@ export default function OnboardingScreen({ lang = "fr", initialProfile, onComple
               value={goalWeight}
               onChangeText={(v) => setGoalWeight(v.replace(/[^\d.]/g, ""))}
               keyboardType="numeric"
-              placeholder="kg"
+              placeholder={units === "imperial" ? t("ph_weight_lbs") : t("ph_weight")}
               placeholderTextColor={C.muted}
             />
           </>
@@ -202,10 +309,13 @@ export default function OnboardingScreen({ lang = "fr", initialProfile, onComple
         disabled={!canCompute}
         onPress={async () => {
           if (!result) return;
+          // Always pass metric values to the engine and DB
           const payload = {
-            sex: sex!, age: Number(age), heightCm: Number(height),
-            weightKg: Number(weight), activity, goal: goal!, pace,
-            goalWeightKg: goalWeight ? Number(goalWeight) : undefined,
+            sex: sex!, age: Number(age),
+            heightCm: heightCmValue,
+            weightKg: weightKgValue,
+            activity, goal: goal!, pace,
+            goalWeightKg: goalWeightKgValue,
             dailyTarget: result.dailyTarget, maintenance: result.maintenance,
           };
           await saveProfile({
@@ -221,6 +331,7 @@ export default function OnboardingScreen({ lang = "fr", initialProfile, onComple
             dailyTarget: payload.dailyTarget,
             maintenance: payload.maintenance,
             lang: localLang,
+            units,
           });
           onComplete(payload);
         }}

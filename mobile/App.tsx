@@ -21,7 +21,7 @@ import {
   Text,
   View,
 } from "react-native";
-import { SafeAreaProvider, useSafeAreaInsets } from "react-native-safe-area-context";
+import { SafeAreaProvider, SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
 import { getProfile, resetAllData, Profile } from "./src/db/localStore";
 import { Lang, makeT, resolveDefaultLang } from "./src/lib/i18n";
 import { C } from "./src/lib/theme";
@@ -205,7 +205,7 @@ function AppInner() {
           <HistoryScreen lang={lang} />
         </View>
         <View style={[StyleSheet.absoluteFill, { display: tab === "weight" ? "flex" : "none" }]}>
-          <WeightScreen lang={lang} />
+          <WeightScreen lang={lang} profile={profile} />
         </View>
         <View style={[StyleSheet.absoluteFill, { display: tab === "settings" ? "flex" : "none" }]}>
           <OnboardingScreen
@@ -219,41 +219,50 @@ function AppInner() {
               setTab("home");
             }}
             onReset={async () => {
-              await resetAllData();
-              setProfile(null);
+              try {
+                await resetAllData();
+              } catch (e) {
+                console.warn("[CT] resetAllData error", e);
+              }
+              // Re-read from DB — will return null after the wipe.
+              // Explicit DB read is more reliable than trusting local state.
+              const p = await getProfile();
+              setProfile(p);  // null → triggers onboarding
               setTab("home");
             }}
           />
         </View>
       </View>
 
-      {/* Tab bar */}
-      <View style={[styles.tabBar, { paddingBottom: Math.max(insets.bottom, 16) }]}>
-        <TabItem
-          icon="home"
-          label={t("tab_home")}
-          active={tab === "home"}
-          onPress={() => setTab("home")}
-        />
-        <TabItem
-          icon="time"
-          label={t("tab_history")}
-          active={tab === "history"}
-          onPress={() => setTab("history")}
-        />
-        <TabItem
-          icon="barbell"
-          label={t("tab_weight")}
-          active={tab === "weight"}
-          onPress={() => setTab("weight")}
-        />
-        <TabItem
-          icon="person"
-          label={t("tab_settings")}
-          active={tab === "settings"}
-          onPress={() => setTab("settings")}
-        />
-      </View>
+      {/* Tab bar — SafeAreaView handles bottom inset on all devices */}
+      <SafeAreaView edges={["bottom"]} style={styles.tabBarSafe}>
+        <View style={styles.tabBar}>
+          <TabItem
+            icon="home"
+            label={t("tab_home")}
+            active={tab === "home"}
+            onPress={() => setTab("home")}
+          />
+          <TabItem
+            icon="time"
+            label={t("tab_history")}
+            active={tab === "history"}
+            onPress={() => setTab("history")}
+          />
+          <TabItem
+            icon="barbell"
+            label={t("tab_weight")}
+            active={tab === "weight"}
+            onPress={() => setTab("weight")}
+          />
+          <TabItem
+            icon="person"
+            label={t("tab_settings")}
+            active={tab === "settings"}
+            onPress={() => setTab("settings")}
+          />
+        </View>
+      </SafeAreaView>
     </View>
   );
 }
@@ -303,11 +312,13 @@ const styles = StyleSheet.create({
   },
 
   // Tab bar
-  tabBar: {
-    flexDirection: "row",
+  tabBarSafe: {
     backgroundColor: C.card,
     borderTopWidth: 1,
     borderTopColor: C.line,
+  },
+  tabBar: {
+    flexDirection: "row",
   },
   tabItem: {
     flex: 1, alignItems: "center", justifyContent: "center",

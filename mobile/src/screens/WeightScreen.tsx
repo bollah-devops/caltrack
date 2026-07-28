@@ -23,13 +23,13 @@ import { Svg, Polyline, Circle, Line, Text as SvgText } from "react-native-svg";
 import {
   addWeightLog,
   deleteWeightLog,
-  getProfile,
   getWeightLogs,
   Profile,
   WeightLog,
 } from "../db/localStore";
 import { Lang, makeT } from "../lib/i18n";
 import { C } from "../lib/theme";
+import { Units, kgToLbs, lbsToKg, displayWeightKg } from "../lib/units";
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
@@ -41,10 +41,13 @@ function formatDate(dateStr: string, lang: Lang): string {
   }).format(date);
 }
 
-function deltaStr(current: number, previous: number): string {
-  const diff = Math.round((current - previous) * 10) / 10;
+function deltaStr(currentKg: number, previousKg: number, units: Units): string {
+  const cur  = units === "imperial" ? kgToLbs(currentKg)  : currentKg;
+  const prev = units === "imperial" ? kgToLbs(previousKg) : previousKg;
+  const diff = Math.round((cur - prev) * 10) / 10;
   if (diff === 0) return "—";
-  return (diff > 0 ? "+" : "") + diff + " kg";
+  const unit = units === "imperial" ? " lbs" : " kg";
+  return (diff > 0 ? "+" : "") + diff + unit;
 }
 
 function deltaColor(current: number, previous: number, goal: "lose" | "gain" | string): string {
@@ -62,31 +65,32 @@ function deltaColor(current: number, previous: number, goal: "lose" | "gain" | s
 
 interface Props {
   lang?: Lang;
+  profile: Profile | null;
 }
 
-export default function WeightScreen({ lang = "fr" }: Props) {
+export default function WeightScreen({ lang = "fr", profile }: Props) {
   const t = makeT(lang);
 
-  const [loading, setLoading]   = useState(true);
-  const [profile, setProfile]   = useState<Profile | null>(null);
-  const [logs, setLogs]         = useState<WeightLog[]>([]);
-  const [input, setInput]       = useState("");
-  const [saving, setSaving]     = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [logs, setLogs]       = useState<WeightLog[]>([]);
+  const [input, setInput]     = useState("");
+  const [saving, setSaving]   = useState(false);
 
   useEffect(() => {
     load();
   }, []);
 
   async function load() {
-    const [p, w] = await Promise.all([getProfile(), getWeightLogs()]);
-    setProfile(p);
+    const w = await getWeightLogs();
     setLogs(w);
     setLoading(false);
   }
 
   async function handleLog() {
-    const kg = parseFloat(input);
-    if (!kg || kg < 20 || kg > 300) return;
+    const raw = parseFloat(input);
+    if (!raw) return;
+    const kg = units === "imperial" ? lbsToKg(raw) : raw;
+    if (kg < 20 || kg > 300) return; // validate in kg
     setSaving(true);
     await addWeightLog(kg);
     const updated = await getWeightLogs();
@@ -108,6 +112,7 @@ export default function WeightScreen({ lang = "fr" }: Props) {
     );
   }
 
+  const units: Units  = (profile?.units as Units) ?? "metric";
   const currentWeight = logs[0]?.weightKg ?? profile?.weightKg ?? null;
   const startWeight   = profile?.startWeightKg ?? profile?.weightKg ?? null;
   const goalWeight    = profile?.goalWeightKg ?? null;
@@ -123,26 +128,32 @@ export default function WeightScreen({ lang = "fr" }: Props) {
         <>
           {/* ── 1. Stats row ── */}
           <View style={styles.statsRow}>
-            <StatCard label={t("start_kg")} value={startWeight} />
-            <StatCard label={t("now_kg")}   value={currentWeight} accent />
-            <StatCard label={t("goal_kg")}  value={goalWeight} />
+            <StatCard label={t("start_kg")} value={startWeight != null ? displayWeightKg(startWeight, units) : null} />
+            <StatCard label={t("now_kg")}   value={currentWeight != null ? displayWeightKg(currentWeight, units) : null} accent />
+            <StatCard label={t("goal_kg")}  value={goalWeight != null ? displayWeightKg(goalWeight, units) : null} />
           </View>
 
           {/* ── 1.5. Weight line chart ── */}
           {logs.length >= 2 && (
-            <WeightLineChart logs={logs} goalWeight={goalWeight} />
+            <WeightLineChart logs={logs} goalWeight={goalWeight} units={units} />
           )}
 
           {/* ── 2. Log input ── */}
           <View style={styles.card}>
-            <Text style={styles.sectionLabel}>{t("weigh_today")}</Text>
+            <Text style={styles.sectionLabel}>
+              {t("weigh_today")} ({units === "imperial" ? "lbs" : "kg"})
+            </Text>
             <View style={styles.inputRow}>
               <TextInput
                 style={styles.weightInput}
                 value={input}
                 onChangeText={(v) => setInput(v.replace(/[^\d.]/g, ""))}
                 keyboardType="decimal-pad"
-                placeholder={currentWeight != null ? String(currentWeight) : "78.5"}
+                placeholder={
+                  currentWeight != null
+                    ? String(units === "imperial" ? kgToLbs(currentWeight) : currentWeight)
+                    : units === "imperial" ? "lbs" : "kg"
+                }
                 placeholderTextColor={C.muted}
                 selectTextOnFocus
               />
@@ -170,8 +181,10 @@ export default function WeightScreen({ lang = "fr" }: Props) {
       }
       renderItem={({ item, index }) => {
         const prev = logs[index + 1];
-        const delta = prev ? deltaStr(item.weightKg, prev.weightKg) : null;
+        const delta = prev ? deltaStr(item.weightKg, prev.weightKg, units) : null;
         const dColor = prev ? deltaColor(item.weightKg, prev.weightKg, goalStr) : C.muted;
+        const dispWeight = units === "imperial" ? kgToLbs(item.weightKg) : item.weightKg;
+        const dispUnit   = units === "imperial" ? " lbs" : " kg";
         return (
           <View style={styles.logRow}>
             <View style={{ flex: 1 }}>
@@ -180,8 +193,8 @@ export default function WeightScreen({ lang = "fr" }: Props) {
                 <Text style={[styles.logDelta, { color: dColor }]}>{delta}</Text>
               )}
             </View>
-            <Text style={styles.logWeight}>{item.weightKg}</Text>
-            <Text style={styles.logUnit}> kg</Text>
+            <Text style={styles.logWeight}>{dispWeight}</Text>
+            <Text style={styles.logUnit}>{dispUnit}</Text>
             <Pressable
               onPress={() => handleDelete(item.id)}
               style={styles.deleteBtn}
@@ -202,9 +215,11 @@ export default function WeightScreen({ lang = "fr" }: Props) {
 function WeightLineChart({
   logs,
   goalWeight,
+  units,
 }: {
   logs: WeightLog[];
   goalWeight: number | null;
+  units: Units;
 }) {
   const { width: screenW } = Dimensions.get("window");
   const width  = screenW - 32 - 2;  // list padding 16×2, border 1×2
@@ -242,18 +257,18 @@ function WeightLineChart({
   return (
     <View style={styles.chartCard}>
       <Svg width={width} height={height}>
-        {/* Y-axis labels */}
+        {/* Y-axis labels — convert to display units */}
         <SvgText
           x={padL - 4} y={padT + 4}
           textAnchor="end" fontSize={10} fill={C.muted}
         >
-          {maxY.toFixed(1)}
+          {units === "imperial" ? kgToLbs(maxY).toFixed(1) : maxY.toFixed(1)}
         </SvgText>
         <SvgText
           x={padL - 4} y={padT + plotH + 4}
           textAnchor="end" fontSize={10} fill={C.muted}
         >
-          {minY.toFixed(1)}
+          {units === "imperial" ? kgToLbs(minY).toFixed(1) : minY.toFixed(1)}
         </SvgText>
 
         {/* Axis lines */}
@@ -298,7 +313,7 @@ function StatCard({
   label, value, accent,
 }: {
   label: string;
-  value: number | null;
+  value: string | null;
   accent?: boolean;
 }) {
   return (

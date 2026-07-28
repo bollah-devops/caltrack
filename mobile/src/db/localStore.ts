@@ -26,6 +26,7 @@ export interface Profile {
   dailyTarget: number;
   maintenance: number;
   lang: string;
+  units: string; // "metric" | "imperial"
 }
 
 export type Meal = "breakfast" | "lunch" | "dinner" | "snack";
@@ -123,6 +124,15 @@ async function initSchema(db: SQLite.SQLiteDatabase): Promise<void> {
     } catch {
       // Column already exists — ignore
     }
+  }
+
+  // Migrate: add units column to profiles (existing rows default to "metric")
+  try {
+    await db.execAsync(
+      `ALTER TABLE profiles ADD COLUMN units TEXT NOT NULL DEFAULT 'metric'`
+    );
+  } catch {
+    // Column already exists — ignore
   }
 
   await db.execAsync(`
@@ -238,13 +248,13 @@ export async function saveProfile(p: Profile): Promise<void> {
   await db.runAsync(
     `INSERT OR REPLACE INTO profiles
        (id, sex, age, height_cm, weight_kg, activity, goal, pace,
-        start_weight_kg, goal_weight_kg, daily_target, maintenance, lang)
-     VALUES (1, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+        start_weight_kg, goal_weight_kg, daily_target, maintenance, lang, units)
+     VALUES (1, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
     [
       p.sex, p.age, p.heightCm, p.weightKg,
       p.activity, p.goal, p.pace,
       p.startWeightKg ?? null, p.goalWeightKg ?? null,
-      p.dailyTarget, p.maintenance, p.lang,
+      p.dailyTarget, p.maintenance, p.lang, p.units ?? "metric",
     ]
   );
 }
@@ -269,6 +279,7 @@ export async function getProfile(): Promise<Profile | null> {
     dailyTarget:   row.daily_target,
     maintenance:   row.maintenance,
     lang:          row.lang,
+    units:         row.units ?? "metric",
   };
 }
 
@@ -661,15 +672,14 @@ export async function deleteCustomMeal(id: string): Promise<void> {
 /** Wipes all user data from every table. Schema is preserved. */
 export async function resetAllData(): Promise<void> {
   const db = await getDb();
-  await db.execAsync(`
-    DELETE FROM profiles;
-    DELETE FROM log_entries;
-    DELETE FROM day_records;
-    DELETE FROM weight_logs;
-    DELETE FROM custom_meals;
-    DELETE FROM custom_meal_items;
-    DELETE FROM custom_foods;
-  `);
+  // Run each DELETE separately — multi-statement execAsync can silently skip
+  // statements after an error on some SQLite builds.
+  for (const table of [
+    "profiles", "log_entries", "day_records", "weight_logs",
+    "custom_meals", "custom_meal_items", "custom_foods",
+  ]) {
+    await db.execAsync(`DELETE FROM ${table};`);
+  }
 }
 
 // ─── Daily kcal history (for bar chart) ───────────────────────────────────────
